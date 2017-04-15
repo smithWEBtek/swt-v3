@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  repo: MyString
+  date: 2017-04-15
+  title: MyString
+  outline: MyText
+  body: MyText
+  summary: MyText
+  tweet: MyText
+  refs: MyText
+
+two:
+  repo: MyString
+  date: 2017-04-15
+  title: MyString
+  outline: MyText
+  body: MyText
+  summary: MyText
+  tweet: MyText
+  refs: MyText

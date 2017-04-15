@@ -1,0 +1,11 @@
+<%#= render partial: 'posts/posts_navbar' %>
+
+<%= link_to "all", posts_path %> |
+<%= link_to "new", new_post_path %><br><br>
+
+<% @posts.each do |post| %>
+
+   (<%= post.id %>) 
+   <%= post.date %> 
+   <%= link_to post.title, post_path(post) %><br>
+<% end %>
