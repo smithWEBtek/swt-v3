@@ -1,4 +1,7 @@
 170416
+
+recover from 1 hour github shithole
+
 static views for static page
 sidebar nav defaults to same as application layout
 when a model is created, it's index.html.erb becomes the default destination from navbar
