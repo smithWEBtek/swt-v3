@@ -8,13 +8,21 @@
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
       <%= csrf_meta_tags %>
   </head>
+
   <body>
-    <%= render 'layouts/main_nav' %>
+    <header id="main_nav" class="clearfix">
+      <a href="index.html" class="name">smithWEBtek</a>
+    <nav>
+      <%= link_to "Articles", posts_path %>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
   <div id="flash-messages" class="flash-style">
     <% flash.each do |key, value| %>
       <%= content_tag(:div, value, :class => "flash #{key}") %>
     <% end %>
     <%= yield %>
   </body>
-  <%= render 'layouts/footer' %>
 </html>
