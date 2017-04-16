@@ -1,4 +1,4 @@
- 
+<!-- facebook stuff -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -9,7 +9,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- facebook stuff -->
-<meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
+  <meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
   <meta property="og:type"          content="website" />
   <meta property="og:title"         content="Your Website Title" />
   <meta property="og:description"   content="Your description" />
@@ -31,40 +31,20 @@
     <%= render partial: 'posts/sidebar', locals: { posts: @posts } %>
   </div>
   <div class="col-0 homepage_content">
- 
+   <%= link_to "edit current post", edit_post_path(@post) %>
+
     <p><%= link_to @post.title, @post.repo %><p class="date"><%= @post.created_at.strftime('%B %d %Y') %></p>
    
     <p>outline</p>
     <%= @post.outline %><br>
-
-    <p>body</p>
-    <%= @post.body %>
-    <%#= @post.markdown(@post.body) %><br>
+    
+    <%= markdown @post.body %>
 
     <p>summary:</p>
     <%= @post.summary %>
     <hr>
-      <%#= render partial: 'posts/social' %>
-    
-<div id="share_box">
-  <p>share this blog: <%= @post.title %></p>
-<!-- linkedIN -->
-<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-<script type="IN/Share" data-url="http://127.0.0.1/posts/1"></script>
-
-<!-- twitter -->
-<a class="twitter-share-button"
-  href="https://twitter.com/intent/tweet?text=<%= url_for(@post) %>"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-
-<!-- googleplus -->
-  <a onclick="javascript:window.open('https://plus.google.com/share?text=<%= @post.title %> by @smithWEBtek = &amp;url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
-
-<!-- facebook -->
-  <div class="fb-share-button" 
-    data-href="<%= url_for([@post, {only_path: false}]) %>'
-    data-layout="button_count">
-  </div>
-
+    <%= render partial: 'posts/social', locals: { post: @post } %>
+     
     <hr>
     <%= render partial: 'posts/disqus' %>
   </div>

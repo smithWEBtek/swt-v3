@@ -1,16 +1,18 @@
 <div id="share_box">
-  <p>share this blog: <%= @post.title %></p>
-<!-- twitter -->
-  <a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @smithWEBtek = &amp;url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>  <!-- twitter -->
-
+  <p>share it!</p>
 <!-- linkedIN -->
-  <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-  <script type="IN/Share" data-url="<%= url_for([@post, {only_path: false}]) %>" data-counter="top"></script>
-  
+<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+<script type="IN/Share" data-url="http://127.0.0.1/posts/1"></script>
 
-<!-- facebook -->
-  <a onclick="javascript:window.open('http://facebook.com/share?text=<%= @post.title %> by @smithWEBtek = &amp;url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+<!-- twitter -->
+<a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=<%= url_for(@post) %>"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 
 <!-- googleplus -->
   <a onclick="javascript:window.open('https://plus.google.com/share?text=<%= @post.title %> by @smithWEBtek = &amp;url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+<!-- facebook -->
+<div class="fb-share-button" 
+  data-href="<%= url_for([@post, {only_path: false}]) %>'
+  data-layout="button_count">
 </div>
