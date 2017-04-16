@@ -4,15 +4,34 @@
 <%= link_to "edit", edit_post_path(@post) %>
 <%= link_to "del", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
 
-<div id=" post_show_content" class="skinny_wrapper wrapper_padding">
+
+<div id="post_show_content" class="skinny_wrapper wrapper_padding">
   <header>
     <p class="date><%= @post.created_at.strftime('%A, %B %d') %>"></p>
     <h3><%= @post.title %></h3>
     <hr>
   </header>
-   <div class="content">
- 
-  <%= @post.body %> 
- 
-<%= render partial: 'posts/disqus' %>
+  <div id="content">
+    <h4>Title:</h4>
+    <%= @post.title %><br>
+
+    <h4>Repo:</h4>  
+    <%= @post.repo %><br>
+
+    <h4>Outline:</h4>
+    <%= @post.outline %><br>
+
+    <h4>Body:</h4>
+    <%= @post.body %>
+    <%#= @post.markdown(@post.body) %><br>
+
+    <h4>Summary:</h4>
+    <%= @post.summary %>
+  </div>
 </div>
+
+<%= render partial: 'posts/disqus' %>
+
+ 
+</div>
+ 
