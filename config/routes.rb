@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   resources :posts
-   root 'static#home'
+  root 'static#home'
+  
 end
