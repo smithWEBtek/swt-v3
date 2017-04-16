@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'static#home'
+  root 'static#about'
 
   get '/about', to: 'static#about'
   get '/blog', to: 'posts#index'
