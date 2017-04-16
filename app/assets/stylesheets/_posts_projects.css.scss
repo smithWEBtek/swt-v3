@@ -1,0 +1,122 @@
+#posts_wrapper {
+  text-align: center;
+}
+
+#posts_wrapper .post date {
+  font-size: 1em;
+  margin: 0;
+}
+
+#posts_wrapper .post h2 {
+  margin: 0;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+
+#posts_wrapper .post h2 a {
+  text-decortation: none;
+  color: #424652;
+}
+
+#posts_wrapper .post h2 a:hover {
+  color: #8bc6db;
+}
+
+#posts_wrapper .post hr {
+  margin: 3em auto;
+  color: #8bc6db;
+}
+
+#post_show_content header {
+  text-align: center;
+}
+
+#post_show_content header .date {
+  font-size: .9em;
+  color: #9a9da4;
+  margin: 0;
+}
+
+#post_show_content header h1 {
+  margin: 0;
+}
+
+#post_show_content hr {
+  margin: 3em auto;
+}
+
+#share_box {
+  text-align: center;
+}
+
+#share_box p {
+  padding: 0 0 1em 0;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #424652;
+  font-size: .8em;
+}
+
+#share_box i {
+  color: #424652;
+  padding: 1em 1.5em;
+}
+
+#share_box i:hover {
+  color: #8bc6db;
+  cursor: pointer;
+}
+
+.pagination:before,
+.pagination:after {
+  content: " ";
+  display: table;
+}
+
+.pagination:after {
+  clear: both;
+}
+
+.pagination {
+  text-align: center;
+  margin: 0 0 3em 0;
+}
+
+.pagination a,
+.pagination .previous_page,
+.pagination .current,
+.pagination .next_page {
+  padding: .75em 1em;
+  margin: 0 .5em;
+  border-radius: .15em;
+  line-height: 20px;
+  text-decoration: none;
+  background: #FFFFFF;
+  font-weight: 700;
+  font-size: .7em;
+  font-style: normal;
+  color: #424652;
+}
+
+.pagination a:hover,
+.pagination .previous_page:hover,
+.pagination .current:hover,
+.pagination .next_page:hover {
+  background: #8bc6db;
+  color: #FFFFFF;
+}
+
+.pagination .current {
+  background: #8bc6db;
+  color: #FFFFFF;
+}
+
+.pagination .disabled {
+  color: #C0C0C0;
+  background: #FFFFFF;
+}
+
+.pagination .disabled:hover {
+  color: #C0C0C0;
+}

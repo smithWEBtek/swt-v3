@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SwtV3</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <title>smithWEBtek</title>
+      <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+      <script src="https://use.fontawesome.com/b7b038f8df.js"></script>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <%= csrf_meta_tags %>
   </head>
 
   <body>
+    <header id="main_nav" class="clearfix">
+      <a href="index.html" class="name">smithWEBtek</a>
+    <nav>
+      <%= link_to "Articles", posts_path %>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
   <div id="flash-messages" class="flash-style">
     <% flash.each do |key, value| %>

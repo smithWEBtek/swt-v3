@@ -1,0 +1,134 @@
+@import 'normalize';
+$white: #FFFFFF;
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.skinny_wrapper {
+  width: 80%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.wrapper_padding {
+  padding: 2rem 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  color: $dark;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.375rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p,
+li {
+  line-height: 1.25rem;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.6em 0;
+}
+
+hr {
+  width: 3em;
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid;
+  color: $highlight;
+  margin: 2rem 0;
+}
+
+#main_nav {
+  padding: 2.5em 5%;
+  border-bottom: 1px solid;
+  color: $border;
+  .name {
+    font-weight: 700;
+    font-size: .8em;
+    letter-spacing: 2px;
+    border: 2px solid $border;
+    padding: 1rem;
+    text-decoration: none;
+    color: $dark;
+  }
+  nav {
+    float: right;
+    padding-top: .5rem;
+    a {
+      color: $dark;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem;
+      &:hover {
+        color: $highlight;
+      }
+    }
+  }
+}
+
+#page_title {
+  text-align: center;
+  border-bottom: 1px solid $border;
+  padding: 3em 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+@import 'welcome';
+@import 'posts_projects';
