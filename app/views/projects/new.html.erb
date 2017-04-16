@@ -1,0 +1,50 @@
+<h2>New Project Form</h2>
+
+<%= form_for @project do |f| %>
+<p>
+  <%= f.label :title %><br>
+  <%= f.text_field :title %>
+</p>
+<p>
+  <%= f.label :business_description %><br>
+  <%= f.text_area :business_description %>
+</p>
+<p>
+  <%= f.label :current_solution %><br>
+  <%= f.text_area :current_solution %>
+</p>
+<p>
+  <%= f.label :data_sources %><br>
+  <%= f.text_area :data_sources %>
+</p>
+<p>
+  <%= f.label :data_sample1 %><br>
+  <%= f.text_field :data_sample1 %>
+</p>
+
+<p>
+  <%= f.label :data_sample2 %><br>
+  <%= f.text_field :data_sample2 %>
+</p>
+
+<p>
+  <%= f.label :data_sample3 %><br>
+  <%= f.text_field :data_sample3 %>
+</p>
+<p>
+  <%= f.label :data_view1 %><br>
+  <%= f.text_area :data_view1 %>
+</p>
+
+<p>
+  <%= f.label :data_view2 %><br>
+  <%= f.text_area :data_view2 %>
+</p>
+
+<p>
+  <%= f.label :data_view3 %><br>
+  <%= f.text_area :data_view3 %>
+</p>
+
+<%= f.submit %>
+<% end %>

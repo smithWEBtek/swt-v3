@@ -1,0 +1,53 @@
+  <div class="wrapper wrapper_padding clearfix">
+    <div class="col-4 homepage_content">
+      <h2>User info</h2>
+        
+        <p>
+        first_name: <%= @user.fname %>
+        </p>
+        <p>
+        last_name: <%= @user.lname %>
+        </p>
+        <p>
+        username: <%= @user.username %>
+        </p>
+        <p>
+        password: <%= @user.password %>
+        </p> 
+        <p>
+        email: <%= @user.email %>
+        </p>
+        <p>
+        phone: <%= @user.phone %>
+        </p>
+    </div>
+    <div class="col-4 homepage_content">
+      <h2>Address info</h2>
+        <p>
+        website: <%= @user.website %>
+        </p>
+        <p>
+        address: <%= @user.address %>
+        </p>
+        <p>
+        city: <%= @user.city %>
+        </p>
+        <p>
+        state: <%= @user.state %>
+        </p>
+        <p>
+        zip: <%= @user.zip %>
+        </p>
+ 
+    </div>
+    <div class="col-4 homepage_content"> 
+      <h2>Current Project Ideas</h2>
+        <% @user.projects.each do |project| %>
+          <%= link_to project.title, project_path(project) %>
+        <% end %>
+        <hr>
+      <%= link_to "submit new project", new_project_path %>
+
+    </div>
+  </div>
+

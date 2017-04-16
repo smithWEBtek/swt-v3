@@ -1,11 +1,11 @@
 <div class="wrapper wrapper_padding clearfix">
-<div class="sidebar homepage_content"><%= render partial: 'posts/sidebar' %></div>
+<div class="sidebar homepage_content"><%= render partial: 'posts/sidebar', locals: { posts: @posts } %></div>
   <div class="col-0 homepage_content">
     <h4>blog</h4>
     <strong>adventures in web development</strong><br>
     <hr>
       <p>
-      <--- Choose a post from the left sidebar.
+      <-- Choose a post from the left sidebar.
     </p>
   </div>
 </div>

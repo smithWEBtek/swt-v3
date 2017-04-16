@@ -1,6 +1,7 @@
    .col-1,
    .col-2,
-   .col-3 {
+   .col-3,
+   .col-4 {
      float: left;
    }
    
@@ -26,6 +27,10 @@
    .col-3 {
      width: 27.5%;
      padding: 0 2.5;
+   }
+   
+   .col-4 {
+     width: 30%;
    }
    
    .homepage_content h2 {

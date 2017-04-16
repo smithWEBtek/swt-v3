@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   get '/tools', to: 'static#tools'
   get '/contact', to: 'static#contact'
   
-  resources :contacts, :projects, :posts
+  resources :users, :projects, :posts
 end
