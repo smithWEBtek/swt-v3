@@ -1,37 +1,71 @@
  
-<%= link_to "all", posts_path %> |
-<%= link_to "new", new_post_path %> |
-<%= link_to "edit", edit_post_path(@post) %>
-<%= link_to "del", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=979091388857858";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- facebook stuff -->
+<meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Your Website Title" />
+  <meta property="og:description"   content="Your description" />
+  <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
+
+<!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<div id="post_show_content" class="skinny_wrapper wrapper_padding">
-  <header>
-    <p class="date><%= @post.created_at.strftime('%A, %B %d') %>"></p>
-    <h3><%= @post.title %></h3>
-    <hr>
-  </header>
-  <div id="content">
-    <h4>Title:</h4>
-    <%= @post.title %><br>
-
-    <h4>Repo:</h4>  
-    <%= @post.repo %><br>
-
-    <h4>Outline:</h4>
+<div class="wrapper wrapper_padding clearfix">
+  <div class="sidebar homepage_content">
+    <%= render partial: 'posts/sidebar', locals: { posts: @posts } %>
+  </div>
+  <div class="col-0 homepage_content">
+ 
+    <p><%= link_to @post.title, @post.repo %><p class="date"><%= @post.created_at.strftime('%B %d %Y') %></p>
+   
+    <p>outline</p>
     <%= @post.outline %><br>
 
-    <h4>Body:</h4>
+    <p>body</p>
     <%= @post.body %>
     <%#= @post.markdown(@post.body) %><br>
 
-    <h4>Summary:</h4>
+    <p>summary:</p>
     <%= @post.summary %>
+    <hr>
+      <%#= render partial: 'posts/social' %>
+    
+<div id="share_box">
+  <p>share this blog: <%= @post.title %></p>
+<!-- linkedIN -->
+<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+<script type="IN/Share" data-url="http://127.0.0.1/posts/1"></script>
+
+<!-- twitter -->
+<a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=<%= url_for(@post) %>"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+<!-- googleplus -->
+  <a onclick="javascript:window.open('https://plus.google.com/share?text=<%= @post.title %> by @smithWEBtek = &amp;url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+<!-- facebook -->
+  <div class="fb-share-button" 
+    data-href="<%= url_for([@post, {only_path: false}]) %>'
+    data-layout="button_count">
+  </div>
+
+    <hr>
+    <%= render partial: 'posts/disqus' %>
   </div>
 </div>
-
-<%= render partial: 'posts/disqus' %>
-
- 
-</div>
- 

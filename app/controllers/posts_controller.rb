@@ -6,6 +6,7 @@ class PostsController < ApplicationController
   end
 
   def show
+    @posts = Post.all
   end
 
   def new
