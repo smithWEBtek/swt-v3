@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'static#about'
+  root 'static#home'
 
   get '/about', to: 'static#about'
   get '/blog', to: 'posts#index'
@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   get '/tools', to: 'static#tools'
   get '/contact', to: 'static#contact'
   
-  resources :posts
+  resources :contacts, :projects, :posts
 end
