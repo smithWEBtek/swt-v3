@@ -8,16 +8,13 @@
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
       <%= csrf_meta_tags %>
   </head>
-
   <body>
- 
       <%= render partial: 'layouts/main_nav' %>
-  
-
   <div id="flash-messages" class="flash-style">
     <% flash.each do |key, value| %>
       <%= content_tag(:div, value, :class => "flash #{key}") %>
     <% end %>
     <%= yield %>
   </body>
+      <%= render partial: 'layouts/footer' %>
 </html>
