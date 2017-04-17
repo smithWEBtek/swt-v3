@@ -9,165 +9,82 @@ ar_internal_metadata:
   records: 
   - - environment
     - development
-    - '2017-04-16 19:07:41.789487'
-    - '2017-04-16 19:07:41.789487'
+    - '2017-04-17 22:14:45.227719'
+    - '2017-04-17 22:14:45.227719'
+
+---
+post_refs:
+  columns:
+  - id
+  - post_id
+  - ref_id
+  records: 
+  - - 1
+    - 1
+    - 1
+  - - 2
+    - 1
+    - 2
 
 ---
 posts:
   columns:
   - id
-  - repo
   - date
   - title
-  - outline
-  - body
+  - repo
   - summary
-  - tweet
-  - refs
+  - md_file
   - created_at
   - updated_at
   records: 
   - - 1
-    - https://github.com/smithwebtek/swt-v3
-    - '2017-04-16'
-    - blog_site
-    - "1. Click Home and, in the Paragraph group, click the arrow next to Multilevel
-      List.\r\n2. Choose an outline style from the List Library. ...\r\n3. Start typing
-      to begin the list."
-    - "##Hipster Bumpus 2nd Level Header Dude\r\nFreegan aesthetic forage, ramps church-key
-      beard af iceland pitchfork godard organic. 3 wolf moon etsy health goth, typewriter
-      XOXO waistcoat jianbing occupy cardigan prism. Coloring book food truck austin
-      direct trade, tousled cardigan pinterest af keffiyeh VHS farm-to-table shoreditch
-      photo booth. Woke irony schlitz, letterpress cold-pressed farm-to-table pitchfork
-      lyft put a bird on it prism freegan. Paleo microdosing gochujang, irony thundercats
-      cliche celiac pinterest prism edison bulb artisan unicorn semiotics narwhal.
-      Coloring book authentic locavore, four dollar toast pinterest plaid direct trade
-      beard jianbing subway tile cardigan synth tote bag try-hard. Chambray godard
-      jianbing, hashtag cardigan chicharrones portland iPhone.\r\n\r\n```ruby\r\nputs
-      'hello world!'\r\n```\r\n- List1\r\n- List2\r\n- List3\r\n\r\n```ruby\r\n  def
-      update\r\n    @post.update(post_params)\r\n    if @post.save\r\n      redirect_to
-      post_path(@post), message: \"Post updated.\"\r\n    else\r\n      render :edit,
-      message: \"Post NOT updated, please try again.\"\r\n    end\r\n  end\r\n```\r\n\r\n###Third
-      Level Header\r\nCopper mug lomo woke pabst bicycle rights, small batch pinterest
-      pug banh mi lo-fi pop-up synth etsy organic flannel. Four loko leggings mixtape
-      mustache crucifix, pug bicycle rights cliche austin. Unicorn VHS prism ugh readymade,
-      listicle ennui chartreuse skateboard blue bottle literally hot chicken. Subway
-      tile fingerstache scenester activated charcoal raw denim man bun. Flexitarian
-      thundercats pok pok echo park franzen. Mlkshk post-ironic hella, fam aesthetic
-      flexitarian activated charcoal air plant woke dreamcatcher occupy kinfolk chartreuse.
-      Flexitarian letterpress lomo, quinoa green juice flannel meh bicycle rights
-      disrupt gentrify try-hard jianbing."
-    - testing summary
-    - tiddle waddle
-    - ref 1, ref 2
-    - '2017-04-16 20:27:40.942507'
-    - '2017-04-17 00:26:36.422645'
-  - - 2
-    - https://github.com/smithWEBtek/diet-planner-v6
-    - '2017-04-18'
-    - get this edit thing working
-    - diet-planner-v6.md
-    - ''
-    - ''
-    - " This blog gives an overview of the Rails application I created for the Learn.co
-      Full Stack Web Development course. If you are not familiar with Learn and Flatiron
-      School, please check it out!"
-    - "ref 1\r\nref 2\r\nref 3"
-    - '2017-04-17 01:22:33.641715'
-    - '2017-04-17 03:43:57.6276'
+    - 
+    - diet-tracker
+    - 
+    - 
+    - diet-tracker.md
+    - '2017-04-17 22:25:55.115029'
+    - '2017-04-17 22:35:29.33964'
 
 ---
-projects:
+refs:
   columns:
   - id
-  - user_id
-  - title
-  - summary
-  - business_description
-  - current_solution
-  - data_sources
-  - data_sample1
-  - data_sample2
-  - data_sample3
-  - data_view1
-  - data_view2
-  - data_view3
+  - name
+  - format
+  - url
+  - content
+  - topic_id
   - created_at
   - updated_at
   records: 
   - - 1
+    - diet-tracker-vid
+    - video
+    - https://www.youtube.com/embed/nGTIAKQ_uJk
+    - 
     - 1
-    - birds, who needs em
+    - '2017-04-17 22:25:36.585932'
+    - '2017-04-17 22:25:36.585932'
+  - - 2
+    - diet-tips
+    - text
     - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - '2017-04-16 19:08:27.461073'
-    - '2017-04-16 19:08:27.461073'
+    - eat less
+    - 1
+    - '2017-04-17 22:28:30.098899'
+    - '2017-04-17 22:28:30.098899'
 
 ---
-users:
+topics:
   columns:
   - id
-  - fname
-  - lname
-  - email
-  - username
-  - password
-  - phone
-  - website
-  - address
-  - city
-  - state
-  - zip
+  - name
   - created_at
   - updated_at
   records: 
   - - 1
-    - 
-    - 
-    - 
-    - bud
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - '2017-04-16 19:08:01.506901'
-    - '2017-04-16 19:08:01.506901'
-  - - 2
-    - george
-    - costanza
-    - geo@abc.com
-    - geo
-    - bosco
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - '2017-04-16 19:49:27.223975'
-    - '2017-04-16 19:49:27.223975'
-  - - 3
-    - elaine
-    - bennis
-    - elaine@abc.com
-    - elaine
-    - pointer
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - '2017-04-16 20:02:47.912896'
-    - '2017-04-16 20:02:47.912896'
+    - unnamed
+    - '2017-04-17 22:25:31.252408'
+    - '2017-04-17 22:25:31.252408'
