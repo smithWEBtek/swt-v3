@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :refs
+  resources :topics
+  resources :groups
   resources :categories
   root 'static#home'
 

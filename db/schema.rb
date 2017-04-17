@@ -10,10 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170416185345) do
+ActiveRecord::Schema.define(version: 20170417213059) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "group_topics", force: :cascade do |t|
+    t.integer "group_id"
+    t.integer "topic_id"
+  end
+
+  create_table "groups", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "post_refs", force: :cascade do |t|
+    t.integer "post_id"
+    t.integer "ref_id"
+  end
 
   create_table "posts", force: :cascade do |t|
     t.string   "repo"
@@ -43,6 +59,22 @@ ActiveRecord::Schema.define(version: 20170416185345) do
     t.text     "data_view3"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
+  end
+
+  create_table "refs", force: :cascade do |t|
+    t.string   "name"
+    t.string   "format"
+    t.string   "url"
+    t.text     "content"
+    t.integer  "topic_id",   default: 1
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "topics", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
