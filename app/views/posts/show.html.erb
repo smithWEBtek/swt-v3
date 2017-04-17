@@ -34,15 +34,13 @@
    <%= link_to "edit current post", edit_post_path(@post) %>
 
     <p><%= link_to @post.title, @post.repo %><p class="date"><%= @post.created_at.strftime('%B %d %Y') %></p>
-   
-    <p>outline</p>
-    <%= @post.outline %><br>
-    
-    <%= markdown @post.body %>
-
-    <p>summary:</p>
-    <%= @post.summary %>
+    <p>outline:<%= markdown @post.outline %></p>    
+    <p>body:<%= markdown @post.body %></p>
+    <p>summary:<%= markdown @post.summary %></p>
     <hr>
+
+    <%= render_md @post.outline %>
+
     <%= render partial: 'posts/social', locals: { post: @post } %>
      
     <hr>

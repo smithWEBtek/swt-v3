@@ -1,6 +1,6 @@
 <div class="wrapper wrapper_padding clearfix">
-  <div class="col-4 homepage_content">
-    <h2>Post info</h2>
+  <!-- <div class="sidebar homepage_content"> -->
+   <div class="col-1 homepage_content">   
     <%= form_for post do |f| %>
     <% if post.errors.any? %>
       <h2><%= pluralize(post.errors.count, "error") %> prevented this post from saving: </h2>
@@ -12,47 +12,41 @@
       <% end %>
     <p>
       <%= f.label :repo %><br>
-      <%= f.text_field :repo %>
+      <%= f.text_field :repo, size: 30 %>
     </p>
     <p>
       <%= f.label :date %><br>
-      <%= f.date_field :date %>
+      <%= f.date_field :date, size: 30 %>
     </p>
     <p>
       <%= f.label :title %><br>
-      <%= f.text_field :title %>
+      <%= f.text_field :title, size: 30 %>
     </p>
-    <p>
-      <%= f.label :outline %><br>
-      <%= f.text_area :outline %>
-    </p>
-  </div>
-  <div class="col-4 homepage_content">
-    <h2>Post details</h2>
-    <p>
-      <%= f.label :body %><br>
-      <%= f.text_area :body %>
-    </p>
-    <p>
-      <%= f.label :summary %><br>
-      <%= f.text_area :summary %>
-    </p>
-  </div>
-  <div class="col-4 homepage_content"> 
-    <h2>Post refs</h2>
     <p>
       <%= f.label :tweet %><br>
-      <%= f.text_area :tweet %>
+      <%= f.text_area :tweet, cols: 30, rows: 5 %>
     </p>
     <p>
       <%= f.label :refs %><br>
-      <%= f.text_area :refs %>
+      <%= f.text_area :refs, cols: 30, rows: 5 %>
+    </p>
+  </div>    
+  </div>
+  <div class="col-1 homepage_content">    
+    <p>
+      <%= f.label :outline %><br>
+      <%= f.text_area :outline, cols: "50", rows: "10" %>
     </p>
     <p>
-      <%#= link_to "Add link to snippet, image, video or github gist", new_section_path %>
+      <%= f.label :body %><br>
+      <%= f.text_area :body, cols: "50", rows: "10" %>
     </p>
+    <p>
+      <%= f.label :summary %><br>
+      <%= f.text_area :summary, cols: "50", rows: "10" %>
+    </p>
+ 
     <%= f.submit %>
   <% end %>
   </div>
 </div>
-

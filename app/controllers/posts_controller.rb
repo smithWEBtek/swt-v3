@@ -19,7 +19,7 @@ class PostsController < ApplicationController
   def update
     @post.update(post_params)
     if @post.save
-      redirect_to post_path(@post), message: "Post updated."
+      redirect_to post_path
     else
       render :edit, message: "Post NOT updated, please try again."
     end
@@ -28,7 +28,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
-      redirect_to post_path(@post), message: "Post created."
+      redirect_to posts_path, message: "Post created."
     else
       render :new, message: "Post NOT created, please try again."
     end
