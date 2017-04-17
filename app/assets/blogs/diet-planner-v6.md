@@ -5,9 +5,12 @@ and log their experiences while following a particular Diet.
 This Rails application was developed as part of the Learn.co Full Stack Web Development course 
 If you are not familiar with [Flatiron School](https://flatironschool.com/), please check it out!
 
+
+
+
 [Video Walkthrough of DietTracker]
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nGTIAKQ_uJk" frameborder="0" allowfullscreen></iframe>
-<br>
+
 
 ![](https://res.cloudinary.com/smithwebtek/image/upload/v1492046956/diet-tracker/image001.png?raw=true)
 
@@ -173,9 +176,8 @@ method that builds random quotes in quote.rb:
 
 ![](https://res.cloudinary.com/smithwebtek/image/upload/v1492046957/diet-tracker/image006.png?raw=true)
 
-###
+## Seeds.rb
 
-Seeds.rb
 
 Throughout this project I made heavy use of a seeds file, to
 populate and re-populate my database with meaningful data. 
@@ -193,7 +195,7 @@ perspective.
 It functioned as a good test of my application, to see if I had
 broken things to where the data model might not consume the data properly. 
 
-Each model in the database has:  
+Each model in the database has: 
 
 DATA hash
 
@@ -245,7 +247,7 @@ end
 The seeds file then calls a *master* method (main) that simply
 calls all the methods (one for each model), and data is loaded in the DB.
 
-<br>
+
 *master method* that includes the *make_users* method:
 
 ```ruby
