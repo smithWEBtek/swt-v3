@@ -25,24 +25,17 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
 
-
 <div class="wrapper wrapper_padding clearfix">
   <div class="sidebar homepage_content">
-    <%= render partial: 'posts/sidebar', locals: { posts: @posts } %>
+    <%= render partial: 'posts/show_sidebar', locals: { post: @post } %>
   </div>
   <div class="col-0 homepage_content">
    <%= link_to "edit current post", edit_post_path(@post) %>
-
     <p><%= link_to @post.title, @post.repo %><p class="date"><%= @post.created_at.strftime('%B %d %Y') %></p>
-    <p>outline:<%= markdown @post.outline %></p>    
-    <p>body:<%= markdown @post.body %></p>
-    <p>summary:<%= markdown @post.summary %></p>
+    <p>summary:<%= markdown @post.summary if @post.summary %></p>
+    <p><%= render_md @post.md_file if @post.md_file %></p>
     <hr>
-
-    <%= render_md @post.outline %>
-
     <%= render partial: 'posts/social', locals: { post: @post } %>
-     
     <hr>
     <%= render partial: 'posts/disqus' %>
   </div>
