@@ -1,7 +1,7 @@
 <nav>
   <% post.refs.each do |ref| %> 
     <% if ref.format == "video" %>
-    <iframe width="250" height="155" src="<%= ref.url %>" frameborder="0" allowfullscreen></iframe><br>
+    <iframe width="190" height="155" src="<%= ref.url %>" frameborder="0" allowfullscreen></iframe><br>
     <% else %>
   <%= ref.name %><br>
   <%= ref.content %><br>
