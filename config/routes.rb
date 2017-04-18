@@ -1,16 +1,11 @@
 Rails.application.routes.draw do
-  resources :refs
-  resources :topics
-  resources :groups
-  resources :categories
-  root 'static#home'
+  root 'static#about'
 
   get '/about', to: 'static#about'
   get '/blog', to: 'posts#index'
   get '/projects', to: 'static#projects'
-  get '/wiki', to: 'refs#index'
   get '/tools', to: 'static#tools'
   get '/contact', to: 'static#contact'
   
-  resources :users, :projects, :posts
+  resources :refs, :topics, :groups, :users, :projects, :posts
 end

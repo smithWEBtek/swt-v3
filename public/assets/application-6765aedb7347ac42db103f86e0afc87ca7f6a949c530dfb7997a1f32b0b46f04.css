@@ -841,45 +841,44 @@ hr {
 
 /* line 15, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
-.col-0 {
-  float: left;
-  width: 80%;
-  padding: 2% 5% 0 2.5%;
-}
-
-
-/* line 21, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
-
 .col-1 {
-  width: 45%;
-  padding: 0 5% 0 2.5%;
+  width: 95%;
+  padding: 2%;
 }
 
 
-/* line 26, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 20, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
-.col-2,
+.col-2 {
+  width: 50%;
+  padding: 2%;
+}
+
+
+/* line 25, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+
 .col-3 {
-  width: 27.5%;
-  padding: 0 2.5;
+  width: 75%;
+  padding: 2%;
 }
 
 
-/* line 32, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 30, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 .col-4 {
-  width: 30%;
+  width: 25%;
+  padding: 2%;
 }
 
 
-/* line 36, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 35, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 .about {
   padding: 0 7.5% 0 0;
 }
 
 
-/* line 40, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 39, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 a {
   color: navy;
@@ -888,14 +887,14 @@ a {
 }
 
 
-/* line 46, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 45, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 a:hover {
   color: #highlight;
 }
 
 
-/* line 50, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 49, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 #main_footer {
   padding: 2.5em 5%;
@@ -903,7 +902,7 @@ a:hover {
 }
 
 
-/* line 55, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 54, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 #main_footer .copyright {
   float: left;
@@ -912,14 +911,14 @@ a:hover {
 }
 
 
-/* line 61, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 60, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 #main_footer nav {
   float: right;
 }
 
 
-/* line 65, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 64, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 #main_footer nav i {
   margin-left: 1em;
@@ -927,7 +926,7 @@ a:hover {
 }
 
 
-/* line 70, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 69, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 #main_footer a {
   color: navy;
@@ -936,31 +935,14 @@ a:hover {
 }
 
 
-/* line 76, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 75, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 #main_footer a:hover {
   color: cyan;
 }
 
 
-/* line 81, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
-
-.user_signed_in h2 {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-
-
-/* line 85, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
-
-.user_signed_in h3 {
-  font-size: 1em;
-  font-weight: 400;
-  margin-bottom: .5em;
-}
-
-
-/* line 90, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 80, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 .user_signed_in a {
   text-decoration: none;
@@ -968,14 +950,14 @@ a:hover {
 }
 
 
-/* line 94, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 84, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 .user_signed_in a:hover {
   color: #8bc6db;
 }
 
 
-/* line 97, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 87, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 .user_signed_in p {
   font-size: .9rem;
@@ -983,7 +965,7 @@ a:hover {
 }
 
 
-/* line 101, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 91, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 .user_signed_in .date {
   font-size: .85em;
@@ -992,14 +974,7 @@ a:hover {
 }
 
 
-/* line 106, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
-
-.user_signed_in .about {
-  padding: 0 7.5% 0 0;
-}
-
-
-/* line 109, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 96, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 .user_signed_in a {
   color: navy;
@@ -1008,14 +983,14 @@ a:hover {
 }
 
 
-/* line 114, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 101, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 .user_signed_in a:hover {
   color: #highlight;
 }
 
 
-/* line 119, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 106, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 #main_footer {
   padding: 2.5em 5%;
@@ -1023,7 +998,7 @@ a:hover {
 }
 
 
-/* line 124, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 111, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 #main_footer .copyright {
   float: left;
@@ -1032,14 +1007,14 @@ a:hover {
 }
 
 
-/* line 130, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 117, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 #main_footer nav {
   float: right;
 }
 
 
-/* line 134, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 121, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 #main_footer nav i {
   margin-left: 1em;
@@ -1047,7 +1022,7 @@ a:hover {
 }
 
 
-/* line 139, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 126, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 #main_footer a {
   color: navy;
@@ -1056,7 +1031,7 @@ a:hover {
 }
 
 
-/* line 145, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
+/* line 132, /Users/BradSmith/Development/_proj/swt-v3/app/assets/stylesheets/_welcome.css.scss */
 
 #main_footer a:hover {
   color: cyan;

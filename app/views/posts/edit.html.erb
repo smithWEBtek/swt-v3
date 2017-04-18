@@ -1,6 +1,6 @@
 <div class="wrapper wrapper_padding clearfix">
-  <div class="sidebar homepage_content">
-    <div class="col-1 homepage_content">   
+  <div class="sidebar user_signed_in">
+    <div class="col-1 user_signed_in">   
       <%= form_for @post do |f| %>
       <p>
         <%= f.label :date %><br>
@@ -20,7 +20,7 @@
       </p> -->
     </div>    
   </div>
-  <div class="col-1 homepage_content">    
+  <div class="col-1 user_signed_in">    
     <p> 
       <%= f.label :summary %><br>
       <%= f.text_area :summary, cols: 100, rows: 10 %>

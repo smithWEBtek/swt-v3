@@ -1,10 +1,10 @@
 <%= render partial: 'posts/facebook' %>
 
 <div class="wrapper wrapper_padding clearfix">
-  <div class="sidebar homepage_content">
+  <div class="sidebar col-4 user_signed_in">
     <%= render partial: 'posts/show_sidebar', locals: { post: @post } %>
   </div>
-  <div class="col-0 homepage_content">
+  <div class="col-3 user_signed_in">
    <%= link_to "edit current post", edit_post_path(@post) %>
     <p><%= link_to @post.title, @post.repo %><p class="date"><%= @post.created_at.strftime('%B %d %Y') %></p>
     <p>summary:<%= markdown @post.summary if @post.summary %></p>

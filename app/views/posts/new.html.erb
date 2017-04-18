@@ -1,7 +1,7 @@
 <div class="wrapper wrapper_padding clearfix">
-  <div class="sidebar homepage_content">
+  <div class="sidebar user_signed_in">
 
-   <div class="col-1 homepage_content">  
+   <div class="col-1 user_signed_in">  
     <%= link_to 'new post', new_post_path %><br>
     <%= form_for @post do |f| %>
     <% if @post.errors.any? %>
