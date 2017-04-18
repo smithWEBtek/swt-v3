@@ -1,24 +1,30 @@
-<h4>New Reference</h4>
-<%= form_for @ref do |f| %>
-<p>
-  <%= f.label :name %>
-  <%= f.text_field :name %><br>
-</p>
-<p>
-  <%= f.label :format %>
-  <%= f.text_field :format %><br>
-</p>
-<p>
-  <%= f.label :url %>
-  <%= f.text_field :url %><br>
-</p>
-<p>
-  <%= f.label :content %>
-  <%= f.text_area :content %><br>
-</p>
-<p>
-  <%= f.label :refs %>
-  <%= f.collection_select :id, Ref.all, :id, :name %>
-</p>
-  <%= f.submit %>
-<% end %>
+<div class="wrapper wrapper_padding clearfix">
+<div class="sidebar homepage_content"></div>
+  <div class="col-0 homepage_content">
+    <h4>New Reference</h4>
+    <%= form_for @ref do |f| %>
+    <p>
+      <%= f.label :name %>
+      <%= f.text_field :name %><br>
+    </p>
+    <p>
+      <%= f.label :format %>
+      <%= f.text_field :format %><br>
+    </p>
+    <p>
+      <%= f.label :url %>
+      <%= f.text_field :url %><br>
+    </p>
+    <p>
+      <%= f.label :content %>
+      <%= f.text_area :content %><br>
+    </p>
+    <p>
+      <%= f.label :refs %>
+      <%= f.collection_select :id, Ref.all, :id, :name %>
+    </p>
+      <%= f.submit %>
+    <% end %>
+    </p>
+  </div>
+</div>
