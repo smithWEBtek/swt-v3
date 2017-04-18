@@ -1,12 +1,14 @@
 <nav>
+references<br>
+  ------------------------------------<br>
   <% post.refs.each do |ref| %> 
+  name: <%= ref.name %><br>
+  url: <%= ref.url %><br>
+  content: <%= ref.content %><br>
+  format: <%= ref.format %><br>
     <% if ref.format == "video" %>
     <iframe width="190" height="155" src="<%= ref.url %>" frameborder="0" allowfullscreen></iframe><br>
-    <% else %>
-  <%= ref.name %><br>
-  <%= ref.content %><br>
-  <%= ref.url %><br>
-
-  <% end %>
+    <% end %>
+  ------------------------------------<br>
   <% end %>
 </nav>

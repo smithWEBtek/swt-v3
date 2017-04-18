@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get '/about', to: 'static#about'
   get '/blog', to: 'posts#index'
   get '/projects', to: 'static#projects'
-  get '/wiki', to: 'static#wiki'
+  get '/wiki', to: 'refs#index'
   get '/tools', to: 'static#tools'
   get '/contact', to: 'static#contact'
   

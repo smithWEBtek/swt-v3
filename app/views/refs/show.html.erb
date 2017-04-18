@@ -1,0 +1,22 @@
+<div class="wrapper wrapper_padding clearfix">
+  <div class="sidebar homepage_content">
+    <p>
+      <strong>name:</strong> <%= @ref.name %><br>
+      <strong>url:</strong> <%= link_to @ref.url, @ref.url , :target => "_blank" %><br>
+      <strong>format:</strong> <%= @ref.format %><br>
+      <strong>content:</strong> <%= @ref.content %><br>
+      <strong>topic:</strong> <%= @ref.topic.name %><br>
+      <strong><%= link_to "edit_ref", edit_ref_path(@ref) %> | 
+      <strong><%= link_to "new_ref", new_ref_path %> 
+    </p>
+  </div>
+    <div class="col-0 homepage_content">
+    <h4>Reference Show</h4>
+    <hr>
+    <% if @ref.format == 'video' %>
+      <iframe width="190" height="155" src="<%= "#{@ref.url}" %>" frameborder="0" allowfullscreen></iframe><br>
+    <% else %> 
+      <%= @ref.content %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="wrapper wrapper_padding clearfix">
+<div class="sidebar homepage_content"></div>
+  <div class="col-0 homepage_content">
+    <h4>Reference Index</h4>
+    <hr>
+      <p>
+----------------------------------------------------------------------------<br>
+<% @refs.each do |ref| %>
+  <strong>name:</strong> <%= ref.name %><br>
+  <strong>url:</strong> <%= ref.url %><br>
+  <strong>format:</strong> <%= ref.format %><br>
+  <strong>content:</strong> <%= ref.content %><br>
+  <strong><%= link_to "edit", edit_ref_path(ref) %><br>
+-----------------------------------------------------------------------------<br>
+<% end %>
+    </p>
+  </div>
+</div>
+
