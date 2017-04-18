@@ -123,6 +123,10 @@ hr {
   }
 }
 
+.text_hover:hover {
+  color: $dark;
+}
+
 #page_title {
   text-align: center;
   border-bottom: 1px solid $border;
