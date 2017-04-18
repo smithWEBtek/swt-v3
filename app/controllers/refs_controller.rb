@@ -11,6 +11,7 @@ class RefsController < ApplicationController
 
   def new
     @ref = Ref.new
+    # @posts = Post.all
   end
   
   def edit

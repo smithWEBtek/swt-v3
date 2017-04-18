@@ -5,10 +5,7 @@
     <%= render partial: 'posts/show_sidebar', locals: { post: @post } %>
   </div>
   <div class="col-3">
-   <%= link_to "edit current post", edit_post_path(@post) %>
-    <p><%= link_to @post.title, @post.repo %><p class="date"><%= @post.created_at.strftime('%B %d %Y') %></p>
-    <p>summary:<%= markdown @post.summary if @post.summary %></p>
-    <p><%= render_md @post.md_file if @post.md_file %></p>
+    <%= render_md @post.md_file if @post.md_file %></p><br>
     <hr>
     <%= render partial: 'posts/social', locals: { post: @post } %>
     <hr>

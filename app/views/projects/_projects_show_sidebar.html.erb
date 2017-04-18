@@ -1,0 +1,10 @@
+<nav>
+  <%= link_to "delete", edit_project_path(project) %> |
+  <%= link_to 'index', projects_path %> |
+  <%= link_to "edit", edit_project_path(project) %> |
+  <%= link_to 'new', new_project_path %> |
+  <hr>
+  <% projects.each do |p| %> 
+  <%= link_to p.name, project_path(p) if !p.name.nil? %><br>
+  <% end %>
+</nav>

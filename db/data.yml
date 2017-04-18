@@ -41,11 +41,78 @@ posts:
   - - 1
     - 
     - diet-tracker
-    - 
-    - 
+    - ''
+    - ''
     - diet-tracker.md
     - '2017-04-17 22:25:55.115029'
-    - '2017-04-17 22:35:29.33964'
+    - '2017-04-18 02:57:07.659711'
+  - - 2
+    - '2017-04-04'
+    - Cucumber Logic
+    - www.github.com/smithwebtek/asdf1
+    - 'summarize the post '
+    - 
+    - '2017-04-18 02:34:16.188329'
+    - '2017-04-18 02:34:16.188329'
+  - - 3
+    - '2017-04-03'
+    - test post 3
+    - github.com/swt/repo2
+    - asdfasdfasdfasdf
+    - 
+    - '2017-04-18 02:55:55.769627'
+    - '2017-04-18 19:13:08.864285'
+  - - 4
+    - 
+    - bean soup
+    - 
+    - 
+    - 
+    - '2017-04-18 19:30:09.073064'
+    - '2017-04-18 19:30:09.073064'
+  - - 5
+    - 
+    - apples, what are they good for?
+    - github-repo-smith
+    - I like apples too
+    - blank.md
+    - '2017-04-18 19:34:25.111079'
+    - '2017-04-18 19:34:25.111079'
+
+---
+projects:
+  columns:
+  - id
+  - user_id
+  - title
+  - summary
+  - business_description
+  - current_solution
+  - data_sources
+  - data_sample1
+  - data_sample2
+  - data_sample3
+  - data_view1
+  - data_view2
+  - data_view3
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 1
+    - crash data
+    - 
+    - summarize crash data
+    - mass trac system
+    - camb open data
+    - 'yes'
+    - 
+    - 
+    - 'yes'
+    - 
+    - 
+    - '2017-04-18 19:47:40.653076'
+    - '2017-04-18 19:47:40.653076'
 
 ---
 refs:
@@ -69,12 +136,28 @@ refs:
     - '2017-04-17 22:25:36.585932'
   - - 2
     - diet-tips
-    - text
-    - 
-    - eat less
+    - video
+    - https://www.youtube.com/watch?v=CVX7-eZReqs
+    - run more, eat less
     - 1
     - '2017-04-17 22:28:30.098899'
-    - '2017-04-17 22:28:30.098899'
+    - '2017-04-18 03:52:28.051542'
+  - - 3
+    - Key info reference1
+    - pdf
+    - www.smithwebtek.com/pdf
+    - 'Testing one two three four. content '
+    - 1
+    - '2017-04-18 02:06:18.885681'
+    - '2017-04-18 02:06:18.885681'
+  - - 4
+    - how to eat squirrel
+    - mp3
+    - http://www.amazon.com
+    - great song about squirrel stew
+    - 1
+    - '2017-04-18 03:15:39.87417'
+    - '2017-04-18 03:15:39.87417'
 
 ---
 topics:
@@ -88,3 +171,36 @@ topics:
     - unnamed
     - '2017-04-17 22:25:31.252408'
     - '2017-04-17 22:25:31.252408'
+
+---
+users:
+  columns:
+  - id
+  - fname
+  - lname
+  - email
+  - username
+  - password
+  - phone
+  - website
+  - address
+  - city
+  - state
+  - zip
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - joe
+    - doe
+    - jodo@abc.com
+    - jodo
+    - pointer
+    - 354-424-2533
+    - jodo.co
+    - 1 main
+    - bedford
+    - nh
+    - '3111'
+    - '2017-04-18 19:39:40.817899'
+    - '2017-04-18 19:39:40.817899'

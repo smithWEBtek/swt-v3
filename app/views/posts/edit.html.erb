@@ -14,16 +14,16 @@
         <%= f.label :repo %><br>
         <%= f.text_field :repo %>
       </p>
-  <!--     <p>
-        <%#= f.label :refs %><br>
-        <%#= f.collection_select :ref_ids, Ref.all, :id, :name %>
-      </p> -->
+      <p>
+        <%= f.label :summary %><br>
+        <%= f.text_field :summary %>
+      </p>
     </div>    
   </div>
   <div class="col-1">    
     <p> 
-      <%= f.label :summary %><br>
-      <%= f.text_area :summary, cols: 100, rows: 10 %>
+      <%#= f.label :summary %><br>
+      <%#= f.text_area :summary, cols: 100, rows: 10 %>
     </p>
     <%= f.submit %>
     <% end %>

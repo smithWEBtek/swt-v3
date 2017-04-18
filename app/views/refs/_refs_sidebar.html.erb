@@ -1,0 +1,27 @@
+<%= link_to "Index", refs_path %> | 
+<%= link_to "New", new_ref_path %>
+<%#= link_to "Books", books_path %><br>
+<%#= link_to "Mentors", mentors_path %><br>
+<%#= link_to "Tracks", tracks_path %><br>
+<% @refs.each do |ref| %>
+Videos:<br>
+  <% if ref.format == "video" %>
+    <%= link_to ref.name, ref_path(ref) %><br>
+  <hr>
+  Books:<br>
+    <% if ref.format == "video" %>
+      <%= link_to ref.name, ref_path(ref) %><br>
+    <hr>
+      Mentors:<br>
+      <% if ref.format == "video" %>
+        <%= link_to ref.name, ref_path(ref) %><br>
+      <hr>
+        Links:<br>
+        <% if ref.format == "video" %>
+          <%= link_to ref.name, ref_path(ref) %><br>
+        <hr>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>

@@ -1,11 +1,13 @@
 <div class="wrapper wrapper_padding clearfix">
 <div class="sidebar col-4"><%= render partial: 'posts/index_sidebar', locals: { posts: @posts } %></div>
   <div class="col-3">
-    <h4>blog</h4>
-    <hr>
-    <strong>adventures in web development</strong><br>
-      <p>
-      Choose a post from the left sidebar.
+      <% @posts.each do |post| %>
+        id: <%= post.id %><br>
+        title:<%= link_to post.title, post_path(post) %><br>
+        repo: <%= link_to "github repo", post.repo %><br>
+        md_file: <%= post.md_file %><br>
+        summary: <%= post.summary %><br><br>
+      <% end %>
     </p>
   </div>
 </div>

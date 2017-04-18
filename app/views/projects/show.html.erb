@@ -1,0 +1,13 @@
+<div class="wrapper wrapper_padding clearfix">
+<div class="sidebar col-4"><%= render partial: 'projects/projects_show_sidebar', locals: { project: @project, projects: @projects } %></div>
+  <div class="col-3">
+    id: <%= @project.id %><br>
+    name: <%= link_to @project.name, project_path(@project) %><br>
+    problem: <%= @project.problem %><br>
+    wishlist: <%= @project.wishlist %><br>
+    user: <%= link_to @project.user.username, user_path(@project.user) %>
+    </p>
+  </div>
+</div>
+
+ 

@@ -4,24 +4,24 @@
     <h4>New Reference</h4>
     <%= form_for @ref do |f| %>
     <p>
-      <%= f.label :name %>
-      <%= f.text_field :name %><br>
+      <%= f.label :name %><br>
+      <%= f.text_field :name, size: 30 %><br>
     </p>
     <p>
-      <%= f.label :format %>
-      <%= f.text_field :format %><br>
+      <%= f.label :format %><br>
+      <%= f.text_field :format, size: 30 %><br>
     </p>
     <p>
-      <%= f.label :url %>
-      <%= f.text_field :url %><br>
+      <%= f.label :url %><br>
+      <%= f.text_field :url, size: 30 %><br>
     </p>
     <p>
-      <%= f.label :content %>
-      <%= f.text_area :content %><br>
+      <%= f.label :content %><br>
+      <%= f.text_area :content, cols: 30, rows: 5 %><br>
     </p>
     <p>
-      <%= f.label :refs %>
-      <%= f.collection_select :id, Ref.all, :id, :name %>
+      <%= f.label :posts %><br>
+      <%= f.collection_select :post_ids, Post.all, :id, :title %>
     </p>
       <%= f.submit %>
     <% end %>

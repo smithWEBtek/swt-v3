@@ -3,9 +3,9 @@ class CreatePosts < ActiveRecord::Migration[5.0]
     create_table :posts do |t|
       t.date :date
       t.string :title
-      t.string :repo
-      t.text :summary
-      t.text :md_file
+      t.string :repo, default: 'please add repo url'
+      t.text :summary, default: 'summary is blank'
+      t.text :md_file, default: 'blank.md'
 
       t.timestamps
     end
