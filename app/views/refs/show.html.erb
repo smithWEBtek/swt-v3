@@ -1,5 +1,5 @@
 <div class="wrapper wrapper_padding clearfix">
-  <div class="col-4 user_signed_in">
+  <div class="col-4">
     <p>
       <strong><%= link_to "X", edit_ref_path(@ref) %> |
       <strong><%= link_to "edit", edit_ref_path(@ref) %> |
@@ -12,7 +12,7 @@
       <strong>topic:</strong> <%= @ref.topic.name %><br>
     </p>
   </div>
-    <div class="col-3 user_signed_in">
+    <div class="col-3">
     <% if @ref.format == 'video' %>
       <iframe width="190" height="155" src="<%= "#{@ref.url}" %>" frameborder="0" allowfullscreen></iframe><br>
     <% else %> 
