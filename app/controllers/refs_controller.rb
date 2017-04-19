@@ -11,7 +11,6 @@ class RefsController < ApplicationController
 
   def new
     @ref = Ref.new
-    # @posts = Post.all
   end
   
   def edit
@@ -46,7 +45,7 @@ class RefsController < ApplicationController
     end
 
     def ref_params
-      params.require(:ref).permit(:name, :format, :url, :content, :topic_id)
+      params.require(:ref).permit(:name, :format, :url, :content)
     end
 end
 

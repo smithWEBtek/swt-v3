@@ -45,6 +45,6 @@ class ProjectsController < ApplicationController
     end
 
     def project_params
-      params.require(:project).permit(:user_id, :title, :summary, :business_description, :current_solution, :data_sources, :data_sample1, :data_sample2, :data_sample3, :data_view1, :data_view2, :data_view3 )
+      params.require(:project).permit(:user_id, :name, :business_model, :data_sources, :problem, :wishlist)
     end
 end

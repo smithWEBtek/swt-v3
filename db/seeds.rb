@@ -1,3 +1,20 @@
+DATA_topics ={
+ :topic_keys =>
+    ["name"],
+  :topics => [
+    ["ruby"],["rails"], ["javascript"], ["scraping"] 
+  ]
+}
+
+def make_topics
+  DATA_topics[:topics].each do |topic|
+    new_topic = Topic.new
+    topic.each_with_index do |attribute, i|
+      new_topic.send(DATA_topics[:topic_keys][i]+"=", attribute)
+    end
+    new_topic.save
+  end
+end
 
 DATA_users ={
  :user_keys =>
@@ -92,6 +109,7 @@ def make_projects
     new_project.save
   end
 end
+
 def main
   make_users
   make_posts

@@ -4,8 +4,8 @@
   <%= link_to 'delete', post_path(@post), method: 'destroy' %><br>
 <hr>
 date: <%= @post.date %><br>
-title: <%= @post.title %><br>
-repo: <%= @post.repo %><br>
+<%= @post.title %><br>
+<%= link_to "GitHub repo", @post.repo %><br>
 summary: <%= @post.summary %><br>
 refs:<br>
   <% @post.refs.each do |ref| %>
