@@ -5,13 +5,6 @@ module ApplicationHelper
     end
   end
 
-  # class Cloudinary::Upload < ApplicationRecord
-  # end
-
-  # def upload
-  #   uploader = Cloudinary.load("/assets/images/msbi.png")
-  # end
-
   def markdown(content)
     renderer = HTMLwithPygments.new(hard_wrap: true, filter_html: true)
     options = {
