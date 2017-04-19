@@ -15,15 +15,15 @@ class Scrape < ApplicationRecord
     end
 
 
-  def self.free_books
-    @bookmarks = []
-    page = HTTParty.get("https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#ruby")
-    @parse = Nokogiri::HTML(page)
+  # def self.free_books
+  #   @bookmarks = []
+  #   page = HTTParty.get("https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#ruby")
+  #   @parse = Nokogiri::HTML(page)
 
-  binding.pry
+  # binding.pry
 
-    refs = @parse.css('a').each do |item|
-            ref = {
+  #   refs = @parse.css('a').each do |item|
+  #           ref = {
 
 
       #   "Language Agnostic" = @parse.css('h3')[4].text
@@ -46,14 +46,14 @@ class Scrape < ApplicationRecord
       #   </ol>
       # <h3>  'group'
 
-        name: item.text, 
-        url: item.values.first
-        author: @parse.css('ul li a')[188].text
-        }
-        @bookmarks.push(ref)
-      end
-    Ref.import(@bookmarks)
-    end
+    #     name: item.text, 
+    #     url: item.values.first
+    #     author: @parse.css('ul li a')[188].text
+    #     }
+    #     @bookmarks.push(ref)
+    #   end
+    # Ref.import(@bookmarks)
+    # end
  
 
 end
