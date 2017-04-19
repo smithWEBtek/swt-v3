@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'static#about'
-
+  get '/bookmarks', to: 'static#bookmarks'
   get '/about', to: 'static#about'
   get '/blog', to: 'posts#index'
   get '/tools', to: 'static#tools'

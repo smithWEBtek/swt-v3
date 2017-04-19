@@ -1,5 +1,9 @@
 class StaticController < ApplicationController
 
+  def bookmarks
+    render 'static/bookmarks'
+  end
+
   def home
     render :home
   end
