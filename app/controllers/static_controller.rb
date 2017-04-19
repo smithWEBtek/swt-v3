@@ -1,7 +1,13 @@
 class StaticController < ApplicationController
 
   def bookmarks
-    render 'static/bookmarks'
+    Scrape.bookmarks
+   render :bookmarks
+  end
+
+  def free_books
+    Scrape.free_books
+   render :free_books
   end
 
   def home

@@ -9,6 +9,10 @@ gem 'yaml_db'
 gem 'rails-erd'
 gem 'pdf-reader'
 
+gem 'watir'
+gem 'nokogiri', '>=1.5.9'
+gem 'httparty'
+
 gem 'pry'
 gem 'rails', '~> 5.0.2'
 gem 'pg', '~> 0.18'

@@ -6,7 +6,7 @@
       <p>
      <% @refs.each do |ref| %>
       <strong>name:</strong> <%= link_to ref.name, ref_path(ref) %><br>
-      <strong>url:</strong> <%= ref.url %><br>
+      <strong>url:</strong> <%= link_to ref.name, ref.url %><br>
       <strong>format:</strong> <%= ref.format %><br><br>
      <% end %>
     </p>

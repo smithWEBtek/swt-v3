@@ -9,22 +9,8 @@ ar_internal_metadata:
   records: 
   - - environment
     - development
-    - '2017-04-17 22:14:45.227719'
-    - '2017-04-17 22:14:45.227719'
-
----
-post_refs:
-  columns:
-  - id
-  - post_id
-  - ref_id
-  records: 
-  - - 1
-    - 1
-    - 1
-  - - 2
-    - 1
-    - 2
+    - '2017-04-19 04:01:21.370893'
+    - '2017-04-19 04:01:21.370893'
 
 ---
 posts:
@@ -39,80 +25,79 @@ posts:
   - updated_at
   records: 
   - - 1
-    - 
-    - diet-tracker
-    - ''
-    - ''
-    - diet-tracker.md
-    - '2017-04-17 22:25:55.115029'
-    - '2017-04-18 02:57:07.659711'
+    - '2017-04-12'
+    - Piano Search CLI
+    - https://github.com/smithWEBtek/piano_search
+    - find a good piano
+    - blog.md
+    - '2017-04-19 04:01:26.112863'
+    - '2017-04-19 04:01:26.112863'
   - - 2
-    - '2017-04-04'
-    - Cucumber Logic
-    - www.github.com/smithwebtek/asdf1
-    - 'summarize the post '
-    - 
-    - '2017-04-18 02:34:16.188329'
-    - '2017-04-18 02:34:16.188329'
+    - '2016-03-12'
+    - Music Student Sinatra App
+    - https://github.com/smithWEBtek/piano-teach2
+    - learn your tunes, practice every day
+    - blog.md
+    - '2017-04-19 04:01:26.11532'
+    - '2017-04-19 04:01:26.11532'
   - - 3
-    - '2017-04-03'
-    - test post 3
-    - github.com/swt/repo2
-    - asdfasdfasdfasdf
-    - 
-    - '2017-04-18 02:55:55.769627'
-    - '2017-04-18 19:13:08.864285'
-  - - 4
-    - 
-    - bean soup
-    - 
-    - 
-    - 
-    - '2017-04-18 19:30:09.073064'
-    - '2017-04-18 19:30:09.073064'
-  - - 5
-    - 
-    - apples, what are they good for?
-    - github-repo-smith
-    - I like apples too
-    - blank.md
-    - '2017-04-18 19:34:25.111079'
-    - '2017-04-18 19:34:25.111079'
+    - '2017-04-12'
+    - Diet Planner
+    - https://github.com/smithWEBtek/diet-planner-v6
+    - eat growing things more than moving things
+    - blog.md
+    - '2017-04-19 04:01:26.117019'
+    - '2017-04-19 04:01:26.117019'
 
 ---
 projects:
   columns:
   - id
   - user_id
-  - title
-  - summary
-  - business_description
-  - current_solution
+  - name
+  - business_model
   - data_sources
-  - data_sample1
-  - data_sample2
-  - data_sample3
-  - data_view1
-  - data_view2
-  - data_view3
+  - problem
+  - wishlist
   - created_at
   - updated_at
   records: 
   - - 1
     - 1
-    - crash data
+    - pool-service
+    - pool service company, 2 location, 7 trucks
+    - too much manual paper shuffling
+    - online service scheduling
     - 
-    - summarize crash data
-    - mass trac system
-    - camb open data
-    - 'yes'
+    - '2017-04-19 04:01:26.145018'
+    - '2017-04-19 04:01:26.145018'
+  - - 2
+    - 2
+    - crash-data
+    - municipal govt data analysis
+    - too many crashes
+    - find key points in data to prevent crashes
     - 
+    - '2017-04-19 04:01:26.148856'
+    - '2017-04-19 04:01:26.148856'
+  - - 3
+    - 3
+    - job-crm
+    - job seeker / graduate
+    - no job
+    - get a job
     - 
-    - 'yes'
+    - '2017-04-19 04:01:26.152901'
+    - '2017-04-19 04:01:26.152901'
+  - - 4
+    - 4
+    - goal-mgr
+    - professional person
+    - spinning wheels, not focused
+    - everything in its place, and a time for every important thing
     - 
-    - 
-    - '2017-04-18 19:47:40.653076'
-    - '2017-04-18 19:47:40.653076'
+    - '2017-04-19 04:01:26.156462'
+    - '2017-04-19 04:01:26.156462'
 
 ---
 refs:
@@ -127,80 +112,3539 @@ refs:
   - updated_at
   records: 
   - - 1
-    - diet-tracker-vid
-    - video
-    - https://www.youtube.com/embed/nGTIAKQ_uJk
+    - asdf
+    - 
+    - 
     - 
     - 1
-    - '2017-04-17 22:25:36.585932'
-    - '2017-04-17 22:25:36.585932'
+    - '2017-04-19 04:08:05.473112'
+    - '2017-04-19 04:08:05.473112'
   - - 2
-    - diet-tips
-    - video
-    - https://www.youtube.com/watch?v=CVX7-eZReqs
-    - run more, eat less
+    - smithWEBtek
+    - 
+    - "/"
+    - 
     - 1
-    - '2017-04-17 22:28:30.098899'
-    - '2017-04-18 03:52:28.051542'
+    - '2017-04-19 07:29:10.905602'
+    - '2017-04-19 07:29:10.905602'
   - - 3
-    - Key info reference1
-    - pdf
-    - www.smithwebtek.com/pdf
-    - 'Testing one two three four. content '
+    - about
+    - 
+    - "/about"
+    - 
     - 1
-    - '2017-04-18 02:06:18.885681'
-    - '2017-04-18 02:06:18.885681'
+    - '2017-04-19 07:29:10.91089'
+    - '2017-04-19 07:29:10.91089'
   - - 4
-    - how to eat squirrel
-    - mp3
-    - http://www.amazon.com
-    - great song about squirrel stew
+    - blog
+    - 
+    - "/posts"
+    - 
     - 1
-    - '2017-04-18 03:15:39.87417'
-    - '2017-04-18 03:15:39.87417'
-
----
-topics:
-  columns:
-  - id
-  - name
-  - created_at
-  - updated_at
-  records: 
-  - - 1
-    - unnamed
-    - '2017-04-17 22:25:31.252408'
-    - '2017-04-17 22:25:31.252408'
+    - '2017-04-19 07:29:10.915131'
+    - '2017-04-19 07:29:10.915131'
+  - - 5
+    - projects
+    - 
+    - "/projects"
+    - 
+    - 1
+    - '2017-04-19 07:29:10.918921'
+    - '2017-04-19 07:29:10.918921'
+  - - 6
+    - wiki
+    - 
+    - "/refs"
+    - 
+    - 1
+    - '2017-04-19 07:29:10.92255'
+    - '2017-04-19 07:29:10.92255'
+  - - 7
+    - '3'
+    - 
+    - http://127.0.0.1:3000/
+    - 
+    - 1
+    - '2017-04-19 07:29:10.926254'
+    - '2017-04-19 07:29:10.926254'
+  - - 8
+    - R
+    - 
+    - http://127.0.0.1:3000/rails/info/routes
+    - 
+    - 1
+    - '2017-04-19 07:29:10.929834'
+    - '2017-04-19 07:29:10.929834'
+  - - 9
+    - Learn
+    - 
+    - https://learn.co/tracks/full-stack-web-dev-with-react
+    - 
+    - 1
+    - '2017-04-19 07:29:10.934215'
+    - '2017-04-19 07:29:10.934215'
+  - - 10
+    - Personal apps | Heroku
+    - 
+    - https://dashboard.heroku.com/apps
+    - 
+    - 1
+    - '2017-04-19 07:29:10.940624'
+    - '2017-04-19 07:29:10.940624'
+  - - 11
+    - job-crm
+    - 
+    - http://job-crm-v1.herokuapp.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:10.947415'
+    - '2017-04-19 07:29:10.947415'
+  - - 12
+    - zoning-v2
+    - 
+    - http://zoning-v2.herokuapp.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:10.951177'
+    - '2017-04-19 07:29:10.951177'
+  - - 13
+    - GoalMgrV1
+    - 
+    - https://goal-mgr-v1.herokuapp.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:10.954802'
+    - '2017-04-19 07:29:10.954802'
+  - - 14
+    - swt-v3
+    - 
+    - https://swt-v3.herokuapp.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:10.960908'
+    - '2017-04-19 07:29:10.960908'
+  - - 15
+    - smithWEBtek
+    - 
+    - file:///Users/BradSmith/Development/_blog/machild/index.html
+    - 
+    - 1
+    - '2017-04-19 07:29:10.964671'
+    - '2017-04-19 07:29:10.964671'
+  - - 16
+    - 'Normalize.css: Make browsers render all elements more consistently.'
+    - 
+    - https://necolas.github.io/normalize.css/
+    - 
+    - 1
+    - '2017-04-19 07:29:10.968251'
+    - '2017-04-19 07:29:10.968251'
+  - - 17
+    - Emmet — the essential toolkit for web-developers
+    - 
+    - https://emmet.io/
+    - 
+    - 1
+    - '2017-04-19 07:29:10.971527'
+    - '2017-04-19 07:29:10.971527'
+  - - 18
+    - CodeKit - THE Mac App For Web Developers
+    - 
+    - https://codekitapp.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:10.975101'
+    - '2017-04-19 07:29:10.975101'
+  - - 19
+    - Raleway - Google Fonts
+    - 
+    - https://fonts.google.com/specimen/Raleway
+    - 
+    - 1
+    - '2017-04-19 07:29:10.9793'
+    - '2017-04-19 07:29:10.9793'
+  - - 20
+    - https://hipsum.co
+    - 
+    - https://hipsum.co/
+    - 
+    - 1
+    - '2017-04-19 07:29:10.98429'
+    - '2017-04-19 07:29:10.98429'
+  - - 21
+    - Learn Google Drive
+    - 
+    - https://drive.google.com/folderview?id=0B-tirJPDhz8BYVE1R0gycTlNdjQ&usp=drive_web
+    - 
+    - 1
+    - '2017-04-19 07:29:10.993234'
+    - '2017-04-19 07:29:10.993234'
+  - - 22
+    - Learn Student Information
+    - 
+    - https://drive.google.com/folderview?id=0B-tirJPDhz8BYVE1R0gycTlNdjQ&usp=drive_web
+    - 
+    - 1
+    - '2017-04-19 07:29:10.999675'
+    - '2017-04-19 07:29:10.999675'
+  - - 23
+    - videos.md
+    - 
+    - https://gist.github.com/aviflombaum/df6c9c68439de6873b55
+    - 
+    - 1
+    - '2017-04-19 07:29:11.003463'
+    - '2017-04-19 07:29:11.003463'
+  - - 24
+    - Ruby-006-videos.md
+    - 
+    - https://gist.github.com/aviflombaum/2656242e0cb0243537dd
+    - 
+    - 1
+    - '2017-04-19 07:29:11.007163'
+    - '2017-04-19 07:29:11.007163'
+  - - 25
+    - Learn Lectures - Google Docs
+    - 
+    - https://docs.google.com/document/d/1HgYcmBY4Yem9gbkx4dJr67wqTFfzBHLhV1_3BtX5-9U/edit#
+    - 
+    - 1
+    - '2017-04-19 07:29:11.010755'
+    - '2017-04-19 07:29:11.010755'
+  - - 26
+    - 'Mountain West Ruby 2016 - Sharpening The Axe: Self-Teaching For Developers
+      Aja Hammerly - YouTube'
+    - 
+    - https://www.youtube.com/watch?v=3Ee1WYl51TM&feature=youtu.be
+    - 
+    - 1
+    - '2017-04-19 07:29:11.015327'
+    - '2017-04-19 07:29:11.015327'
+  - - 27
+    - Learn Lectures (Recovered) - Google Docs
+    - 
+    - https://docs.google.com/document/d/1PIxkXQK9sUrwc_zqeqIHuP-XXWm_U2TwvCjcAOu2Wog/edit?copiedFromTrash#heading=h.t1uh9nri9zbl
+    - 
+    - 1
+    - '2017-04-19 07:29:11.019113'
+    - '2017-04-19 07:29:11.019113'
+  - - 28
+    - A guide explaining Learn-Verified Lectures
+    - 
+    - https://gist.github.com/aviflombaum/423cd7ccec1531673704
+    - 
+    - 1
+    - '2017-04-19 07:29:11.022558'
+    - '2017-04-19 07:29:11.022558'
+  - - 29
+    - "* learn-verified | Learn.co Slack"
+    - 
+    - https://learn-co.slack.com/messages/learn-verified/team/smithwebtek/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.026078'
+    - '2017-04-19 07:29:11.026078'
+  - - 30
+    - Learn Lectures - Google Docs
+    - 
+    - https://docs.google.com/document/d/1HgYcmBY4Yem9gbkx4dJr67wqTFfzBHLhV1_3BtX5-9U/edit
+    - 
+    - 1
+    - '2017-04-19 07:29:11.031811'
+    - '2017-04-19 07:29:11.031811'
+  - - 31
+    - learn
+    - 
+    - https://learn.co/tracks/full-stack-web-dev-with-react
+    - 
+    - 1
+    - '2017-04-19 07:29:11.035739'
+    - '2017-04-19 07:29:11.035739'
+  - - 32
+    - Study
+    - 
+    - https://learn.co/study-groups
+    - 
+    - 1
+    - '2017-04-19 07:29:11.041134'
+    - '2017-04-19 07:29:11.041134'
+  - - 33
+    - LV-R
+    - 
+    - https://github.com/learn-co-students
+    - 
+    - 1
+    - '2017-04-19 07:29:11.045'
+    - '2017-04-19 07:29:11.045'
+  - - 34
+    - My Drive - Google Drive
+    - 
+    - https://drive.google.com/drive/u/2/my-drive
+    - 
+    - 1
+    - '2017-04-19 07:29:11.05146'
+    - '2017-04-19 07:29:11.05146'
+  - - 35
+    - Ruby on Rails Developer - Boston Logic | Jobs.com
+    - 
+    - http://job-openings.monster.com/monster/7b81b88f-74dc-40c5-8d11-875e273dea93?mescoid=1500129001001&jobPosition=6
+    - 
+    - 1
+    - '2017-04-19 07:29:11.055432'
+    - '2017-04-19 07:29:11.055432'
+  - - 36
+    - Boston Logic | Real Estate Marketing Automation Digital Software Suite
+    - 
+    - http://www.bostonlogic.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.059265'
+    - '2017-04-19 07:29:11.059265'
+  - - 37
+    - ''
+    - 
+    - https://www.google.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.064119'
+    - '2017-04-19 07:29:11.064119'
+  - - 38
+    - ''
+    - 
+    - https://learn-co.slack.com/messages/learn-verified/search/study%20groups/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.068231'
+    - '2017-04-19 07:29:11.068231'
+  - - 39
+    - ''
+    - 
+    - https://www.youtube.com/user/bradsmithpiano
+    - 
+    - 1
+    - '2017-04-19 07:29:11.071692'
+    - '2017-04-19 07:29:11.071692'
+  - - 40
+    - ''
+    - 
+    - https://github.com/smithWEBtek
+    - 
+    - 1
+    - '2017-04-19 07:29:11.075361'
+    - '2017-04-19 07:29:11.075361'
+  - - 41
+    - Learn Ruby The Hard Way
+    - 
+    - http://learnrubythehardway.org/book/index.html
+    - 
+    - 1
+    - '2017-04-19 07:29:11.081094'
+    - '2017-04-19 07:29:11.081094'
+  - - 42
+    - ''
+    - 
+    - https://launchschool.com/blog/a-glimpse-into-the-launch-school-curriculum
+    - 
+    - 1
+    - '2017-04-19 07:29:11.085353'
+    - '2017-04-19 07:29:11.085353'
+  - - 43
+    - Udemy
+    - 
+    - https://www.udemy.com/courses/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.092601'
+    - '2017-04-19 07:29:11.092601'
+  - - 44
+    - Udacity
+    - 
+    - https://www.udacity.com/course/full-stack-foundations--ud088
+    - 
+    - 1
+    - '2017-04-19 07:29:11.097567'
+    - '2017-04-19 07:29:11.097567'
+  - - 45
+    - edX
+    - 
+    - https://courses.edx.org/u/SmithPiano
+    - 
+    - 1
+    - '2017-04-19 07:29:11.101334'
+    - '2017-04-19 07:29:11.101334'
+  - - 46
+    - Coursera
+    - 
+    - https://www.coursera.org/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.105654'
+    - '2017-04-19 07:29:11.105654'
+  - - 47
+    - 'MacProVideo: JavaScript 101'
+    - 
+    - https://www.macprovideo.com/tutorial/absolute-beginners-guide-to-javascript
+    - 
+    - 1
+    - '2017-04-19 07:29:11.109256'
+    - '2017-04-19 07:29:11.109256'
+  - - 48
+    - Git Video Tutorial - Derek Banas
+    - 
+    - https://www.youtube.com/watch?v=r63f51ce84A
+    - 
+    - 1
+    - '2017-04-19 07:29:11.112821'
+    - '2017-04-19 07:29:11.112821'
+  - - 49
+    - Pixabay
+    - 
+    - https://pixabay.com/en/accounts/media/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.116381'
+    - '2017-04-19 07:29:11.116381'
+  - - 50
+    - Podcasts To Help You Learn About Technology
+    - 
+    - http://skillcrush.com/2014/01/07/best-podcasts-that-help-you-keep-up-technology/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.11998'
+    - '2017-04-19 07:29:11.11998'
+  - - 51
+    - Nitrous Community
+    - 
+    - https://community.nitrous.io/docs
+    - 
+    - 1
+    - '2017-04-19 07:29:11.124568'
+    - '2017-04-19 07:29:11.124568'
+  - - 52
+    - REGEX intro Regular Expressions - YouTube
+    - 
+    - https://www.youtube.com/watch?v=-Yy2agBN8EA
+    - 
+    - 1
+    - '2017-04-19 07:29:11.131393'
+    - '2017-04-19 07:29:11.131393'
+  - - 53
+    - REGEX
+    - 
+    - http://rubular.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.136816'
+    - '2017-04-19 07:29:11.136816'
+  - - 54
+    - 'RVM: Ruby Version Manager - RVM Ruby Version Manager - Documentation'
+    - 
+    - https://rvm.io/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.140469'
+    - '2017-04-19 07:29:11.140469'
+  - - 55
+    - Koans
+    - 
+    - http://rubykoans.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.146652'
+    - '2017-04-19 07:29:11.146652'
+  - - 56
+    - SitePoint
+    - 
+    - https://www.sitepoint.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.150486'
+    - '2017-04-19 07:29:11.150486'
+  - - 57
+    - envatostudio
+    - 
+    - https://studio.envato.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.154109'
+    - '2017-04-19 07:29:11.154109'
+  - - 58
+    - The Ruby Toolbox - Welcome to the Ruby Toolbox, Brad!
+    - 
+    - https://www.ruby-toolbox.com/account
+    - 
+    - 1
+    - '2017-04-19 07:29:11.157988'
+    - '2017-04-19 07:29:11.157988'
+  - - 59
+    - 'The Pragmatic Programmer: From Journeyman to Master: 0785342616224: Computer
+      Science Books @ Amazon.com'
+    - 
+    - http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X
+    - 
+    - 1
+    - '2017-04-19 07:29:11.161443'
+    - '2017-04-19 07:29:11.161443'
+  - - 60
+    - Practical Object-Oriented Design in Ruby
+    - 
+    - http://www.poodr.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.165397'
+    - '2017-04-19 07:29:11.165397'
+  - - 61
+    - 'The Well-Grounded Rubyist: David A. Black: 9781933988658: Amazon.com: Books'
+    - 
+    - http://www.amazon.com/The-Well-Grounded-Rubyist-David-Black/dp/1933988657
+    - 
+    - 1
+    - '2017-04-19 07:29:11.170659'
+    - '2017-04-19 07:29:11.170659'
+  - - 62
+    - Eloquent Ruby by Russ Olsen — Reviews, Discussion, Bookclubs, Lists
+    - 
+    - http://www.goodreads.com/book/show/9364729-eloquent-ruby
+    - 
+    - 1
+    - '2017-04-19 07:29:11.174914'
+    - '2017-04-19 07:29:11.174914'
+  - - 63
+    - 'Programming Ruby: The Pragmatic Programmer''s Guide'
+    - 
+    - http://ruby-doc.com/docs/ProgrammingRuby/#UJ
+    - 
+    - 1
+    - '2017-04-19 07:29:11.179147'
+    - '2017-04-19 07:29:11.179147'
+  - - 64
+    - Beyond This Tutorial - Learn to Program
+    - 
+    - https://pine.fm/LearnToProgram/chap_11.html
+    - 
+    - 1
+    - '2017-04-19 07:29:11.184855'
+    - '2017-04-19 07:29:11.184855'
+  - - 65
+    - Learn to Program, by Chris Pine
+    - 
+    - https://pine.fm/LearnToProgram/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.188835'
+    - '2017-04-19 07:29:11.188835'
+  - - 66
+    - free-programming-books/free-programming-books.md at master · vhf/free-programming-books
+    - 
+    - https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#ruby
+    - 
+    - 1
+    - '2017-04-19 07:29:11.192636'
+    - '2017-04-19 07:29:11.192636'
+  - - 67
+    - Home - Dropbox
+    - 
+    - https://www.dropbox.com/home/___7_smithWEBtek/_WebDevLibrary
+    - 
+    - 1
+    - '2017-04-19 07:29:11.200114'
+    - '2017-04-19 07:29:11.200114'
+  - - 68
+    - Skillcrush FREE 10-Day Online Coding Bootcamp
+    - 
+    - https://skillcrush.com/skillcrush-10-day-bootcamp/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.204116'
+    - '2017-04-19 07:29:11.204116'
+  - - 69
+    - 15 Steps for Updating Your Resumé
+    - 
+    - http://skillcrush.com/2014/07/30/15-steps-updating-resume/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.207932'
+    - '2017-04-19 07:29:11.207932'
+  - - 70
+    - 'Tips From a Recruiter: Optimize Your Resume - Levo'
+    - 
+    - http://www.levo.com/articles/career-advice/how-to-fit-your-resume-onto-just-one-page
+    - 
+    - 1
+    - '2017-04-19 07:29:11.211903'
+    - '2017-04-19 07:29:11.211903'
+  - - 71
+    - Namechk | Username, Domain & Trademark Search
+    - 
+    - https://namechk.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.215848'
+    - '2017-04-19 07:29:11.215848'
+  - - 72
+    - What skill set should a junior Rails developer have? - Quora
+    - 
+    - https://www.quora.com/What-skill-set-should-a-junior-Rails-developer-have
+    - 
+    - 1
+    - '2017-04-19 07:29:11.22055'
+    - '2017-04-19 07:29:11.22055'
+  - - 73
+    - What skills must a Junior Rails Developer need know in order to be successful
+      in getting an entry level position? - Quora
+    - 
+    - https://www.quora.com/What-skills-must-a-Junior-Rails-Developer-need-know-in-order-to-be-successful-in-getting-an-entry-level-position
+    - 
+    - 1
+    - '2017-04-19 07:29:11.225055'
+    - '2017-04-19 07:29:11.225055'
+  - - 74
+    - What Every Junior Rails Developer Should Know | Rails Mama
+    - 
+    - https://railsmama.wordpress.com/2015/06/13/what-every-junior-rails-developer-should-know/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.230395'
+    - '2017-04-19 07:29:11.230395'
+  - - 75
+    - What Employers are looking for in a junior rails developer
+    - 
+    - http://blog.teamtreehouse.com/employers-looking-junior-rails-developer
+    - 
+    - 1
+    - '2017-04-19 07:29:11.234287'
+    - '2017-04-19 07:29:11.234287'
+  - - 76
+    - Becoming a Ruby on Rails developer | Infinum
+    - 
+    - https://infinum.co/the-capsized-eight/becoming-a-ruby-on-rails-developer
+    - 
+    - 1
+    - '2017-04-19 07:29:11.240481'
+    - '2017-04-19 07:29:11.240481'
+  - - 77
+    - Landing Your First Job as a Junior Web Developer
+    - 
+    - http://blog.thefirehoseproject.com/posts/getting-your-first-junior-web-developer-job/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.244278'
+    - '2017-04-19 07:29:11.244278'
+  - - 78
+    - 13 Meetup Groups You Should Join If You're New To Code
+    - 
+    - http://skillcrush.com/2015/02/17/13-tech-meetup-groups-for-beginners/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.248319'
+    - '2017-04-19 07:29:11.248319'
+  - - 79
+    - 12 Things You Must Do to Land a Junior Web Developer Job
+    - 
+    - http://skillcrush.com/2015/04/09/land-junior-web-developer-job/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.252308'
+    - '2017-04-19 07:29:11.252308'
+  - - 80
+    - Interview Cake
+    - 
+    - https://www.interviewcake.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.255899'
+    - '2017-04-19 07:29:11.255899'
+  - - 81
+    - What is a Full Stack developer? | Laurence Gellert's Blog
+    - 
+    - http://www.laurencegellert.com/2012/08/what-is-a-full-stack-developer/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.259892'
+    - '2017-04-19 07:29:11.259892'
+  - - 82
+    - Boston Ruby Companies
+    - 
+    - https://github.com/bostonrb/bostonrb/wiki/Companies
+    - 
+    - 1
+    - '2017-04-19 07:29:11.264305'
+    - '2017-04-19 07:29:11.264305'
+  - - 83
+    - RoRJobs.com
+    - 
+    - https://www.rorjobs.com/pages/43-about
+    - 
+    - 1
+    - '2017-04-19 07:29:11.270393'
+    - '2017-04-19 07:29:11.270393'
+  - - 84
+    - Ruby on Rails Jobs
+    - 
+    - https://www.rorjobs.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.274888'
+    - '2017-04-19 07:29:11.274888'
+  - - 85
+    - RailsJobs.com
+    - 
+    - https://www.railsjobs.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.283209'
+    - '2017-04-19 07:29:11.283209'
+  - - 86
+    - Join as a Freelancer | Toptal
+    - 
+    - https://www.toptal.com/talent/apply
+    - 
+    - 1
+    - '2017-04-19 07:29:11.286988'
+    - '2017-04-19 07:29:11.286988'
+  - - 87
+    - How to Build an Impressive Portfolio When You're New to Tech
+    - 
+    - https://skillcrush.com/2015/03/12/impressive-tech-portfolio/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.290848'
+    - '2017-04-19 07:29:11.290848'
+  - - 88
+    - 12 Things Web Developers Must Include in Their Portfolios | Codementor
+    - 
+    - https://www.codementor.io/learn-programming/12-important-things-to-include-in-web-dev-portfolios
+    - 
+    - 1
+    - '2017-04-19 07:29:11.294578'
+    - '2017-04-19 07:29:11.294578'
+  - - 89
+    - So you want to become a full-stack developer... - RubySteps
+    - 
+    - https://www.rubysteps.com/articles/2014/so-you-want-to-become-a-full-stack-developer/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.299068'
+    - '2017-04-19 07:29:11.299068'
+  - - 90
+    - 4 Ways to Handle Interview Questions You Don't Know How to Answer
+    - 
+    - https://www.themuse.com/advice/4-ways-to-handle-interview-questions-you-dont-know-how-to-answer?utm_medium=email&utm_campaign=weekly_20170407&utm_source=blueshift&bsft_eid=c7fee705-de41-4462-9dc0-d7d3c78ba382&bsft_pid=3ccf07d5-00fa-4342-b6ca-c2f59a7fd019&bsft_clkid=df6f283e-972d-418c-b3b5-88370b41424f&bsft_uid=11a0bd8b-d47a-4d56-94dd-efdffc5e1484&bsft_mid=006df803-f84a-4b5d-81ff-28cefc7af911&bsft_pp=1&p=1
+    - 
+    - 1
+    - '2017-04-19 07:29:11.302775'
+    - '2017-04-19 07:29:11.302775'
+  - - 91
+    - The Best-Ever Response to "Why Did You Leave Your Last Job?"
+    - 
+    - https://www.themuse.com/advice/the-bestever-response-to-why-did-you-leave-your-last-job?utm_medium=email&utm_campaign=weekly_20170407&utm_source=blueshift&bsft_eid=c7fee705-de41-4462-9dc0-d7d3c78ba382&bsft_pid=76c53af0-c381-499b-a28c-3e564ea22aea&bsft_clkid=f4314a00-8d71-4ee0-83e8-ff14df33ba1e&bsft_uid=11a0bd8b-d47a-4d56-94dd-efdffc5e1484&bsft_mid=006df803-f84a-4b5d-81ff-28cefc7af911&bsft_pp=3&p=3
+    - 
+    - 1
+    - '2017-04-19 07:29:11.306539'
+    - '2017-04-19 07:29:11.306539'
+  - - 92
+    - 3 Steps to a Perfect Informational Interview
+    - 
+    - https://www.themuse.com/advice/3-steps-to-a-perfect-informational-interview?utm_medium=email&utm_campaign=weekly_20170407&utm_source=blueshift&bsft_eid=c7fee705-de41-4462-9dc0-d7d3c78ba382&bsft_pid=ffb458c9-9c5d-4e94-930f-15d30646ca5a&bsft_clkid=ab86f205-daf9-4881-ab93-2f71af299a16&bsft_uid=11a0bd8b-d47a-4d56-94dd-efdffc5e1484&bsft_mid=006df803-f84a-4b5d-81ff-28cefc7af911&bsft_pp=2&p=2
+    - 
+    - 1
+    - '2017-04-19 07:29:11.310596'
+    - '2017-04-19 07:29:11.310596'
+  - - 93
+    - Assignments format
+    - 
+    - https://learn.co/tracks/career-prep/career-prep/the-job-search/welcome-to-career-prep
+    - 
+    - 1
+    - '2017-04-19 07:29:11.314873'
+    - '2017-04-19 07:29:11.314873'
+  - - 94
+    - Rapportive-email finder
+    - 
+    - http://rapportive.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.320176'
+    - '2017-04-19 07:29:11.320176'
+  - - 95
+    - How to Find Email Addresses | Scott Britton | Pulse | LinkedIn
+    - 
+    - https://www.linkedin.com/pulse/20140915184621-60525567-how-to-find-email-addresses?trk=hb_ntf_MEGAPHONE_ARTICLE_POST&trk=hb_ntf_MEGAPHONE_ARTICLE_POST
+    - 
+    - 1
+    - '2017-04-19 07:29:11.3257'
+    - '2017-04-19 07:29:11.3257'
+  - - 96
+    - Job Search Tracker - TEMPLATE - Google Sheets
+    - 
+    - https://docs.google.com/spreadsheets/d/1CMFzB1zUQl_yR2ZO9kZdDjPZJEupsjULC6G_vRTUgnU/edit#gid=2065124896
+    - 
+    - 1
+    - '2017-04-19 07:29:11.331963'
+    - '2017-04-19 07:29:11.331963'
+  - - 97
+    - 'Killer Cover Letters: Startup Edition - Levo'
+    - 
+    - https://www.levo.com/posts/killer-cover-letters-startup-edition
+    - 
+    - 1
+    - '2017-04-19 07:29:11.339168'
+    - '2017-04-19 07:29:11.339168'
+  - - 98
+    - Learn - Managing Your Job Search
+    - 
+    - https://learn.co/tracks/career-prep/career-prep/effective-networking/cover-letters
+    - 
+    - 1
+    - '2017-04-19 07:29:11.343369'
+    - '2017-04-19 07:29:11.343369'
+  - - 99
+    - Curated list of awesome lists
+    - 
+    - https://github.com/sindresorhus/awesome
+    - 
+    - 1
+    - '2017-04-19 07:29:11.347364'
+    - '2017-04-19 07:29:11.347364'
+  - - 100
+    - ''
+    - 
+    - http://manifesto.softwarecraftsmanship.org/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.351188'
+    - '2017-04-19 07:29:11.351188'
+  - - 101
+    - Training - Clean Coder
+    - 
+    - https://sites.google.com/site/unclebobconsultingllc/home/training
+    - 
+    - 1
+    - '2017-04-19 07:29:11.354845'
+    - '2017-04-19 07:29:11.354845'
+  - - 102
+    - Clean Coder
+    - 
+    - https://sites.google.com/site/unclebobconsultingllc/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.358594'
+    - '2017-04-19 07:29:11.358594'
+  - - 103
+    - JavaScript Promises
+    - 
+    - https://davidwalsh.name/promises
+    - 
+    - 1
+    - '2017-04-19 07:29:11.366708'
+    - '2017-04-19 07:29:11.366708'
+  - - 104
+    - Design Patterns | Object Oriented Design
+    - 
+    - http://www.oodesign.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.377203'
+    - '2017-04-19 07:29:11.377203'
+  - - 105
+    - 'Internet: Lots More Information - HowStuffWorks'
+    - 
+    - http://computer.howstuffworks.com/internet/basics/internet3.htm
+    - 
+    - 1
+    - '2017-04-19 07:29:11.383558'
+    - '2017-04-19 07:29:11.383558'
+  - - 106
+    - URL Encoded Characters
+    - 
+    - http://www.degraeve.com/reference/urlencoding.php
+    - 
+    - 1
+    - '2017-04-19 07:29:11.387428'
+    - '2017-04-19 07:29:11.387428'
+  - - 107
+    - 25Useful Keybd Shortcuts
+    - 
+    - https://blog.hubspot.com/sales/chrome-keyboard-shortcuts#sm.0001ltmxn310hseduuyr7pg3zq12t
+    - 
+    - 1
+    - '2017-04-19 07:29:11.391131'
+    - '2017-04-19 07:29:11.391131'
+  - - 108
+    - HappenApps
+    - 
+    - http://happenapps.com/#quiver
+    - 
+    - 1
+    - '2017-04-19 07:29:11.395053'
+    - '2017-04-19 07:29:11.395053'
+  - - 109
+    - 6 Simple Tools to Increase Your Coding Productivity « Flatiron School
+    - 
+    - http://blog.flatironschool.com/6-simple-tools-to-increase-your-coding-productivity/?utm_campaign=Alumni%20Engagement%20&utm_content=31428254&utm_medium=social&utm_source=twitter
+    - 
+    - 1
+    - '2017-04-19 07:29:11.399701'
+    - '2017-04-19 07:29:11.399701'
+  - - 110
+    - ScreenCap
+    - 
+    - http://www.imore.com/screenshot-mac
+    - 
+    - 1
+    - '2017-04-19 07:29:11.40359'
+    - '2017-04-19 07:29:11.40359'
+  - - 111
+    - PDF to WORD
+    - 
+    - http://www.pdfonline.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.407278'
+    - '2017-04-19 07:29:11.407278'
+  - - 112
+    - NaturalReader
+    - 
+    - javascript:(function()%7BreadStyle%3D%27style-newspaper%27%3BreadSize%3D%27size-large%27%3BreadMargin%3D%27margin-wide%27%3Bvar%20locationURL%3Ddocument.location.href%3Bwindow.open(%27http://www.naturalreaders.com/nr_gettext.php%3F%26url%3D%27%2BencodeURIComponent(locationURL))%3B%7D)()%3B
+    - 
+    - 1
+    - '2017-04-19 07:29:11.411806'
+    - '2017-04-19 07:29:11.411806'
+  - - 113
+    - Learn - Set Up
+    - 
+    - https://learn.co/manual_setup
+    - 
+    - 1
+    - '2017-04-19 07:29:11.422816'
+    - '2017-04-19 07:29:11.422816'
+  - - 114
+    - 'Class: Time (Ruby 2.3.0)'
+    - 
+    - https://ruby-doc.org/stdlib-2.3.0/libdoc/time/rdoc/Time.html#method-c-strptime
+    - 
+    - 1
+    - '2017-04-19 07:29:11.429573'
+    - '2017-04-19 07:29:11.429573'
+  - - 115
+    - Date & Time in Ruby
+    - 
+    - https://www.tutorialspoint.com/ruby/ruby_date_time.htm
+    - 
+    - 1
+    - '2017-04-19 07:29:11.433353'
+    - '2017-04-19 07:29:11.433353'
+  - - 116
+    - DHH RailsConf 2011
+    - 
+    - https://www.youtube.com/watch?v=cGdCI2HhfAU
+    - 
+    - 1
+    - '2017-04-19 07:29:11.436915'
+    - '2017-04-19 07:29:11.436915'
+  - - 117
+    - The Asset Pipeline — Ruby on Rails Guides
+    - 
+    - http://guides.rubyonrails.org/asset_pipeline.html
+    - 
+    - 1
+    - '2017-04-19 07:29:11.440584'
+    - '2017-04-19 07:29:11.440584'
+  - - 118
+    - Bootstrap vs Foundation - Top 2 CSS Frameworks
+    - 
+    - https://www.keycdn.com/blog/bootstrap-vs-foundation/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.444215'
+    - '2017-04-19 07:29:11.444215'
+  - - 119
+    - bootstrap-learn-lab
+    - 
+    - https://learn.co/tracks/full-stack-web-dev-with-react/rails-and-javascript/asset-pipeline/bootstrap-and-the-asset-pipeline
+    - 
+    - 1
+    - '2017-04-19 07:29:11.447686'
+    - '2017-04-19 07:29:11.447686'
+  - - 120
+    - Cookie properties - EditThisCookie
+    - 
+    - http://www.editthiscookie.com/blog/2014/03/cookie-properties/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.451343'
+    - '2017-04-19 07:29:11.451343'
+  - - 121
+    - Support EditThisCookie
+    - 
+    - chrome-extension://fngmhnnpilhplaeedifhccceomclgfbg/options_pages/support.html
+    - 
+    - 1
+    - '2017-04-19 07:29:11.455027'
+    - '2017-04-19 07:29:11.455027'
+  - - 122
+    - Getting Started with EditThisCookie - EditThisCookie
+    - 
+    - http://www.editthiscookie.com/start/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.4601'
+    - '2017-04-19 07:29:11.4601'
+  - - 123
+    - All About Computer Cookies - Session Cookies, Persistent Cookies,How to Enable/Disable/Manage
+      Cookies
+    - 
+    - http://www.allaboutcookies.org/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.465614'
+    - '2017-04-19 07:29:11.465614'
+  - - 124
+    - HTTP cookie - Wikipedia, the free encyclopedia
+    - 
+    - https://en.wikipedia.org/wiki/HTTP_cookie#Session_cookie
+    - 
+    - 1
+    - '2017-04-19 07:29:11.470896'
+    - '2017-04-19 07:29:11.470896'
+  - - 125
+    - Cross-origin resource sharing - Wikipedia
+    - 
+    - https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
+    - 
+    - 1
+    - '2017-04-19 07:29:11.47498'
+    - '2017-04-19 07:29:11.47498'
+  - - 126
+    - 'cyu/rack-cors: Rack Middleware for handling Cross-Origin Resource Sharing (CORS),
+      which makes cross-origin AJAX possible.'
+    - 
+    - https://github.com/cyu/rack-cors
+    - 
+    - 1
+    - '2017-04-19 07:29:11.478805'
+    - '2017-04-19 07:29:11.478805'
+  - - 127
+    - CSS reference - CSS | MDN
+    - 
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+    - 
+    - 1
+    - '2017-04-19 07:29:11.485761'
+    - '2017-04-19 07:29:11.485761'
+  - - 128
+    - Basscss
+    - 
+    - http://basscss.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.490516'
+    - '2017-04-19 07:29:11.490516'
+  - - 129
+    - Video Screencasts | CSS-Tricks
+    - 
+    - https://css-tricks.com/video-screencasts/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.494432'
+    - '2017-04-19 07:29:11.494432'
+  - - 130
+    - Attribute selectors - CSS | MDN
+    - 
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+    - 
+    - 1
+    - '2017-04-19 07:29:11.498267'
+    - '2017-04-19 07:29:11.498267'
+  - - 131
+    - CSS - Pseudo Class Selectors | CSS-Tricks
+    - 
+    - https://css-tricks.com/pseudo-class-selectors/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.501995'
+    - '2017-04-19 07:29:11.501995'
+  - - 132
+    - CSS | Mozilla.org
+    - 
+    - https://developer.mozilla.org/en-US/docs/Web/CSS
+    - 
+    - 1
+    - '2017-04-19 07:29:11.506568'
+    - '2017-04-19 07:29:11.506568'
+  - - 133
+    - 30 CSS Selectors you Must Memorize - Envato Tuts+ Code Tutorial
+    - 
+    - http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+    - 
+    - 1
+    - '2017-04-19 07:29:11.511163'
+    - '2017-04-19 07:29:11.511163'
+  - - 134
+    - ruby on rails - curl command line POST - Stack Overflow
+    - 
+    - http://stackoverflow.com/questions/5826690/curl-command-line-post
+    - 
+    - 1
+    - '2017-04-19 07:29:11.517086'
+    - '2017-04-19 07:29:11.517086'
+  - - 135
+    - How to Use cURL to Test RESTful Rails // RailsTips by John Nunemaker
+    - 
+    - http://www.railstips.org/blog/archives/2006/08/04/how-to-use-curl-to-test-restful-rails/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.521136'
+    - '2017-04-19 07:29:11.521136'
+  - - 136
+    - curl - Manual
+    - 
+    - https://curl.haxx.se/docs/manual.html
+    - 
+    - 1
+    - '2017-04-19 07:29:11.524759'
+    - '2017-04-19 07:29:11.524759'
+  - - 137
+    - Dash for macOS - API Documentation Browser, Snippet Manager - Kapeli
+    - 
+    - https://kapeli.com/dash
+    - 
+    - 1
+    - '2017-04-19 07:29:11.52838'
+    - '2017-04-19 07:29:11.52838'
+  - - 138
+    - strftime (ActiveSupport::TimeWithZone) - APIdock
+    - 
+    - http://apidock.com/rails/ActiveSupport/TimeWithZone/strftime
+    - 
+    - 1
+    - '2017-04-19 07:29:11.534958'
+    - '2017-04-19 07:29:11.534958'
+  - - 139
+    - Design for Developers
+    - 
+    - http://designfordevelopers.co/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.53865'
+    - '2017-04-19 07:29:11.53865'
+  - - 140
+    - HTML UTF-8 Reference
+    - 
+    - http://www.w3schools.com/charsets/ref_html_utf8.asp
+    - 
+    - 1
+    - '2017-04-19 07:29:11.542334'
+    - '2017-04-19 07:29:11.542334'
+  - - 141
+    - CSS Validation Service - W3C
+    - 
+    - http://jigsaw.w3.org/css-validator/#validate_by_input
+    - 
+    - 1
+    - '2017-04-19 07:29:11.546202'
+    - '2017-04-19 07:29:11.546202'
+  - - 142
+    - 'Modernizr: the feature detection library for HTML5/CSS3'
+    - 
+    - https://modernizr.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.553313'
+    - '2017-04-19 07:29:11.553313'
+  - - 143
+    - Opera browser - The fast, safe web browser - Download free
+    - 
+    - http://www.opera.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.559292'
+    - '2017-04-19 07:29:11.559292'
+  - - 144
+    - Using Jekyll with Pages - User Documentation
+    - 
+    - https://help.github.com/articles/using-jekyll-with-pages/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.563364'
+    - '2017-04-19 07:29:11.563364'
+  - - 145
+    - ISO 2 Letter Language Codes - SitePoint
+    - 
+    - http://www.sitepoint.com/web-foundations/iso-2-letter-language-codes/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.569063'
+    - '2017-04-19 07:29:11.569063'
+  - - 146
+    - CSS Gradient Generator - ColorZilla.com
+    - 
+    - http://www.colorzilla.com/gradient-editor/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.576169'
+    - '2017-04-19 07:29:11.576169'
+  - - 147
+    - Gradient CSS Generator | CSSmatic
+    - 
+    - http://www.cssmatic.com/gradient-generator#'\-moz\-linear\-gradient\%28left\%2C\%20rgba\%28248\%2C80\%2C50\%2C1\%29\%200\%25\%2C\%20rgba\%28241\%2C111\%2C92\%2C1\%29\%2050\%25\%2C\%20rgba\%28246\%2C41\%2C12\%2C1\%29\%2051\%25\%2C\%20rgba\%28240\%2C47\%2C23\%2C1\%29\%2071\%25\%2C\%20rgba\%28231\%2C56\%2C39\%2C1\%29\%20100\%25\%29\%3B'
+    - 
+    - 1
+    - '2017-04-19 07:29:11.580155'
+    - '2017-04-19 07:29:11.580155'
+  - - 148
+    - Balsamiq. Rapid, effective and fun wireframing software. | Balsamiq
+    - 
+    - https://balsamiq.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.584832'
+    - '2017-04-19 07:29:11.584832'
+  - - 149
+    - Mockingbird - wireframe
+    - 
+    - https://gomockingbird.com/projects/g7artlo/4gXVnC
+    - 
+    - 1
+    - '2017-04-19 07:29:11.588555'
+    - '2017-04-19 07:29:11.588555'
+  - - 150
+    - Bootstrap
+    - 
+    - http://getbootstrap.com/getting-started/#download
+    - 
+    - 1
+    - '2017-04-19 07:29:11.592214'
+    - '2017-04-19 07:29:11.592214'
+  - - 151
+    - BootstrapCDN by MaxCDN
+    - 
+    - http://www.bootstrapcdn.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.595849'
+    - '2017-04-19 07:29:11.595849'
+  - - 152
+    - twitter-bootstrap - cdnjs.com - The free and open source CDN for web related
+      libraries to speed up your website!
+    - 
+    - http://cdnjs.com/libraries/twitter-bootstrap
+    - 
+    - 1
+    - '2017-04-19 07:29:11.599321'
+    - '2017-04-19 07:29:11.599321'
+  - - 153
+    - twbs/bootstrap
+    - 
+    - https://github.com/twbs/bootstrap
+    - 
+    - 1
+    - '2017-04-19 07:29:11.613076'
+    - '2017-04-19 07:29:11.613076'
+  - - 154
+    - normalize.css – Nicolas Gallagher
+    - 
+    - http://nicolasgallagher.com/about-normalize-css/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.617191'
+    - '2017-04-19 07:29:11.617191'
+  - - 155
+    - Validation Service
+    - 
+    - https://validator.w3.org/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.621116'
+    - '2017-04-19 07:29:11.621116'
+  - - 156
+    - transform - CSS
+    - 
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/transform#Live_example
+    - 
+    - 1
+    - '2017-04-19 07:29:11.62794'
+    - '2017-04-19 07:29:11.62794'
+  - - 157
+    - Bootstrap-Getting started TEMPLATE
+    - 
+    - http://getbootstrap.com/getting-started/#template
+    - 
+    - 1
+    - '2017-04-19 07:29:11.632801'
+    - '2017-04-19 07:29:11.632801'
+  - - 158
+    - JavaScript · Bootstrap
+    - 
+    - http://getbootstrap.com/javascript/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.636809'
+    - '2017-04-19 07:29:11.636809'
+  - - 159
+    - Google Fonts
+    - 
+    - https://www.google.com/fonts
+    - 
+    - 1
+    - '2017-04-19 07:29:11.640959'
+    - '2017-04-19 07:29:11.640959'
+  - - 160
+    - Complete Guide to Reducing Page Weight
+    - 
+    - http://www.sitepoint.com/complete-guide-reducing-page-weight/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.644654'
+    - '2017-04-19 07:29:11.644654'
+  - - 161
+    - normalize - cdnjs.com - The free and open source CDN for web related libraries
+      to speed up your website!
+    - 
+    - https://cdnjs.com/libraries/normalize
+    - 
+    - 1
+    - '2017-04-19 07:29:11.649792'
+    - '2017-04-19 07:29:11.649792'
+  - - 162
+    - ReadMe
+    - 
+    - http://devise.plataformatec.com.br/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.654346'
+    - '2017-04-19 07:29:11.654346'
+  - - 163
+    - 'Module: Devise — Documentation for plataformatec/devise (master)'
+    - 
+    - http://www.rubydoc.info/github/plataformatec/devise/master/Devise
+    - 
+    - 1
+    - '2017-04-19 07:29:11.661218'
+    - '2017-04-19 07:29:11.661218'
+  - - 164
+    - using pandoc with rails - Google Search
+    - 
+    - https://www.google.com/webhp?sourceid=chrome-instant&rlz=1C5CHFA_enUS700US700&ion=1&espv=2&ie=UTF-8#q=using+pandoc+with+rails
+    - 
+    - 1
+    - '2017-04-19 07:29:11.668656'
+    - '2017-04-19 07:29:11.668656'
+  - - 165
+    - Mastering Markdown · GitHub Guides
+    - 
+    - https://guides.github.com/features/mastering-markdown/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.672873'
+    - '2017-04-19 07:29:11.672873'
+  - - 166
+    - 10 Essential SublimeText Plugins for JavaScript Developers
+    - 
+    - https://www.sitepoint.com/essential-sublime-text-javascript-plugins/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.676615'
+    - '2017-04-19 07:29:11.676615'
+  - - 167
+    - keyboard-shortcuts-macos.pdf
+    - 
+    - https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
+    - 
+    - 1
+    - '2017-04-19 07:29:11.681278'
+    - '2017-04-19 07:29:11.681278'
+  - - 168
+    - Documentation for Visual Studio Code
+    - 
+    - https://code.visualstudio.com/docs
+    - 
+    - 1
+    - '2017-04-19 07:29:11.685205'
+    - '2017-04-19 07:29:11.685205'
+  - - 169
+    - Rails ERD – Customisation options
+    - 
+    - https://voormedia.github.io/rails-erd/customise.html
+    - 
+    - 1
+    - '2017-04-19 07:29:11.68911'
+    - '2017-04-19 07:29:11.68911'
+  - - 170
+    - 'voormedia/rails-erd: Generate Entity-Relationship Diagrams for Rails applications'
+    - 
+    - https://github.com/voormedia/rails-erd
+    - 
+    - 1
+    - '2017-04-19 07:29:11.692697'
+    - '2017-04-19 07:29:11.692697'
+  - - 171
+    - RailRoad diagrams generator
+    - 
+    - http://railroad.rubyforge.org/#examples
+    - 
+    - 1
+    - '2017-04-19 07:29:11.698093'
+    - '2017-04-19 07:29:11.698093'
+  - - 172
+    - RubyGems Documentation Index
+    - 
+    - http://localhost:8808/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.703133'
+    - '2017-04-19 07:29:11.703133'
+  - - 173
+    - "#245 New Gem with Bundler - RailsCasts"
+    - 
+    - http://railscasts.com/episodes/245-new-gem-with-bundler
+    - 
+    - 1
+    - '2017-04-19 07:29:11.707633'
+    - '2017-04-19 07:29:11.707633'
+  - - 174
+    - Publishing your gem - RubyGems Guides
+    - 
+    - http://guides.rubygems.org/publishing/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.716441'
+    - '2017-04-19 07:29:11.716441'
+  - - 175
+    - Learn - CLI Data Gem Project
+    - 
+    - https://learn.co/tracks/full-stack-web-development/object-oriented-ruby/final-projects/cli-data-gem-project
+    - 
+    - 1
+    - '2017-04-19 07:29:11.720481'
+    - '2017-04-19 07:29:11.720481'
+  - - 176
+    - 'RubyGems Documentation LOCALHOST: run gem server'
+    - 
+    - http://localhost:8808/#liquid
+    - 
+    - 1
+    - '2017-04-19 07:29:11.724153'
+    - '2017-04-19 07:29:11.724153'
+  - - 177
+    - The Ruby Toolbox - Know Your Options!
+    - 
+    - https://www.ruby-toolbox.com/resources
+    - 
+    - 1
+    - '2017-04-19 07:29:11.727644'
+    - '2017-04-19 07:29:11.727644'
+  - - 178
+    - Awesome Ruby libraries, tools, frameworks and software
+    - 
+    - https://github.com/markets/awesome-ruby
+    - 
+    - 1
+    - '2017-04-19 07:29:11.731362'
+    - '2017-04-19 07:29:11.731362'
+  - - 179
+    - 'Awesome-rails-gem: A collection of awesome Ruby Gems for Rails development.'
+    - 
+    - https://github.com/hothero/awesome-rails-gem
+    - 
+    - 1
+    - '2017-04-19 07:29:11.735002'
+    - '2017-04-19 07:29:11.735002'
+  - - 180
+    - 'thoughtbot/paperclip: Easy file attachment management for ActiveRecord'
+    - 
+    - https://github.com/thoughtbot/paperclip
+    - 
+    - 1
+    - '2017-04-19 07:29:11.73843'
+    - '2017-04-19 07:29:11.73843'
+  - - 181
+    - Make your own gem - RubyGems Guides
+    - 
+    - http://guides.rubygems.org/make-your-own-gem/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.741685'
+    - '2017-04-19 07:29:11.741685'
+  - - 182
+    - 'Bundler: The best way to manage a Ruby application''s gems'
+    - 
+    - http://bundler.io/gemfile.html
+    - 
+    - 1
+    - '2017-04-19 07:29:11.745283'
+    - '2017-04-19 07:29:11.745283'
+  - - 183
+    - Git is, like many professional tools, something you simply got to learn. But
+      li... | Hacker News
+    - 
+    - https://news.ycombinator.com/item?id=12622746
+    - 
+    - 1
+    - '2017-04-19 07:29:11.750948'
+    - '2017-04-19 07:29:11.750948'
+  - - 184
+    - Learn Version Control with Git for Free
+    - 
+    - https://www.git-tower.com/learn/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.754913'
+    - '2017-04-19 07:29:11.754913'
+  - - 185
+    - Learn Git with Bitbucket Cloud | Atlassian Git Tutorial
+    - 
+    - https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
+    - 
+    - 1
+    - '2017-04-19 07:29:11.760327'
+    - '2017-04-19 07:29:11.760327'
+  - - 186
+    - job-crm · Settings | Heroku
+    - 
+    - https://dashboard.heroku.com/apps/job-crm/settings
+    - 
+    - 1
+    - '2017-04-19 07:29:11.763829'
+    - '2017-04-19 07:29:11.763829'
+  - - 187
+    - Ruby gitignore list
+    - 
+    - https://github.com/github/gitignore/blob/master/Ruby.gitignore
+    - 
+    - 1
+    - '2017-04-19 07:29:11.767242'
+    - '2017-04-19 07:29:11.767242'
+  - - 188
+    - Git Video Tutorial - cheatsheet
+    - 
+    - http://www.newthinktank.com/2014/04/git-video-tutorial/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.773699'
+    - '2017-04-19 07:29:11.773699'
+  - - 189
+    - Ignoring files - User Documentation
+    - 
+    - https://help.github.com/articles/ignoring-files/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.777403'
+    - '2017-04-19 07:29:11.777403'
+  - - 190
+    - Learn Git Branching
+    - 
+    - http://learngitbranching.js.org/?NODEMO
+    - 
+    - 1
+    - '2017-04-19 07:29:11.781816'
+    - '2017-04-19 07:29:11.781816'
+  - - 191
+    - find forks of a repo
+    - 
+    - http://forked.yannick.io/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.785362'
+    - '2017-04-19 07:29:11.785362'
+  - - 192
+    - Hackathon IO - Organize & Discover Hackathons - Hackathon.IO
+    - 
+    - http://www.hackathon.io/events
+    - 
+    - 1
+    - '2017-04-19 07:29:11.78877'
+    - '2017-04-19 07:29:11.78877'
+  - - 193
+    - New & upcoming hackthons · Devpost
+    - 
+    - http://devpost.com/hackathons
+    - 
+    - 1
+    - '2017-04-19 07:29:11.792182'
+    - '2017-04-19 07:29:11.792182'
+  - - 194
+    - Hackathons | Hacker League
+    - 
+    - https://www.hackerleague.org/hackathons
+    - 
+    - 1
+    - '2017-04-19 07:29:11.796817'
+    - '2017-04-19 07:29:11.796817'
+  - - 195
+    - Upcoming Hackathons | AngelHack
+    - 
+    - http://angelhack.com/events/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.800889'
+    - '2017-04-19 07:29:11.800889'
+  - - 196
+    - How to add a git remote to a heroku app | The Agile Warrior
+    - 
+    - https://agilewarrior.wordpress.com/2013/08/02/how-to-add-a-git-remote-to-a-heroku-app/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.808397'
+    - '2017-04-19 07:29:11.808397'
+  - - 197
+    - Deploying with Git | Heroku Dev Center
+    - 
+    - https://devcenter.heroku.com/articles/git#tracking-your-app-in-git
+    - 
+    - 1
+    - '2017-04-19 07:29:11.814964'
+    - '2017-04-19 07:29:11.814964'
+  - - 198
+    - Sign In - Pluralsight
+    - 
+    - https://app.pluralsight.com/id/signin/sso?RedirectTo=%2Fcourses%2Fadvanced-javascript&Alias=flatironschool.com
+    - 
+    - 1
+    - '2017-04-19 07:29:11.818622'
+    - '2017-04-19 07:29:11.818622'
+  - - 199
+    - 'postgresql - pgadmin: getting "DETAIL: User does not have CONNECT privilege."
+      error - Stack Overflow'
+    - 
+    - http://stackoverflow.com/questions/39169264/pgadmin-getting-detail-user-does-not-have-connect-privilege-error
+    - 
+    - 1
+    - '2017-04-19 07:29:11.822079'
+    - '2017-04-19 07:29:11.822079'
+  - - 200
+    - spc-v1
+    - 
+    - https://spc-v1.herokuapp.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.825658'
+    - '2017-04-19 07:29:11.825658'
+  - - 201
+    - brew trash
+    - 
+    - http://stackoverflow.com/questions/2642147/how-to-remove-files-and-directories-quickly
+    - 
+    - 1
+    - '2017-04-19 07:29:11.829085'
+    - '2017-04-19 07:29:11.829085'
+  - - 202
+    - HTML element reference - HTML | MDN
+    - 
+    - https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+    - 
+    - 1
+    - '2017-04-19 07:29:11.832562'
+    - '2017-04-19 07:29:11.832562'
+  - - 203
+    - HTML -best-practices
+    - 
+    - https://github.com/hail2u/html-best-practices#add-title-element
+    - 
+    - 1
+    - '2017-04-19 07:29:11.836186'
+    - '2017-04-19 07:29:11.836186'
+  - - 204
+    - HTML cheatsheet
+    - 
+    - http://www.cril.univ-artois.fr/~lecoutre/teaching/web/sheets/HTML.pdf
+    - 
+    - 1
+    - '2017-04-19 07:29:11.839964'
+    - '2017-04-19 07:29:11.839964'
+  - - 205
+    - A remote server automation and deployment tool written in Ruby.
+    - 
+    - http://capistranorb.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.845073'
+    - '2017-04-19 07:29:11.845073'
+  - - 206
+    - Your Guide to Semicolons in JavaScript | Codecademy
+    - 
+    - https://www.codecademy.com/blog/78
+    - 
+    - 1
+    - '2017-04-19 07:29:11.850346'
+    - '2017-04-19 07:29:11.850346'
+  - - 207
+    - JSFiddle
+    - 
+    - https://jsfiddle.net/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.855655'
+    - '2017-04-19 07:29:11.855655'
+  - - 208
+    - Babel · The compiler for writing next generation JavaScript
+    - 
+    - https://babeljs.io/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.859235'
+    - '2017-04-19 07:29:11.859235'
+  - - 209
+    - TypeScript - JavaScript that scales.
+    - 
+    - https://www.typescriptlang.org/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.862609'
+    - '2017-04-19 07:29:11.862609'
+  - - 210
+    - How to Install Node.js and NPM on a Mac
+    - 
+    - http://blog.teamtreehouse.com/install-node-js-npm-mac
+    - 
+    - 1
+    - '2017-04-19 07:29:11.8689'
+    - '2017-04-19 07:29:11.8689'
+  - - 211
+    - 'Sass: Syntactically Awesome Style Sheets'
+    - 
+    - http://sass-lang.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.87267'
+    - '2017-04-19 07:29:11.87267'
+  - - 212
+    - 'Grunt: The JavaScript Task Runner'
+    - 
+    - http://gruntjs.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.876303'
+    - '2017-04-19 07:29:11.876303'
+  - - 213
+    - 'Plugins - Grunt: The JavaScript Task Runner'
+    - 
+    - http://gruntjs.com/plugins
+    - 
+    - 1
+    - '2017-04-19 07:29:11.879996'
+    - '2017-04-19 07:29:11.879996'
+  - - 214
+    - npm
+    - 
+    - https://www.npmjs.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.883856'
+    - '2017-04-19 07:29:11.883856'
+  - - 215
+    - bower
+    - 
+    - https://www.npmjs.com/package/bower
+    - 
+    - 1
+    - '2017-04-19 07:29:11.887465'
+    - '2017-04-19 07:29:11.887465'
+  - - 216
+    - npm Documentation
+    - 
+    - https://docs.npmjs.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.899937'
+    - '2017-04-19 07:29:11.899937'
+  - - 217
+    - JavaScript Glossary | Codecademy
+    - 
+    - https://www.codecademy.com/articles/glossary-javascript#strings
+    - 
+    - 1
+    - '2017-04-19 07:29:11.907902'
+    - '2017-04-19 07:29:11.907902'
+  - - 218
+    - 'ECMAScript 6: New Features: Overview and Comparison'
+    - 
+    - http://es6-features.org/#ExpressionBodies
+    - 
+    - 1
+    - '2017-04-19 07:29:11.912039'
+    - '2017-04-19 07:29:11.912039'
+  - - 219
+    - Eloquent JavaScript
+    - 
+    - http://eloquentjavascript.net/index.html
+    - 
+    - 1
+    - '2017-04-19 07:29:11.915954'
+    - '2017-04-19 07:29:11.915954'
+  - - 220
+    - JavaScript Guide - JavaScript | MDN
+    - 
+    - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+    - 
+    - 1
+    - '2017-04-19 07:29:11.919936'
+    - '2017-04-19 07:29:11.919936'
+  - - 221
+    - Babel · The compiler for writing next generation JavaScript
+    - 
+    - https://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact%2Cstage-2&targets=&browsers=&builtIns=false&code=
+    - 
+    - 1
+    - '2017-04-19 07:29:11.923749'
+    - '2017-04-19 07:29:11.923749'
+  - - 222
+    - Event KeyCodes
+    - 
+    - http://keycode.info/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.927762'
+    - '2017-04-19 07:29:11.927762'
+  - - 223
+    - 'You-Dont-Know-JS: A book series on JavaScript. @YDKJS on twitter.'
+    - 
+    - https://github.com/getify/You-Dont-Know-JS
+    - 
+    - 1
+    - '2017-04-19 07:29:11.9329'
+    - '2017-04-19 07:29:11.9329'
+  - - 224
+    - 'Handlebars.js: Minimal Templating on Steroids'
+    - 
+    - http://handlebarsjs.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.938335'
+    - '2017-04-19 07:29:11.938335'
+  - - 225
+    - JavaScript Prototypes - Sebastian's Blog
+    - 
+    - http://sporto.github.io/blog/2013/02/22/a-plain-english-guide-to-javascript-prototypes/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.942708'
+    - '2017-04-19 07:29:11.942708'
+  - - 226
+    - Flow | A static type checker for JavaScript
+    - 
+    - https://flowtype.org/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.948408'
+    - '2017-04-19 07:29:11.948408'
+  - - 227
+    - JavaScript | MDN
+    - 
+    - https://developer.mozilla.org/en-US/docs/Web/JavaScript
+    - 
+    - 1
+    - '2017-04-19 07:29:11.955269'
+    - '2017-04-19 07:29:11.955269'
+  - - 228
+    - jslint - Google Search
+    - 
+    - https://www.google.com/webhp?sourceid=chrome-instant&rlz=1C5CHFA_enUS700US700&ion=1&espv=2&ie=UTF-8#q=jslint
+    - 
+    - 1
+    - '2017-04-19 07:29:11.961877'
+    - '2017-04-19 07:29:11.961877'
+  - - 229
+    - event listeners
+    - 
+    - https://developer.mozilla.org/en-US/docs/Web/Events
+    - 
+    - 1
+    - '2017-04-19 07:29:11.966882'
+    - '2017-04-19 07:29:11.966882'
+  - - 230
+    - JavaScript Cheat Sheet | Codementor
+    - 
+    - https://www.codementor.io/johnnyb/javascript-cheatsheet-fb54lz08k
+    - 
+    - 1
+    - '2017-04-19 07:29:11.970831'
+    - '2017-04-19 07:29:11.970831'
+  - - 231
+    - JSLint: The JavaScript Code Quality Tool
+    - 
+    - http://www.jslint.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.974506'
+    - '2017-04-19 07:29:11.974506'
+  - - 232
+    - JS Bin - Collaborative JavaScript Debugging
+    - 
+    - https://jsbin.com/gareno/edit?html,js,output
+    - 
+    - 1
+    - '2017-04-19 07:29:11.97813'
+    - '2017-04-19 07:29:11.97813'
+  - - 233
+    - 'Ajax: A New Approach to Web Applications | Adaptive Path'
+    - 
+    - http://adaptivepath.org/ideas/ajax-new-approach-web-applications/
+    - 
+    - 1
+    - '2017-04-19 07:29:11.981755'
+    - '2017-04-19 07:29:11.981755'
+  - - 234
+    - Flatiron School Presents (New York, NY) | Meetup
+    - 
+    - https://www.meetup.com/Flatiron-School-Presents/?scroll=true
+    - 
+    - 1
+    - '2017-04-19 07:29:11.987138'
+    - '2017-04-19 07:29:11.987138'
+  - - 235
+    - A Tour of Rails’ jQuery UJS
+    - 
+    - https://robots.thoughtbot.com/a-tour-of-rails-jquery-ujs
+    - 
+    - 1
+    - '2017-04-19 07:29:11.991599'
+    - '2017-04-19 07:29:11.991599'
+  - - 236
+    - Running a Linux Web Server on an Android device | Codementor
+    - 
+    - https://www.codementor.io/maxpleaner/run-a-linux-web-server-on-android-device-du1083k05
+    - 
+    - 1
+    - '2017-04-19 07:29:11.995859'
+    - '2017-04-19 07:29:11.995859'
+  - - 237
+    - Mac Commands
+    - 
+    - https://github.com/0nn0/terminal-mac-cheatsheet
+    - 
+    - 1
+    - '2017-04-19 07:29:12.001435'
+    - '2017-04-19 07:29:12.001435'
+  - - 238
+    - OS X Command line reference
+    - 
+    - http://ss64.com/osx/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.005273'
+    - '2017-04-19 07:29:12.005273'
+  - - 239
+    - mailgun
+    - 
+    - https://mailgun.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.010236'
+    - '2017-04-19 07:29:12.010236'
+  - - 240
+    - Markdown Cheatsheet · adam-p/markdown-here Wiki
+    - 
+    - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+    - 
+    - 1
+    - '2017-04-19 07:29:12.015226'
+    - '2017-04-19 07:29:12.015226'
+  - - 241
+    - 'vmg/redcarpet: The safe Markdown parser, reloaded.'
+    - 
+    - https://github.com/vmg/redcarpet
+    - 
+    - 1
+    - '2017-04-19 07:29:12.018833'
+    - '2017-04-19 07:29:12.018833'
+  - - 242
+    - Markdown Cheatsheet · adam-p/markdown-here Wiki
+    - 
+    - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links
+    - 
+    - 1
+    - '2017-04-19 07:29:12.022697'
+    - '2017-04-19 07:29:12.022697'
+  - - 243
+    - Minify Resources (HTML, CSS, and JavaScript)  |  PageSpeed Insights  |  Google
+      Developers
+    - 
+    - https://developers.google.com/speed/docs/insights/MinifyResources
+    - 
+    - 1
+    - '2017-04-19 07:29:12.02677'
+    - '2017-04-19 07:29:12.02677'
+  - - 244
+    - Pentaho Mondrian Documentation
+    - 
+    - http://mondrian.pentaho.com/documentation/faq.php
+    - 
+    - 1
+    - '2017-04-19 07:29:12.030634'
+    - '2017-04-19 07:29:12.030634'
+  - - 245
+    - Mondrian | Pentaho Community
+    - 
+    - http://community.pentaho.com/projects/mondrian/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.036463'
+    - '2017-04-19 07:29:12.036463'
+  - - 246
+    - Mondrian OLAP server - Wikipedia
+    - 
+    - https://en.wikipedia.org/wiki/Mondrian_OLAP_server
+    - 
+    - 1
+    - '2017-04-19 07:29:12.040074'
+    - '2017-04-19 07:29:12.040074'
+  - - 247
+    - 'rsim/mondrian_demo: mondrian-olap demo Rails application'
+    - 
+    - https://github.com/rsim/mondrian_demo
+    - 
+    - 1
+    - '2017-04-19 07:29:12.044357'
+    - '2017-04-19 07:29:12.044357'
+  - - 248
+    - 'rsim/mondrian-olap: JRuby gem for performing multidimensional queries of relational
+      database data using Mondrian OLAP Java library'
+    - 
+    - https://github.com/rsim/mondrian-olap
+    - 
+    - 1
+    - '2017-04-19 07:29:12.04979'
+    - '2017-04-19 07:29:12.04979'
+  - - 249
+    - Pentaho Mondrian Documentation
+    - 
+    - http://mondrian.pentaho.com/documentation/schema.php#What_is_a_schema
+    - 
+    - 1
+    - '2017-04-19 07:29:12.053743'
+    - '2017-04-19 07:29:12.053743'
+  - - 250
+    - 9 Ways to Make Your Website Super Fast
+    - 
+    - http://learntocodewith.me/posts/make-your-website-fast/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.057688'
+    - '2017-04-19 07:29:12.057688'
+  - - 251
+    - Testing API with Postman
+    - 
+    - http://www.sm-cloud.com/testing-api-with-postman/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.061422'
+    - '2017-04-19 07:29:12.061422'
+  - - 252
+    - Pry - an IRB alternative and runtime developer console
+    - 
+    - http://pryrepl.org/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.068148'
+    - '2017-04-19 07:29:12.068148'
+  - - 253
+    - 'pry/pry: An IRB alternative and runtime developer console'
+    - 
+    - https://github.com/pry/pry
+    - 
+    - 1
+    - '2017-04-19 07:29:12.072129'
+    - '2017-04-19 07:29:12.072129'
+  - - 254
+    - nixme/pry-debugger - Ruby
+    - 
+    - https://github.com/nixme/pry-debugger
+    - 
+    - 1
+    - '2017-04-19 07:29:12.075949'
+    - '2017-04-19 07:29:12.075949'
+  - - 255
+    - Intro To Rails - Intro To Rails
+    - 
+    - http://docs.railsbridge.org/intro-to-rails/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.079745'
+    - '2017-04-19 07:29:12.079745'
+  - - 256
+    - RailsCasts
+    - 
+    - http://railscasts.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.084691'
+    - '2017-04-19 07:29:12.084691'
+  - - 257
+    - 'RoRails Tutorial '
+    - 
+    - https://www.railstutorial.org/book/frontmatter
+    - 
+    - 1
+    - '2017-04-19 07:29:12.088536'
+    - '2017-04-19 07:29:12.088536'
+  - - 258
+    - RailsGuides
+    - 
+    - http://guides.rubyonrails.org/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.093008'
+    - '2017-04-19 07:29:12.093008'
+  - - 259
+    - Tutorial on setting up GitHub login in a Rails application - YouTube
+    - 
+    - https://www.youtube.com/watch?v=WWcbcNlsK7U
+    - 
+    - 1
+    - '2017-04-19 07:29:12.101553'
+    - '2017-04-19 07:29:12.101553'
+  - - 260
+    - Rails Style Guid
+    - 
+    - https://github.com/bbatsov/rails-style-guide#os-specific-gemfile-locks
+    - 
+    - 1
+    - '2017-04-19 07:29:12.10597'
+    - '2017-04-19 07:29:12.10597'
+  - - 261
+    - Ruby and Rails Reserved Words
+    - 
+    - http://www.rubymagic.org/posts/ruby-and-rails-reserved-words
+    - 
+    - 1
+    - '2017-04-19 07:29:12.110161'
+    - '2017-04-19 07:29:12.110161'
+  - - 262
+    - 17 Best Resources for Rails Developer - PhraseApp Blog
+    - 
+    - https://phraseapp.com/blog/posts/17-best-resources-for-rails-developer/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.11445'
+    - '2017-04-19 07:29:12.11445'
+  - - 263
+    - 'SONIC PI: LIVE & CODING'
+    - 
+    - http://www.sonicpiliveandcoding.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.11865'
+    - '2017-04-19 07:29:12.11865'
+  - - 264
+    - Raspberry Pi Blog - News, Announcements, and Ideas
+    - 
+    - https://www.raspberrypi.org/blog/#amazon-echo-homebrew-version
+    - 
+    - 1
+    - '2017-04-19 07:29:12.122633'
+    - '2017-04-19 07:29:12.122633'
+  - - 265
+    - How to Install Ruby on Rails on Raspberry Pi
+    - 
+    - https://computers.tutsplus.com/tutorials/how-to-install-ruby-on-rails-on-raspberry-pi--cms-21421
+    - 
+    - 1
+    - '2017-04-19 07:29:12.126769'
+    - '2017-04-19 07:29:12.126769'
+  - - 266
+    - Regular-Expressions.pdf
+    - 
+    - https://www.princeton.edu/~mlovett/reference/Regular-Expressions.pdf
+    - 
+    - 1
+    - '2017-04-19 07:29:12.134459'
+    - '2017-04-19 07:29:12.134459'
+  - - 267
+    - 'PowerGREP: Windows grep Software to Search (and Replace) through Files and
+      Folders on Your PC and Network'
+    - 
+    - https://www.powergrep.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.138873'
+    - '2017-04-19 07:29:12.138873'
+  - - 268
+    - EditPad - Text Editor for Windows
+    - 
+    - https://www.editpadpro.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.144707'
+    - '2017-04-19 07:29:12.144707'
+  - - 269
+    - 'RegExr: Learn, Build, & Test RegEx'
+    - 
+    - http://regexr.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.151688'
+    - '2017-04-19 07:29:12.151688'
+  - - 270
+    - Become a regular with regular expressions
+    - 
+    - https://www.tableau.com/about/blog/2015/6/become-regular-regular-expressions-39802
+    - 
+    - 1
+    - '2017-04-19 07:29:12.155847'
+    - '2017-04-19 07:29:12.155847'
+  - - 271
+    - 'REGEX: How to Become a Regular Expression Power User'
+    - 
+    - https://www.memberpress.com/how-to-become-a-regular-expression-power-user/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.159699'
+    - '2017-04-19 07:29:12.159699'
+  - - 272
+    - 'RegexOne - Learn Regular Expressions - Lesson 1: An Introduction, and the ABCs'
+    - 
+    - https://www.regexone.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.163593'
+    - '2017-04-19 07:29:12.163593'
+  - - 273
+    - 'REGEX: Rubular: Ruby regular expression editor and tester'
+    - 
+    - http://rubular.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.167276'
+    - '2017-04-19 07:29:12.167276'
+  - - 274
+    - 'REGEX: RegexOne - Learn Regular Expressions - Lesson 1: An Introduction, and
+      the ABCs'
+    - 
+    - http://regexone.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.171013'
+    - '2017-04-19 07:29:12.171013'
+  - - 275
+    - 'Online regex tester and debugger: JavaScript, Python, PHP, and PCRE'
+    - 
+    - https://regex101.com/r/nW9iC5/3
+    - 
+    - 1
+    - '2017-04-19 07:29:12.174751'
+    - '2017-04-19 07:29:12.174751'
+  - - 276
+    - Ruby-doc.org
+    - 
+    - http://ruby-doc.org/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.180016'
+    - '2017-04-19 07:29:12.180016'
+  - - 277
+    - Ruby Errors
+    - 
+    - http://ruby-doc.org/core-2.2.0/Exception.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.185049'
+    - '2017-04-19 07:29:12.185049'
+  - - 278
+    - Ruby Syntax
+    - 
+    - http://ruby-doc.org/docs/ruby-doc-bundle/Manual/man-1.4/syntax.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.190937'
+    - '2017-04-19 07:29:12.190937'
+  - - 279
+    - RubyMonk - Ruby Primer - String Basics
+    - 
+    - https://rubymonk.com/learning/books/1-ruby-primer/chapters/5-strings/lessons/31-string-basics
+    - 
+    - 1
+    - '2017-04-19 07:29:12.19507'
+    - '2017-04-19 07:29:12.19507'
+  - - 280
+    - Ruby Programming/Syntax/Variables and Constants - Wikibooks, open books for
+      an open world
+    - 
+    - https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Variables_and_Constants
+    - 
+    - 1
+    - '2017-04-19 07:29:12.201725'
+    - '2017-04-19 07:29:12.201725'
+  - - 281
+    - Variables and Assignment - Learn to Program
+    - 
+    - https://pine.fm/LearnToProgram/chap_03.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.205687'
+    - '2017-04-19 07:29:12.205687'
+  - - 282
+    - 'Class: String (Ruby 2.2.0)'
+    - 
+    - http://ruby-doc.org/core-2.2.0/String.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.209576'
+    - '2017-04-19 07:29:12.209576'
+  - - 283
+    - Ruby arrays - Zet Code
+    - 
+    - http://zetcode.com/lang/rubytutorial/arrays/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.213745'
+    - '2017-04-19 07:29:12.213745'
+  - - 284
+    - Ruby Global variables
+    - 
+    - http://www.rubyist.net/~slagell/ruby/globalvars.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.217562'
+    - '2017-04-19 07:29:12.217562'
+  - - 285
+    - 'A Quick (and Hopefully Painless) Ride Through Ruby (with Cartoon Foxes) ::
+      Why''s (Poignant) Guide to Ruby'
+    - 
+    - http://poignant.guide/book/chapter-3.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.222128'
+    - '2017-04-19 07:29:12.222128'
+  - - 286
+    - Loops & Iterators | Codecademy
+    - 
+    - https://www.codecademy.com/en/courses/ruby-beginner-en-XYcN1/2/4?curriculum_id=5059f8619189a5000201fbcb
+    - 
+    - 1
+    - '2017-04-19 07:29:12.227595'
+    - '2017-04-19 07:29:12.227595'
+  - - 287
+    - A Wealth Of Ruby Loops And Iterators
+    - 
+    - http://www.skorks.com/2009/09/a-wealth-of-ruby-loops-and-iterators/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.232598'
+    - '2017-04-19 07:29:12.232598'
+  - - 288
+    - Class and Instance Methods in Ruby // RailsTips by John Nunemaker
+    - 
+    - http://www.railstips.org/blog/archives/2009/05/11/class-and-instance-methods-in-ruby/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.238926'
+    - '2017-04-19 07:29:12.238926'
+  - - 289
+    - Ruby variables
+    - 
+    - http://zetcode.com/lang/rubytutorial/variables/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.243073'
+    - '2017-04-19 07:29:12.243073'
+  - - 290
+    - Learn the Ruby Programming Language
+    - 
+    - http://ruby.about.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.247048'
+    - '2017-04-19 07:29:12.247048'
+  - - 291
+    - Block Parameters and Yielding
+    - 
+    - http://ruby.about.com/od/beginningruby/a/Block-Parameters-And-Yielding.htm
+    - 
+    - 1
+    - '2017-04-19 07:29:12.253499'
+    - '2017-04-19 07:29:12.253499'
+  - - 292
+    - 'A Ruby HOWTO: Writing A Method That Uses Code Blocks | Archives | codablog
+      | Coda Hale'
+    - 
+    - http://blog.codahale.com/2005/11/24/a-ruby-howto-writing-a-method-that-uses-code-blocks/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.257378'
+    - '2017-04-19 07:29:12.257378'
+  - - 293
+    - Recent Tips - Reactive.TIPS - The Official Blog of Reactive.IO
+    - 
+    - http://www.reactive.io/tips/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.261066'
+    - '2017-04-19 07:29:12.261066'
+  - - 294
+    - Understanding Ruby Blocks, Procs and Lambdas - Reactive.TIPS - The Official
+      Blog of Reactive.IO
+    - 
+    - http://www.reactive.io/tips/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.26574'
+    - '2017-04-19 07:29:12.26574'
+  - - 295
+    - Ruby Blocks 101 | All About Ruby
+    - 
+    - https://allaboutruby.wordpress.com/2006/01/20/ruby-blocks-101/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.269713'
+    - '2017-04-19 07:29:12.269713'
+  - - 296
+    - All About Ruby | Ruby newbie view on the web development using Ruby on Rails
+    - 
+    - https://allaboutruby.wordpress.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.274042'
+    - '2017-04-19 07:29:12.274042'
+  - - 297
+    - How to Create and Use Hashes in Ruby
+    - 
+    - http://ruby.about.com/od/rubyfeatures/a/hashes.htm
+    - 
+    - 1
+    - '2017-04-19 07:29:12.27858'
+    - '2017-04-19 07:29:12.27858'
+  - - 298
+    - RubyDoc
+    - 
+    - http://docs.ruby-lang.org/en/2.0.0/index.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.283091'
+    - '2017-04-19 07:29:12.283091'
+  - - 299
+    - Nokogiri
+    - 
+    - http://ruby.bastardsbook.com/chapters/html-parsing/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.290512'
+    - '2017-04-19 07:29:12.290512'
+  - - 300
+    - The Ultimate Introduction to Web Scraping and Browser Automation - YouTube
+    - 
+    - https://www.youtube.com/watch?v=1UYBAn69Qrk&t=314s
+    - 
+    - 1
+    - '2017-04-19 07:29:12.295721'
+    - '2017-04-19 07:29:12.295721'
+  - - 301
+    - Examples | Watir.com
+    - 
+    - https://watir.com/examples/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.299946'
+    - '2017-04-19 07:29:12.299946'
+  - - 302
+    - Ryan McMahon’s Blog Posts about rails
+    - 
+    - http://www.rymcmahon.com/categories/1
+    - 
+    - 1
+    - '2017-04-19 07:29:12.303691'
+    - '2017-04-19 07:29:12.303691'
+  - - 303
+    - Tutorial - Creating a Custom Google In-site Search for Rails - Ruby Forum
+    - 
+    - https://www.ruby-forum.com/topic/201324
+    - 
+    - 1
+    - '2017-04-19 07:29:12.307489'
+    - '2017-04-19 07:29:12.307489'
+  - - 304
+    - 'rtomayko/sinatra-sequel: Sinatra extension that adds Sequel ORM features, database
+      config, and database migrations'
+    - 
+    - https://github.com/rtomayko/sinatra-sequel/tree/master
+    - 
+    - 1
+    - '2017-04-19 07:29:12.311203'
+    - '2017-04-19 07:29:12.311203'
+  - - 305
+    - 'Blake Mizerany: How do I learn and master Sinatra? // RubyLearning Blog'
+    - 
+    - http://rubylearning.com/blog/2009/08/11/blake-mizerany-how-do-i-learn-and-master-sinatra/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.314976'
+    - '2017-04-19 07:29:12.314976'
+  - - 306
+    - 'Sinatra: README'
+    - 
+    - http://www.sinatrarb.com/intro.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.318732'
+    - '2017-04-19 07:29:12.318732'
+  - - 307
+    - 'ERB: An Introduction to ERB Templating | StuartEllis.eu'
+    - 
+    - http://www.stuartellis.eu/articles/erb/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.323471'
+    - '2017-04-19 07:29:12.323471'
+  - - 308
+    - ActiveModel::SecurePassword::ClassMethods
+    - 
+    - http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html#method-i-has_secure_password
+    - 
+    - 1
+    - '2017-04-19 07:29:12.327827'
+    - '2017-04-19 07:29:12.327827'
+  - - 309
+    - BCRYPT
+    - 
+    - https://github.com/codahale/bcrypt-ruby
+    - 
+    - 1
+    - '2017-04-19 07:29:12.334439'
+    - '2017-04-19 07:29:12.334439'
+  - - 310
+    - has_secure_password
+    - 
+    - http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.338359'
+    - '2017-04-19 07:29:12.338359'
+  - - 311
+    - Active Record Associations — Ruby on Rails Guides
+    - 
+    - http://guides.rubyonrails.org/association_basics.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.34226'
+    - '2017-04-19 07:29:12.34226'
+  - - 312
+    - Sinatra Flash
+    - 
+    - http://www.sitepoint.com/sinatra-flash/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.346135'
+    - '2017-04-19 07:29:12.346135'
+  - - 313
+    - Notes on Setting Up PostgreSQL · codeforboston/cambridge_energy_app Wiki
+    - 
+    - https://github.com/codeforboston/cambridge_energy_app/wiki/Notes-on-Setting-Up-PostgreSQL
+    - 
+    - 1
+    - '2017-04-19 07:29:12.352712'
+    - '2017-04-19 07:29:12.352712'
+  - - 314
+    - SQLite Documentation
+    - 
+    - http://www.sqlite.org/docs.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.358484'
+    - '2017-04-19 07:29:12.358484'
+  - - 315
+    - Homebrew — The missing package manager for OS X
+    - 
+    - http://brew.sh/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.362228'
+    - '2017-04-19 07:29:12.362228'
+  - - 316
+    - SQLite tutorial
+    - 
+    - http://zetcode.com/db/sqlite/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.36683'
+    - '2017-04-19 07:29:12.36683'
+  - - 317
+    - Justified Nav Template for Bootstrap
+    - 
+    - file:///Users/BradSmith/Development/dev/smithpiano/index.html#
+    - 
+    - 1
+    - '2017-04-19 07:29:12.371935'
+    - '2017-04-19 07:29:12.371935'
+  - - 318
+    - Datatypes In SQLite Version 3
+    - 
+    - http://www.sqlite.org/datatype3.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.376814'
+    - '2017-04-19 07:29:12.376814'
+  - - 319
+    - SQL Aggregate Functions
+    - 
+    - http://www.sqlclauses.com/sql+aggregate+functions
+    - 
+    - 1
+    - '2017-04-19 07:29:12.382477'
+    - '2017-04-19 07:29:12.382477'
+  - - 320
+    - The SELECT statement in SQLite
+    - 
+    - http://zetcode.com/db/sqlite/select/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.386884'
+    - '2017-04-19 07:29:12.386884'
+  - - 321
+    - In-Memory Databases
+    - 
+    - https://www.sqlite.org/inmemorydb.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.390766'
+    - '2017-04-19 07:29:12.390766'
+  - - 322
+    - 'SQLite Query Language: SELECT'
+    - 
+    - https://www.sqlite.org/lang_select.html#resultset
+    - 
+    - 1
+    - '2017-04-19 07:29:12.394362'
+    - '2017-04-19 07:29:12.394362'
+  - - 323
+    - SQL Joins - visual
+    - 
+    - http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.401416'
+    - '2017-04-19 07:29:12.401416'
+  - - 324
+    - sqlite3 doc on github
+    - 
+    - https://github.com/sparklemotion/sqlite3-ruby
+    - 
+    - 1
+    - '2017-04-19 07:29:12.405624'
+    - '2017-04-19 07:29:12.405624'
+  - - 325
+    - Settings
+    - 
+    - chrome://settings/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.409519'
+    - '2017-04-19 07:29:12.409519'
+  - - 326
+    - 'SQLite Query Language: ALTER TABLE'
+    - 
+    - https://www.sqlite.org/lang_altertable.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.414335'
+    - '2017-04-19 07:29:12.414335'
+  - - 327
+    - Best Practices for Spies, Stubs and Mocks in Sinon.js - Semaphore
+    - 
+    - https://semaphoreci.com/community/tutorials/best-practices-for-spies-stubs-and-mocks-in-sinon-js
+    - 
+    - 1
+    - '2017-04-19 07:29:12.419718'
+    - '2017-04-19 07:29:12.419718'
+  - - 328
+    - RSpec Testing for Beginners, Part 1
+    - 
+    - https://code.tutsplus.com/articles/rspec-testing-for-beginners-part-1--cms-26716
+    - 
+    - 1
+    - '2017-04-19 07:29:12.424765'
+    - '2017-04-19 07:29:12.424765'
+  - - 329
+    - rspec INTRO
+    - 
+    - http://blog.teamtreehouse.com/an-introduction-to-rspec
+    - 
+    - 1
+    - '2017-04-19 07:29:12.428492'
+    - '2017-04-19 07:29:12.428492'
+  - - 330
+    - factory_girl/GETTING_STARTED.md at master · thoughtbot/factory_girl
+    - 
+    - https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md
+    - 
+    - 1
+    - '2017-04-19 07:29:12.434019'
+    - '2017-04-19 07:29:12.434019'
+  - - 331
+    - Better Specs { rspec guidelines with ruby }
+    - 
+    - http://betterspecs.org/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.440501'
+    - '2017-04-19 07:29:12.440501'
+  - - 332
+    - Everyday Rails Testing with… by Aaron Sumner [PDF/iPad/Kindle]
+    - 
+    - https://leanpub.com/everydayrailsrspec
+    - 
+    - 1
+    - '2017-04-19 07:29:12.4443'
+    - '2017-04-19 07:29:12.4443'
+  - - 333
+    - 'Rails 4 Test Prescriptions: Build a Healthy Codebase by Noel Rappin | The Pragmatic
+      Bookshelf'
+    - 
+    - https://pragprog.com/book/nrtest2/rails-4-test-prescriptions
+    - 
+    - 1
+    - '2017-04-19 07:29:12.448397'
+    - '2017-04-19 07:29:12.448397'
+  - - 334
+    - Introduction — Vue.js
+    - 
+    - https://vuejs.org/v2/guide/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.452109'
+    - '2017-04-19 07:29:12.452109'
+  - - 335
+    - 'Website wireframes: Mockingbird'
+    - 
+    - https://gomockingbird.com/home
+    - 
+    - 1
+    - '2017-04-19 07:29:12.455853'
+    - '2017-04-19 07:29:12.455853'
+  - - 336
+    - Balsamiq. Rapid, effective and fun wireframing software. | Balsamiq
+    - 
+    - https://balsamiq.com/index.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.459635'
+    - '2017-04-19 07:29:12.459635'
+  - - 337
+    - Online Mockup, Wireframe & UI Prototyping Tool · Moqups
+    - 
+    - https://moqups.com/#tour
+    - 
+    - 1
+    - '2017-04-19 07:29:12.463426'
+    - '2017-04-19 07:29:12.463426'
+  - - 338
+    - 'cjdsie/pattern-portfolio: Inspired by the recent movement of creating systems,
+      not pages. This is a living library of deliverables that can be stylized to
+      fit your next project. Each pattern is included within the pattern directory
+      and can be optionally included into the final guide.'
+    - 
+    - https://github.com/cjdsie/pattern-portfolio
+    - 
+    - 1
+    - '2017-04-19 07:29:12.468196'
+    - '2017-04-19 07:29:12.468196'
+  - - 339
+    - Wirefy
+    - 
+    - http://getwirefy.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.476464'
+    - '2017-04-19 07:29:12.476464'
+  - - 340
+    - Wirefy | Grid
+    - 
+    - http://getwirefy.com/grid.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.482038'
+    - '2017-04-19 07:29:12.482038'
+  - - 341
+    - Jetstrap - The Easiest Twitter Bootstrap Builder!
+    - 
+    - https://jetstrap.com/demo
+    - 
+    - 1
+    - '2017-04-19 07:29:12.485828'
+    - '2017-04-19 07:29:12.485828'
+  - - 342
+    - LayoutIt! - Interface Builder for Bootstrap
+    - 
+    - http://www.layoutit.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.491111'
+    - '2017-04-19 07:29:12.491111'
+  - - 343
+    - Contact us
+    - 
+    - https://bootstrapstudio.io/contact-us
+    - 
+    - 1
+    - '2017-04-19 07:29:12.496269'
+    - '2017-04-19 07:29:12.496269'
+  - - 344
+    - Bootstrap Studio
+    - 
+    - https://bootstrapstudio.io/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.499967'
+    - '2017-04-19 07:29:12.499967'
+  - - 345
+    - chrome.bookmarks - Google Chrome
+    - 
+    - https://developer.chrome.com/extensions/bookmarks
+    - 
+    - 1
+    - '2017-04-19 07:29:12.50384'
+    - '2017-04-19 07:29:12.50384'
+  - - 346
+    - ''
+    - 
+    - https://docs.google.com/a/smithwebtek.com/document/d/1Pk4_cOmiwR91HpXhNRcuvMfNQEoBgdrJUUu7y8ajCC4/edit?usp=notify&ts=58f004fc
+    - 
+    - 1
+    - '2017-04-19 07:29:12.507911'
+    - '2017-04-19 07:29:12.507911'
+  - - 347
+    - API Endpoints | Socrata
+    - 
+    - https://dev.socrata.com/docs/endpoints.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.511669'
+    - '2017-04-19 07:29:12.511669'
+  - - 348
+    - soda-ruby | Socrata
+    - 
+    - http://socrata.github.io/soda-ruby/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.517537'
+    - '2017-04-19 07:29:12.517537'
+  - - 349
+    - Board of Zoning Appeal Requests | Open Data | City of Cambridge
+    - 
+    - https://data.cambridgema.gov/Inspectional-Services/Board-of-Zoning-Appeal-Requests/urfm-usws
+    - 
+    - 1
+    - '2017-04-19 07:29:12.522061'
+    - '2017-04-19 07:29:12.522061'
+  - - 350
+    - MassTRAC Help Guide
+    - 
+    - file:///Users/BradSmith/Downloads/MassTRAC_User_Guide.pdf
+    - 
+    - 1
+    - '2017-04-19 07:29:12.527519'
+    - '2017-04-19 07:29:12.527519'
+  - - 351
+    - camb-open-data
+    - 
+    - https://data.cambridgema.gov/General-Government/Civic-Innovation-Challenge-Inventory/x96z-hdnh/data
+    - 
+    - 1
+    - '2017-04-19 07:29:12.534418'
+    - '2017-04-19 07:29:12.534418'
+  - - 352
+    - MassTRAC
+    - 
+    - http://masstrac.chs.state.ma.us/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.538686'
+    - '2017-04-19 07:29:12.538686'
+  - - 353
+    - cernanb/sinatra-cool-store-2
+    - 
+    - https://github.com/cernanb/sinatra-cool-store-2
+    - 
+    - 1
+    - '2017-04-19 07:29:12.54269'
+    - '2017-04-19 07:29:12.54269'
+  - - 354
+    - smithWEBtek/sinatra-cool-store-2
+    - 
+    - https://github.com/smithWEBtek/sinatra-cool-store-2
+    - 
+    - 1
+    - '2017-04-19 07:29:12.546749'
+    - '2017-04-19 07:29:12.546749'
+  - - 355
+    - codeforboston-legalhousing-forks
+    - 
+    - http://forked.yannick.io/codeforboston/legalhousing
+    - 
+    - 1
+    - '2017-04-19 07:29:12.551101'
+    - '2017-04-19 07:29:12.551101'
+  - - 356
+    - codeforboston
+    - 
+    - https://codeforboston.hackpad.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.554828'
+    - '2017-04-19 07:29:12.554828'
+  - - 357
+    - Listings.zip - Google Drive
+    - 
+    - https://drive.google.com/file/d/0B-QW_ZC5eZ4-NndFQ1N6eG1UbkU/view
+    - 
+    - 1
+    - '2017-04-19 07:29:12.558624'
+    - '2017-04-19 07:29:12.558624'
+  - - 358
+    - Lukeghenco/rails-ecommerce-api
+    - 
+    - https://github.com/lukeghenco/rails-ecommerce-api
+    - 
+    - 1
+    - '2017-04-19 07:29:12.564152'
+    - '2017-04-19 07:29:12.564152'
+  - - 359
+    - smithWEBtek/rails-ecommerce-api
+    - 
+    - https://github.com/smithWEBtek/rails-ecommerce-api
+    - 
+    - 1
+    - '2017-04-19 07:29:12.569343'
+    - '2017-04-19 07:29:12.569343'
+  - - 360
+    - JPOS Software Company
+    - 
+    - http://www.jpossoftware.com/JPOS/default.aspx
+    - 
+    - 1
+    - '2017-04-19 07:29:12.575298'
+    - '2017-04-19 07:29:12.575298'
+  - - 361
+    - Keystroke POS Software - Ultimate Retail Store Point Of Sale Software
+    - 
+    - http://www.keystrokepos.com/index.shtml
+    - 
+    - 1
+    - '2017-04-19 07:29:12.5794'
+    - '2017-04-19 07:29:12.5794'
+  - - 362
+    - POS Systems Price Quotes From Qualified Sellers
+    - 
+    - http://www.buyerzone.com/retail/pos-systems/rfqz/?marketingId=c25bfaaccf954da4bc14190577ce51f8&form_header=Compare%20Free%20Quotes%20for%20Point%20of%20Sale%20Systems&gclid=CKCpr9WFiMwCFQK2NwodURcGEA&gclsrc=ds
+    - 
+    - 1
+    - '2017-04-19 07:29:12.58592'
+    - '2017-04-19 07:29:12.58592'
+  - - 363
+    - pos system point of sale software inventory control Compatible software systems
+    - 
+    - http://www.css-corp.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.589547'
+    - '2017-04-19 07:29:12.589547'
+  - - 364
+    - JPOS Software
+    - 
+    - http://www.jpossoftware.com/JPOS/Support/datacap.aspx
+    - 
+    - 1
+    - '2017-04-19 07:29:12.60156'
+    - '2017-04-19 07:29:12.60156'
+  - - 365
+    - JPOS Support Drivers
+    - 
+    - http://www.jpossoftware.com/JPOS/Support/emvReady.aspx
+    - 
+    - 1
+    - '2017-04-19 07:29:12.605579'
+    - '2017-04-19 07:29:12.605579'
+  - - 366
+    - swt
+    - 
+    - http://smithwebtek.github.io/swt/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.611423'
+    - '2017-04-19 07:29:12.611423'
+  - - 367
+    - swt-git
+    - 
+    - https://github.com/smithWEBtek
+    - 
+    - 1
+    - '2017-04-19 07:29:12.616666'
+    - '2017-04-19 07:29:12.616666'
+  - - 368
+    - job-crm-v1
+    - 
+    - http://job-crm-v1.herokuapp.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.622667'
+    - '2017-04-19 07:29:12.622667'
+  - - 369
+    - 'smithWEBtek/job-crm-v1: job-search-crm tool, to manage a job search campaign'
+    - 
+    - https://github.com/smithWEBtek/job-crm-v1
+    - 
+    - 1
+    - '2017-04-19 07:29:12.630292'
+    - '2017-04-19 07:29:12.630292'
+  - - 370
+    - FB
+    - 
+    - https://developers.facebook.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.634656'
+    - '2017-04-19 07:29:12.634656'
+  - - 371
+    - Boston Ruby Group
+    - 
+    - http://bostonrb.org/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.640926'
+    - '2017-04-19 07:29:12.640926'
+  - - 372
+    - WAP
+    - 
+    - https://web.whatsapp.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.644712'
+    - '2017-04-19 07:29:12.644712'
+  - - 373
+    - CodeForBoston
+    - 
+    - https://github.com/codeforboston/legalhousing
+    - 
+    - 1
+    - '2017-04-19 07:29:12.648395'
+    - '2017-04-19 07:29:12.648395'
+  - - 374
+    - SP
+    - 
+    - http://smithpiano.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.652115'
+    - '2017-04-19 07:29:12.652115'
+  - - 375
+    - smithpiano.com/2/
+    - 
+    - http://smithpiano.com/2/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.655729'
+    - '2017-04-19 07:29:12.655729'
+  - - 376
+    - AppointmentQuest
+    - 
+    - http://www.appointmentquest.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.659436'
+    - '2017-04-19 07:29:12.659436'
+  - - 377
+    - Lunar
+    - 
+    - https://atlas.lunarpages.com:2083/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.664955'
+    - '2017-04-19 07:29:12.664955'
+  - - 378
+    - Access cPanel
+    - 
+    - https://atlas.lunarpages.com:2083/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.66925'
+    - '2017-04-19 07:29:12.66925'
+  - - 379
+    - Pianoteknd Distributors of Piano Parts, Tools and Supplies
+    - 
+    - http://www.pianoteksupply.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.674752'
+    - '2017-04-19 07:29:12.674752'
+  - - 380
+    - Schaff
+    - 
+    - https://istore.schaffpiano.com/istore/viewinvoicepage.jsp
+    - 
+    - 1
+    - '2017-04-19 07:29:12.681408'
+    - '2017-04-19 07:29:12.681408'
+  - - 381
+    - Welcome to the Genuine Steinway Parts Website
+    - 
+    - https://parts.steinway.com/Account/LogOn?ReturnUrl=%2f
+    - 
+    - 1
+    - '2017-04-19 07:29:12.685413'
+    - '2017-04-19 07:29:12.685413'
+  - - 382
+    - Piano Forte
+    - 
+    - http://www.pianofortesupply.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.689164'
+    - '2017-04-19 07:29:12.689164'
+  - - 383
+    - Vanda King
+    - 
+    - http://www.vandaking.com/gauges.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.692861'
+    - '2017-04-19 07:29:12.692861'
+  - - 384
+    - tool handle - Google Search
+    - 
+    - https://www.google.com/search?q=tool+handle&newwindow=1&safe=off&rlz=1C1CHWA_enUS612US613&espv=2&tbm=isch&imgil=ckQaP8roeUza3M%253A%253BeRT8vefPSUwqKM%253Bhttp%25253A%25252F%25252Fwww.mainewoodconcepts.com%25252Findex.php%25253Fid%2525253D2%25252526sub_id%2525253D1748&source=iu&pf=m&fir=ckQaP8roeUza3M%253A%252CeRT8vefPSUwqKM%252C_&biw=1280&bih=620&usg=__sBLVJG6LfaFCQO5cLc8SF_v3hDk%3D&ved=0CDEQyjdqFQoTCI2KkLOGn8gCFUdWPgodH3MN8w&ei=jfwLVs2PFses-QGf5rWYDw#imgrc=ckQaP8roeUza3M%3A&usg=__sBLVJG6LfaFCQO5cLc8SF_v3hDk%3D
+    - 
+    - 1
+    - '2017-04-19 07:29:12.696526'
+    - '2017-04-19 07:29:12.696526'
+  - - 385
+    - leathercordusa.com Round Leather Cord, 3.0mm, 10 Meter Spool
+    - 
+    - http://www.leathercordusa.com/product/1001-3MM.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.700333'
+    - '2017-04-19 07:29:12.700333'
+  - - 386
+    - Home
+    - 
+    - https://www.midi.org/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.704327'
+    - '2017-04-19 07:29:12.704327'
+  - - 387
+    - ''
+    - 
+    - http://crm.dejaoffice.com/index.php
+    - 
+    - 1
+    - '2017-04-19 07:29:12.70932'
+    - '2017-04-19 07:29:12.70932'
+  - - 388
+    - Scraping PDF Files using Ruby
+    - 
+    - http://www.thewanderingconsultant.com/scraping-pdf-files-using-ruby/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.717714'
+    - '2017-04-19 07:29:12.717714'
+  - - 389
+    - 'yob/pdf-reader: The PDF::Reader library implements a PDF parser conforming
+      as much as possible to the PDF specification from Adobe.'
+    - 
+    - https://github.com/yob/pdf-reader
+    - 
+    - 1
+    - '2017-04-19 07:29:12.72369'
+    - '2017-04-19 07:29:12.72369'
+  - - 390
+    - How to Start a Web Hosting Business - GreenGeeks®
+    - 
+    - https://www.greengeeks.com/how-to-start-a-web-hosting-business
+    - 
+    - 1
+    - '2017-04-19 07:29:12.727638'
+    - '2017-04-19 07:29:12.727638'
+  - - 391
+    - How to Choose A Web Host? 15-Point Hosting Checklist
+    - 
+    - http://www.webhostingsecretrevealed.net/choose-the-right-web-hosting/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.733977'
+    - '2017-04-19 07:29:12.733977'
+  - - 392
+    - DreamHost
+    - 
+    - https://www.dreamhost.com/hosting/vps/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.738261'
+    - '2017-04-19 07:29:12.738261'
+  - - 393
+    - Ruby on Rails applications Hosting
+    - 
+    - https://www.allerin.com/blog/ruby-on-rails-website-hosting
+    - 
+    - 1
+    - '2017-04-19 07:29:12.742151'
+    - '2017-04-19 07:29:12.742151'
+  - - 394
+    - Deploy Your Rails App to AWS
+    - 
+    - https://www.sitepoint.com/deploy-your-rails-app-to-aws/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.745914'
+    - '2017-04-19 07:29:12.745914'
+  - - 395
+    - Glenn Gould 1932 - 1982 Bach Toccatas BWV 910 - 916.wmv - YouTube
+    - 
+    - https://www.youtube.com/watch?v=JNjNuQJG9xY
+    - 
+    - 1
+    - '2017-04-19 07:29:12.749982'
+    - '2017-04-19 07:29:12.749982'
+  - - 396
+    - Richter Bach The Well-Tempered Clavier Book BWV 846 - 893.wmv & bonus - YouTube
+    - 
+    - https://www.youtube.com/watch?v=Ej5rGGTHy54
+    - 
+    - 1
+    - '2017-04-19 07:29:12.753623'
+    - '2017-04-19 07:29:12.753623'
+  - - 397
+    - 'Bill Evans - The Complete Village Vanguard Recordings, 1961: All Of You (Take
+      1) - YouTube'
+    - 
+    - https://www.youtube.com/watch?v=Nh4nXEiHpBw&list=PLhq_uu2458_xwfeisa6KZE7dyAAMdhYmk
+    - 
+    - 1
+    - '2017-04-19 07:29:12.758331'
+    - '2017-04-19 07:29:12.758331'
+  - - 398
+    - 'Glenn Gould - Goldberg Variations (1981) '
+    - 
+    - https://www.youtube.com/watch?v=aEkXet4WX_c
+    - 
+    - 1
+    - '2017-04-19 07:29:12.762794'
+    - '2017-04-19 07:29:12.762794'
+  - - 399
+    - Glenn Gould - 1980 Goldberg Variation
+    - 
+    - https://www.youtube.com/watch?v=CrPrJ0ih8Kc
+    - 
+    - 1
+    - '2017-04-19 07:29:12.76701'
+    - '2017-04-19 07:29:12.76701'
+  - - 400
+    - Glenn Gould  1955 Goldberg Variations
+    - 
+    - https://www.youtube.com/watch?v=Ah392lnFHxM
+    - 
+    - 1
+    - '2017-04-19 07:29:12.772578'
+    - '2017-04-19 07:29:12.772578'
+  - - 401
+    - Listen to WGIR AM 610 Radio Live | Stream Online Free | iHeartRadio
+    - 
+    - http://www.iheart.com/live/wgir-am-610-2752/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.776149'
+    - '2017-04-19 07:29:12.776149'
+  - - 402
+    - 1000 Recordings to Hear Before You Die (Tom Moon's list) | Listology
+    - 
+    - http://www.listology.com/betaylor73/list/1000-recordings-hear-you-die-tom-moons-list
+    - 
+    - 1
+    - '2017-04-19 07:29:12.779784'
+    - '2017-04-19 07:29:12.779784'
+  - - 403
+    - TOUR DATES | Kardia
+    - 
+    - http://kardiaband.com/?page_id=54
+    - 
+    - 1
+    - '2017-04-19 07:29:12.786656'
+    - '2017-04-19 07:29:12.786656'
+  - - 404
+    - SCRIBD
+    - 
+    - https://www.scribd.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.790335'
+    - '2017-04-19 07:29:12.790335'
+  - - 405
+    - Sight Reading
+    - 
+    - http://www.soundswell.co.uk/pages/swsightr.htm
+    - 
+    - 1
+    - '2017-04-19 07:29:12.793874'
+    - '2017-04-19 07:29:12.793874'
+  - - 406
+    - Best iPad apps for piano teachers - timtopham.com
+    - 
+    - https://timtopham.com/blog/best-ipad-apps-for-piano-teachers/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.797382'
+    - '2017-04-19 07:29:12.797382'
+  - - 407
+    - 'How to Sight-Read Music: 5 Steps to Mastering Sight-Reading | jazzadvice.com'
+    - 
+    - http://www.jazzadvice.com/5-steps-to-mastering-sight-reading/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.801122'
+    - '2017-04-19 07:29:12.801122'
+  - - 408
+    - Berklee College of Music External Career
+    - 
+    - https://berklee.silkroad.com/epostings/index.cfm?fuseaction=app.jobinfo&jobid=980&source=ONLINE&JobOwner=992479&company_id=16215&version=1&byBusinessUnit=NULL&bycountry=1&bystate=1&byRegion=US_MA&bylocation=US&keywords=&byCat=&proximityCountry=&postalCode=&radiusDistance=&isKilometers=&tosearch=yes&city=
+    - 
+    - 1
+    - '2017-04-19 07:29:12.805606'
+    - '2017-04-19 07:29:12.805606'
+  - - 409
+    - 510 - Light Weight Composite Panels - 510 - Laminate Panels - TCH
+    - 
+    - http://www.tchweb.com/tchstore/category/composite-laminate/s0/510---Light-Weight-Composite-Panels.html
+    - 
+    - 1
+    - '2017-04-19 07:29:12.811612'
+    - '2017-04-19 07:29:12.811612'
+  - - 410
+    - Shipping & Carrying Case Hardware Parts
+    - 
+    - http://www.starcase.com/casehardwareparts.htm
+    - 
+    - 1
+    - '2017-04-19 07:29:12.817075'
+    - '2017-04-19 07:29:12.817075'
+  - - 411
+    - D5C_4571 | So my KeyB Duo Mark III never came after waiting … | Flickr
+    - 
+    - https://www.flickr.com/photos/jrsone/8048855779/in/album-72157628753374687/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.820901'
+    - '2017-04-19 07:29:12.820901'
+  - - 412
+    - Making old organs more portable with MIDI | Hackaday
+    - 
+    - http://hackaday.com/2012/04/24/making-old-organs-more-portable-with-midi/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.827531'
+    - '2017-04-19 07:29:12.827531'
+  - - 413
+    - Raspberry Pi • View topic - Pipedal
+    - 
+    - https://www.raspberrypi.org/forums/viewtopic.php?f=41&t=136985
+    - 
+    - 1
+    - '2017-04-19 07:29:12.832038'
+    - '2017-04-19 07:29:12.832038'
+  - - 414
+    - Miro Video Converter FREE - Convert any video to MP4, WebM (vp8), iPhone, Android,
+      iPod, iPad, and more.
+    - 
+    - http://www.mirovideoconverter.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.835989'
+    - '2017-04-19 07:29:12.835989'
+  - - 415
+    - TOS
+    - 
+    - https://online.investools.com/authentication/auth.iedu?logout=true&redirect=http%3A%2F%2Fonline.investools.com%2Flanding.iedu
+    - 
+    - 1
+    - '2017-04-19 07:29:12.839644'
+    - '2017-04-19 07:29:12.839644'
+  - - 416
+    - TD Ameritrade Login
+    - 
+    - https://invest.ameritrade.com/grid/p/login?dboxId=grdLogout&logout=L
+    - 
+    - 1
+    - '2017-04-19 07:29:12.84318'
+    - '2017-04-19 07:29:12.84318'
+  - - 417
+    - DLINK
+    - 
+    - http://192.168.0.1/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.846799'
+    - '2017-04-19 07:29:12.846799'
+  - - 418
+    - How important it is the way we live. (Insight on Alzheimer's) - YouTube
+    - 
+    - https://www.youtube.com/watch?v=EeOHPZV4ZKI
+    - 
+    - 1
+    - '2017-04-19 07:29:12.85015'
+    - '2017-04-19 07:29:12.85015'
+  - - 419
+    - Stop Being Dead Serious About Life - YouTube
+    - 
+    - https://www.youtube.com/watch?v=cfsuose6EaM
+    - 
+    - 1
+    - '2017-04-19 07:29:12.854364'
+    - '2017-04-19 07:29:12.854364'
+  - - 420
+    - '"How do I Conquer Anger and Negative Emotions?" - Sadhguru - YouTube'
+    - 
+    - https://www.youtube.com/watch?v=-gL8c_yIofg&feature=youtu.be
+    - 
+    - 1
+    - '2017-04-19 07:29:12.85848'
+    - '2017-04-19 07:29:12.85848'
+  - - 421
+    - How to Avoid Anger? Sadhguru - YouTube
+    - 
+    - https://www.youtube.com/watch?v=QAsJvKsd2Xk&feature=youtu.be
+    - 
+    - 1
+    - '2017-04-19 07:29:12.862533'
+    - '2017-04-19 07:29:12.862533'
+  - - 422
+    - Lucid Dreaming Sleep Track (8 Hour Sleep Cycle Track) with Binaural beats and
+      Isochronic Tones - YouTube
+    - 
+    - https://www.youtube.com/watch?v=mDX8QrcDI_o
+    - 
+    - 1
+    - '2017-04-19 07:29:12.867569'
+    - '2017-04-19 07:29:12.867569'
+  - - 423
+    - LUCID DREAMING - "Brainwave Entrainment Music - YouTube
+    - 
+    - https://www.youtube.com/watch?v=HpQ-chUrlYc&feature=iv&src_vid=mDX8QrcDI_o&annotation_id=annotation_2412959435
+    - 
+    - 1
+    - '2017-04-19 07:29:12.871181'
+    - '2017-04-19 07:29:12.871181'
+  - - 424
+    - Animal minds | The Economist
+    - 
+    - http://www.economist.com/news/essays/21676961-inner-lives-animals-are-hard-study-there-evidence-they-may-be-lot-richer-science-once-thought
+    - 
+    - 1
+    - '2017-04-19 07:29:12.876697'
+    - '2017-04-19 07:29:12.876697'
+  - - 425
+    - CuriosityStream
+    - 
+    - https://app.curiositystream.com/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.881457'
+    - '2017-04-19 07:29:12.881457'
+  - - 426
+    - Four Ways of Letting Go | by Ajahn Brahm - YouTube
+    - 
+    - https://www.youtube.com/watch?v=USC5MJVZLy8&feature=youtu.be
+    - 
+    - 1
+    - '2017-04-19 07:29:12.885041'
+    - '2017-04-19 07:29:12.885041'
+  - - 427
+    - B
+    - 
+    - chrome://bookmarks/
+    - 
+    - 1
+    - '2017-04-19 07:29:12.888441'
+    - '2017-04-19 07:29:12.888441'
+  - - 428
+    - ''
+    - 
+    - http://twitter.com/smithwebtek
+    - 
+    - 1
+    - '2017-04-19 07:29:12.891964'
+    - '2017-04-19 07:29:12.891964'
+  - - 429
+    - ''
+    - 
+    - http://linkedin.com/in/smithwebtek
+    - 
+    - 1
+    - '2017-04-19 07:29:12.895543'
+    - '2017-04-19 07:29:12.895543'
+  - - 430
+    - ''
+    - 
+    - http://github.com/smithwebtek
+    - 
+    - 1
+    - '2017-04-19 07:29:12.899951'
+    - '2017-04-19 07:29:12.899951'
 
 ---
 users:
   columns:
   - id
-  - fname
-  - lname
-  - email
   - username
+  - email
   - password
-  - phone
-  - website
-  - address
-  - city
-  - state
-  - zip
   - created_at
   - updated_at
   records: 
   - - 1
-    - joe
-    - doe
-    - jodo@abc.com
-    - jodo
+    - ned
+    - ned@abc.com
     - pointer
-    - 354-424-2533
-    - jodo.co
-    - 1 main
-    - bedford
-    - nh
-    - '3111'
-    - '2017-04-18 19:39:40.817899'
-    - '2017-04-18 19:39:40.817899'
+    - '2017-04-19 04:01:26.084363'
+    - '2017-04-19 04:01:26.084363'
+  - - 2
+    - max
+    - max@abc.com
+    - pointer
+    - '2017-04-19 04:01:26.08709'
+    - '2017-04-19 04:01:26.08709'
+  - - 3
+    - skai
+    - skai@abc.com
+    - pointer
+    - '2017-04-19 04:01:26.088706'
+    - '2017-04-19 04:01:26.088706'
+  - - 4
+    - kaleo
+    - kaleo@abc.com
+    - pointer
+    - '2017-04-19 04:01:26.09013'
+    - '2017-04-19 04:01:26.09013'
+  - - 5
+    - megan
+    - megan@abc.com
+    - pointer
+    - '2017-04-19 04:01:26.09185'
+    - '2017-04-19 04:01:26.09185'
+  - - 6
+    - tenzing
+    - tenzing@abc.com
+    - pointer
+    - '2017-04-19 04:01:26.093389'
+    - '2017-04-19 04:01:26.093389'
+  - - 7
+    - davis
+    - davis@abc.com
+    - pointer
+    - '2017-04-19 04:01:26.094764'
+    - '2017-04-19 04:01:26.094764'
+  - - 8
+    - cole
+    - cole@abc.com
+    - pointer
+    - '2017-04-19 04:01:26.096996'
+    - '2017-04-19 04:01:26.096996'
+  - - 9
+    - ted
+    - ted@abc.com
+    - pointer
+    - '2017-04-19 04:01:26.098655'
+    - '2017-04-19 04:01:26.098655'
+  - - 10
+    - fred
+    - fred@abc.com
+    - pointer
+    - '2017-04-19 04:01:26.100101'
+    - '2017-04-19 04:01:26.100101'
