@@ -1,3 +1,22 @@
+DATA_groups ={
+ :group_keys =>
+    ["name"],
+  :groups => [
+    ["front-end"],["rails"],["javascript"],["tools"],["reading"],["mentors"],["video"],["track"], 
+  ]
+}
+
+def make_groups
+  DATA_groups[:groups].each do |group|
+    new_group = Group.new
+    group.each_with_index do |attribute, i|
+      new_group.send(DATA_groups[:group_keys][i]+"=", attribute)
+    end
+    new_group.save
+  end
+end
+
+
 DATA_topics ={
  :topic_keys =>
     ["name"],
@@ -15,6 +34,61 @@ def make_topics
     new_topic.save
   end
 end
+
+DATA_refs ={
+ :ref_keys =>
+    ["name", "format", "url", "content"],
+  :refs => [
+    ["diet-tracker-video", "video", "https://youtu.be/nGTIAKQ_uJk"],
+    ["piano-search-video", "video", "https://www.youtube.com/embed/A_jb0Iv6pEE"],
+    ["piano-student-cms-video", "video", "https://youtu.be/PjIlwuJX1Bw"],
+    ["An Updated Summary of The 12 Celestine Insights.docx", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["Badass - Making Users Awesome.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["Begining Database Design.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["Beginning T-SQL 2008 R2.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["Beginning T-SQL 2012 brad.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["Beginning T-SQL 2012.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["bootstrapant1.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["c programming.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["Ecma-262.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["Eloquent Ruby.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["Eloquent_JavaScript.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["Git.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["growing-rails.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["Introduction.to.Algorithms.3rd.Edition.Sep.2010.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["James Redfield - The Celestine Prophecy.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["koans", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["Learn To Program - Chris Pine.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["Mastery-George-Leonard.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["MindForNumbers-summary.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["MindForNumbers.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["Mindset-The New Psychology of Success.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["POODR.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["ProgrammingRuby-4thEd Pragmatic Programmers Guide.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["ProgramStudyGuide.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["Refactoring_Ruby Edition.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["Refactoring.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["ruby_programming_language.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["ruby-NXPowerLite.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["ruby-pocket-ref.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["Speaking JS.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["sql_server_2012.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["TechInterview.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["The Speed of Dark.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"],
+    ["Well_Grounded_Rubyist.pdf", "book", "/Users/BradSmith/Dropbox/_refs", "book-content"]
+  ]
+}
+
+def make_refs
+  DATA_refs[:refs].each do |ref|
+    new_ref = Ref.new
+    ref.each_with_index do |attribute, i|
+      new_ref.send(DATA_refs[:ref_keys][i]+"=", attribute)
+    end
+    new_ref.save
+  end
+end
+
 
 DATA_users ={
  :user_keys =>
@@ -97,7 +171,6 @@ DATA_projects ={
     ["4", "goal-mgr", "professional person", 
       "spinning wheels, not focused", "everything in its place, and a time for every important thing"]
   ]
-
 }
 
 def make_projects
@@ -111,6 +184,9 @@ def make_projects
 end
 
 def main
+  make_groups
+  make_topics
+  make_refs
   make_users
   make_posts
   make_projects

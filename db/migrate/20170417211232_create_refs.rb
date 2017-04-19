@@ -5,7 +5,6 @@ class CreateRefs < ActiveRecord::Migration[5.0]
       t.string :format
       t.string :url
       t.text :content
-      t.integer :topic_id, default: 1
 
       t.timestamps
     end
