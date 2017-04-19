@@ -1,10 +1,10 @@
 <div class="wrapper wrapper_padding clearfix">
 <div class="sidebar col-4"><%= render partial: 'projects/projects_index_sidebar', locals: { projects: @projects } %></div>
-  <div class="col-3">
+  <div class="col-2">
       <% @projects.each do |project| %>
         id: <%= project.id %><br>
         name:<%= link_to project.name, project_path(project) %><br>
-        user: <%= link_to "user", project.user.username %><br>
+        user: <%= link_to "user", user_path(project.user) %><br>
        
       <% end %>
     </p>

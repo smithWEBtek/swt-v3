@@ -24,8 +24,31 @@ class Scrape < ApplicationRecord
 
     refs = @parse.css('a').each do |item|
             ref = {
+
+
+      #   "Language Agnostic" = @parse.css('h3')[4].text
+      # <h3>  'group'
+      #   <ol>
+      #     <li>'book'
+      #       <a href="url to the book">
+      #     <li>'book'
+      #       <a href="url to the book">
+      #     <li>'book'
+      #       <a href="url to the book">
+      #     <li>'book'
+      #       <a href="url to the book">
+      #     <li>'book'
+      #       <a href="url to the book">
+      #     <li>'book'
+      #       <a href="url to the book">
+      #     <li>'book'
+      #       <a href="url to the book">
+      #   </ol>
+      # <h3>  'group'
+
         name: item.text, 
         url: item.values.first
+        author: @parse.css('ul li a')[188].text
         }
         @bookmarks.push(ref)
       end

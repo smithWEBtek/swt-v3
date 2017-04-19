@@ -1,13 +1,7 @@
   <div class="wrapper wrapper_padding clearfix">
     <div class="col-4">
       <h2>User info</h2>
-        
-        <p>
-        first_name: <%= @user.fname %>
-        </p>
-        <p>
-        last_name: <%= @user.lname %>
-        </p>
+    
         <p>
         username: <%= @user.username %>
         </p>
@@ -17,34 +11,18 @@
         <p>
         email: <%= @user.email %>
         </p>
-        <p>
-        phone: <%= @user.phone %>
-        </p>
     </div>
-    <div class="col-4">
-      <h2>Address info</h2>
-        <p>
-        website: <%= @user.website %>
-        </p>
-        <p>
-        address: <%= @user.address %>
-        </p>
-        <p>
-        city: <%= @user.city %>
-        </p>
-        <p>
-        state: <%= @user.state %>
-        </p>
-        <p>
-        zip: <%= @user.zip %>
-        </p>
- 
-    </div>
-    <div class="col-4"> 
-      <h2>Current Project Ideas</h2>
+    <div class="col-2"> 
+      <h4>Current Projects</h4>
+      <% if @user.projects.present? %>
         <% @user.projects.each do |project| %>
-          <%= link_to project.title, project_path(project) %>
+          <%= link_to project.name, project_path(project) %>
         <% end %>
+        <% else %>
+            <p>no current projects for this user</p>
+        <% end %>
+        <hr>
+        <hr>
         <hr>
       <%= link_to "submit new project", new_project_path %>
 

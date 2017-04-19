@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: smithwebtek
+  api_key: '777466575657829'
+  api_secret: g7KcOFtLuC_0ZK5HMKNl3c48AJI
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: smithwebtek
+  api_key: '777466575657829'
+  api_secret: g7KcOFtLuC_0ZK5HMKNl3c48AJI
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: smithwebtek
+  api_key: '777466575657829'
+  api_secret: g7KcOFtLuC_0ZK5HMKNl3c48AJI
+  enhance_image_tag: true
+  static_image_support: false

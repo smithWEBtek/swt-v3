@@ -8,7 +8,7 @@ end
 gem 'yaml_db'
 gem 'rails-erd'
 gem 'pdf-reader'
-
+gem 'cloudinary'
 gem 'watir'
 gem 'nokogiri', '>=1.5.9'
 gem 'httparty'
