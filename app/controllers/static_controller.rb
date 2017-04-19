@@ -1,5 +1,9 @@
 class StaticController < ApplicationController
 
+  def about
+    render :about
+  end
+
   def bookmarks
     Scrape.bookmarks
    render :bookmarks
@@ -14,9 +18,6 @@ class StaticController < ApplicationController
     render :home
   end
 
-  def about
-    render :about
-  end
 
   def contact
     render :contact

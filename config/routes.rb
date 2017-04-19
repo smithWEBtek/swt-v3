@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
+  root 'static#about'
   get '/bookmarks', to: 'static#bookmarks'  
   get '/free_books', to: 'static#free_books'  
  
-  root 'static#about'
   get '/bookmarks', to: 'static#bookmarks'
   get '/about', to: 'static#about'
   get '/blog', to: 'posts#index'
