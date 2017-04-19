@@ -62,9 +62,8 @@ ActiveRecord::Schema.define(version: 20170419071342) do
     t.string   "format"
     t.string   "url"
     t.text     "content"
-    t.integer  "topic_id",   default: 1
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "scrapes", force: :cascade do |t|
