@@ -28,10 +28,13 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    if @post.save
-      redirect_to posts_path, message: "Post created."
-    else
-      render :new, message: "Post NOT created, please try again."
+    if params.ref_ids
+      params.ref_ids.each {|ref_id| PostRef.create(post_id: @post.id, ref_id: ref_id)}
+      if @post.save
+        redirect_to posts_path, message: "Post created."
+      else
+        render :new, message: "Post NOT created, please try again."
+      end
     end
   end
 
@@ -46,8 +49,6 @@ class PostsController < ApplicationController
     end
 
     def post_params
-
-
-      params.require(:post).permit(:date, :title, :repo, :summary, :md_file)
+      params.require(:post).permit(:date, :title, :repo, :video_url, :summary, :md_file)
     end
 end

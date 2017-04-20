@@ -85,8 +85,25 @@ li,
   font-color: #light;
 }
 
+.ref-text {
+  line-height: 1rem;
+  margin: 0 0 .9em 0;
+  font-size: .77em;
+  font-color: #light;
+}
+
 hr {
   width: 108%;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid;
+  color: $highlight;
+  margin: 0 0 .5rem 0;
+}
+
+hr-ref {
+  width: 6em;
   display: block;
   height: 1px;
   border: 0;

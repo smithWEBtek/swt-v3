@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20170419071342) do
     t.date     "date"
     t.string   "title"
     t.string   "repo",       default: "please add repo url"
+    t.string   "video_url"
     t.text     "summary",    default: "summary is blank"
     t.text     "md_file",    default: "blank.md"
     t.datetime "created_at",                                 null: false

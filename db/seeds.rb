@@ -39,9 +39,21 @@ DATA_refs ={
  :ref_keys =>
     ["name", "format", "url", "content"],
   :refs => [
-    ["diet-tracker-video", "video", "https://youtu.be/nGTIAKQ_uJk"],
-    ["piano-search-video", "video", "https://www.youtube.com/embed/A_jb0Iv6pEE"],
-    ["piano-student-cms-video", "video", "https://youtu.be/PjIlwuJX1Bw"],
+    ["video1", "video", "#", "contents of video1" ],
+    ["video2", "video", "#", "contents of video2" ],
+    ["video3", "video", "#", "contents of video3" ],
+    ["video4", "video", "#", "contents of video4" ],
+    ["video5", "video", "#", "contents of video5" ],
+    ["video6", "video", "#", "contents of video6" ],
+
+    ["DerekBanas", "mentor", "#", "fast, succinct dev of all" ],
+    ["MacKenzieChild", "mentor", "#", "med pace webdev and design" ],
+    ["Uncle Bob", "mentor", "#", "computer science, programming, philosophy" ],
+    ["Build Blog", "mentor", "#", "contents of video6"],
+    ["Traversy Media", "mentor", "https://www.youtube.com/user/TechGuyWeb", "web dev:HTML/CSS, JavaScript, PHP, RoR"],
+    ["CodeAcademy", "mentor", "https://www.youtube.com/user/TechGuyWeb", "online school" ],
+    ["TUTS+", "mentor", "#", "contents of video6" ],
+
     ["An Updated Summary of The 12 Celestine Insights.docx", "book", "#", "book-content"],
     ["Badass - Making Users Awesome.pdf", "book", "#", "book-content"],
     ["Begining Database Design.pdf", "book", "#", "book-content"],
@@ -116,32 +128,43 @@ def make_users
     new_user.save
   end
 end
-
+ 
 DATA_posts ={
  :post_keys =>
-    ["date", "title", "repo", "summary", "md_file"],
+    ["date", "title", "repo", "video_url", "summary", "md_file"],
   :posts => [
     [ 
       "2017-04-12", 
       "Piano Search CLI", 
       "https://github.com/smithWEBtek/piano_search",
+      "https://www.youtube.com/embed/A_jb0Iv6pEE",
       "find a good piano", 
-      "blog.md"
+      "piano-search.md"
       ], 
     [ 
       "2016-03-12", 
-      "Music Student Sinatra App", 
+      "Music Student CMS", 
       "https://github.com/smithWEBtek/piano-teach2",
+      "https://www.youtube.com/embed/-gYpibTzQH8",
       "learn your tunes, practice every day", 
       "music-student.md"
       ], 
     [ 
+      "2016-01-12", 
+      "Why Learn To Code?", 
+      "http://www.smithWEBtek/blog",
+      "https://www.youtube.com/smithWEBtek",
+      "limitations of physical work vs unlimited opportunities with coding", 
+      "career-change.md"
+      ], 
+    [ 
       "2017-04-12", 
-      "Diet Planner", 
+      "Diet Planner",
       "https://github.com/smithWEBtek/diet-planner-v6",
+      "https://www.youtube.com/embed/nGTIAKQ_uJk",
       "eat growing things more than moving things", 
-      "blog.md"
-      ]
+      "diet-tracker.md"
+    ]
   ]
 }
 
@@ -154,7 +177,7 @@ def make_posts
     new_post.save
   end
 end
-  
+
 DATA_projects ={
  :project_keys =>
     ["user_id", "name", "business_model", "data_sources", "problem", "wishlist"],

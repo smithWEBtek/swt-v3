@@ -1,22 +1,6 @@
-<nav>
-  <%= link_to 'index', posts_path %> | 
-  <%= link_to 'edit', edit_post_path(@post) %> | 
-  <%= link_to 'delete', post_path(@post), method: 'destroy' %><br>
+<h3>Posts Index</h3>
 <hr>
-date: <%= @post.date %><br>
-<%= @post.title %><br>
-<%= link_to "GitHub repo", @post.repo %><br>
-summary: <%= @post.summary %><br>
-refs:<br>
-  <% @post.refs.each do |ref| %>
-    <% if ref.format != "video" %>
-    <%= ref.format %>: <%= link_to ref.name, ref_path %><br>
-    <% end %>
-  <% end %>
-<hr>
-<% post.refs.each do |ref| %> 
-  <% if ref.format == "video" %>
-    <iframe width="190" height="155" src="<%= ref.url %>" frameborder="0" allowfullscreen></iframe><br>
-    <% end %>
+  <% posts.each do |post| %> 
+    <%= link_to post.title, post_path(post) %><br>
   <% end %>
 </nav>

@@ -1,15 +1,61 @@
 <div class="wrapper wrapper_padding clearfix">
-<div class="sidebar col-4"><%= render partial: 'refs/refs_sidebar', locals: { refs: @refs }%></div>
-  <div class="col-2">
-    <h4>Refs</h4>
+  <div class="col-ref">
+    <h4><%= link_to "New Ref", new_ref_path %></h4>
     <hr>
-      <p>
-     <% @refs.each do |ref| %>
-      <strong>name:</strong> <%= link_to ref.name, ref_path(ref) %><br>
-      <strong>url:</strong> <%= link_to ref.name, ref.url %><br>
-      <strong>format:</strong> <%= ref.format %><br><br>
-     <% end %>
-    </p>
+    <%= link_to "Groups", groups_path %>
+    <hr>
+     <%= link_to "Topics", topics_path %>
+    <hr>
+     <%= link_to "Refs", refs_path %>
+    <hr>
+   </div>
+ 
+  <div class="ref-text col-ref">
+    <h4>books</h4>
+    <hr>
+    <% @books.each do |book|%>
+      <%= link_to book.name, book.url %><br>
+    <% end %>
+  </div>
+
+  <div class="ref-text col-ref">
+    <h4>bookmarks</h4>
+    <hr>
+    <% @bookmarks.each do |bookmark|%>
+      <%= link_to bookmark.name, bookmark.url %><br>
+    <% end %>
+  </div>
+
+  <div class="ref-text col-ref">
+    <h4>mentors:</h4>
+    <hr>
+    <% @mentors.each do |mentor|%>
+      <%= link_to mentor.name, mentor.url %><br>
+    <% end %>
+  </div>
+
+  <div class="ref-text col-ref">
+    <h4>videos</h4>
+    <hr>
+    <% @videos.each do |video|%>
+      <%= link_to video.name, video.url %><br>
+    <% end %>
+  </div>
+
+  <div class="ref-text col-ref">
+    <h4>docs</h4>
+    <hr>
+    <% @docs.each do |doc|%>
+      <%= link_to doc.name, doc.url %><br>
+    <% end %>
+  </div>
+
+  <div class="ref-text col-ref">
+    <h4>Pdfs</h4>
+    <hr>
+    <% @pdfs.each do |pdf|%>`
+      <%= link_to pdf.name, pdf.url %><br>
+    <% end %>
   </div>
 </div>
-
+<div class="col-1" style="clear: both"></div>

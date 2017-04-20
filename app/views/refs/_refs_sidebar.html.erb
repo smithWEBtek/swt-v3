@@ -2,28 +2,33 @@
 <%= link_to "Topics", topics_path %> |
 <%= link_to "New Ref", new_ref_path %> 
 <hr>
-<%#= link_to "Books", books_path %><br>
-<%#= link_to "Mentors", mentors_path %><br>
-<%#= link_to "Tracks", tracks_path %><br>
-<% @refs.each do |ref| %>
-Videos:<br>
-  <% if ref.format == "video" %>
-    <%= link_to ref.name, ref_path(ref) %><br>
-  <hr>
-  Books:<br>
-    <% if ref.format == "video" %>
-      <%= link_to ref.name, ref_path(ref) %><br>
-    <hr>
-      Mentors:<br>
-      <% if ref.format == "video" %>
-        <%= link_to ref.name, ref_path(ref) %><br>
-      <hr>
-        Links:<br>
-        <% if ref.format == "video" %>
-          <%= link_to ref.name, ref_path(ref) %><br>
-        <hr>
-        <% end %>
-      <% end %>
-    <% end %>
-  <% end %>
+<h3><h3>mentors:</h3>
+<% mentors.each do |mentor|%>
+  <%= link_to mentor.name, mentor.url %><br>
 <% end %>
+<hr>
+<h3>videos</h3>
+<% videos.each do |video|%>
+  <%= link_to video.name, video.url %><br>
+<% end %>
+<hr>
+<h3>books</h3>
+<% books.each do |book|%>
+  <%= link_to book.name, book.url %><br>
+<% end %>
+<hr>
+<h3>bookmarks</h3>
+<% bookmarks.each do |bookmark|%>
+  <%= link_to bookmark.name, bookmark.url %><br>
+<% end %>
+<hr>
+<h3>docs</h3>
+<% docs.each do |doc|%>
+  <%= link_to doc.name, doc.url %><br>
+<% end %>
+<hr>
+<h3>Pdfs</h3>
+<% pdfs.each do |pdf|%>`
+  <%= link_to pdf.name, pdf.url %><br>
+<% end %></h3>
+<h3>

@@ -3,6 +3,12 @@ class RefsController < ApplicationController
 
   def index
     @refs = Ref.all 
+    @mentors = Ref.all.where(format: "mentor")
+    @videos = Ref.all.where(format: "video")
+    @books = Ref.all.where(format: "book")
+    @bookmarks = Ref.all.where(format: "bookmark")
+    @docs = Ref.all.where(format: "doc")
+    @pdfs = Ref.all.where(format: "pdf")
   end
 
   def show
