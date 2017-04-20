@@ -153,7 +153,7 @@ DATA_posts ={
       "2016-01-12", 
       "Why Learn To Code?", 
       "http://www.smithWEBtek/blog",
-      "https://www.youtube.com/smithWEBtek",
+      "https://www.youtube.com/embed/CVX7-eZReqs",
       "limitations of physical work vs unlimited opportunities with coding", 
       "career-change.md"
       ], 
