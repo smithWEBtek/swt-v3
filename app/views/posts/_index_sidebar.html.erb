@@ -1,6 +1,6 @@
 <nav>
-  <%= link_to 'index', posts_path %> |
-  <%= link_to 'new', new_post_path %><br>
+  <%= link_to 'index', posts_path %> <!-- | -->
+  <%#= link_to 'new', new_post_path %><!-- <br> -->
   <hr>
   <% posts.each do |post| %> 
   <%= link_to post.title, post_path(post) if !post.title.empty?%><br>

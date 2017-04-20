@@ -4,11 +4,6 @@
     <%= render partial: 'posts/show_sidebar', locals: { posts: @posts } %>
   </div>
   <div class="col-3">
-  
-  <%= link_to 'index', posts_path %> | 
-  <%= link_to 'new', new_post_path %> | 
-  <%= link_to 'edit', edit_post_path(@post) %> | 
-  <%= link_to 'delete', post_path(@post), method: 'destroy' %><br>
   <hr>
   date: <%= @post.date %><br>
   title: <%= @post.title %><br>
