@@ -5,12 +5,16 @@
       <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
       <script src="https://use.fontawesome.com/b7b038f8df.js"></script>
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag    'custom' %>
+
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
       <%= csrf_meta_tags %>
   </head>
   <body>
       <%= render partial: 'layouts/main_nav' %>
-  <div id="flash-messages" class="flash-style">
+  <div id="flash-messages" class="flash_style">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <% flash.each do |key, value| %>
       <%= content_tag(:div, value, :class => "flash #{key}") %>
     <% end %>

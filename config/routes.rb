@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'static#about'
   get '/bookmarks', to: 'static#bookmarks'  
   get '/free_books', to: 'static#free_books'  

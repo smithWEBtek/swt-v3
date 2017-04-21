@@ -1,0 +1,40 @@
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+.index_view {
+  font-weight: bold;
+  background: LightGray;
+}
+
+.nav_bar {
+  font-weight: bold;
+  background: LightBlue;
+  &:hover {
+    background: DarkCyan;
+  }
+}
+
+.registration_bar {
+  font-weight: bold;
+  background: LightBlue;
+  &:hover {
+    background: DarkCyan;
+  }
+}
+
+.admin {
+  font-weight: bold;
+  background: LightPink;
+  &:hover {
+    background: DarkCyan;
+  }
+}
+
+.flash_style {
+  font-weight: bold;
+  color: #cc3300;
+  font-style: italic;
+}

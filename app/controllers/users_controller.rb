@@ -25,6 +25,8 @@ class UsersController < ApplicationController
   end
 
   def create
+raise params.inspect
+
     @user = User.new(user_params)
     if @user.save
       redirect_to user_path(@user), message: "User created."
@@ -44,6 +46,6 @@ class UsersController < ApplicationController
     end
 
     def user_params
-      params.require(:user).permit(:fname, :lname, :email, :username, :password, :phone, :website, :address, :city, :state, :zip )
+      params.require(:user).permit(:company, :about, :first_name, :last_name, :email, :username, :password, :phone, :website, :address, :city, :state, :zip, :role )
     end
 end

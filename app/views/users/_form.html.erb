@@ -1,14 +1,14 @@
   <div class="wrapper wrapper_padding clearfix">
     <div class="col-4">
-      <h2>Contact info</h2>
+      <h2>Contact</h2>
         <%= form_for user do |f| %>
         <p>
         <%= f.label :first_name %><br>
-        <%= f.text_field :fname %>
+        <%= f.text_field :first_name %>
         </p>
         <p>
         <%= f.label :last_name %><br>
-        <%= f.text_field :lname %>
+        <%= f.text_field :last_name %>
         </p>
         <p>
         <%= f.label :username %><br>
@@ -28,26 +28,35 @@
         </p>
     </div>
     <div class="col-4">
-      <h2>Address info</h2>
+      <h2>Company</h2>
+        <p>
+        <%= f.label :company %><br>
+        <%= f.text_field :company %>
+        </p>
+        <p>
+        <%= f.label :about %><br>
+        <%= f.text_field :about %>
+        </p>
         <p>
         <%= f.label :website %><br>
         <%= f.text_field :website %>
         </p>
+    </div>
+    <div class="col-4">
+      <h2>Address</h2>
         <p>
         <%= f.label :address %><br>
-        <%= f.text_field :address %>
+        <%= f.text_field :address1 %><br>
+        <%= f.text_field :address2 %>
         </p>
         <p>
-        <%= f.label :city %><br>
-        <%= f.text_field :city %>
+        City<br>
+        <%= f.text_field :city, size: 15 %>
         </p>
         <p>
-        <%= f.label :state %><br>
-        <%= f.text_field :state %>
-        </p>
-        <p>
-        <%= f.label :zip %><br>
-        <%= f.text_field :zip %>
+        State, Zip<br>
+        <%= f.text_field :state, size: 4 %>
+        <%= f.text_field :zip, size: 10 %>
         </p>
       <%= f.submit "Sign up" %>
       <% end %>

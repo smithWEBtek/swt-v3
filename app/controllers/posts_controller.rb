@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :authorize_admin, only: [:edit, :update, :destroy, :create]
 
   def index
     @posts = Post.all 
