@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 20170421135807) do
     t.text     "data_sources"
     t.text     "problem"
     t.text     "wishlist"
+    t.text     "url"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
   end

@@ -180,12 +180,14 @@ end
 
 DATA_projects ={
  :project_keys =>
-    ["user_id", "name", "business_model", "data_sources", "problem", "wishlist"],
+    ["user_id", "name", "business_model", "data_sources", "problem", "wishlist", "url"],
   :projects => [
-    ["1", "pool-service", "pool service company, 2 location, 7 trucks", "excel, quickbooks, csv files", "too much manual paper shuffling", "online service scheduling"],
-    ["2", "crash-data", "municipal govt data analysis", "api data, Cambridge Open Data portal", "too many crashes", "find key points in data to prevent crashes"],
-    ["3", "job-crm", "job seeker / graduate", "text, csv, online forms, scraped web data:(Indeed, GlassDoor, job ads)", "needs a job", "get a job"],
-    ["4", "goal-mgr", "professional person", "todo list, outlook, online forms, scraped data, random typed lists", "spinning wheels, not focused", "everything in its place, and a time for every important thing"]
+    ["1", "pool-service", "pool service company, 2 location, 7 trucks", "excel, quickbooks, csv files", "too much manual paper shuffling", "online service scheduling", "http://spc-v1.herokuapp.com"],
+    ["1", "crash-data", "municipal govt data analysis", "api data, Cambridge Open Data portal", "too many crashes", "find key points in data to prevent crashes", "http://zoning-v2.herokuapp.com/"],
+    ["1", "job-crm", "job seeker / graduate", "text, csv, online forms, scraped web data:(Indeed, GlassDoor, job ads)", "needs a job", "get a job","https://job-crm-v1.herokuapp.com/"],
+    ["1", "goal-mgr", "professional person", "todo list, outlook, online forms, scraped data, random typed lists", "spinning wheels, not focused", "everything in its place, and a time for every important thing", "https://goal-mgr-v1.herokuapp.com/"],
+    ["1", "bst-trio", "musician site", "todo list, email, band info, venues", "message is not conveyed vividly enough to find our niche audience", "need the audience experience online", "http://bradsmithtrio.com/"],
+    ["1", "piano-tech-site", "piano technician business site", "crm database, email, lists, excel, online schedule API", "user buying experience is too dry", "get personal sales process into digital experience", "http://smithpiano.com/"]
   ]
 }
 

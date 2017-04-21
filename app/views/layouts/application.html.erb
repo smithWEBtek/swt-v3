@@ -11,14 +11,8 @@
       <%= csrf_meta_tags %>
   </head>
   <body>
-      <%= render partial: 'layouts/main_nav' %>
-  <div id="flash-messages" class="flash_style">
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <% flash.each do |key, value| %>
-      <%= content_tag(:div, value, :class => "flash #{key}") %>
-    <% end %>
-    <%= yield %>
+  <%= render partial: 'layouts/main_nav' %>
+  <%= yield %>
   </body>
-      <%= render partial: 'layouts/footer' %>
+  <%= render partial: 'layouts/footer' %>
 </html>

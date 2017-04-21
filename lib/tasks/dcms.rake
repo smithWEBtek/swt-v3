@@ -1,6 +1,6 @@
 namespace :db do
   desc 'drop, create, migrate, seed the db, restart rails'
-  task dcmrs: :environment do
+  task dcms: :environment do
     puts 'dropping db....'
     Rake::Task['db:drop'].invoke
     

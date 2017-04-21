@@ -1,29 +1,32 @@
-<h2>Edit Project Form</h2>
-
-<%= form_for @project do |f| %>
-  <p>
-    <%= f.label :user %><br>
-    <%= f.collection_select :user_id, User.all, :id, :username %>
-  </p>
-  <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :business_model %><br>
-    <%= f.text_area :business_model %>
-  </p>
-  <p>
-    <%= f.label :data_sources %><br>
-    <%= f.text_area :data_sources %>
-  </p>
-  <p>
-    <%= f.label :problem %><br>
-    <%= f.text_area :problem %>
-  </p>
-  <p>
-    <%= f.label :wishlist %><br>
-    <%= f.text_field :wishlist %>
-  </p>
-<%= f.submit %>
-<% end %>
+<div class="wrapper wrapper_padding clearfix">
+  <div class="sidebar col-4">
+  <h2>Edit Project Form</h2>
+    <%= form_for @project do |f| %>
+      <p>
+        <%= f.label :user %><br>
+        <%= f.collection_select :user_id, User.all, :id, :username %>
+      </p>
+      <p>
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+      </p>
+      <p>
+        <%= f.label :business_model %><br>
+        <%= f.text_area :business_model %>
+      </p>
+      <p>
+        <%= f.label :data_sources %><br>
+        <%= f.text_area :data_sources %>
+      </p>
+      <p>
+        <%= f.label :problem %><br>
+        <%= f.text_area :problem %>
+      </p>
+      <p>
+        <%= f.label :wishlist %><br>
+        <%= f.text_field :wishlist %>
+      </p>
+    <%= f.submit %>
+    <% end %>
+  </div>
+</div>
