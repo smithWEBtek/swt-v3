@@ -134,6 +134,14 @@ DATA_posts ={
     ["date", "title", "repo", "video_url", "summary", "md_file"],
   :posts => [
     [ 
+      "2016-01-12", 
+      "Why Learn To Code?", 
+      "http://www.smithWEBtek/blog",
+      "https://www.youtube.com/embed/CVX7-eZReqs",
+      "limitations of physical work vs unlimited opportunities with coding", 
+      "career-change.md"
+      ], 
+    [ 
       "2017-04-12", 
       "Piano Search CLI", 
       "https://github.com/smithWEBtek/piano_search",
@@ -148,14 +156,6 @@ DATA_posts ={
       "https://www.youtube.com/embed/-gYpibTzQH8",
       "learn your tunes, practice every day", 
       "music-student.md"
-      ], 
-    [ 
-      "2016-01-12", 
-      "Why Learn To Code?", 
-      "http://www.smithWEBtek/blog",
-      "https://www.youtube.com/embed/CVX7-eZReqs",
-      "limitations of physical work vs unlimited opportunities with coding", 
-      "career-change.md"
       ], 
     [ 
       "2017-04-12", 
