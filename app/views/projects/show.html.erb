@@ -7,7 +7,7 @@
       <%= label_tag :problem %> : <%= @project.problem %><br>
       <%= label_tag :wishlist %> : <%= @project.wishlist %><br>
       <%= label_tag :user %> : <%= link_to @project.user.username, user_path(@project.user) %><br>
-      <%= label_tag :url %> : <%= link_to "demo site", @project.url %><br>
+      <%= label_tag :url %> : <%= link_to "demo site", @project.url, target: "_blank" %><br>
     </p>
   </div>
 </div>
