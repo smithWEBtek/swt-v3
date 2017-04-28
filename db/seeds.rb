@@ -188,7 +188,7 @@ DATA_projects ={
     ["1", "goal-mgr", "professional person", "todo list, outlook, online forms, scraped data, random typed lists", "spinning wheels, not focused", "everything in its place, and a time for every important thing", "https://goal-mgr-v1.herokuapp.com/"],
     ["1", "bst-trio", "musician site", "todo list, email, band info, venues", "message is not conveyed vividly enough to find our niche audience", "need the audience experience online", "http://bradsmithtrio.com/"],
     ["1", "piano-tech-site", "piano technician business site", "crm database, email, lists, excel, online schedule API", "user buying experience is too dry", "get personal sales process into digital experience", "http://smithpiano.com/"],
-    ["1", "diet-planner", "your diet, foods, meals tracked in a friendly forum", "calorie data, user logs, lists, excel", "following diet, need support", "create pages to bond users struggling with diets", "https://diet-planner-v6.herokuapp.com/"]
+    ["1", "diet-planner", "your diet, foods, meals tracked in a friendly forum", "calorie data, user logs, lists, excel", "following diet, need support", "create pages to bond users struggling with diets", "https://diet-planner-v8.herokuapp.com/"]
   ]
 }
 
