@@ -159,8 +159,16 @@ DATA_posts ={
       ], 
     [ 
       "2017-04-12", 
-      "Diet Planner",
+      "Diet Planner v6, Rails",
       "https://github.com/smithWEBtek/diet-planner-v6",
+      "https://www.youtube.com/embed/nGTIAKQ_uJk",
+      "eat growing things more than moving things", 
+      "diet-tracker.md"
+    ]
+    [ 
+      "2017-05-07", 
+      "Diet Planner v8 with new and improved AJAX",
+      "https://github.com/smithWEBtek/diet-planner-v8",
       "https://www.youtube.com/embed/nGTIAKQ_uJk",
       "eat growing things more than moving things", 
       "diet-tracker.md"
