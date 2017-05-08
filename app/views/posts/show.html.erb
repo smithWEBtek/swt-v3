@@ -4,14 +4,14 @@
     <%= render partial: 'posts/show_sidebar', locals: { posts: @posts } %>
   </div>
   <div class="col-3">
+  summary: <%= @post.summary %><br><br>
   <hr>
   date: <%= @post.date %><br>
   title: <%= @post.title %><br>
   repo: <%= link_to "github-repo", @post.repo %><br>
-  summary: <%= @post.summary %><br><br>
+  <%= render_md @post.md_file if @post.md_file %></p><br>
 <hr>
 <iframe width="230" height="150" src="<%= @post.video_url %>" frameborder="0" allowfullscreen></iframe>
-    <%= render_md @post.md_file if @post.md_file %></p><br>
     <hr>
     <%= render partial: 'posts/social', locals: { post: @post } %>
     <hr>
