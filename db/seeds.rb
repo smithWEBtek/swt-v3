@@ -169,7 +169,7 @@ DATA_posts ={
       "2017-05-07",
       "Diet Planner v8, Rails App with jQuery Front End",
       "https://github.com/smithWEBtek/diet-planner-v8",
-      "https://www.youtube.com",
+      "https://www.youtube.com/watch?v=YT8r_w4AifI&t=11s",
       "jQuery, AJAX, JSON as front end to Rails application", 
       "diet-planner-v8.md"
     ]

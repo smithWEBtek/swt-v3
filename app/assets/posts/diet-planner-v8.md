@@ -1,6 +1,11 @@
 ## Rails with jQuery Assessment
 This post is an overview of the assignment to create a jQuery front end to an existing Rails app. 
 
+https://www.youtube.com/watch?v=YT8r_w4AifI&t=11s
+
+[Video Walkthrough of Diet Planner v8]
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=YT8r_w4AifI&t=11s" frameborder="0" allowfullscreen></iframe>
+
 My choice was the Diet-Planner application, which tracks Users' Diets, Foods, Meals, Logs in a Rails app with a Postgresql backend, authorization via Devise and other goodies. 
 The app is currently [on Heroku here]:https://diet-planner-v8.herokuapp.com
  
