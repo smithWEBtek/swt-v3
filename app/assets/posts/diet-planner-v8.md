@@ -1,22 +1,19 @@
-## Rails with jQuery Assessment
+#### Rails with jQuery Assessment
 This post is an overview of the assignment to create a jQuery front end to an existing Rails app. 
 
-https://www.youtube.com/watch?v=YT8r_w4AifI&t=11s
 
-[Video Walkthrough of Diet Planner v8]
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=YT8r_w4AifI&t=11s" frameborder="0" allowfullscreen></iframe>
+[Video Walkthrough of Diet Planner v8](https://www.youtube.com/watch?v=YT8r_w4AifI&t=11s)
+
 
 My choice was the Diet-Planner application, which tracks Users' Diets, Foods, Meals, Logs in a Rails app with a Postgresql backend, authorization via Devise and other goodies. 
-The app is currently [on Heroku here]:https://diet-planner-v8.herokuapp.com
+The app is currently [on Heroku here](https://diet-planner-v8.herokuapp.com)
  
-## Key Points
-
-### Outline
+#### Key Points
 
 The app has the common functionality of index, show, edit, new, create, update, destroy for all models. 
-The data model is shown in this [ERD diagram]:http://res.cloudinary.com/smithwebtek/image/upload/v1494192278/diet-tracker/diet-planner-v8/erd.pdf
+The data model is shown in this [ERD diagram](http://res.cloudinary.com/smithwebtek/image/upload/v1494192278/diet-tracker/diet-planner-v8/erd.pdf)
 
-### The data model is summarized as follows: 
+#### The data model is summarized as follows: 
 
   Users register and track their Diets, Meals, Calories and Log their experiences
   Users participate in groups of like-minded Dieters, to compare calories consumed, avg calories, etc.
@@ -29,7 +26,7 @@ Data model
   Meals
   Quotes
 
-### Active Record relationships
+#### Active Record relationships
 
   User has_many :meals
        belongs_to :diet
@@ -51,28 +48,28 @@ Data model
 
 The "Quote" model is where most of the required jQuery / AJAX / JSON functionality is done. 
 
-###  Requirements
+####  Requirements
 
 The following specs were requirements, and I'll go through each one with a few examples of meeting the requirement.
 
-###  Use jQuery for implementing new requirements
+####  Use jQuery for implementing new requirements
 
 	*The following files use jQuery:
 		add_celeb_food_diet_phrase.js
 		index_and_show.js
 		quotes.js
 
-###  Include a show resource rendered using jQuery and an Active Model Serialization JSON backend.
+####  Include a show resource rendered using jQuery and an Active Model Serialization JSON backend.
 
 	*The following active model objects have data rendered for show view:
 	*User
 
-###  Include an index resource rendered using jQuery and an Active Model Serialization JSON backend.
+####  Include an index resource rendered using jQuery and an Active Model Serialization JSON backend.
 
 	*The following active model objects have data rendered for index views:
 	*Users, Meals, Mealnames, Foods, Groups, Diets
 
-###  Include at least one has_many relationship in information rendered via JSON and appended to the DOM.
+####  Include at least one has_many relationship in information rendered via JSON and appended to the DOM.
 
 	*The following active model object is rendered with JSON, showing has_many relationships:
 	*Users
@@ -80,7 +77,7 @@ The following specs were requirements, and I'll go through each one with a few e
 	*The Users index is rendered via jQuery / AJAX / JSON.
 	*The data shown is then linkeable for individual User, also via jQuery/AJAX/JSON
 	
-###  Include at least one link that loads or updates a resource without reloading the page.
+####  Include at least one link that loads or updates a resource without reloading the page.
 
 	*The following active model objects are loaded or updated without reloading page:
 	*Users, Meals, Mealnames, Foods, Groups, Diets
@@ -88,46 +85,48 @@ The following specs were requirements, and I'll go through each one with a few e
 	*Create Celeb, Create Food, Create Diet, Create Phrase
 		-these items are saved to the database upon display, and available for inclusion in 'random quote generation'
 
-###  Translate JSON responses into js model objects.
+####  Translate JSON responses into js model objects.
 
 	*This is demonstrated with the 'New DropDown Quote' button and related code
 		-the form and resulting Quote, is shown via AJAX, and save to the database
 	*New CelebMeal
 		-this is a JavaScript class CelebrityMeal, which is scripted within '/layouts/application.html.erb', because Heroku was not successfully finding the code. 
 
-###  At least one of the js model objects must have at least one method added by your code to the prototype.
+####  At least one of the js model objects must have at least one method added by your code to the prototype.
 
 	*this is demonstrated on the class CelebrityMeal, with a custom method 'customQuote', which creates another unique Quote based on the values submitted in the form, all via jQuery/AJAX/JSON
 	
-###  You have a large number of small Git commits
+####  You have a large number of small Git commits
 
 	*As of this writing, the repo has 125 commits directly related to this version of the app.
 
-###  Your commit messages are meaningful
+####  Your commit messages are meaningful
 
 	*All of the commit messages are meaningful in terms of what was accomplished with that commit
 
-###  You made the changes in a commit that relate to the commit message
+####  You made the changes in a commit that relate to the commit message
 
 	*While not 100%, the amount of changes related to commit messages is much higher than previous projects.
 	*I still do have the tendency to jump around fixing things, vs staying focused on a single feature.
 
-###  You don't include changes in a commit that aren't related to the commit message
+####  You don't include changes in a commit that aren't related to the commit message
 
 	*Not 100% here, but far better than in previous projects. 
 
-### Code Example:
+#### Code Example:
+
 
 The following javascript file shows the current level of the programming. 
 Much of it is verbose, using low-level AJAX methods, with repetitive explicit naming of functions. 
 This is largely due to my newness at JavaScript, as well as the multiple moving pieces involved. 
 It does make the code more readable and understandable. 
 
-#### Essentially there are the following types of functions.
+##### Essentially there are the following types of functions.
 
 Functions that 'listen' for a particular element of the DOM (Document Object Model, or web page) to be clicked.
 Sometimes, they trigger other functions, or retrieve a form form the server to be filled by the User, like this:
 Example:
+
 ```javascript
 function listenForNewQuote(){
 	$("#new_quote_button").on("click", function(e) {
@@ -148,6 +147,7 @@ function listenForNewQuote(){
 Some functions watch 'buttons' or DOM elements, and when clicked, the 'listener' functions trigger internal server methods, such as this one which retrieves 5 'random quotes', by sending a 'GET' request to a specific route in the Rails application. That route, points to a Controller, which fires a method, to produce the 5 random quotes and send them back to the waiting AJAX function, for display in the DOM. 
 
 Example:
+
 ```javascript
 function quotesJSON(){
 	$("#random_json_quotes").on("click", function(e) {
@@ -170,6 +170,7 @@ function quotesJSON(){
 
 Some functions POST data to the server, mostly from forms filled by the User, to be saved to the database.
 Example:
+
 ```javascript
 function newQuote(){
 	$("#response_area form").on("submit", function(e){
@@ -210,7 +211,9 @@ Some functions trigger pre-planned Ruby methods, that produce data results, and 
 
 
 Some functions simply clear out data from the DOM, to keep the user experience as expected, for example: 
+
 Example: 
+
 ```javascript
 function clearResponseAreas(){
 	$("#response_area").html("")
@@ -220,7 +223,7 @@ function clearResponseAreas(){
 ```
 
 
-#### full script:
+##### full script:
 ```javascript
 $(function(){
 	quotesJSON();
@@ -387,7 +390,7 @@ function newCelebMeal(){
 }
 ```
  
-### Issues Overcome
+#### Issues Overcome
 
 I found the following challenges:
 	* Difficulty managing various moving parts
@@ -405,7 +408,7 @@ I found the following challenges:
 	*Debugging JavaScript, Ajax, JSON within the Rails ecosystem can be complicated. But once you get through a few examples of the full data life cycle through js functions, in and back from Rails, navigating the DOM and keeping track of "THIS" as it changes state, there does seem to be a finite number of issues that are usually the culprit. My style is based on being a craftsman all of my life, so we learn by doing something many times. Brute will power and tenacity go a long way. 
 
 
-### What I Found
+#### What I Found
 
 	* I found that sometimes it was not clear why certain JavaScript functionality was breaking, or not refreshing, or just laying there on the page unflinching when I expected it to clear, or update. 
 	
@@ -426,7 +429,7 @@ I found the following challenges:
 	* I found that you can make an entire Rails application DANCE BABY!, without leaving the home page.
 
 
-### Summary
+#### Summary
 
 I'm looking forward to more with JavaScript, having just scratched the surface with this application. 
 I see now why there are so many JavaScript frameworks out there, because of where it fits in web development, and the fact that you can slip it in anywhere. Rails conventions have made it far more scalable than if it was left to 'grow your own', same goes for JavaScript, so I'm looking forward to delving into React next. 
