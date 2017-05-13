@@ -1,4 +1,9 @@
+@import 'welcome';
+@import 'posts_projects';
+@import 'pygments';
+@import 'custom';
 @import 'normalize';
+
 $white: #FFFFFF;
 $dark: #424652;
 $light: #9a9da4;
@@ -158,7 +163,3 @@ hr-ref {
   font-size: 1rem;
   text-transform: uppercase;
 }
-
-@import 'welcome';
-@import 'posts_projects';
-@import 'pygments';
