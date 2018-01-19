@@ -6,7 +6,7 @@
     <% @posts.sort.reverse.each do |post| %>
       <div>
 
-        <fieldset>
+        <p>
           id:
           <%= post.id %>
             <br> title:
@@ -17,7 +17,8 @@
                 <%= post.md_file %>
                   <br> summary:
                   <%= post.summary %>
-        </fieldset>
+        </p>
+        <hr>
         <% end %>
       </div>
   </div>

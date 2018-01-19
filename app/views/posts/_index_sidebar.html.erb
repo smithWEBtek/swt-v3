@@ -3,10 +3,9 @@
     <%#= link_to 'new', new_post_path %>
       <hr>
       <% posts.each do |post| %>
-        <div>
-          <fieldset style="height: 50px" )>
-            <%= link_to post.title, post_path(post) if !post.title.empty?%>
-          </fieldset>
-        </div>
+        <p style="height: 30px">
+          <%= link_to post.title, post_path(post) if !post.title.empty?%>
+            <hr>
+        </p>
         <% end %>
 </nav>
