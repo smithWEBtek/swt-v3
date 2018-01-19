@@ -143,7 +143,7 @@ DATA_posts ={
       ], 
     [ 
       "2017-04-12", 
-      "Piano Search CLI", 
+      "Piano Search CLI, - command line app", 
       "https://github.com/smithWEBtek/piano_search",
       "https://www.youtube.com/embed/A_jb0Iv6pEE",
       "find a good piano", 
@@ -151,7 +151,7 @@ DATA_posts ={
       ], 
     [ 
       "2016-03-12", 
-      "Music Student CMS", 
+      "Music Student CMS, -Sinatra application", 
       "https://github.com/smithWEBtek/piano-teach2",
       "https://www.youtube.com/embed/-gYpibTzQH8",
       "learn your tunes, practice every day", 
@@ -159,7 +159,7 @@ DATA_posts ={
       ], 
     [ 
       "2017-04-12", 
-      "Diet Planner v6, Rails",
+      "Diet Planner v6, Rails application",
       "https://github.com/smithWEBtek/diet-planner-v6",
       "https://www.youtube.com/embed/nGTIAKQ_uJk",
       "eat growing things more than moving things", 
@@ -167,7 +167,7 @@ DATA_posts ={
       ],
     [ 
       "2017-05-07",
-      "Diet Planner v8, Rails App with jQuery Front End",
+      "Diet Planner v8, Rails app, jQuery front end",
       "https://github.com/smithWEBtek/diet-planner-v8",
       "https://www.youtube.com/watch?v=YT8r_w4AifI&t=11s",
       "jQuery, AJAX, JSON as front end to Rails application", 
@@ -175,7 +175,7 @@ DATA_posts ={
     ],
     [ 
       "2018-01-19",
-      "Music Studio Manager - Web App Rails API",
+      "Music Studio - Rails API, React/Redux front end",
       "https://github.com/smithWEBtek/piano-student-api",
       "https://youtu.be/Mm1hf_AJSsY",
       "Rails API with JavaScript/React/Redux front end", 

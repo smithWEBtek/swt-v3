@@ -1,8 +1,12 @@
 <nav>
-  <%= link_to 'index', posts_path %> <!-- | -->
-  <%#= link_to 'new', new_post_path %><!-- <br> -->
-  <hr>
-  <% posts.each do |post| %> 
-  <%= link_to post.title, post_path(post) if !post.title.empty?%><br>
-  <% end %>
+  <%= link_to 'index', posts_path %>
+    <%#= link_to 'new', new_post_path %>
+      <hr>
+      <% posts.each do |post| %>
+        <div>
+          <fieldset style="height: 50px" )>
+            <%= link_to post.title, post_path(post) if !post.title.empty?%>
+          </fieldset>
+        </div>
+        <% end %>
 </nav>
