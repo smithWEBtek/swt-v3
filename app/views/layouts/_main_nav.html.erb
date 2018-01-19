@@ -16,8 +16,8 @@
     <%= link_to "about", about_path %>
       <%= link_to "blog", posts_path %>
         <%= link_to "projects", projects_path %>
-          <%= link_to "wiki", refs_path %> |
-            <% if user_signed_in? %>
+          <%= link_to "wiki", refs_path %>
+            <!-- <% if user_signed_in? %>
               Logged in as
               <strong>
                 <%= current_user.email %>
@@ -27,7 +27,7 @@
                   <% else %>
                     <%= link_to "sign up", new_user_registration_path, :class => 'navbar-link'  %>
                       <%= link_to "login", new_user_session_path, :class => 'navbar-link'  %>
-                        <% end %>
+                        <% end %> -->
   </nav>
   </div>
   </div>
