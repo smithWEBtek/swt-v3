@@ -137,7 +137,7 @@ DATA_posts ={
       "2016-01-12", 
       "Why Learn To Code?", 
       "",
-      "https://www.youtube.com/embed/CVX7-eZReqs",
+      "",
       "limitations of physical work vs unlimited opportunities with coding", 
       "career-change.md"
       ], 
@@ -146,7 +146,7 @@ DATA_posts ={
       "Piano Search CLI, - command line app", 
       "https://github.com/smithWEBtek/piano_search",
       "https://www.youtube.com/embed/A_jb0Iv6pEE",
-      "find a good piano", 
+      "scrape Craigslist for 2 specific models of Yamaha piano", 
       "piano-search.md"
       ], 
     [ 

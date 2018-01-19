@@ -34,14 +34,10 @@ ActiveRecord::Schema.define(version: 20170421135807) do
   create_table "posts", force: :cascade do |t|
     t.date     "date"
     t.string   "title"
-    t.string   "repo",       default: "repo blank"
+    t.string   "repo"
     t.string   "video_url"
     t.text     "summary",    default: "summary is blank"
     t.text     "md_file",    default: "blank.md"
-    t.text     "body"
-    t.text     "format",     default: "format blank"
-    t.text     "url",        default: "url blank"
-    t.text     "location",   default: "location blank"
     t.datetime "created_at",                              null: false
     t.datetime "updated_at",                              null: false
   end

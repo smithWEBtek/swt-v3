@@ -1,9 +1,3 @@
-video:  <iframe width="420" height="315" src="https://www.youtube.com/embed/A_jb0Iv6pEE" frameborder="0" allowfullscreen></iframe>
-
-
-repo: https://github.com/smithWEBtek/piano_search
-
-
 ##PIANO SEARCH - RUBY CLI GEM
 
 Command Line Interface application, using Ruby and NokoGiri to scrape Craigslist, in search of the 2 most popular models of Yamaha piano, the model U2, and the model P22. Similar to buying a Toyota Corolla or Camry, the Japanese made pianos are very solid investments.
