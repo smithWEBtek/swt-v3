@@ -153,8 +153,8 @@ DATA_posts ={
       "2016-03-12", 
       "Music Student CMS", 
       "https://github.com/smithWEBtek/piano-teach2",
-      "https://www.youtube.com/embed/-gYpibTzQH8",
-      "learn your tunes, practice every day", 
+      "https://www.youtube.com/embed/-gYpibTzQH8?rel=0",
+      "Sinatra app for managing teachers and students", 
       "music-student.md"
       ], 
     [ 
@@ -169,7 +169,7 @@ DATA_posts ={
       "2017-05-07",
       "Diet Planner v8 Rails - jQuery",
       "https://github.com/smithWEBtek/diet-planner-v8",
-      "https://www.youtube.com/watch?v=YT8r_w4AifI&t=11s",
+      "https://www.youtube.com/embed/YT8r_w4AifI",
       "Rails API w/ jQuery, AJAX, JSON front end", 
       "diet-planner-v8.md"
     ],
@@ -177,7 +177,7 @@ DATA_posts ={
       "2018-01-19",
       "Music Studio - Rails API - React/Redux",
       "https://github.com/smithWEBtek/piano-student-api",
-      "https://youtu.be/Mm1hf_AJSsY",
+      "https://www.youtube.com/embed/Mm1hf_AJSsY",
       "Rails API w/ JavaScript/React/Redux front end", 
       "music-studio.md"
     ]

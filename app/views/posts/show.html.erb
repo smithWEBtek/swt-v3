@@ -15,14 +15,23 @@
       summary:
       <%= @post.summary %>
     </h5>
-    <h5>
-      github:
-      <%= link_to @post.repo, @post.repo %>
-    </h5>
 
-    <hr>
-    <iframe width="230" height="150" src="<%= @post.video_url %>" frameborder="0" allowfullscreen></iframe>
-    <hr>
+    <div>
+      <% if @post.repo != "" %>
+        <h5>
+          github:
+          <%= link_to @post.repo, @post.repo %>
+        </h5>
+        <% end %>
+    </div>
+
+    <div>
+      <% if @post.video_url != "" %>
+        <hr>
+        <iframe width="230" height="150" src="<%= @post.video_url %>" frameborder="0" allowfullscreen></iframe>
+        <hr>
+        <% end %>
+    </div>
 
     <!-- main blog post document in Markdown format -->
     <div>
@@ -30,12 +39,5 @@
     </div>
 
     <!-- main blog post footer  -->
-    <div>
-      <%= render partial: 'posts/social', locals: { post: @post } %>
-    </div>
-    <hr>
-    <div>
-      <%= render partial: 'posts/disqus' %>
-    </div>
   </div>
 </div>
