@@ -17,6 +17,7 @@ gem 'redcarpet', '~> 3.2.2'
 gem 'pry'
 gem 'devise'
 gem 'pundit'
+gem 'rails-erd'
 
 gem 'rails', '~> 5.0.2'
 gem 'pg', '~> 0.18'

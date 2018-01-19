@@ -172,6 +172,14 @@ DATA_posts ={
       "https://www.youtube.com/watch?v=YT8r_w4AifI&t=11s",
       "jQuery, AJAX, JSON as front end to Rails application", 
       "diet-planner-v8.md"
+    ],
+    [ 
+      "2018-01-19",
+      "Music Studio Manager - Web App Rails API",
+      "https://github.com/smithWEBtek/piano-student-api",
+      "https://youtu.be/Mm1hf_AJSsY",
+      "Rails API with JavaScript/React/Redux front end", 
+      "music-studio.md"
     ]
   ]
 }
