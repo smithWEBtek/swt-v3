@@ -1,25 +1,41 @@
 <div class="wrapper wrapper_padding clearfix">
-  <div class="sidebar col-4">
-    <%= render partial: 'posts/index_sidebar', locals: { posts: @posts } %>
+  <div class="sidebar col-6">
+    <%= render partial: 'posts/sidebar_index', locals: { posts: @posts } %>
   </div>
-  <div class="col-3">
-    <% @posts.sort.reverse.each do |post| %>
-      <div>
+</div>
+<div class="col-6">
 
-        <p>
-          id:
-          <%= post.id %>
-            <br> title:
-            <%= link_to post.title, post_path(post) %>
-              <br> repo:
-              <%= link_to "github repo", post.repo %>
-                <br> md_file:
-                <%= post.md_file %>
-                  <br> summary:
-                  <%= post.summary %>
-        </p>
-        <hr>
-        <% end %>
-      </div>
+  <h2>
+    <%= @post.title %>
+  </h2>
+  <h5>
+    date:
+    <%= @post.date %>
+  </h5>
+  <h5>
+    summary:
+    <%= @post.summary %>
+  </h5>
+  <h5>
+    github:
+    <%= link_to @post.repo, @post.repo %>
+  </h5>
+
+  <hr>
+  <iframe width="230" height="150" src="<%= @post.video_url %>" frameborder="0" allowfullscreen></iframe>
+  <hr>
+
+  <!-- main blog post document in Markdown format -->
+  <div>
+    <%= render_md @post.md_file if @post.md_file %>
+  </div>
+
+  <!-- main blog post footer  -->
+  <div>
+    <%= render partial: 'posts/social', locals: { post: @post } %>
+  </div>
+  <hr>
+  <div>
+    <%= render partial: 'posts/disqus' %>
   </div>
 </div>

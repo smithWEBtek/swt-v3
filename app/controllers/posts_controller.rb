@@ -4,6 +4,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all 
+    @post = Post.last
   end
 
   def show

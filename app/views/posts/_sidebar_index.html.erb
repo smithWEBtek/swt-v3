@@ -1,0 +1,6 @@
+<% posts.sort.reverse.each do |post| %>
+  <div style="height: 30" px>
+    <%= link_to post.title, post_path(post) %>
+  </div>
+  <hr>
+  <% end %>
