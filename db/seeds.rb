@@ -131,7 +131,7 @@ end
  
 DATA_posts ={
  :post_keys =>
-    ["date", "title", "repo", "video_url", "summary", "md_file"],
+    ["date", "title", "repo", "video_url", "summary", "md_file", "body", "format", "url", "location"],
   :posts => [
     [ 
       "2016-01-12", 

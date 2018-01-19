@@ -1,20 +1,31 @@
 <%= render partial: 'posts/facebook' %>
-<div class="wrapper wrapper_padding clearfix">
-  <div class="sidebar col-4">
-    <%= render partial: 'posts/show_sidebar', locals: { posts: @posts } %>
+  <div class="wrapper wrapper_padding clearfix">
+    <div class="sidebar col-4">
+      <%= render partial: 'posts/show_sidebar', locals: { posts: @posts } %>
+    </div>
+    <div class="col-3">
+      <h4>summary:
+        <%= @post.summary %>
+      </h4>
+      <br>
+      <hr> date:
+      <%= @post.date %>
+        <br> title:
+        <%= @post.title %>
+          <br> repo:
+          <%= link_to "github-repo", @post.repo %>
+            <br>
+            <%= render_md @post.md_file if @post.md_file %>
+              </p>
+              <br>
+              <%= render_md @post.html_file if @post.format == 'html' %>
+                </p>
+                <br>
+                <hr>
+                <iframe width="230" height="150" src="<%= @post.video_url %>" frameborder="0" allowfullscreen></iframe>
+                <hr>
+                <%= render partial: 'posts/social', locals: { post: @post } %>
+                  <hr>
+                  <%= render partial: 'posts/disqus' %>
+    </div>
   </div>
-  <div class="col-3">
-  <h4>summary: <%= @post.summary %></h4><br>
-  <hr>
-  date: <%= @post.date %><br>
-  title: <%= @post.title %><br>
-  repo: <%= link_to "github-repo", @post.repo %><br>
-  <%= render_md @post.md_file if @post.md_file %></p><br>
-<hr>
-<iframe width="230" height="150" src="<%= @post.video_url %>" frameborder="0" allowfullscreen></iframe>
-    <hr>
-    <%= render partial: 'posts/social', locals: { post: @post } %>
-    <hr>
-    <%= render partial: 'posts/disqus' %>
-  </div>
-</div>
