@@ -1,9 +1,12 @@
 <div class="wrapper wrapper_padding clearfix">
-  <div class="sidebar col-6">
+  <div class="sidebar col-4">
+    <h1>Post:
+      <%= @post.id %>
+    </h1>
+    <br />
     <%= render partial: 'posts/sidebar_index', locals: { posts: @posts } %>
   </div>
   <div class="col-3">
-
     <h2>
       <%= @post.title %>
     </h2>

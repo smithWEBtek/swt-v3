@@ -1,13 +1,22 @@
 <div class="wrapper wrapper_padding clearfix">
-<div class="sidebar col-4"><%= render partial: 'projects/projects_show_sidebar', locals: { project: @project, projects: @projects } %></div>
+  <div class="sidebar col-4">
+    <%= render partial: 'projects/sidebar', locals: { projects: @projects } %>
+  </div>
   <div class="col-3">
-    <p>
-      <%= label_tag :name %> : <%= @project.name %><br>
-      <%= label_tag :business_model %> : <%= @project.business_model %><br>
-      <%= label_tag :problem %> : <%= @project.problem %><br>
-      <%= label_tag :wishlist %> : <%= @project.wishlist %><br>
-      <%= label_tag :user %> : <%= link_to @project.user.username, user_path(@project.user) %><br>
-      <%= label_tag :url %> : <%= link_to "demo site", @project.url, target: "_blank" %><br>
-    </p>
+    <h2>
+      <%= @project.name %>
+    </h2>
+    <h5>
+      business_model:
+      <%= @project.business_model %>
+    </h5>
+    <h5>
+      problem:
+      <%= @project.problem %>
+    </h5>
+    <h5>
+      wishlist:
+      <%= @project.wishlist %>
+    </h5>
   </div>
 </div>

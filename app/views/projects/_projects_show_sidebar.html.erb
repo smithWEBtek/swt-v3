@@ -1,8 +1,0 @@
-<nav>
-  <%= link_to 'index', projects_path %> |
-  <%= link_to 'new', new_project_path %> |
-  <hr>
-  <% projects.each do |p| %> 
-  <%= link_to p.name, project_path(p) if !p.name.nil? %><br>
-  <% end %>
-</nav>

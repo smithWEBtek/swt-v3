@@ -3,6 +3,7 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = Project.all 
+    @project = Project.last
   end
 
   def show
