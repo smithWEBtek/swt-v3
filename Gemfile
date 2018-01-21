@@ -5,24 +5,26 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'yaml_db'
 gem 'rails-erd'
 gem 'pdf-reader'
 gem 'cloudinary'
+
 gem 'watir'
 gem 'nokogiri', '>=1.5.9'
 gem 'httparty'
 gem 'pygments.rb', '~> 0.6.0'
 gem 'redcarpet', '~> 3.2.2'
-gem 'pry'
+
 gem 'devise'
 gem 'pundit'
- 
+
 
 gem 'rails', '~> 5.0.2'
 gem 'pg', '~> 0.18'
+gem 'yaml_db'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
+
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
@@ -38,6 +40,7 @@ gem 'jbuilder', '~> 2.5'
 
 
 group :development, :test do
+  gem 'pry'
   gem 'byebug', platform: :mri
 end
 
