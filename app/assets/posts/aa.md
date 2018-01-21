@@ -1,31 +1,22 @@
-
-blog daily
-  create workflow using existing placeholders in this app
-  feed the funnel with topics, sub-topics, ideas that are ripe
-  prioritize the funnel, pick one, elaborate its outline and summary
-  pick one of those and fill in some detail on first few sub-topics
-
-
+review React, Redux and Javascript all week
 add resources to music-studio app
-organize wiki data model
+  -get functional with Cloudinary API
+  -get functional with Soundcloud API
+
+blog from this repo
+  create workflow using existing placeholders in this app  
+  organize wiki data model
+    feed the funnel with topics, sub-topics, ideas that are ripe
+    prioritize the funnel, pick one, elaborate its outline and summary
+    pick one of those and fill in some detail on first few sub-topics
+
+
 build out 3-4 varied projects 
   Cambridge Open Data
   VolunteerMatch
   Manchester NH Police/Fire/Ambulance/Drugs epidemic
 
-blog from this repo daily
-  use Markdown cheatsheet
-  explore quick way to publish Gists on Github w/same Markdown chops(?)
-
-  find that Rails gem that backs up all data into a file which can be restored quickly. it is kind of like seeds.rb file with rake db:hdcms, but produces a separate file of the data.
-
-  
-
-
-
-review React, Redux and Javascript all week
-get functional with Cloudinary API
-get functional with Soundcloud API
+ 
 
 breadth
   languages:      Python, Java
@@ -64,24 +55,14 @@ wiki
   4: blog post about learning it
   5: go deeper in a project with it
 
-
-
-
-
-
-##MANAGE YOUR LIFE
-
-Put all this doc, visit daily, see on Github via iOctocat
-Use tabs to expand/collapse sections
-Do the things you see here
  
 
 # SmithPiano
-  ## Do **everything** in Act, do something daily
-  ## Mailing
-
->_I really need to get moving on a mailing, because I don't think I will get the interview and job with Ernesto._
-
+ 
+  ## mailing / emailing
+  ## invoicing
+  ## scheduling
+ 
 CODING
 blog post about seed data, data model, serializers rails basic mockaroo and cloudinary
 blog post about coding attitude and the spirit of debugging
@@ -95,14 +76,10 @@ LinkedIn
 
 Darrell’s inv
 Scottrade acct move money
-Smithpiano mailer
-
+ 
 
 # Flatiron
-  ## Final project
-  ## CRUD working
-  ## Reqs met
-  ## Stats, Viewers, Lesson creator
+  ## Assessment prep
   ## Career track
   ## get restarted with Martha Bloem-Reddy
   ## finish career track
@@ -137,11 +114,7 @@ Hello World:
     Boston JS / ProjectJS
     CodeForBoston
     CodeForNH
-
-aasmithpiano:SP Postcard, email, marketing mailing 
-Darrell's invoice update
-
-
+ 
 
 ```javascript
 var s = "JavaScript syntax highlighting";
@@ -153,17 +126,7 @@ var s = "JavaScript syntax highlighting";
 alert(s);
 ```
 
-
-=======================================================
-LEARN
-    blog    start outline of blog on ":update_without_password"
-    blog    12 apps in 12 days tutorials: mackenzie child
-    learn    javascript labs
-=======================================================
-ALL-PURPOSE-APP
-    get basic app ready for doing React labs
-    pattern of implementing what I learn in an app
-    pattern of outlining a blog for it
+ 
 
 =======================================================
 MISC
@@ -177,15 +140,12 @@ master list of all gems and functionality to go in ALL rails apps
     Governed by Mastery learning principles
     Governed by A Mind for Numbers learning principles
 =======================================================
-APPS
+#APPS
 swt-v3: working
-    refine devise, users, security
-    put up an admin section, find the lab for it
-    blog-repo-parts process and structure
-    disqus: user comments, get back into Mackenzie vidoes
     finish wiki structure
-    set up ask/sales structure
-
+    blog-repo-parts process and structure
+    read only billboard for ME no users, discussions, just my shit
+ 
 spc-v1:initial build worked
     1.2:service call show page
         calendar of trucks
@@ -199,12 +159,7 @@ crash-data:applied for access to MassTrac
     put up basic Rails app on Heroku
     create some basic summaries for Priyanka and others
     get hello world on D3, ask James to help
-
-diet-planner-v6:live on Heroku
-    get css bootstrap working
-    clean up markup on diet-planner-v6
-    be ready to use on jquery project
-
+ 
 career
     Incorporate tips from "How to be a No-Brainer Hire"
     blog: 5 more posts to graduate
@@ -252,11 +207,6 @@ PIANO TEACHING
             Lead the student through the actions, drills, study paths, content to desired goal
             Get paid to reduce the student's "floundering time"
 =======================================================
-GIGGING
-keybd rig    Axiom play Nord organ w/o MainStage
-    Volume pedals Nord
-    Organ pedals MIDI
-    Aluminum stand and bench for RD64, in bag
 =======================================================
 PROPERTY
 Property prep    Get shop vac and boards organized in attic
@@ -264,24 +214,4 @@ Property prep    Get shop vac and boards organized in attic
     List tasks
 
 =======================================================
-
-SUPERSTITION (STEVIE WONDER)
-DR FEELGOOD (ARETHA FRANKLIN) 
-ROUTE 66 (NATALIE COLE)
  
-TRY A LITTLE TENDERNESS (OTIS REDDING) 
-I’M STILL IN LOVE WITH YOU (AL GREEN)
-AIN'T THAT LOVING YOU (LUTHER INGRAM) 
-THINK (ARETHA FRANKLIN) 
-I HEARD IT THROUGH THE GRAPEVINE (GLADYS KNIGHT AND THE PIPS) 
-NATURAL WOMAN (ARETHA FRANKLIN)
-CROSSCUT SAW (ALBERT KING)
-CHAIN OF FOOLS (ARETHA FRANKLIN)
-I HEARD IT THROUGH THE GRAPEVINE (GLADYS KNIGHT AND THE PIPS) 
-CAN I CHANGE MY MIND (TYRONE DAVIS)
-KNOCK ON WOOD (EDDIE FLOYD)
-CHANGE MY MIND (TYRONE DAVIS)
-IN A SENTIMENTAL MOOD (JOHN COLTRANE)
-PICK UP THE PIECES (AWB AVERAGE WHITE BAND)
-LET’S GROOVE (EARTH,WIND & FIRE)
-SEPTEMBER (EARTH,WIND & FIRE)
