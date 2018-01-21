@@ -1,37 +1,47 @@
 <div class="wrapper wrapper_padding clearfix">
-  <div class="sidebar col-6">
+  <div class="sidebar col-4 sidebar-margin">
+    <h1>Post:
+      <%= @post.id %>
+    </h1>
+    <br />
     <%= render partial: 'posts/sidebar', locals: { posts: @posts } %>
+      <%= render 'layouts/contact' %>
   </div>
-</div>
-<div class="col-6">
+  <div class="col-3">
+    <h2>
+      <%= @post.title %>
+    </h2>
+    <h5>
+      date:
+      <%= @post.date %>
+    </h5>
+    <h5>
+      summary:
+      <%= @post.summary %>
+    </h5>
 
-  <h2>
-    <%= @post.title %>
-  </h2>
-  <h5>
-    date:
-    <%= @post.date %>
-  </h5>
-  <h5>
-    summary:
-    <%= @post.summary %>
-  </h5>
-  <h5>
-    github:
-    <%= link_to @post.repo, @post.repo %>
-  </h5>
+    <div>
+      <% if @post.repo != "" %>
+        <h5>
+          github:
+          <%= link_to @post.repo, @post.repo %>
+        </h5>
+        <% end %>
+    </div>
 
-  <hr>
-  <iframe width="230" height="150" src="<%= @post.video_url %>" frameborder="0" allowfullscreen></iframe>
-  <hr>
+    <div>
+      <% if @post.video_url != "" %>
+        <hr>
+        <iframe width="230" height="150" src="<%= @post.video_url %>" frameborder="0" allowfullscreen></iframe>
+        <hr>
+        <% end %>
+    </div>
 
-  <!-- main blog post document in Markdown format -->
-  <div>
-    <%= render_md @post.md_file if @post.md_file %>
-  </div>
+    <!-- main blog post document in Markdown format -->
+    <div class="col-lg-4 body-text">
+      <%= render_md @post.md_file if @post.md_file %>
+    </div>
 
-  <!-- main blog post footer  -->
-  <div>
-    <%= render partial: 'posts/social', locals: { post: @post } %>
+    <!-- main blog post footer  -->
   </div>
 </div>
