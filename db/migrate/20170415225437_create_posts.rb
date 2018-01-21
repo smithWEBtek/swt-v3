@@ -5,6 +5,7 @@ class CreatePosts < ActiveRecord::Migration[5.0]
       t.string :title
       t.string :repo
       t.string :video_url
+      t.string :site_url
       t.text :summary, default: 'summary is blank'
       t.text :md_file, default: 'blank.md'
 

@@ -131,11 +131,12 @@ end
  
 DATA_posts ={
  :post_keys =>
-    ["date", "title", "repo", "video_url", "summary", "md_file", "body", "format", "url", "location"],
+    ["date", "title", "repo", "video_url", "site_url", "summary", "md_file"],
   :posts => [
     [ 
       "2016-01-12", 
       "Why Learn To Code?", 
+      "",
       "",
       "",
       "limitations of physical work vs unlimited opportunities with coding", 
@@ -143,9 +144,10 @@ DATA_posts ={
       ], 
     [ 
       "2017-04-12", 
-      "Piano Search CLI", 
+      "Piano Search CLI",
       "https://github.com/smithWEBtek/piano_search",
       "https://www.youtube.com/embed/A_jb0Iv6pEE",
+      "", 
       "scrape Craigslist for 2 specific models of Yamaha piano", 
       "piano-search.md"
       ], 
@@ -154,6 +156,7 @@ DATA_posts ={
       "Music Student CMS", 
       "https://github.com/smithWEBtek/piano-teach2",
       "https://www.youtube.com/embed/-gYpibTzQH8?rel=0",
+      "",
       "Sinatra app for managing teachers and students", 
       "music-student.md"
       ], 
@@ -162,6 +165,7 @@ DATA_posts ={
       "Diet Planner v6 Rails app",
       "https://github.com/smithWEBtek/diet-planner-v6",
       "https://www.youtube.com/embed/nGTIAKQ_uJk",
+      "",
       "eat growing things more than moving things", 
       "diet-tracker.md"
       ],
@@ -171,6 +175,7 @@ DATA_posts ={
       "https://github.com/smithWEBtek/diet-planner-v8",
       "https://www.youtube.com/embed/YT8r_w4AifI",
       "Rails API w/ jQuery, AJAX, JSON front end", 
+      "https://diet-planner-v8.herokuapp.com/",
       "diet-planner-v8.md"
     ],
     [ 
@@ -179,6 +184,7 @@ DATA_posts ={
       "https://github.com/smithWEBtek/piano-student-api",
       "https://www.youtube.com/embed/Mm1hf_AJSsY",
       "Rails API w/ JavaScript/React/Redux front end", 
+      "https://music-studio.herokuapp.com/",
       "music-studio.md"
     ]
   ]
