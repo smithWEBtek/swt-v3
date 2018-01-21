@@ -1,46 +1,59 @@
 <div class="wrapper wrapper_padding clearfix">
   <div class="sidebar">
 
-   <div class="col-1">  
-    <%= link_to 'new post', new_post_path %><br>
-    <%= form_for @post do |f| %>
-    <% if @post.errors.any? %>
-      <h2><%= pluralize(@post.errors.count, "error") %> prevented this post from saving: </h2>
-      <ul>
-        <% @post.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-      <% end %>
-    <p>
-      <%= f.label :date %><br>
-      <%= f.date_field :date, size: 30 %>
-    </p>
-    <p>
-      <%= f.label :title %><br>
-      <%= f.text_field :title, size: 30 %>
-    </p>
-    <p>
-      <%= f.label :repo %><br>
-      <%= f.text_field :repo, size: 30 %>
-    </p>
-    <p>
-      <%= f.label :summary %><br>
-      <%= f.text_area :summary, cols: "50", rows: "5" %>
-    </p>
-    <p>
-      <%#= f.label :refs %><br>
-      <%#= f.text_area :refs, cols: 30, rows: 5 %>
-    </p>
- 
-    <%= f.fields_for :refs do |ref_fields| %>
-      <%= ref_fields.collection_select :ref_ids, Ref.all, :id, :name, 
+    <div class="col-1">
+      <%= link_to 'new post', new_post_path %>
+        <br>
+        <%= form_for @post do |f| %>
+          <% if @post.errors.any? %>
+            <h2>
+              <%= pluralize(@post.errors.count, "error") %> prevented this post from saving: </h2>
+            <ul>
+              <% @post.errors.full_messages.each do |msg| %>
+                <li>
+                  <%= msg %>
+                </li>
+                <% end %>
+            </ul>
+            <% end %>
+              <p>
+                <%= f.label :date %>
+                  <br>
+                  <%= f.date_field :date, size: 30 %>
+              </p>
+              <p>
+                <%= f.label :title %>
+                  <br>
+                  <%= f.text_field :title, size: 30 %>
+              </p>
+              <p>
+                <%= f.label :repo %>
+                  <br>
+                  <%= f.text_field :repo, size: 30 %>
+              </p>
+              <p>
+                <%= f.label :summary %>
+                  <br>
+                  <%= f.text_area :summary, cols: "50", rows: "5" %>
+              </p>
+              <p>
+                <%= f.label :refs %>
+                  <br>
+                  <%= f.text_area :refs, cols: 30, rows: 5 %>
+              </p>
+              <p>
+                <%= f.label :md_file %>
+                  <br>
+                  <%= f.text_field :md_file %>
+              </p>
+              <%= f.fields_for :refs do |ref_fields| %>
+                <%= ref_fields.collection_select :ref_ids, Ref.all, :id, :name, 
             {:selected => @post.ref_ids, :include_blank => true}, 
             {:multiple => true, :name => 'post[ref_ids]'} %>
-      <% end %>
- 
-    <%= f.submit %>
-    <% end %>
-  </div>    
+                  <% end %>
+
+                    <%= f.submit %>
+                      <% end %>
+    </div>
   </div>
 </div>

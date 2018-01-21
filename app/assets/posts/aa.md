@@ -17,6 +17,12 @@ blog from this repo daily
   use Markdown cheatsheet
   explore quick way to publish Gists on Github w/same Markdown chops(?)
 
+  find that Rails gem that backs up all data into a file which can be restored quickly. it is kind of like seeds.rb file with rake db:hdcms, but produces a separate file of the data.
+
+  
+
+
+
 review React, Redux and Javascript all week
 get functional with Cloudinary API
 get functional with Soundcloud API
