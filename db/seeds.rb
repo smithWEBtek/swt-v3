@@ -174,8 +174,8 @@ DATA_posts ={
       "Diet Planner v8 Rails - jQuery",
       "https://github.com/smithWEBtek/diet-planner-v8",
       "https://www.youtube.com/embed/YT8r_w4AifI",
-      "Rails API w/ jQuery, AJAX, JSON front end", 
       "https://diet-planner-v8.herokuapp.com/",
+      "Rails API w/ jQuery, AJAX, JSON front end", 
       "diet-planner-v8.md"
     ],
     [ 
@@ -183,8 +183,8 @@ DATA_posts ={
       "Music Studio - Rails API - React/Redux",
       "https://github.com/smithWEBtek/piano-student-api",
       "https://www.youtube.com/embed/Mm1hf_AJSsY",
-      "Rails API w/ JavaScript/React/Redux front end", 
       "https://music-studio.herokuapp.com/",
+      "Rails API w/ JavaScript/React/Redux front end", 
       "music-studio.md"
     ]
   ]
