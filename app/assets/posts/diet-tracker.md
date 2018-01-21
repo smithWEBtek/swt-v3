@@ -4,13 +4,7 @@ and log their experiences while following a particular Diet.
 
 This Rails application was developed as part of the Learn.co Full Stack Web Development course 
 If you are not familiar with [Flatiron School](https://flatironschool.com/), please check it out!
-
-
-
-
-[Video Walkthrough of DietTracker]
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nGTIAKQ_uJk" frameborder="0" allowfullscreen></iframe>
-
+ 
 
 ![](https://res.cloudinary.com/smithwebtek/image/upload/v1492046956/diet-tracker/image001.png?raw=true)
 
