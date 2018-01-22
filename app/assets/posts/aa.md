@@ -4,7 +4,8 @@ add resources to music-studio app
   -get functional with Soundcloud API
 
 blog from this repo
-  create workflow using existing placeholders in this app  
+  create workflow using existing placeholders in this app
+  create a blogging markdown template, prefilled with styles 
   organize wiki data model
     feed the funnel with topics, sub-topics, ideas that are ripe
     prioritize the funnel, pick one, elaborate its outline and summary

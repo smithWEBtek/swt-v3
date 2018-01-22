@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   root 'static#about'
   get '/bookmarks', to: 'static#bookmarks'  
   
+  get '/index2', to: 'static#index2'
+
   get '/bookmarks', to: 'static#bookmarks'
   get '/about', to: 'static#about'
   get '/blog', to: 'posts#index'

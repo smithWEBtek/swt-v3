@@ -1,4 +1,9 @@
 class StaticController < ApplicationController
+  layout false, only: [:index2]
+
+  def index2
+    render '/static/index2/index.html.erb' 
+  end
 
   def about
     render :about
@@ -17,7 +22,6 @@ class StaticController < ApplicationController
   def home
     render :home
   end
-
 
   def contact
     render :contact
