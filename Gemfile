@@ -17,10 +17,6 @@ gem 'httparty'
 gem 'pygments.rb', '~> 0.6.0'
 gem 'redcarpet', '~> 3.2.2'
 
-gem 'devise'
-gem 'pundit'
-
-
 gem 'rails', '~> 5.0.2'
 gem 'pg', '~> 0.18'
 gem 'yaml_db'
@@ -43,7 +39,6 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   gem 'pry'
-  gem 'byebug', platform: :mri
 end
 
 group :development do

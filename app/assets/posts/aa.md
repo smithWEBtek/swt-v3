@@ -214,4 +214,19 @@ Property prep    Get shop vac and boards organized in attic
     List tasks
 
 =======================================================
- 
+
+refs
+
+posts
+  
+projects
+
+scrapes
+
+book
+video
+code example
+course
+tutorial
+
+tags
