@@ -7,6 +7,7 @@ class CreateProjects < ActiveRecord::Migration[5.0]
       t.text :problem
       t.text :wishlist
       t.text :url
+      t.text :screenshot
       
       t.timestamps
     end

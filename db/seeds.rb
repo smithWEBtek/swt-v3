@@ -155,17 +155,64 @@ end
 
 DATA_projects ={
  :project_keys =>
-    ["name", "business_model", "data_sources", "problem", "wishlist", "url"],
-  :projects => [
-    ["pool-service", "pool service company, 2 location, 7 trucks", "excel, quickbooks, csv files", "too much manual paper shuffling", "online service scheduling", "https://spc-v1.herokuapp.com"],
-    ["crash-data", "municipal govt data analysis", "api data, Cambridge Open Data portal", "too many crashes", "find key points in data to prevent crashes", "https://crash-data-v1.herokuapp.com/"],
-    ["job-crm", "job seeker / graduate", "text, csv, online forms, scraped web data:(Indeed, GlassDoor, job ads)", "needs a job", "get a job","https://job-crm-v1.herokuapp.com/"],
-    ["goal-mgr", "professional person", "todo list, outlook, online forms, scraped data, random typed lists", "spinning wheels, not focused", "everything in its place, and a time for every important thing", "https://goal-mgr-v1.herokuapp.com/"],
-    ["bst-trio", "musician site", "todo list, email, band info, venues", "message is not conveyed vividly enough to find our niche audience", "need the audience experience online", "http://bradsmithtrio.com/"],
-    ["piano-tech-site", "piano technician business site", "crm database, email, lists, excel, online schedule API", "user buying experience is too dry", "get personal sales process into digital experience", "http://smithpiano.com/"],
-    ["diet-planner", "your diet, foods, meals tracked in a friendly forum", "calorie data, user logs, lists, excel", "following diet, need support", "create pages to bond users struggling with diets", "https://diet-planner-v8.herokuapp.com/"]
-  ]
+    ["name", "business_model", "data_sources", "problem", "wishlist", "url", "screenshot"],
+  :projects =>  
+  [
+    ["pool-service",
+     "pool service company, 2 locations,7 trucks",
+     "excel, quickbooks, csv files",
+     "too much manual paper shuffling",
+     "online service scheduling",
+     "https://spc-v1.herokuapp.com",
+     "http://res.cloudinary.com/smithwebtek/image/upload/v1516609033/swt/poolsvc_flvbfm.png"],
+
+
+    ["crash-data",
+     "municipal govt data analysis",
+     "api data, Cambridge Open Data portal",
+     "too many crashes",
+     "find key points in data to prevent crashes",
+     "https://crash-data-v1.herokuapp.com/",
+     "http://res.cloudinary.com/smithwebtek/image/upload/v1516609030/swt/crashdata_r63o4z.png"],
+
+
+    ["bst-trio",
+     "musician site",
+     "todo list, email, band info, venues",
+     "message is not conveyed vividly enough to find our niche audience",
+     "need the audience experience online",
+     "http://bradsmithtrio.com/",
+     "http://res.cloudinary.com/smithwebtek/image/upload/v1516609035/swt/bstrio_dvpuhf.png"],
+
+
+    ["piano-tech-site",
+     "piano technician business site",
+     "crm database, email, lists, excel, online schedule API",
+     "user buying experience is too dry",
+     "get personal sales process into digital experience",
+     "http://smithpiano.com/",
+     "http://res.cloudinary.com/smithwebtek/image/upload/v1516609034/swt/smithpiano_ny4dom.png"],
+
+
+    ["diet-planner",
+     "your diet, foods, meals tracked in a friendly forum",
+     "calorie data, user logs, lists, excel",
+     "following diet, need support",
+     "create pages to bond users struggling with diets",
+     "https://diet-planner-v8.herokuapp.com/",
+     "http://res.cloudinary.com/smithwebtek/image/upload/v1516609031/swt/diet-planner_oohyqk.png"],
+
+
+    ["music-studio",
+     "CRM system for a music teaching studio",
+     "teaching studio",
+     "Teachers,Students, Resources, Lessons",
+     "manage more students, and provide a richer learning experience",
+     "https://music-studio.herokuapp.com/",
+     "http://res.cloudinary.com/smithwebtek/image/upload/v1516500349/music-studio/music-student_pnmwbr.png"]
+   ]
 }
+
 
 def make_projects
   DATA_projects[:projects].each do |project|

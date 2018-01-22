@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20180122044247) do
     t.text     "problem"
     t.text     "wishlist"
     t.text     "url"
+    t.text     "screenshot"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
   end

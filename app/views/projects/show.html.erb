@@ -19,5 +19,10 @@
       wishlist:
       <%= @project.wishlist %>
     </h5>
+    <h5>
+      demo-site:
+      <%= link_to @project.url, @project.url %>
+    </h5>
+    <img src=<%=@project.screenshot %> width="450" height="350" alt="site" />
   </div>
 </div>
