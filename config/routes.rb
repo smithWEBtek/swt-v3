@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   
   get '/posts/new', to: 'posts#index'
   resources :posts, only: [:show, :index]
-  resources :refs, :topics, :groups, :users, :projects
+  resources :refs, :topics, :groups, :users, :projects, :cloud
 end

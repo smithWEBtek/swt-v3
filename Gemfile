@@ -7,7 +7,7 @@ end
 
 gem 'rails-erd'
 gem 'pdf-reader'
-gem 'cloudinary'
+
 gem 'seed_dump'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
