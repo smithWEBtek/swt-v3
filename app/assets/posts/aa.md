@@ -10,13 +10,11 @@ blog from this repo
     prioritize the funnel, pick one, elaborate its outline and summary
     pick one of those and fill in some detail on first few sub-topics
 
-
 build out 3-4 varied projects 
   Cambridge Open Data
   VolunteerMatch
   Manchester NH Police/Fire/Ambulance/Drugs epidemic
 
- 
 
 breadth
   languages:      Python, Java
@@ -214,19 +212,4 @@ Property prep    Get shop vac and boards organized in attic
     List tasks
 
 =======================================================
-
-refs
-
-posts
-  
-projects
-
-scrapes
-
-book
-video
-code example
-course
-tutorial
-
-tags
+ 
