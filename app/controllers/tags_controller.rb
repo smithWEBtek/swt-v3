@@ -33,19 +33,18 @@ class TagsController < ApplicationController
         render :new, message: "Tag NOT created, please try again."
       end
     end
-  end
-
-  def destroy
-    @tag.delete
-    redirect_to tags_path
-  end
-
-  private
+    
+    def destroy
+      @tag.delete
+      redirect_to tags_path
+    end
+    
+    private
     def set_tag
       @tag = Tag.find_by_id(params[:id])
     end
-
+    
     def tag_params
       params.require(:tag).permit(:name)
     end
-end
+  end
