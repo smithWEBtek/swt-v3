@@ -93,7 +93,7 @@ DATA_posts ={
       "",
       "",
       "limitations of physical work vs unlimited opportunities with coding", 
-      "career-change.md"
+      "001-career-change.md"
       ], 
     [ 
       "2017-04-12", 
@@ -102,7 +102,7 @@ DATA_posts ={
       "https://www.youtube.com/embed/A_jb0Iv6pEE",
       "", 
       "scrape Craigslist for 2 specific models of Yamaha piano", 
-      "piano-search.md"
+      "002-piano-search.md"
       ], 
     [ 
       "2016-03-12", 
@@ -111,7 +111,7 @@ DATA_posts ={
       "https://www.youtube.com/embed/-gYpibTzQH8?rel=0",
       "",
       "Sinatra app for managing teachers and students", 
-      "music-student.md"
+      "003-music-student.md"
       ], 
     [ 
       "2017-04-12", 
@@ -120,7 +120,7 @@ DATA_posts ={
       "https://www.youtube.com/embed/nGTIAKQ_uJk",
       "",
       "eat growing things more than moving things", 
-      "diet-tracker.md"
+      "004-diet-tracker.md"
       ],
     [ 
       "2017-05-07",
@@ -129,7 +129,7 @@ DATA_posts ={
       "https://www.youtube.com/embed/YT8r_w4AifI",
       "https://diet-planner-v8.herokuapp.com/",
       "Rails API w/ jQuery, AJAX, JSON front end", 
-      "diet-planner-v8.md"
+      "005-diet-planner-v8.md"
     ],
     [ 
       "2018-01-19",
@@ -138,7 +138,7 @@ DATA_posts ={
       "https://www.youtube.com/embed/Mm1hf_AJSsY",
       "https://music-studio.herokuapp.com/",
       "Rails API w/ JavaScript/React/Redux front end", 
-      "music-studio.md"
+      "006-music-studio.md"
     ]
   ]
 }
