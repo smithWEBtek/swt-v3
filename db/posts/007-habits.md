@@ -126,24 +126,25 @@ It will seem like you are wasting time.
   Code along with everything the presenter is doing, but as soon as you have a sense of what they'll code next, STOP the video and see how far you can get on your own. Then when you resume play, the video will mean far more. 
   This requires a personal motivation / fire in the belly, which will reap big rewards. 
   
-### 6. Create your own folder system to track:
-    Labs, in sections and categories that make sense to you
+### 6. Create your own folder system
+    Store experimental code and labs in sections and categories that make sense to you.
     Own this material, by filing it away on your system, so you can retreive it. 
+    As you visit or revisit a topic, create little summaries that could be the seeds of a blog post.
+    I think we should blog not just for publishing to the world, but simply to organize our own heads.
   
 ### 7. Create your own naming conventions, or adopt some and use them. 
   This promotes consistency in your thinking and code. 
-  And it forms habits that will serve you in the future as you
+  And it forms habits that will serve you in the future when you have to regenerate your brain.
   These are all byproducts of 'owning' the learning process.
 
-  Meaningful names last longer in a project, it's worth the thought.
+  Meaningful names last longer in a project, it is worth the time to create good names.
   You will be typing these names hundreds of times while you code, so the more they are organic, short, easy to spell and easy to PLURALIZE, the better.
   
 ### 8. Reach out and talk to other people
-  You have no idea how powerful it is to have your burden shared even for a moment with other like minded souls. This is one of the valuable parts of Flatiron, setting it apart from the other schools. My personal belief is that it began with Avi Flombaum's spirit of teaching. And, I believe that he inherited some of this attitude from [Matz](https://en.wikipedia.org/wiki/Yukihiro_Matsumoto).
+  You have no idea how powerful it is to have your burden shared even for a moment with other like minded souls. This is one of the valuable parts of Flatiron, setting it apart from the other schools. My personal belief is that it began with Avi Flombaum's spirit of teaching, heart for coding and raw talent. I am so grateful he decided to do a school instead of a million other things he could have done with the last 5 years. And, I believe that he inherited some of this attitude from [Matz](https://en.wikipedia.org/wiki/Yukihiro_Matsumoto), "Matz is nice, so we are nice".
 
 ### 9. Help someone else every day
-  Helping other people is actually very helpful to oneself.
-  Most of the time, it is not technical in nature. You don't have to be an expert, to ask simple questions about clarifying code. You might just help the other person jog their memory as they explain the problem.  [Be a duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
+  Helping other people is actually very helpful to oneself. Most of the time, it is not technical in nature. You don't have to be an expert, to ask simple questions about clarifying code. You might just help the other person jog their memory as they explain the problem.  [Be a duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
   I think that at least half of it is that you are bearing their burden with them even if for a brief time. As a result that they are strengthened enough to keep moving. Build up their strength so they can start forming their own opinions, starting from something verifiably true, testing and forming another opinion. 
 
 ### 10. Ask people (end users, civilians) what they wish their software could do
@@ -151,10 +152,27 @@ It will seem like you are wasting time.
 
   [this article and podcast](https://www.smartpassiveincome.com/podcasts/no-ideas-no-expertise-no-money-business/) captures this idea very well.
 
-  I was at a meetup recently where a group of developers had a long discussion about what kind of app we could produce as a volunteer group. The conversation wandered and settled on the loudest person in the room (where most devs are a little shy, the loudest voice takes on more meaning than it sometimes deserves). The consensus for an app became focused on this person's opionion that we needed an app to track "pot holes" in the street and possibly a feature to track whether someone had left dog droppings without cleaning it up. ( we'll pause while I give a sigh... )
+  _funny story that happened recently:_
 
-  Now, we live in a city where there are about 50 drug overdose deaths monthly. As I listened, it occured to me that we should ask the local police, fire, hospital, EMT workers if there was some way we could help them by developing an application. I was not loud enough about this idea, but it did seem to register with many of the other attendees. So my point is ASK USERS WHAT THEY NEED, instead of living in your own head when imagining what the app should do. 
- 
+  I was at a meetup recently where a group of developers had a long discussion about what kind of app we could produce as a volunteer group for our community. The conversation wandered and settled on the loudest person in the room (where most devs are a little shy, the loudest voice takes on more meaning than it sometimes deserves). The consensus for an app became focused on this person's opionion that we needed an app to track "pot holes" in the street and possibly a feature to track whether someone had left dog droppings without cleaning it up. ( we'll pause while I give a sigh... )
+
+  Now, we live in a city where there are about 50 drug overdose deaths monthly. As I listened, it occured to me that we should ask the local police, fire, hospital, EMT workers if there was some way we could help them by developing an application. Perhaps I was not loud enough about this idea, but it did seem to register with many of the other attendees. My point:  ASK USERS WHAT THEY NEED, instead of living in your own head when imagining what the app should do.  Focus on the problems of your users, instead of broadcasting your features! Features are only useful if a user has a problem first, that is solved by that feature. 
+  
+### Problem Knowledge vs Product Knowledge 
+  Now you might pitch the idea that a feature could inspire the user to new ideas, and a higher level of living. 
+  And I would say that you probably work for Microsoft, painting imaginary value into the marketplace of ideas. And, perhaps there is some value in dreaming up a feature, foisting it on the world and then pretending that the world beat a path to your door, asking for that feature. 
+
+  Reality teaches me that we are safer and more effective focusing on actual problems that users have, first. 
+  
+  In any development effort, you are faced with a long list of "nice to haves", "wish lists", etc. As I used to say to sales people:  STOP broadcasting your product knowledge. Your awareness of the client's PROBLEM is far more important than any PRODUCT knowledge you have of features and benefits.
+
+  Users do not care that you have a thousand ways to code something. They have a limited budget, time and attention span to determine if you can actually solve their problem or not, before they move on to find the person who actually does understand their problem. This applies whether you are in a cutting edge startup, working for the most mundane of governmental departments or having a meeting with the local girl scouts to plan their site. I'll stop for now, but as most people in life have 1 or 2 songs they sing, this is my biggest hit, and I shall be heard. 
+
+
+  But then, hey, maybe we do need a "dog poo app", as was suggested in the meetup earlier. 
+  
+  _moving on_
+
 ## 12. DO QUANTITY as well as quality
   I find with music students and students of piano tuning, that sometimes they just need to DO MORE. Repetition of skills to the point where they become deeper in your mind ( and deeper into your hands physically ) produces higher levels of everything. With piano, you practice things physically until your body becomes a conduit for musical ideas and emotions. You practice the language parts (scales, melodies, chord harmony positions) until you think on a higher plane about all of it. 
   
