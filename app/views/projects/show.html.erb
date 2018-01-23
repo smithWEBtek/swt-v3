@@ -1,7 +1,10 @@
 <div class="wrapper wrapper_padding clearfix">
   <div class="sidebar col-4 sidebar-margin">
-    <%= render partial: 'projects/sidebar', locals: { projects: @projects } %>
-      <%= render partial: 'layouts/contact' %>
+    <%= render 'layouts/contact' %>
+      <br />
+      <br />
+      <br />
+      <%= render partial: 'projects/sidebar', locals: { projects: @projects } %>
   </div>
   <div class="col-3">
     <h2>

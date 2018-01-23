@@ -166,8 +166,9 @@ It will seem like you are wasting time.
   
   In any development effort, you are faced with a long list of "nice to haves", "wish lists", etc. As I used to say to sales people:  STOP broadcasting your product knowledge. Your awareness of the client's PROBLEM is far more important than any PRODUCT knowledge you have of features and benefits.
 
-  Users do not care that you have a thousand ways to code something. They have a limited budget, time and attention span to determine if you can actually solve their problem or not, before they move on to find the person who actually does understand their problem. This applies whether you are in a cutting edge startup, working for the most mundane of governmental departments or having a meeting with the local girl scouts to plan their site. I'll stop for now, but as most people in life have 1 or 2 songs they sing, this is my biggest hit, and I shall be heard. 
-
+  Users do not care that you have a thousand ways to code something. They have a limited budget, time and attention span to determine if you can actually solve their problem or not, before they move on to find the person who actually does understand their problem. This applies whether you are in a cutting edge startup, working for the most mundane of governmental departments or having a meeting with the local girl scouts to plan their site. 
+  
+  I'll stop for now, but as most people in life have 1 or 2 songs they sing, this is my biggest hit, and I shall be heard. 
 
   But then, hey, maybe we do need a "dog poo app", as was suggested in the meetup earlier. 
   
