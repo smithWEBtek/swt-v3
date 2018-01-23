@@ -139,7 +139,27 @@ DATA_posts ={
       "https://music-studio.herokuapp.com/",
       "Rails API w/ JavaScript/React/Redux front end", 
       "006-music-studio.md"
+    ],
+    [
+      # ["date", "title", "repo", "video_url", "site_url", "summary", "md_file"],
+      "2018-01-23",
+      "Habits of A Successful Student",
+      "",
+      "",
+      "",
+      "Do some of these things", 
+      "007-habits.md"
     ]
+    # [
+    # # ["date", "title", "repo", "video_url", "site_url", "summary", "md_file"],
+    #   "2018-01-22",
+    #   "How to build project seed data",
+    #   "",
+    #   "",
+    #   "",
+    #   "Solid data is your project foundation.", 
+    #   "008-project-data.md"
+    # ]
   ]
 }
 
