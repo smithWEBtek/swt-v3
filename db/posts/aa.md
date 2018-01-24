@@ -1,4 +1,15 @@
 review React, Redux and Javascript all week
+ 
+
+add spinner for big fetches
+reset button: set Students, Teachers and Resources back to active: true
+more stuff on the site; add more artifacts 
+visually clarify views for Student, Teacher, Lesson and related sub-sections
+
+settle on a pattern for dev and prod 
+just change the 5 'service' files to point to local server if you wish
+otherwise you can develop local client app, while using Heroku as API
+
 add resources to music-studio app
   -get functional with Cloudinary API
   -get functional with Soundcloud API
@@ -18,11 +29,10 @@ build out 3-4 varied projects
 
 
 breadth
-  languages:      Python, Java
+  languages:      Python, Java, ColdFusion
   js frameworks:  Angular, Vue
   visualization:  D3
   GIS mapping:    ?
-
   source control:  git chops
 
 
@@ -56,15 +66,13 @@ wiki
 
  
 
-# SmithPiano
- 
-  ## mailing / emailing
-  ## invoicing
-  ## scheduling
+SmithPiano
+  mailing / emailing
+  invoicing
+  scheduling
  
 CODING
 blog post about seed data, data model, serializers rails basic mockaroo and cloudinary
-blog post about coding attitude and the spirit of debugging
 blog post about D3
 
 volunteer match sites for portfolio 
@@ -77,54 +85,34 @@ Darrell’s inv
 Scottrade acct move money
  
 
-# Flatiron
-  ## Assessment prep
-  ## Career track
-  ## get restarted with Martha Bloem-Reddy
-  ## finish career track
-  ## blog
-  ## portfolio projects
-  ## smithWEBtek site
-  ## BSTrio site
-  ## Branding: LinkeIn/Twitter/Instagram/YouTube brand identity
-  ## dream job description
+Flatiron
+  Assessment prep
+  Career track
+  get restarted with Martha Bloem-Reddy
+  finish career track
+  blog
+  portfolio projects
+  smithWEBtek site
+  BSTrio site
+  Branding: LinkeIn/Twitter/Instagram/YouTube brand identity
+  dream job description
  
 #Reading  
-  ##Pragmatic Programmer
-  ##Code Smells
+  ragmatic Programmer
+  Code Smells
 
 #GoDeep RTFM a-z: 
-  ##JS:     You Don't Know JS
-  ##React:  FullStact React
-  ##Redux:  Docs and Videos
-  ##Regex:  Blogs, tutorials
-  ##Bootstrap
-  ##D3
+  JS:     You Don't Know JS
+  React:  FullStact React
+  Redux:  Docs and Videos
+  Regex:  Blogs, tutorials
+  Bootstrap
+  D3
 
 #CodingChops
-  ##codewars
-  ##hackerrank
+  Codewars
+  Hackerrank
     
-
-Hello World:
-    java, python, php, D3
-       Network
-    Manchester JS
-    Boston JS / ProjectJS
-    CodeForBoston
-    CodeForNH
- 
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
-```
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
  
 
 =======================================================
@@ -140,72 +128,21 @@ master list of all gems and functionality to go in ALL rails apps
     Governed by A Mind for Numbers learning principles
 =======================================================
 #APPS
-swt-v3: working
+
+sp-appt:
+
+swt-v3:
     finish wiki structure
     blog-repo-parts process and structure
     read only billboard for ME no users, discussions, just my shit
- 
-spc-v1:initial build worked
-    1.2:service call show page
-        calendar of trucks
-        clipboard filling up
-        dropping into truck
-    Steve repeated the "take a pic, attach thing several times"
-
-crash-data:applied for access to MassTrac
-    get MassTrac access
-    work with API to get data
-    put up basic Rails app on Heroku
-    create some basic summaries for Priyanka and others
-    get hello world on D3, ask James to help
- 
+  
 career
     Incorporate tips from "How to be a No-Brainer Hire"
     blog: 5 more posts to graduate
     read:    you don't know js book
     jsD3:    do hello world with data in my apps
-
-goal-mgr-v1:     form data model of the ultimate verb/noun/iot that corresponds with anything
-    wiki: catalog and store books, refs, courses, videos
-            How to store books and videos
-                    Use Avi's video on uploading Google Docs as a start
-                            Battledecks lectures
-            One click save, to add something to library
-            Flagging system to identify what I'm working on
-            Tags to tie bits of knowledge together
-                    To guide learner through the matrix
-                    To use existing published content wherever possible
-                    The value of the site, is the guiding hand, even more than the content
-
-job-crm-v1
-    get all basic forms working
-    get nested action form working for multiple jobs
-    get user auth working, use diet-tracker as example
-    get github omniauth working
-    get facebook omniauth working
-    incorporate Ajax in User actioni/upate forms
-
-teaching-app:
-    research MIDI via HTTP rendered with D3
-    Jekyll:    get Jekyll working on a demo app, published on Heroku 
-    SoundSlice:     Record more Salsa flavors for Terry, using SoundSlice
-
-bst:bradsmithtrio
-    Map out a path for paying music gig  / band
-
-=======================================================
-PIANO TEACHING
-    Outline what is needed: Resume, EPK, Videos, content, system, policies
-    Decide what format:  In home, Skype, work for a studio, start a studio
-    Advertise: 
-    Refine content:
-    Build website:
-    Piano Teaching cred / resume / videos /materials
-    See Steve Baker for materials
-    The Teacher's job:
-            Lead the student through the actions, drills, study paths, content to desired goal
-            Get paid to reduce the student's "floundering time"
-=======================================================
+ 
+   
 =======================================================
 PROPERTY
 Property prep    Get shop vac and boards organized in attic

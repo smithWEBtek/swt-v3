@@ -39,7 +39,7 @@ It will seem like you are wasting time.
   You will forget how you created some things. You will actually temporarily forget how you coded some things and you will marvel that the code you pushed up, is actually yours. It doesn't have to be a ton of info, but at least capture the little tidbits about configuration, or how a Gem behaves, or error messages you battled. Help the Universe by capturing this stuff, and it will also become great blog meat (yes, I said it: "blog meat"). So, write little summaries of your projects, start with editing README files. 
 
 ### 3. Create your own glossary or bookmarks folder to capture the deluge of information for now and future
-  I have a huge list of bookmarks. It is not highly organized but at least I have a way to quickly capture ideas that I encounter, and I try to put them in folders where I can find them in the future. I will be turning a portion of my site into a curation / library / wiki of all the stuff I've collected. I got this idea from a great developer, David Wilkerson. He taught a class where he encouraged the building of your own glossary from day 1.
+  I have a huge list of bookmarks. It is not highly organized but at least I have a way to quickly capture ideas that I encounter, and I try to put them in folders where I can find them in the future. I will be turning a portion of my site into a curation / library / wiki of all the stuff I've collected. I got this idea from a great teacher who encouraged the building of your own glossary from day one.
 
   In my case, I am building a little factory like this: 
 
@@ -159,20 +159,13 @@ It will seem like you are wasting time.
   Now, we live in a city where there are about 50 drug overdose deaths monthly. As I listened, it occured to me that we should ask the local police, fire, hospital, EMT workers if there was some way we could help them by developing an application. Perhaps I was not loud enough about this idea, but it did seem to register with many of the other attendees. My point:  ASK USERS WHAT THEY NEED, instead of living in your own head when imagining what the app should do.  Focus on the problems of your users, instead of broadcasting your features! Features are only useful if a user has a problem first, that is solved by that feature. 
   
 ### Problem Knowledge vs Product Knowledge 
-  Now you might pitch the idea that a feature could inspire the user to new ideas, and a higher level of living. 
-  And I would say that you probably work for Microsoft, painting imaginary value into the marketplace of ideas. And, perhaps there is some value in dreaming up a feature, foisting it on the world and then pretending that the world beat a path to your door, asking for that feature. 
-
-  Reality teaches me that we are safer and more effective focusing on actual problems that users have, first. 
-  
   In any development effort, you are faced with a long list of "nice to haves", "wish lists", etc. As I used to say to sales people:  STOP broadcasting your product knowledge. Your awareness of the client's PROBLEM is far more important than any PRODUCT knowledge you have of features and benefits.
 
   Users do not care that you have a thousand ways to code something. They have a limited budget, time and attention span to determine if you can actually solve their problem or not, before they move on to find the person who actually does understand their problem. This applies whether you are in a cutting edge startup, working for the most mundane of governmental departments or having a meeting with the local girl scouts to plan their site. 
   
-  I'll stop for now, but as most people in life have 1 or 2 songs they sing, this is my biggest hit, and I shall be heard. 
-
-  But then, hey, maybe we do need a "dog poo app", as was suggested in the meetup earlier. 
+  But then maybe people do want a "dog poo app", as was suggested in the meetup earlier. 
   
-  _moving on_
+  _...and we're moving on_
 
 ## 12. DO QUANTITY as well as quality
   I find with music students and students of piano tuning, that sometimes they just need to DO MORE. Repetition of skills to the point where they become deeper in your mind ( and deeper into your hands physically ) produces higher levels of everything. With piano, you practice things physically until your body becomes a conduit for musical ideas and emotions. You practice the language parts (scales, melodies, chord harmony positions) until you think on a higher plane about all of it. 
