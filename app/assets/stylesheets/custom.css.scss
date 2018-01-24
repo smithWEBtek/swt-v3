@@ -55,3 +55,18 @@
 .rounded {
   border-radius: 25px;
 }
+ 
+
+@media screen and (max-width:480px){
+  img.responsive {width: 60px;}
+}
+
+@media screen and (max-width:827px){
+  img.responsive {width: 90px;}
+}
+
+@media screen and (min-width:828px){
+  img.responsive{width: 150px;}
+}
+
+img.responsive{height: auto;}
