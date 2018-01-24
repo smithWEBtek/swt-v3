@@ -1,10 +1,18 @@
-review React, Redux and Javascript all week
- 
 
-add spinner for big fetches
-reset button: set Students, Teachers and Resources back to active: true
-more stuff on the site; add more artifacts 
-visually clarify views for Student, Teacher, Lesson and related sub-sections
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+### review React, Redux and Javascript all week
+
+- add spinner for big fetches
+- reset button: set Students, Teachers and Resources back to active: true
+- more stuff on the site; add more artifacts 
+- visually clarify views for Student, Teacher, Lesson and related sub-sections
 
 settle on a pattern for dev and prod 
 just change the 5 'service' files to point to local server if you wish

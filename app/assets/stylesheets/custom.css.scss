@@ -39,16 +39,10 @@
   font-style: italic;
 }
 
-.copy-text p {
-  font-family: Verdana, sans-serif;
-  font-size: 82%;
-   text-align: justify;
-    text-justify: inter-word;
-}
-
 .body-text p {
   font-family: Verdana, sans-serif;
-  font-size: 82%;
+  font-size: 14px;
+  line-height: 1.25;
   text-align: justify;
   text-justify: inter-word;
   width: 80%;
@@ -61,5 +55,3 @@
 .rounded {
   border-radius: 25px;
 }
-
- 
