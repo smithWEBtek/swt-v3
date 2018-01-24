@@ -1,8 +1,9 @@
 class StaticController < ApplicationController
   layout false, only: [:index2]
 
-  def index2
-    render '/static/index2/index.html.erb' 
+  def asdf
+    @asdf = "asdf.md"
+    render '/static/asdf.html.erb' 
   end
 
   def about

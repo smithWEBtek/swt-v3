@@ -15,6 +15,7 @@ add resources to music-studio app
   -get functional with Soundcloud API
 
 blog from this repo
+[Redcarpet](https://github.com/vmg/redcarpet)
   create workflow using existing placeholders in this app
   create a blogging markdown template, prefilled with styles 
   organize wiki data model

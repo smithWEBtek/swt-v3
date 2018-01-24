@@ -5,6 +5,15 @@ module ApplicationHelper
     end
   end
 
+  def render_md(file)
+    if file.nil?
+      "no blog.md file exists"
+    else
+      render_file = "#{Rails.root}"+"/db/posts/"+"#{file}"
+      markdown(File.read(render_file))
+    end
+  end
+
   def markdown(content)
     renderer = HTMLwithPygments.new(hard_wrap: true, filter_html: true)
     options = {
@@ -16,16 +25,6 @@ module ApplicationHelper
       strikethrough: true,
       superscript: true
     }
-    Redcarpet::Markdown.new(renderer, options).render(content).html_safe
+    Redcarpet::Markdown.new(renderer, options).render(content).html_safe  
   end
-
-  def render_md(file)
-    if file.nil?
-      "no blog.md file exists"
-    else
-      render_file = "#{Rails.root}"+"/db/posts/"+"#{file}"
-      markdown(File.read(render_file))
-    end
-  end
-
 end

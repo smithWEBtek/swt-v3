@@ -12,7 +12,9 @@ I took this project seriously and have done the best I can given my current skil
     Selected list of CONTAINERS: Lessons, Students, Teachers, Resources, LessonResources (and there are more )
 [X] here should be 5 stateless components
     Selected list of STATELESS FUNCTIONAL components: Student, Teacher, Resource, StudentService, TeacherService, ResourceService, LessonService ( among others )
-[X] There should be 3 routesList of routes: 
+[X] There should be 3 routes
+
+List of routes: 
       /students, /teachers, /resources, /lessons (for indexs of these data groups)
       /students/:id (for individual student)
       /students/:id/edit (for editing individual studen
@@ -121,7 +123,7 @@ td {
 ###Regarding React
 
   I hated it! Until I learned it. Now I really enjoy it. 
-  I amo happy to have found a place to use Rails as an API while using React and Redux to make the single page client side rock! 
+  I am happy to have found a place to use Rails as an API while using React and Redux to make the single page client side rock! 
 
   I have not learned Angular or VUEjs, but I can tell they are in my future.  I am so excited at the idea of being able toput my creative ideas into practice through coding!
 
