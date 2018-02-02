@@ -10,18 +10,14 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 <h2>Questions for Cernan</h2>
 1. Is there a better way to toggle API_URL (see store/serivces/*.js files)
-
 2. What can you advise about folder structure? (Container/Component, etc. )
-
 3. I think I would prefer one huge CSS file, instead of matching css file in dedicated folders for every file. Is that just a developer choice or do you think there are best practices to follow.
-
 4.Toggling views with local state  
     I picked up this technique in my research, are there better ways do do it?
   * If I wanted to manage view/close of a component via Redux state, would that be preferred?
-
 5.  Wrapping a <Link /> with a <button>
   - I just came up with this on my own, wonder if it seems weird? Is there a better way?
-
+6.
 
 
 

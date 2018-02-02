@@ -16,6 +16,11 @@ class StaticController < ApplicationController
     render '/static/zxcv.html.erb' 
   end
 
+  def assmt
+    @asdf = "assmt.md"
+    render '/static/assmt.html.erb' 
+  end
+
   def about
     render :about
   end

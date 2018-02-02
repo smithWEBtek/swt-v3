@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/asdf', to: 'static#asdf'
   get '/zxcv', to: 'static#zxcv'
   get '/qwer', to: 'static#qwer'
+  get '/assmt', to: 'static#assmt'
 
   get '/bookmarks', to: 'static#bookmarks'
   get '/about', to: 'static#about'
