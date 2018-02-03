@@ -80,7 +80,7 @@ my original todo list:
 
 
 ### Observations on Actions:
-I have setup "actionStart", "actionSucces", "actionFail" for a given action, with the main "action" referenceing the other 3 (start, success, fail).
+I have setup "actionStart", "actionSucces", "actionFail" for a given action, with the main "action" referencing the other 3 (start, success, fail).
 
 I was not thinking through how these all worked, and in some cases I had either redundant actions, or improper use of the responses that came back from a given fetch request.
 
