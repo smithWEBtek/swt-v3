@@ -6,13 +6,21 @@
 ***
 ***
 
+
 Hi Cernan, 
 We are set to meet tomorrow at 330PM Pacific Time
 My project [repo is here](https://github.com/smithWEBtek/piano-student-api)
 
-If you have time to reply, below are 2 questions about refreshing data from Redux state and using routing to trigger refetch of Redux state. 
+Slack username:  @smithwebtek
+
+Below are 2 questions about refreshing data from Redux state and using routing to trigger refetch of Redux state. 
 
 Below that I have summarized the refactoring done since last meeting. 
+
+If you have any quick feedback, I would be grateful!
+
+-Brad Smith
+
 
 
 ---------------------------------------------------------------------------------------
