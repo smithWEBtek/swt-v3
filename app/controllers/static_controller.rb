@@ -1,6 +1,11 @@
 class StaticController < ApplicationController
   layout false, only: [:index2]
 
+  def cernan
+    @cernan = "cernan.md"
+    render '/static/cernan.html.erb' 
+  end
+
   def asdf
     @asdf = "asdf.md"
     render '/static/asdf.html.erb' 
