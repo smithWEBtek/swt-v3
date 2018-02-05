@@ -6,6 +6,11 @@ class StaticController < ApplicationController
     render '/static/cernan.html.erb' 
   end
 
+  def jsarrays
+    @jsarrays = "jsarrays.md"
+    render '/static/jsarrays.html.erb' 
+  end
+
   def asdf
     @asdf = "asdf.md"
     render '/static/asdf.html.erb' 

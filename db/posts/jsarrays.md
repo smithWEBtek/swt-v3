@@ -1,6 +1,9 @@
 
+### JavaScript Array Methods
 
+#### Common ways to manipulate arrays in JavaScript, including mutating the original array or returning a copy of the original, whether modified or not.
 
+The foll
 method	#args	action	returns	mutates y/n?
 .push	1+	adds element(s) to end of arrary	count of array elements	YES, array gains element(s)
 .slice	1	slices array at index(arg)	returns sliced elements	NO, array remains unmutated
@@ -13,4 +16,20 @@ method	#args	action	returns	mutates y/n?
 [...array_name, arg]	1	appends 'arg' to end of array	appended array	NO, array remains unmutated
 [arg ,...array_name]	1	pre-pends 'arg' to beginning of array	pre-pended array	NO, array remains unmutated
 
-
+<table border="1">
+  <tr>
+    <td>&nbsp;</td>
+    <td>Knocky</td>
+    <td>Flor</td>
+    <td>Ella</td>
+    <td>Juan</td>
+  </tr>
+  <tr>
+    <td>Breed</td>
+    <td>Jack Russell</td>
+    <td>Poodle</td>
+    <td>Streetdog</td>
+    <td>Cocker Spaniel</td>
+  </tr>
+ 
+</table>

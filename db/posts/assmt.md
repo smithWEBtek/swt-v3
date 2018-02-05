@@ -1,79 +1,29 @@
 ### Current Status
 
-#### Updating Student via proper action=>reducer=>component
-
-updateStudent, in StudentActions.js is refactored, to use StudentReducer for updating a single student both with the API call, and in the actionType dispatched to StudentReducer. 
-
-However, I cannot get my StudentsList to rerender by pushing /students on history to generate a rerender based on a Redux state change (which is definitely happening, now that I've refactored.)
-
-I have tried: 
-
-1. componentDidMount
-  in Students.js
-  onFetchStudents()
-  loads the existing state of Students from Redux state
-  does not hit the API
-  seems to be required so that I can re-render the Students List after a student update
-
-2. componentDidMount in App.js
-  tried loading all Redux state here instead of Students.js
-  Students.js still doesn't get Redux state of 'students' unless I fetch it again when Students.js loads
-  also it seems to stop the re-render of StudentsList after an update
-
-3. I do have the StudentActions properly hitting the API and dispatching to Redux store now.
-  But, the only way that I can find to get my StudentsList to re-render upon clicking "LIKE", is to push 2 routes likt this: 
-
-```javascript
-//-----UPDATE STUDENT ACTIONS-----------------------------
-export const updateStudentStart = () => {
-  return { type: actionTypes.UPDATE_STUDENT_START }
-}
-export const updateStudentSuccess = () => {
-  return { type: actionTypes.UPDATE_STUDENT_SUCCESS }
-}
-export const updateStudentFail = (error) => {
-  return { type: actionTypes.UPDATE_STUDENT_FAIL, error: error }
-}
-export const updateStudent = (data, history, location) => {
-  return dispatch => {
-    dispatch(updateStudentStart())
-    StudentService.updateStudent(data)
-      .then(response => {
-        dispatch({ type: actionTypes.UPDATE_STUDENT, updatedStudentData: response })
-        history.push(`/`)
-        history.push(`/students/`)
-        dispatch(updateStudentSuccess())
-      })
-      .catch(error => {
-        dispatch(updateStudentFail(error))
-      })
-  }
-}
-```
-It is as I need to "leave town", so that I can re-enter town and receive the proper welcome, so to speak.
-The proper welcome being that Students.js re-fetches the current state of students.
-
-
+#### Updating component via:  
+      dispatch action => reducer => redux state => component(s)
+      dispatch action => api => reducer => redux state => component(s)
 
 my original todo list:
 
-[x] change this to use Object.assign()
-[x] then update the student via (action to API) and (action dispatch to reducer)
-[x] the component should be getting state from Redux
-[x] the individual student should be updated via action
-[x] Redux state should be updated for the single student, instead of relying on fetching all students
+[X] change this to use Object.assign()
+[X] then update the student via (action to API) and (action dispatch to reducer)
+[X] the component should be getting state from Redux
+[X] the individual student should be updated via action
+[X] Redux state should be updated for the single student, instead of relying on fetching all students
 [*] and this all needs to happen while retaining Routing
 [?] it may be neccessary to pass 'location' as a prop, to retain Routing behavior
 [] https://reacttraining.com/react-router/web/guides/dealing-with-update-blocking 
 [] 
-[x] keep the new component <StudentRow />
-[x] add perisistence to DB in this branch
-[x] then test the 'likeStudent' function, action, service, api, reducer, redux state, refresh view
+[X] keep the new component <StudentRow />
+[X] add perisistence to DB in this branch
+[X] then test the 'likeStudent' function, action, service, api, reducer, redux state, refresh view
 
 
+[X] go through the other reducers and actions files to do the equivalent
+[X] get this effen disk to stop spinning so hard
 
-[] go through the other reducers and actions files to do the equivalent
-[] get this effen disk to stop spinning so hard
+
 [] write the blog about fetch
 [] write the blog about how data flows between:
   API, Action(s), Reducers, Redux State, Local State, Routing

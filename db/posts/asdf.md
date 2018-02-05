@@ -27,11 +27,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - reset button: set Students, Teachers and Resources back to active: true
 - more stuff on the site; add more artifacts 
 - visually clarify views for Student, Teacher, Lesson and related sub-sections
-
-settle on a pattern for dev and prod 
-just change the 5 'service' files to point to local server if you wish
-otherwise you can develop local client app, while using Heroku as API
-
+ 
 add resources to music-studio app
   -get functional with Cloudinary API
   -get functional with Soundcloud API
