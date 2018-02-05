@@ -38,15 +38,15 @@ For example:
 I experimented with only fetching Redux state in a higher component like App.js, and I found that I still needed to fetch current state for my objects in each file (ie. Students.js, Teachers.js, Resources.js, Lessons.js), otherwise my components would not render with data.
 
 QUESTIONS: 
-### Am I using best practice for fetching data from Redux state?
-### Is there anything wrong with fetching state for these objects in componentDidMount for each one respectively, instead of doing it all in App.js?
-### Since I am NOT re-fetching using the API, but only re-fetching updated Redux state, is there any harm in this approach?
+#### Am I using best practice for fetching data from Redux state?
+#### Is there anything wrong with fetching state for these objects in componentDidMount for each one respectively, instead of doing it all in App.js?
+#### Since I am NOT re-fetching using the API, but only re-fetching updated Redux state, is there any harm in this approach?
 
 
 
 ---------------------------------------------------------------------------------------
 ### 2. Am I using best practice for routing after updating?
-After an update to a Student for example, I want to be re-render on the StudentsList page (/students), showing the updated list of all students, including the update I just made. The only way I found to do this was to navigate away from that page and then navigate back to it, by pushing 2 history entries after I complete my update in studentActions.js.  (This works because each of the data groups (Students, Teachers, Resources, Lessons) have 'componentDidMount' where I am fetching their current state.)
+After an update to a Student for example, I want to re-render the StudentsList page (/students), showing the updated list of all students, including the update I just made. The only way I found to do this was to navigate away from that page and then navigate back to it, by pushing 2 history entries after I complete my update in studentActions.js.  (This works because each of the data groups (Students, Teachers, Resources, Lessons) have 'componentDidMount' where I am fetching their current state.)
 
 I am using 'history.push(), and successfully passing in history:
 
@@ -73,8 +73,8 @@ code is below, or [here on Github](https://github.com/smithWEBtek/piano-student-
   ```
 
 QUESTIONS:
-### Is this an anti-pattern to be navigating away from /students, then back to it, just to force a re-fetching of Redux's state.students? 
-### Is there another way that I am not aware of ? 
+#### Is this an anti-pattern to be navigating away from /students, then back to it, just to force a re-fetching of Redux's state.students? 
+#### Is there another way that I am not aware of ? 
  
 ---------------------------------------------------------------------------------------
 
