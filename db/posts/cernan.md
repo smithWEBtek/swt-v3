@@ -100,7 +100,7 @@ Removed the show and hide of main lists which depended on local state
 ---------------------------------------------------------------------------------------
 
 
-### Updated as of Tuesday, 1PM Eastern
+### Updated as of Tuesday, 3PM Eastern
 
 #### Added functionality: EditStudent to:  'Student.js' show page
   Added Redux state for this page, including:
@@ -150,6 +150,9 @@ Removed the show and hide of main lists which depended on local state
     this.props.onUpdateStudent(data, history)
   }
   ```
+
+
+#### Implemented the above Student changes, to Teacher, Resource and Lesson
 
 
 
