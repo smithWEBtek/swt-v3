@@ -98,3 +98,60 @@ Removed the show and hide of main lists which depended on local state
     - Individual Student, Teacher, Resource or Lesson now render from links within the main lists
 
 ---------------------------------------------------------------------------------------
+
+
+### Updated as of Tuesday, 1PM Eastern
+
+#### Added functionality: EditStudent to:  'Student.js' show page
+  Added Redux state for this page, including:
+    this.props.teachers, to provide date for 'teacherSelect' dropdown function
+    this.props.students, for finding 'student' either via 2 ways:
+
+      1. <Link /> from Student show page, passed in this.props.match.params.id
+      2. student_id passed in from 'Students.js'
+      
+    In each case, the student is found in Redux state, and local state is set with that student's attributes
+
+#### Routing after an 'Edit' update
+  Desired behavior was to end up back on the page where you began your Edit:
+    EditStudent from Student.js (show page), should bring you back to Student.js (show page), with updated data.
+    EditStudent from Students.js ("index page"), should bring you back to Students.js ("index page"), with updated data.
+
+##### Using 'history.goBack()' in the StudentActions.js file, in the updateStudent() function, solved this. 
+  history.goBack() to the rescue! 
+  this navigates you back to wherever you started your "Edit student" operation.
+   
+### BUT...
+
+#### Routing after a 'like' update
+  It then produced the following undesired behavior:  
+  When clicking "like" button, on a StudentRow in the StudentsList, in the Students.js ("index page")...
+  ...the StudentActions.updateStudent() function would send you "back" to whatever page you were on before you went to Students.js
+
+##### Desired behavior:  
+  When you click on "LIKE" for a particular student:
+  
+* I want to remain on the Students.js page
+* showing all students, with the only difference being:
+* that the "like" count incremented for the clicked ('like'd) student row
+
+##### SOLUTION: 
+```javascript
+  //********LIKE_STUDENT handling****************
+  likeStudent = (id) => {
+    let { history } = this.props
+    history.push('/students') 
+    // this "primes the history pump", 
+    // so that "history.goBack()" in StudentActions.js, updateStudent(), 
+    // doesn't screw up User experience
+
+    let student = this.props.students.find(stu => stu.id === id)
+    let data = Object.assign({}, student, { likes: student.likes + 1 })
+    this.props.onUpdateStudent(data, history)
+  }
+  ```
+
+
+
+ 
+
