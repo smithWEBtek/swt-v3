@@ -121,6 +121,23 @@ Removed the show and hide of main lists which depended on local state
   history.goBack() to the rescue! 
   this navigates you back to wherever you started your "Edit student" operation.
    
+```javascript 
+export const updateStudent = (data, history) => {
+  return dispatch => {
+    dispatch(updateStudentStart())
+    StudentService.updateStudent(data)
+      .then(response => {
+        dispatch({ type: actionTypes.UPDATE_STUDENT, updatedStudentData: response })
+        history.goBack() // magic!
+        dispatch(updateStudentSuccess())
+      })
+      .catch(error => {
+        dispatch(updateStudentFail(error))
+      })
+  }
+}
+```
+
 ### BUT...
 
 #### Routing after a 'like' update
