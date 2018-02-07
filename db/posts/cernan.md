@@ -176,9 +176,9 @@ export const updateStudent = (data, history) => {
 
 need to fix: 
 
-1. CreateResource, goes to Resources index, does not go to new resource "show page" as I want
-2. Resource.url handling if left empty on Edit.save
-3. Heroku urls don't work until I implement routing to force all routes back to index.html first
+[X] CreateResource, goes to Resources index, does not go to new resource "show page" as I want
+[ ] Resource.url handling if left empty on Edit.save
+[ ] Heroku urls don't work until I implement routing to force all routes back to index.html first
 
 
  
