@@ -21,6 +21,10 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 
 
+http://res.cloudinary.com/smithwebtek/image/upload/v1518024751/_career2/BradSmith-pdf-resume.pdf
+
+
+
 ### review React, Redux and Javascript all week
 
 - add spinner for big fetches
