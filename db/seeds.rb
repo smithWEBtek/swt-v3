@@ -143,7 +143,7 @@ DATA_posts ={
     [
       # ["date", "title", "repo", "video_url", "site_url", "summary", "md_file"],
       "2018-01-23",
-      "Habits of A Successful Student",
+      "Habits of A Successful Developer",
       "",
       "",
       "",
