@@ -7,12 +7,13 @@
       <%= render partial: 'posts/sidebar', locals: { posts: @posts } %>
   </div>
   <div class="col-3">
-    <h2>
+    <h3>
       <%= @post.title %>
-    </h2>
+		</h3>
+		<hr />
     <h5>
-      date:
-      <%= @post.date %>
+		date:
+		<%= @post.date %>
     </h5>
 
     <% if @post.site_url != "" %>
