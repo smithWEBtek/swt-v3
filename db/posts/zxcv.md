@@ -1,17 +1,105 @@
-# Create Your Project Data
-This post covers some good habits around preparing a solid dataset for your development project for Sinatra, Rails, React, jQuery, javascript, React, Redux. The idea is to have solid relational data prepared before you begin the thornier parts of client side rendering, and to help you keep your focus during development. 
+# Oh, one more thing...
+Columbo (the great 70s TV detective) would often solve a case with small bits of seemingly unimportant information. The unwitting suspect would admit to key points while Columbo quietly built his case. 
 
-Columbo (the great 70s TV detective) would often solve a case with many small bits of seemingly unrelated data. 
+This post covers some good habits for preparing a solid dataset in your development project for Sinatra, Rails, React, jQuery, javascript, React, Redux or anytime you need a sample dataset and database for developement. 
+
+For applications that require a database, there are steps I follow that help me ensure my data is solid before I write any of the application logic or client side views. Like Columbo, this helps me eliminate things that would otherwise clutter my thinking as I develop, debug and add abstraction to my application. 
+
+### Some reasons why I always do this before a project:
+I want to have a bullet proof way to reset my database anytime I please, with minimal refactoring or wondering, especially when I end up deploy my apps to Heroku, Netlify, Firebase, AWS or Github pages, I want to be sure that I have solid code for resetting my data on a remote server. With a thoughtful seed file, I have an easy way to add both new fields to my database and add new data to match those fields, removing any guesswork about the effectiveness of the new data. 
+
+The idea is to have solid relational data prepared before you begin the thornier parts of client side development. If you are building anything from a small app, to a full blown API serving up data to a front end app, these steps will help you to: 
+
+1. Conveniently Drop, Create, Migrate, Seed and Start your database and application 
+2. Keep your focus during development
+3. Eliminate some complexities during debugging, because you can rule out data problems
+4. Have a familiar dataset throughout development, so that:
+	a. Your views are more meaningful
+	b. You will gain insights on ways to enhance your data model, based on your development
+	c. You will have a convenient way to add these enhancements, and painlessly bring your results to life. 
+
 When we are in the throes of debugging and trying to make our code work, a great helper can be your seed dataset. You know exactly what the list of 'cats' or 'books' should be and sometimes you don't get 100% clear answers from the developer console or debugger(s).
 
-## CREATE YOUR DATA MODEL
+## Summary of steps: 
 
-#### Why? The better you can shape your tables around actual user needs, the more relevant your applications will be. 
-- This is about asking yourself enough questions to determine the shape of your data tables and how they interrelate. - If we are tracking for example, "user votes" on a movie, we have to come up with solid tables and columns to support this business logic. 
+### 1. Plan Data Model
+###	2. Choose Naming Convention
+### 3. Plan Active Record relationships
+### 4. Write Database Migrations
+### 4. Use Active Model Serializer gem
+### 5. Create Seed file and Test
+### 6. Create Rake tasks to DCMS (Drop, Create, Migrate, Seed / Start) the DB and App 
 
-- show business question examples
-- show database table examples
-- ask enough questions to determine 1 to many, 1 to 1, many-to-many
+
+
+
+#### Why? The better you can shape your tables around actual user needs, the more relevant your applications will be. Ask enough questions to determine relationships of one-to-many, one-to-one, many-to-many
+
+Most important, you want to think about the relationships between tables, so that you get the complex relationships you need, while you leave simple things alone. 
+
+Solid data models are a combination of 
+
+practical thinking about how you refer to the data
+intuitive naming conventions
+database relationships
+
+Practical Thinking:
+Your early instincts about names often prove correct.
+If you find yourself calling a table something other than what you've named it, you probably should consider changing to your instinctive names. 
+Be aware that there are ['reserved words'](http://www.rubymagic.org/posts/ruby-and-rails-reserved-words) in most languages. You don't want to use 'type' for a table name in Rails for example. 
+
+
+Naming Conventions:
+You want to develop your instincts for tight, short names if possible, that reflect the intuitive understanding of your data. You'll type these names hundreds of times in the development of your project, so wouldn't you rather type "zip" instead "postal_code"? 
+
+Database Relationships:
+Think about the relationships, such as 1 to 1, or 1 to many, or many to many using the sample questions below, or just thinking through the life cycle of your data. Here are some questions to ask yourself about the tables in your data model to help determine relationships. 
+
+'it'
+What is it?
+What does it do?
+Why does it do it?
+When does it do it?
+When does it start doing that?
+When does it end doing that?
+What changes after that?
+ 
+Where does it exist?
+What things does it touch ?
+How many are there of it? 
+How is it created, edited, updated, deleted?
+
+In a recent Rails app for a music teaching studio, I wanted to have tables for Teachers, Students, Resources and Lessons. I talked through each one in my mind, determining the following for my context: 
+
+Teacher
+has_many :students
+has_many :lessons
+has_many :resources, through: :lessons
+
+Student
+belongs_to :teacher
+has_many :lessons
+has_many :resources, through: :lessons
+
+Lesson
+belongs_to :teacher
+belongs_to :student
+has_many :resources
+
+Resource
+has_many :lessons
+has_many :teachers, through: :lessons
+has_many :students, through: :lessons
+
+
+Wherever possible, I wanted to exploit Active Record relationships so that my API data would have not only the related ID's but full related objects.
+
+
+Active Model Serialization
+Rails magic provides 
+
+
+
 
 #### takeaways
   #####Nouns and Verbs
