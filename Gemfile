@@ -9,8 +9,6 @@ gem 'rails-erd'
 gem 'pdf-reader'
 
 gem 'seed_dump'
-gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
-
 gem 'watir'
 gem 'nokogiri', '>=1.5.9'
 gem 'httparty'

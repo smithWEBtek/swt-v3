@@ -8,7 +8,11 @@ Create github 'gist' for articles
 Stop using Markdown files for posts, instead use html.erb files
 Use a template for sample_post.html.erb
 Feed the template from the wiki database
-Create github gist for each code sample or image
+
+Post:
+1. Create an HTML template for post. 
+2. /posts/show has the layout and surrounding web parts
+3. Create github gist for each code sample
 
 
 Technical Knowledge workflow: Bookmark => Entry => HelloWorld => App => Blog
