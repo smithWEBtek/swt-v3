@@ -8,7 +8,10 @@ class PostsController < ApplicationController
   end
 
   def show
-    @posts = Post.all
+		@posts = Post.all
+		# if @post.content_html != 'blank_html'	
+			# render file: Rails.public_path.join("templates","#{@post.content_html}")
+		# end
   end
 
   def new

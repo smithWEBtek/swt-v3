@@ -26,5 +26,9 @@ module ApplicationHelper
       superscript: true
     }
     Redcarpet::Markdown.new(renderer, options).render(content).html_safe  
-  end
+	end
+	
+	def render_html(file)
+		Rails.root.join("db/posts", file)
+	end
 end

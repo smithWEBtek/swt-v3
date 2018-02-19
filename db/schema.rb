@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20180122044247) do
     t.string   "site_url"
     t.text     "summary",      default: "summary_blank"
     t.text     "content_md",   default: "blank_md"
-    t.text     "content_html", default: "blank_html_file"
+    t.text     "content_html", default: "blank_html"
     t.datetime "created_at",                                             null: false
     t.datetime "updated_at",                                             null: false
   end

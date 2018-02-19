@@ -93,7 +93,8 @@ DATA_posts ={
       "",
       "",
       "limitations of physical work vs unlimited opportunities with coding", 
-      "001-career-change.md"
+      "001-career-change.md", 
+      "001-career-change.html" 
       ], 
     [ 
       "2017-04-12", 
@@ -102,7 +103,8 @@ DATA_posts ={
       "https://www.youtube.com/embed/A_jb0Iv6pEE",
       "", 
       "scrape Craigslist for 2 specific models of Yamaha piano", 
-      "002-piano-search.md"
+      "002-piano-search.md",
+      "002-piano-search.html"
       ], 
     [ 
       "2016-03-12", 
@@ -111,11 +113,12 @@ DATA_posts ={
       "https://www.youtube.com/embed/-gYpibTzQH8?rel=0",
       "",
       "Sinatra app for managing teachers and students", 
-      "003-music-student.md"
+      "003-music-student.md",
+      "003-music-student.html"
       ], 
     [ 
       "2017-04-12", 
-      "Diet Planner v6 Rails app",
+      "Diet Planner v6",
       "https://github.com/smithWEBtek/diet-planner-v6",
       "https://www.youtube.com/embed/nGTIAKQ_uJk",
       "",
@@ -124,7 +127,7 @@ DATA_posts ={
       ],
     [ 
       "2017-05-07",
-      "Diet Planner v8 Rails - jQuery",
+      "Diet Planner v8",
       "https://github.com/smithWEBtek/diet-planner-v8",
       "https://www.youtube.com/embed/YT8r_w4AifI",
       "https://diet-planner-v8.herokuapp.com/",
@@ -133,7 +136,7 @@ DATA_posts ={
     ],
     [ 
       "2018-01-19",
-      "Music Studio - Rails API - React/Redux",
+      "Music Studio",
       "https://github.com/smithWEBtek/piano-student-api",
       "https://www.youtube.com/embed/Mm1hf_AJSsY",
       "https://music-studio.herokuapp.com/",
@@ -143,11 +146,11 @@ DATA_posts ={
     [
       # ["date", "title", "repo", "video_url", "site_url", "summary", "content_md"],
       "2018-01-23",
-      "Habits of A Successful Developer",
+      "Habits",
       "",
       "",
       "",
-      "Do some of these things", 
+      "Habits of a successful developer", 
       "007-habits.md"
     ]
     # [

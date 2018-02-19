@@ -1,0 +1,153 @@
+<h3>PIANO SEARCH - RUBY CLI GEM</h3>
+
+<p>Command Line Interface application, using Ruby and NokoGiri to scrape Craigslist, in search of the 2 most popular models
+	of Yamaha piano, the model U2, and the model P22. Similar to buying a Toyota Corolla or Camry, the Japanese made pianos
+	are very solid investments.</p>
+
+
+<h3>Summary</h3>
+
+<p>Version 0.1.0 PianoSearch</p>
+
+<p>Searches Boston Craiglist Musical Instruments for Yamaha P22 or Yamaha U1 pianos for sale.Prompts user to choose 'Yamaha
+	piano model U1' or 'P22'.</p>
+
+<p>Displays a list, including prices and headlines of existing posts. Prompts user to choose a post #, to see details.</p>
+
+<p>Displays the Price, Location, Headline and Description (post text) for the chosen post. Prompts user to choose another post
+	#, or 'list' to restart, or 'x' to exit.</p>
+
+
+<h3>Business Application</h3>
+
+<p>The Ruby Gem PianoSearch is a basic measurement of used piano sales in Boston, to allow a piano dealer insight on the "competition"
+	that exists in the used piano market. Potential buyers all face the decision of whether to buy used or new.</p>
+<p>The 2 piano models in PianoSearch are good measures of the market, very similar by analogy, to the Toyota Corolla and Toyota
+	Camry in the auto market. (Basic cars that are Japansese-made and hold their value well.)</p>
+
+
+<h3>Concept</h3>
+
+<p>The idea for this Gem comes from the basic premise that a business should be doing three (3) things with their data.</p>
+<ul>
+	<li>Measuring what happened</li>
+	<li>Predicting what will happen</li>
+	<li>Comparing competitor data</li>
+</ul>
+
+<h4>1. Measuring</h4>
+<p>Measuring what happened, today, yesterday, this week, last month, last year and comparing those time frames in meaningful
+	ways to steer the business.</p>
+
+<h4>2. Predicting</h4>
+
+<p>Deducing from data measurements, the things that will likely happen in the future.</p>
+
+<p>Knowing that your donut shop sells out of chocolate most Friday nights, compared to almost zero chocolate donut sales on
+	most Monday nights, is a valuable insight. This can help cash flow, product freshness and strategic planning for adding
+	more workers on Friday nights, if needed.</p>
+
+<h4>3. Comparing</h4>
+<p>Leveraging business data to answer questions both past and future, is essential to any enterprise that measures itself. Comparison
+	data incorporates other data sets into the past and future data so that the business can now answer deeper questions that
+	simply "what happened?" or "what might happen?".</p>
+
+<h4>TECHNICAL FLOW and FUNCTIONALITY in version 0.1.0</h4>
+
+<h4>Main URLs:</h4>
+<p>The PianoSearch Gem 0.1.0 is statically coded to the Boston Craigslist Musical Instruments section. This is accomplished
+	with 2 static URLs in 2 separate methods, for scraping the existing post headlines.</p>
+
+<h4>Use of Nokogiri</h4>
+
+<p>These URL's are scraped using Nokogiri and Open-Uri for both the initial post headlines and the subsequent post details.</p>
+
+<h4>Methods in class PianoSearch::Post</h4>
+
+<p>[self.scrape_clu1]</p>
+<ul>
+	<li>Scrapes the main URL for "Yamaha U1", saving results in the @posts array.</li>
+	<li>Calls the self.scrape_posts method</li>
+</ul>
+
+<p>[self.scrape_clp22]</p>
+<ul>
+	<li>Scrapes the main URL for "Yamaha P22", saving results in the @posts array.</li>
+	<li>Calls the self.scrape_posts method</li>
+</ul>
+
+<h4>[self.scrape_posts]</h4>
+<ul>
+	<li>Scrapes the @posts array to extract post_id for each post, to be used in creating its URL</li>
+	<li>Calls the self.create_urls method</li>
+</ul>
+
+<h4>[self.create_urls]</h4>
+<ul>
+	<li>Appends the post id to "http://boston.craigslist.org/"
+		<post_ID>.html"</li>
+	<li>Calls the self.show_headings method</li>
+</ul>
+<h4>[self.show_headings]</h4>
+<ul>
+	<li>PUTS out a row for each post, including a Post Number and Headline</li>
+</ul>
+
+<h4>[self.scrape_detail]</h4>
+<ul>
+	<li>Creates an array (@post_ary) of post hashes, including price, headline, location and description</li>
+</ul>
+
+<h4>[self.show_detail(input)]</h4>
+<ul>
+	<li>Takes in the users input choice as an index number</li>
+	<li>Displays the appropriate post hash corresponding to the user input number</li>
+</ul>
+
+
+<h3>EXAMPLE:</h3>
+
+<h4>$2250 Beautiful Yamaha Piano (Stoughton)</h4>
+
+<p>Piano is a gorgeous Polished Walnut and looks like it has just come from the factory (made in Thomaston, Georgia). One owner,
+	lightly driven by a little old lady. :) Purchased new from Boston Organ and Piano in 1996, Model P22, Serial Number 210067.
+	Includes piano bench - bench has a few dings.</p>
+
+<p>🎹🎹🎹🎹</p>
+
+<h4>Future Functionality</h4>
+<p>Added functionality will include:</p>
+<ul>
+	<li>Choice of user State and Area within that U.S. State to replace the static URL's in current version
+
+		<p>NOTE: Areas are represented by 3 letters immediately preceding the post_id. States are not directly represented in URLs.
+			The syntax is as follows:</p>
+
+		<p>"http://[state_area].craigslist.org/[3 letter area acronym]/[10 digit post_id].html"</p>
+	</li>
+
+	<li>Use of Ruby Gem: Pony or Mail to provide the user the option of having the search sent daily in email.</li>
+
+	<li>Expanded details, including DateTime posted, geo-coordinates for GoogleMaps and other post details</li>
+
+	<li>Reply to capture, providing the foundation for automated outreach to ads proposing to buy the pianos at a pre-determined
+		fraction of the price, assuming they pass onsite inspection by a qualified technician.</li>
+
+	<li>Pushing of this list, to pre-qualified buyers, seeking pianos. This would augment the business of a technician or piano
+		mover, intent on generating new opportunities for technical work or moving.</li>
+
+	<li>Expansion of options to include national search.</li>
+
+	<li>Expansion of options to choose additional sections for searching.</li>
+
+	<li>
+		<p>Combination with related scraping projects, such as:</p>
+		<ul>
+			<li>promotion of music instruction</li>
+
+			<li>organizations in need of donated pianos</li>
+
+			<li>"make a wish" types of opportunities to provide a piano for a talented child in a low-income family</li>
+		</ul>
+	</li>
+	<h4>Conclusion: Everyone ought to have some music (and some Ruby) in their life!</h4>
