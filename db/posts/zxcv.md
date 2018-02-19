@@ -1,4 +1,6 @@
-# Oh, one more thing...
+## BLOG POST: Data model, seed file, naming conventions
+
+### Oh, one more thing...
 Columbo (the great 70s TV detective) would often solve a case with small bits of seemingly unimportant information. The unwitting suspect would admit to key points while Columbo quietly built his case. 
 
 This post covers some good habits for preparing a solid dataset in your development project for Sinatra, Rails, React, jQuery, javascript, React, Redux or anytime you need a sample dataset and database for developement. 

@@ -1,38 +1,13 @@
 
-
-### review React, Redux and Javascript all week
-
-
-blog from this repo
-[Redcarpet](https://github.com/vmg/redcarpet)
-  create workflow using existing placeholders in this app
-  create a blogging markdown template, prefilled with styles 
-  organize wiki data model
-    feed the funnel with topics, sub-topics, ideas that are ripe
-    prioritize the funnel, pick one, elaborate its outline and summary
-    pick one of those and fill in some detail on first few sub-topics
-
-build out 3-4 varied projects 
-  Cambridge Open Data
-  VolunteerMatch
-  Manchester NH Police/Fire/Ambulance/Drugs epidemic
-
-
-breadth
-  languages:      Python, Java, ColdFusion
-  js frameworks:  Angular, Vue
-  visualization:  D3
-  GIS mapping:    ?
-  source control:  git chops
-
-
-wiki
-  automate bookmarking, storing in wiki, learning, blogging
-  1: bookmark 
-    chrome bookmarks folder is currently where I capture these
-    I export the list every few months, but it should be automated
-    it needs to be fed into my wiki machine automatically
-    not every bookmark completes the course (bookmark, wiki, hello-world, blog-post, demo-project), but all bookmarks should get to the wiki, with at least:
+Technical Knowledge workflow: Bookmark => Wiki => Blog => Build
+  Bookmark 
+    chrome bookmarks folder is currently where I capture things
+    Export bookmarks list (should be automated)
+   	Feed bookmarks to wiki machine automatically
+    All bookmarks end up with 1 or all of these:
+			* placeholder in Wiki
+			* blog post
+			* demo app
     Category
     Group
     Topic
@@ -54,44 +29,13 @@ wiki
   4: blog post about learning it
   5: go deeper in a project with it
 
- 
+  
 
-SmithPiano
-  mailing / emailing
-  invoicing
-  scheduling
- 
-CODING
-blog post about seed data, data model, serializers rails basic mockaroo and cloudinary
-blog post about D3
-
-volunteer match sites for portfolio 
-
-Career prep track
-Portfolio projects
-LinkedIn
-
-Darrell’s inv
-Scottrade acct move money
- 
-
-Flatiron
-  Assessment prep
-  Career track
-  get restarted with Martha Bloem-Reddy
-  finish career track
-  blog
-  portfolio projects
-  smithWEBtek site
-  BSTrio site
-  Branding: LinkeIn/Twitter/Instagram/YouTube brand identity
-  dream job description
- 
 #Reading  
-  ragmatic Programmer
+  Pragmatic Programmer
   Code Smells
 
-#GoDeep RTFM a-z: 
+#GoDeep RTFM a-z 
   JS:     You Don't Know JS
   React:  FullStact React
   Redux:  Docs and Videos
@@ -99,15 +43,32 @@ Flatiron
   Bootstrap
   D3
 
-#CodingChops
-  Codewars
-  Hackerrank
     
+
+ 
+ 
+
 =======================================================
-MISC
-master list of all gems and functionality to go in ALL rails apps
-    rake tasks, gems, SOPs, workflow, gitflow, cloudinary images & urls
-    get cloudinary API working
+House keeping
+	Invoice Heritage Baptist
+	Invoice: check on St Mary's
+	Bank deposit
+	Scottrade acct move money
+	SmithPiano mailer
+	Pay bills
+	Property:	Ready for sale by April 2018 Attic, soffits, barns, poolhouse, house interior
+		Make shelves for kitchen pantry cabinet:  14 3/8" x 22 3/4"
+	Prep:			Ready to bugout; Off-grid power, heat, food & water; Mobile bugout vehicle; Self defense; Malaysia option
+
+Health
+	Planning & Solitude 	
+	Work out at PF
+	170lbs Vegan, Eat, drink, exercise, meditate, read; Family
+	Hold your tongue, Use your mind
+	Stop performing for people
+	
+=======================================================
+Reading list
     Launch school
         Read Mastery - George Leonard
     Do Coursera - Learn How to Learn course
@@ -115,27 +76,110 @@ master list of all gems and functionality to go in ALL rails apps
     Governed by Mastery learning principles
     Governed by A Mind for Numbers learning principles
 =======================================================
-#APPS
+SmithPiano
+	SmithPiano mailing
+	Tune: 		1 per day	Postcards, emails, letters to clients, teachers, churches, schools, music stores
+	Teach: 		1 per day	Studio, site, resume, samples, refs; Content: Jazz Piano, Intro, Left Hand, Improv, Tech
+	Play: 		Brad Smith Trio: My grooves, tunes and gigs
 
-sp-appt:
+=======================================================
+Tech
+	Finish Udemy React course
+	Udemy Node course
+	Udemy Python course
+	Udemy PHP course
+	[Redcarpet](https://github.com/vmg/redcarpet)
 
-swt-v3:
-    finish wiki structure
-    blog-repo-parts process and structure
-    read only billboard for ME no users, discussions, just my shit
+=======================================================
+Projects
+	Get Router working on Heroku and Firebase
+	SWT-SP4: 									new smithpiano scheduling site
+	Service Scheduler: 				Mobile, GoogleAPI, OnlineDB
+	Curation Tech Library: 		funnel all tech leads
+	Interactive Visual Stim: 	D3, Codepen, Jud
+	Multiple API connector: 	blind date via unconventional API data 
+	POS Store:								RegisterInventoryBarCodeScan
+	Job Search CRM:						Dashboard & curation
+	Music Studio:							Admin, Library, ParsePDF, LoadPDF, LessonView
+
+=======================================================
+Flatiron
+	Rails, OmniAuth, Devise, Pundit, Nested Forms
+	jQuery practice
+	Sinatra
+	TA prep track
+
+=======================================================
+Career prep track - Martha Bloem-Reddy
+	Resume, LinkedIn, Blog, Branding, Portfolio
+	Breadth Topics: Algorithms, Trivia, Breadth, Topics, PHP, Python, Java, D3, Docker, Node, MEAN, SQL, C#, .NET, ColdFusion, Angular, Vue, git chops
+  Alog practice: Codewars, Hackerrank
+  Incorporate tips from "How to be a No-Brainer Hire"
+	What Every Developer Should Know: watch first videos, read first few articles
+
+=======================================================
+Blog
+	Outline a blog
+	Move an existing blog further along
+  Blogging workflow using existing placeholders in this app
+  	Use the 'blank.md' template for basic outline
+		, prefilled with styles 
   
-career
-    Incorporate tips from "How to be a No-Brainer Hire"
-    blog: 5 more posts to graduate
-    read:    you don't know js book
-    jsD3:    do hello world with data in my apps
- 
-   
-=======================================================
-PROPERTY
-Property prep    Get shop vac and boards organized in attic
-    Fix lights and ac power to house fan in attic
-    List tasks
+	organize wiki data model
+    feed the funnel with topics, sub-topics, ideas that are ripe
+    prioritize the funnel, pick one, elaborate its outline and summary
+    pick one of those and fill in some detail on first few sub-topics
+
+tekWiki
+tekAppt
+tekPos
+tekTutor
 
 =======================================================
- 
+smithWEBtek
+	Get a paid project	Web development; portfolio worthy; referenceable
+	Set up hosting	LunarPages, AWS, Heroku, Netlify, Firebase
+	Steve Phaneuf	Build a POS w/data backend that he can sell
+
+=======================================================
+Network	
+	CodeForBoston													open source coding
+	Manchester JS													network
+	Boston JS / ProjectJS									network
+	Dave Hall	Tech, Forcivity							network
+	Ken Steinberg, Cambridge Associates		tech mentor, network
+	Matt Zagaja, CodeForBoston						tech mentor, network
+	Alex Merritt													tech mentor, network
+	James Rogers, Wayfair									network, job contact
+
+
+=======================================================
+Dream Job Description
+	Iterative prototyping meaningful projects daily, weekly, monthly
+	Javascript, RoR, React, Redux, Python, PHP, Java
+	Small, nimble group, led by leaders/teachers
+	Study growth path directed by leaders/teachers
+	Mix of onsite and remote
+
+	Build things that help people:
+		• ...who need help and are already trying to help themselves
+		• ...to reinforce family, duty, responsibility.
+		• ...to make music, teach music, experience music
+
+	Data modelling 
+	Business modelling
+	Apps for small business data and daily operations
+	Translating business logic to project specs
+	Robotics related(?)
+	Internet of Things related(?)
+	Non-profit, mission-related:
+		• special needs people
+		• 3rd world countries
+		• elder care
+		• youth training
+			○ building trades, coding, music and art
+			○ citizenship, history, finance, health, philosophy
+		• middle age retraining
+		• survival life skills / community building
+
+=======================================================
