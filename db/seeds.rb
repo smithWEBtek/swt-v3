@@ -84,7 +84,7 @@ end
  
 DATA_posts ={
  :post_keys =>
-    ["date", "title", "repo", "video_url", "site_url", "summary", "md_file"],
+    ["date", "title", "repo", "video_url", "site_url", "summary", "content_md", "content_html"],
   :posts => [
     [ 
       "2016-01-12", 
@@ -141,7 +141,7 @@ DATA_posts ={
       "006-music-studio.md"
     ],
     [
-      # ["date", "title", "repo", "video_url", "site_url", "summary", "md_file"],
+      # ["date", "title", "repo", "video_url", "site_url", "summary", "content_md"],
       "2018-01-23",
       "Habits of A Successful Developer",
       "",
@@ -151,7 +151,7 @@ DATA_posts ={
       "007-habits.md"
     ]
     # [
-    # # ["date", "title", "repo", "video_url", "site_url", "summary", "md_file"],
+    # # ["date", "title", "repo", "video_url", "site_url", "summary", "content_md"],
     #   "2018-01-22",
     #   "How to build project seed data",
     #   "",

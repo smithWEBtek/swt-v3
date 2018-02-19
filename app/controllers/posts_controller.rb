@@ -50,6 +50,6 @@ class PostsController < ApplicationController
     end
 
     def post_params
-      params.require(:post).permit(:date, :title, :repo, :video_url, :summary, :md_file, ref_ids: [])
+      params.require(:post).permit(:date, :title, :repo, :video_url, :summary, :content_md, ref_ids: [])
     end
 end

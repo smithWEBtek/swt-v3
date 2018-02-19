@@ -42,9 +42,9 @@
                   <%= f.text_area :refs, cols: 30, rows: 5 %>
               </p>
               <p>
-                <%= f.label :md_file %>
+                <%= f.label :content_md %>
                   <br>
-                  <%= f.text_field :md_file %>
+                  <%= f.text_field :content_md %>
               </p>
               <%= f.fields_for :refs do |ref_fields| %>
                 <%= ref_fields.collection_select :ref_ids, Ref.all, :id, :name, 

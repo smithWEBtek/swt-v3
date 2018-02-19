@@ -20,7 +20,8 @@ posts:
   - title
   - repo
   - summary
-  - md_file
+  - content_md
+  - content_html
   - created_at
   - updated_at
   records: 

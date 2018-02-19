@@ -2,7 +2,7 @@
 170417
 steps to move a blog
 
-create md_file
+create content_md
 load images to cloudinary
 copy cloudinary urls in order
 create ref(s) for relevant video(s)
