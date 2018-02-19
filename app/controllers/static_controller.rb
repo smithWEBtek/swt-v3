@@ -1,11 +1,6 @@
 class StaticController < ApplicationController
   layout false, only: [:index2]
 
-  def cernan
-    @cernan = "cernan.md"
-    render '/static/cernan.html.erb' 
-  end
-
   def jsarrays
     @jsarrays = "jsarrays.md"
     render '/static/jsarrays.html.erb' 
@@ -24,11 +19,6 @@ class StaticController < ApplicationController
   def zxcv
     @asdf = "zxcv.md"
     render '/static/zxcv.html.erb' 
-  end
-
-  def assmt
-    @asdf = "assmt.md"
-    render '/static/assmt.html.erb' 
   end
 
   def about

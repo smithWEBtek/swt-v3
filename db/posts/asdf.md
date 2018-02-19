@@ -1,40 +1,7 @@
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
-
-<h2>Questions for Cernan</h2>
-1. Is there a better way to toggle API_URL (see store/serivces/*.js files)
-2. What can you advise about folder structure? (Container/Component, etc. )
-3. I think I would prefer one huge CSS file, instead of matching css file in dedicated folders for every file. Is that just a developer choice or do you think there are best practices to follow.
-4.Toggling views with local state  
-    I picked up this technique in my research, are there better ways do do it?
-  * If I wanted to manage view/close of a component via Redux state, would that be preferred?
-5.  Wrapping a <Link /> with a <button>
-  - I just came up with this on my own, wonder if it seems weird? Is there a better way?
-6.
-
-
-
-http://res.cloudinary.com/smithwebtek/image/upload/v1518024751/_career2/BradSmith-pdf-resume.pdf
-
-
 
 ### review React, Redux and Javascript all week
 
-- add spinner for big fetches
-- reset button: set Students, Teachers and Resources back to active: true
-- more stuff on the site; add more artifacts 
-- visually clarify views for Student, Teacher, Lesson and related sub-sections
- 
-add resources to music-studio app
-  -get functional with Cloudinary API
-  -get functional with Soundcloud API
 
 blog from this repo
 [Redcarpet](https://github.com/vmg/redcarpet)
@@ -136,8 +103,6 @@ Flatiron
   Codewars
   Hackerrank
     
- 
-
 =======================================================
 MISC
 master list of all gems and functionality to go in ALL rails apps

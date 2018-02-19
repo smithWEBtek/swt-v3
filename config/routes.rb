@@ -8,8 +8,6 @@ Rails.application.routes.draw do
   get '/jsarrays', to: 'static#jsarrays'
   get '/zxcv', to: 'static#zxcv'
   get '/qwer', to: 'static#qwer'
-  get '/assmt', to: 'static#assmt'
-  get '/cernan', to: 'static#cernan'
   
   get '/bookmarks', to: 'static#bookmarks'
   get '/about', to: 'static#about'
