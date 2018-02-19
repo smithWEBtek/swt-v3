@@ -8,7 +8,7 @@ class CreatePosts < ActiveRecord::Migration[5.0]
       t.string :site_url
       t.text :summary, default: 'summary_blank'
       t.text :content_md, default: 'blank_md'
-      t.text :content_html, default: 'blank_html_file'
+      t.text :content_html, default: 'blank_html'
  
       t.timestamps
     end
