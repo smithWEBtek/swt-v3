@@ -9,7 +9,7 @@ module ApplicationHelper
     if file.nil?
       "no blog.md file exists"
     else
-      render_file = "#{Rails.root}"+"/db/posts/"+"#{file}"
+      render_file = "#{Rails.root}"+"/lib/posts/"+"#{file}"
       markdown(File.read(render_file))
     end
   end

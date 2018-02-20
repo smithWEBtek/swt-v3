@@ -1,11 +1,6 @@
 class StaticController < ApplicationController
   layout false, only: [:index2]
 
-  def jsarrays
-    @jsarrays = "jsarrays.md"
-    render '/static/jsarrays.html.erb' 
-  end
-
   def asdf
     @asdf = "asdf.md"
     render '/static/asdf.html.erb' 

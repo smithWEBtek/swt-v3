@@ -43,9 +43,9 @@
 
 		<div class="col-lg-6 body-text">
 			<% if @post.content_html != 'blank_html'%>
-				<%= render file: Rails.public_path.join('posts',"#{@post.content_html}") %>	<!-- blog post body in html format -->
+				<%= render file: Rails.public_path.join('posts',"#{@post.content_html}") %>	<!--"renders blog post body in html format "-->
 			<% else %>
-				<%= render_md @post.content_md if @post.content_md %>	<!-- blog post body in Markdown format -->
+				<%= render_md(@post.content_md) if @post.content_md %>	<!-- "Renders blog post body in Markdown format. (see application_helper.rb)" -->
 			<% end %>
 		</div>
   </div>
