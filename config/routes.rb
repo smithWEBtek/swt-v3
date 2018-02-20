@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :tags
    
-  root 'static#about'
+  root 'static#home'
   get '/bookmarks', to: 'static#bookmarks'  
   
   get '/asdf', to: 'static#asdf'

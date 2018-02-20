@@ -4,10 +4,8 @@
   </div>
   <div class="col-2">
     <% @projects.each do |project| %>
-      id:
-      <%= project.id %>
-        <%= link_to project.name, project_path(project) %>
-          <hr>
-          <% end %>
+		<%= project.id %><%= link_to project.name, project_path(project) %>
+		<hr>
+	<% end %>
   </div>
 </div>

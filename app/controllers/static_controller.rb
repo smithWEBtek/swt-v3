@@ -19,6 +19,10 @@ class StaticController < ApplicationController
     render '/static/draft.html.erb' 
   end
 
+  def home
+    render :home
+  end
+
   def about
     render :about
   end
