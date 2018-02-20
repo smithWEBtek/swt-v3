@@ -1,5 +1,5 @@
 =======================================================
-#MY TODO LIST
+#MY TODO LIST for today
 
 #House keeping
 	Invoice Heritage Baptist
