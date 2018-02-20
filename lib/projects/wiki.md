@@ -1,6 +1,6 @@
 
 =======================================================
-TECH CURATION App (wiki)
+# TECH CURATION App (wiki)
 
 Learn github API while building smithwebtek wiki
 Create github 'gist' for articles

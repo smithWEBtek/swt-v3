@@ -45,7 +45,7 @@
 			<% if @post.content_html != 'blank_html'%>
 				<%= render file: Rails.public_path.join('posts',"#{@post.content_html}") %>	<!--"renders blog post body in html format "-->
 			<% else %>
-				<%= render_md(@post.content_md) if @post.content_md %>	<!-- "Renders blog post body in Markdown format. (see application_helper.rb)" -->
+				<%= render_md(@post.content_md, @path) if @post.content_md %>	<!-- "Renders blog post body in Markdown format. (see application_helper.rb)" -->
 			<% end %>
 		</div>
   </div>

@@ -1,19 +1,22 @@
 class StaticController < ApplicationController
   layout false, only: [:index2]
 
-  def asdf
-    @asdf = "asdf.md"
-    render '/static/asdf.html.erb' 
-  end
-
   def qwer
-    @asdf = "qwer.md"
-    render '/static/qwer.html.erb' 
+    @file = "qwer.md"
+		@path = '/lib/notes/'
+    render '/static/draft.html.erb' 
   end
 
   def zxcv
-    @asdf = "zxcv.md"
-    render '/static/zxcv.html.erb' 
+    @file = "zxcv.md"
+		@path = '/lib/notes/'
+    render '/static/draft.html.erb' 
+  end
+
+	def asdf
+		@file = "asdf.md"
+		@path = '/lib/notes/'
+    render '/static/draft.html.erb' 
   end
 
   def about
