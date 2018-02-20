@@ -193,7 +193,7 @@ Network
 	Matt Zagaja, CodeForBoston						tech mentor, network
 	Alex Merritt													tech mentor, network
 	James Rogers, Wayfair									network, job contact
-
+	Greg Stout, author of Drupal books 		network, tech mentor				
 
 =======================================================
 Dream Job Description
