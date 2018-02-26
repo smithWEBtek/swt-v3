@@ -27,9 +27,11 @@ class StaticController < ApplicationController
     render :about
   end
 
+# every few weeks, export and replace the bookmarks.html file, (exported from Chrome)
+# until you find a way to reach out to Chrome programatically
   def bookmarks
     Scrape.bookmarks
-   render :bookmarks
+   render 'static/bookmarks'
   end
 
   def free_books

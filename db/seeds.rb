@@ -258,7 +258,8 @@ end
 
 def main
   make_tags
-  make_refs 
+	make_refs
+	Scrape.bookmarks
   make_posts
   make_projects
 end

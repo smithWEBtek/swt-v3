@@ -1,7 +1,7 @@
 <div class="wrapper wrapper_padding clearfix">
   <div class="col-ref">
     <h4>
-      <%#= link_to "New Ref", new_ref_path %>
+      <%= link_to "New Ref", new_ref_path %>
     </h4>
     <!-- <hr> -->
     <%= link_to "Refs", refs_path %>
@@ -12,7 +12,7 @@
     <h4>books</h4>
     <hr>
     <% @books.each do |book|%>
-      <%= link_to book.name, book.url %>
+      <%= link_to book.title, book.url %>
         <br>
         <% end %>
   </div>
@@ -21,7 +21,7 @@
     <h4>bookmarks</h4>
     <hr>
     <% @bookmarks.each do |bookmark|%>
-      <%= link_to bookmark.name, bookmark.url %>
+      <%= link_to bookmark.title, bookmark.url %>
         <br>
         <% end %>
   </div>
@@ -30,7 +30,7 @@
     <h4>mentors:</h4>
     <hr>
     <% @mentors.each do |mentor|%>
-      <%= link_to mentor.name, mentor.url %>
+      <%= link_to mentor.title, mentor.url %>
         <br>
         <% end %>
   </div>
@@ -39,7 +39,7 @@
     <h4>videos</h4>
     <hr>
     <% @videos.each do |video|%>
-      <%= link_to video.name, video.url %>
+      <%= link_to video.title, video.url %>
         <br>
         <% end %>
   </div>
@@ -48,7 +48,7 @@
     <h4>docs</h4>
     <hr>
     <% @docs.each do |doc|%>
-      <%= link_to doc.name, doc.url %>
+      <%= link_to doc.title, doc.url %>
         <br>
         <% end %>
   </div>
@@ -57,7 +57,7 @@
     <h4>Pdfs</h4>
     <hr>
     <% @pdfs.each do |pdf|%>`
-      <%= link_to pdf.name, pdf.url %>
+      <%= link_to pdf.title, pdf.url %>
         <br>
         <% end %>
   </div>

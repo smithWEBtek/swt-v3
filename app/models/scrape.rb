@@ -1,17 +1,24 @@
 class Scrape < ApplicationRecord
+require 'open-uri'
 
+	# every few weeks, export and replace the bookmarks.html file, (exported from Chrome)
+	# until you find a way to reach out to Chrome programatically
+	
   def self.bookmarks
-    @bookmarks = []
-    page = HTTParty.get("https://swt-v3.herokuapp.com/bookmarks")
-    @parse = Nokogiri::HTML(page)
-    refs = @parse.css('a').each do |item|
-            ref = {
-        name: item.text, 
-        url: item.values.first
-        }
-        @bookmarks.push(ref)
-      end
-    Ref.import(@bookmarks)
+		bookmarks = []
+		file = File.open('/Users/brad/Desktop/bookmarks.html') 
+    parse = Nokogiri::HTML(file)
+    refs = parse.css('a').each do |item|
+			ref = {
+				title: item.text, 
+				category: item.children.text,
+				format: 'bookmark',
+        url: item.values.first,
+				description: 'bookmark'
+			}
+			bookmarks.push(ref)
+		end
+    Ref.import(bookmarks)
     end
 
 
