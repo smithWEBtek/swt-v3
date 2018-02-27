@@ -70,7 +70,6 @@ def free_books
  render :free_books
 end
 
-
   private
     def set_ref
       @ref = Ref.find_by_id(params[:id])
@@ -85,7 +84,7 @@ end
 		end
 	
 		def sort_column
-			sortable_columns.include?(params[:column]) ? params[:column] : "name"
+			sortable_columns.include?(params[:column]) ? params[:column] : "title"
 		end
 	
 		def sort_direction
