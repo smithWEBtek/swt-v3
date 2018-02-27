@@ -1,8 +1,11 @@
 class RefsController < ApplicationController
   before_action :set_ref, only: [:show, :edit, :update, :destroy]
+	helper_method :sort_column, :sort_direction
 
-  def index
-    @refs = Ref.all 
+ 
+	def index
+		@refs = Ref.order("#{sort_column} #{sort_direction}")
+    # @refs = Ref.all 
     @mentors = Ref.all.where(format: "mentor")
     @books = Ref.all.where(format: "pdf")
     @bookmarks = Ref.all.where(format: "bookmark")
@@ -75,7 +78,19 @@ end
 
     def ref_params
       params.require(:ref).permit(:name, :format, :url, :content)
-    end
+		end
+		
+		def sortable_columns
+			["title", "category", "format"]
+		end
+	
+		def sort_column
+			sortable_columns.include?(params[:column]) ? params[:column] : "name"
+		end
+	
+		def sort_direction
+			%w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
+		end
 end
 
 
