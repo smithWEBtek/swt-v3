@@ -6,7 +6,7 @@ require 'open-uri'
 	
   def self.bookmarks
 		bookmarks = []
-		file = File.open('/Users/brad/Desktop/bookmarks.html') 
+		file = File.open(Rails.root.join('lib', 'assets', 'bookmarks.html'))
     parse = Nokogiri::HTML(file)
     refs = parse.css('a').each do |item|
 			ref = {
