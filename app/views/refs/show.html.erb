@@ -1,6 +1,11 @@
+ 
 <div>
- 
- 
-			<iframe src="<%= link_to @ref.title, @ref.url %>"></iframe>
-   
+ <h2> hello </h2>
+
+	<% if @ref.format === 'pdf' %>
+		<p><%= link_to @ref.title, @ref.url %></p>	
+	<% elsif @ref.format === 'bookmark' %>
+		<p><%= @ref.title %>  | <%= @ref.title %> </p>
+	<% else %>
+<% end %>
 </div>

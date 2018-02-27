@@ -8,9 +8,12 @@ class RefsController < ApplicationController
     @bookmarks = Ref.all.where(format: "bookmark")
   end
 
-  def show
-    @refs = Ref.all
-  end
+	def show
+		if @ref.format === 'pdf'
+			url = Rails.root + "app/assets/books/" + @ref.category + @ref.title
+			send_file(url, disposition: "inline", type: "application/pdf")
+   	end
+   end
 
   def new
     @ref = Ref.new

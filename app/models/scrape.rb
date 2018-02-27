@@ -23,25 +23,27 @@ require 'open-uri'
 	
 	def self.books
 		books = []
-		Dir.chdir("/Users/brad/dev/books")
+		Dir.chdir(Rails.root.join('app', 'assets', 'books'))
 		folders = Dir.glob('*')
 		folders.each do |folder|
-			Dir.chdir("/Users/brad/dev/books" + "/" + "#{folder}")
+			Dir.chdir(Rails.root.join('app', 'assets', 'books' + '/' + "#{folder}"))
 			files = Dir.glob('*')
 			files.each do |file|
 				book = {}
-				url  = "/Users/brad/dev/books" + "/" + "#{folder}" + "/" + "#{file}"
-				book[:title] = file
+ 				book[:title] = file
 				book[:category] = folder
 				book[:description] = 'book description'
 				book[:format] = 'pdf'
-				book[:url] = url
+ 				book[:url] =  "#{Rails.root.join('app', 'assets', 'books', 'folder', '/', "#{file}")}"
 				books.push(book)
 			end
 		end
 		Ref.import_books(books)
 	end
+	 
 
+
+	
   # def self.free_books
   #   @bookmarks = []
   #   page = HTTParty.get("https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#ruby")
