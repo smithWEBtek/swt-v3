@@ -6,8 +6,6 @@
 			<th><%= sort_link "format" %></th>
       <th><%= sort_link "title" %></th>
       <th><%= sort_link "category" %></th>
-      <th><%= sort_link "description" %></th>
-			<th><%= sort_link "url" %></th>
     </tr>
   </thead>
   <tbody>
@@ -21,7 +19,6 @@
 				<% end %>
         <td><%= ref.category %></td>
         <td><%= ref.description %></td>
-        <td><%= ref.url %></td>
       </tr>
     <% end %>
   </tbody>
