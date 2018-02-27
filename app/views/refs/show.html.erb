@@ -1,21 +1,6 @@
-<div class="wrapper wrapper_padding clearfix">
-  <div class="col-4">
-    <p>
-      <strong><%= link_to "X", edit_ref_path(@ref) %> |
-      <strong><%= link_to "edit", edit_ref_path(@ref) %> |
-      <strong><%= link_to "index", refs_path %> |
-
-      <strong>name:</strong> <%= @ref.name %><br>
-      <strong>url:</strong> <%= link_to @ref.url, @ref.url , :target => "_blank" %><br>
-      <strong>format:</strong> <%= @ref.format %><br>
-      <strong>content:</strong> <%= @ref.content %><br>
-     </p>
-  </div>
-    <div class="col-3">
-    <% if @ref.format == 'video' %>
-      <iframe width="190" height="155" src="<%= "#{@ref.url}" %>" frameborder="0" allowfullscreen></iframe><br>
-    <% else %> 
-      <%= @ref.content %>
-    <% end %>
-  </div>
+<div>
+ 
+ 
+			<iframe src="<%= link_to @ref.title, @ref.url %>"></iframe>
+   
 </div>

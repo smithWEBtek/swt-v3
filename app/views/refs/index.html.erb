@@ -1,66 +1,21 @@
-<div class="wrapper wrapper_padding clearfix">
-  <div class="col-ref">
-    <h4>
-      <%= link_to "New Ref", new_ref_path %>
-      <%= link_to "Reload Bookmarks", load_bookmarks_path %>
-    </h4>
-    <!-- <hr> -->
-    <%= link_to "Refs", refs_path %>
-      <hr>
-  </div>
-
-  <div class="ref-text col-ref">
-    <h4>books</h4>
-    <hr>
-    <% @books.each do |book|%>
-      <%= link_to book.title, book.url %>
-        <br>
-        <% end %>
-  </div>
-
-  <div class="ref-text col-ref">
-    <h4>bookmarks</h4>
-    <hr>
-    <% @bookmarks.each do |bookmark|%>
-      <%= link_to bookmark.title, bookmark.url %>
-        <br>
-        <% end %>
-  </div>
-
-  <div class="ref-text col-ref">
-    <h4>mentors:</h4>
-    <hr>
-    <% @mentors.each do |mentor|%>
-      <%= link_to mentor.title, mentor.url %>
-        <br>
-        <% end %>
-  </div>
-
-  <div class="ref-text col-ref">
-    <h4>videos</h4>
-    <hr>
-    <% @videos.each do |video|%>
-      <%= link_to video.title, video.url %>
-        <br>
-        <% end %>
-  </div>
-
-  <div class="ref-text col-ref">
-    <h4>docs</h4>
-    <hr>
-    <% @docs.each do |doc|%>
-      <%= link_to doc.title, doc.url %>
-        <br>
-        <% end %>
-  </div>
-
-  <div class="ref-text col-ref">
-    <h4>Pdfs</h4>
-    <hr>
-    <% @pdfs.each do |pdf|%>`
-      <%= link_to pdf.title, pdf.url %>
-        <br>
-        <% end %>
-  </div>
+<div class="container">
+	<div class="row">
+		<div class="ref-text col-ref">
+		<h3>Bookmarks</h3>
+		<hr>
+		<% @bookmarks.each do |bookmark|%>
+			<h5><%= link_to bookmark.title, bookmark.url %></h5>
+			<br>
+		<% end %>
+		</div>
+			
+		<div class="ref-text col-ref">
+		<h3>Books</h3>
+		<hr>
+		<% @books.each do |book| %>
+			<h5><%= link_to book.title, ref_path(book.id) %></h5>
+			<br>
+		<% end %>
+		</div>
+	</div>
 </div>
-<div class="col-1" style="clear: both"></div>

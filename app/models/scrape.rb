@@ -22,17 +22,25 @@ require 'open-uri'
 	end
 	
 	def self.books
-		books = {}
+		books = []
 		Dir.chdir("/Users/brad/dev/books")
 		folders = Dir.glob('*')
 		folders.each do |folder|
 			Dir.chdir("/Users/brad/dev/books" + "/" + "#{folder}")
-			books[folder] = Dir.glob('*')
+			files = Dir.glob('*')
+			files.each do |file|
+				book = {}
+				url  = "/Users/brad/dev/books" + "/" + "#{folder}" + "/" + "#{file}"
+				book[:title] = file
+				book[:category] = folder
+				book[:description] = 'book description'
+				book[:format] = 'pdf'
+				book[:url] = url
+				books.push(book)
+			end
 		end
-			books
-			Ref.import_books(books)
-    end
-
+		Ref.import_books(books)
+	end
 
   # def self.free_books
   #   @bookmarks = []
@@ -43,8 +51,6 @@ require 'open-uri'
 
   #   refs = @parse.css('a').each do |item|
   #           ref = {
-
-
       #   "Language Agnostic" = @parse.css('h3')[4].text
       # <h3>  'group'
       #   <ol>

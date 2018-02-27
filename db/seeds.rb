@@ -33,42 +33,7 @@ DATA_refs ={
     ["Build Blog", "mentor", "#", "contents of video6"],
     ["Traversy Media", "mentor", "https://www.youtube.com/user/TechGuyWeb", "web dev:HTML/CSS, JavaScript, PHP, RoR"],
     ["CodeAcademy", "mentor", "https://www.youtube.com/user/TechGuyWeb", "online school" ],
-    ["TUTS+", "mentor", "#", "contents of video6" ],
-
-    ["An Updated Summary of The 12 Celestine Insights.docx", "book", "#", "book-content"],
-    ["Badass - Making Users Awesome.pdf", "book", "#", "book-content"],
-    ["Begining Database Design.pdf", "book", "#", "book-content"],
-    ["Beginning T-SQL 2008 R2.pdf", "book", "#", "book-content"],
-    ["Beginning T-SQL 2012 brad.pdf", "book", "#", "book-content"],
-    ["Beginning T-SQL 2012.pdf", "book", "#", "book-content"],
-    ["bootstrapant1.pdf", "book", "#", "book-content"],
-    ["c programming.pdf", "book", "#", "book-content"],
-    ["Ecma-262.pdf", "book", "#", "book-content"],
-    ["Eloquent Ruby.pdf", "book", "#", "book-content"],
-    ["Eloquent_JavaScript.pdf", "book", "#", "book-content"],
-    ["Git.pdf", "book", "#", "book-content"],
-    ["growing-rails.pdf", "book", "#", "book-content"],
-    ["Introduction.to.Algorithms.3rd.Edition.Sep.2010.pdf", "book", "#", "book-content"],
-    ["James Redfield - The Celestine Prophecy.pdf", "book", "#", "book-content"],
-    ["koans", "book", "#", "book-content"],
-    ["Learn To Program - Chris Pine.pdf", "book", "#", "book-content"],
-    ["Mastery-George-Leonard.pdf", "book", "#", "book-content"],
-    ["MindForNumbers-summary.pdf", "book", "#", "book-content"],
-    ["MindForNumbers.pdf", "book", "#", "book-content"],
-    ["Mindset-The New Psychology of Success.pdf", "book", "#", "book-content"],
-    ["POODR.pdf", "book", "#", "book-content"],
-    ["ProgrammingRuby-4thEd Pragmatic Programmers Guide.pdf", "book", "#", "book-content"],
-    ["ProgramStudyGuide.pdf", "book", "#", "book-content"],
-    ["Refactoring_Ruby Edition.pdf", "book", "#", "book-content"],
-    ["Refactoring.pdf", "book", "#", "book-content"],
-    ["ruby_programming_language.pdf", "book", "#", "book-content"],
-    ["ruby-NXPowerLite.pdf", "book", "#", "book-content"],
-    ["ruby-pocket-ref.pdf", "book", "#", "book-content"],
-    ["Speaking JS.pdf", "book", "#", "book-content"],
-    ["sql_server_2012.pdf", "book", "#", "book-content"],
-    ["TechInterview.pdf", "book", "#", "book-content"],
-    ["The Speed of Dark.pdf", "book", "#", "book-content"],
-    ["Well_Grounded_Rubyist.pdf", "book", "#", "book-content"]
+    ["TUTS+", "mentor", "#", "contents of video6" ]
   ]
 }
 
@@ -260,6 +225,7 @@ def main
   make_tags
 	make_refs
 	Scrape.bookmarks
+	Scrape.books
   make_posts
   make_projects
 end
