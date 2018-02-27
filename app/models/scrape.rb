@@ -18,7 +18,19 @@ require 'open-uri'
 			}
 			bookmarks.push(ref)
 		end
-    Ref.import(bookmarks)
+    Ref.import_bookmarks(bookmarks)
+	end
+	
+	def self.books
+		books = {}
+		Dir.chdir("/Users/brad/dev/books")
+		folders = Dir.glob('*')
+		folders.each do |folder|
+			Dir.chdir("/Users/brad/dev/books" + "/" + "#{folder}")
+			books[folder] = Dir.glob('*')
+		end
+			books
+			Ref.import_books(books)
     end
 
 

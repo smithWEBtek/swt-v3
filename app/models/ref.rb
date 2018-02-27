@@ -1,7 +1,7 @@
 class Ref < ApplicationRecord
   has_many :tags
 
-  def self.import(bookmarks)
+  def self.import_bookmarks(bookmarks)
 		bookmarks.each do |bookmark|
       ref = Ref.find_or_create_by(
 				title: bookmark[:title],	

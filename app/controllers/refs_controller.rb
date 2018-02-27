@@ -43,7 +43,30 @@ class RefsController < ApplicationController
   def destroy
     @ref.delete
     redirect_to refs_path
-  end
+	end
+	
+
+# every few weeks, export and replace the bookmarks.html file, (exported from Chrome)
+# until you find a way to reach out to Chrome programatically
+def bookmarks
+ render 'static/bookmarks'
+end
+
+def scrape_bookmarks
+	Scrape.bookmarks
+ render 'static/bookmarks'
+end
+
+def scrape_books
+	Scrape.books
+ render 'static/bookmarks'
+end
+
+def free_books
+	Scrape.free_books
+ render :free_books
+end
+
 
   private
     def set_ref
