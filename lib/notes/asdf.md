@@ -10,6 +10,7 @@
 invoice st mary for 2/27/2018
 
 add libary to its own git repo
+get it working from Heroku, so we don't have to deal w/separate Heroku branch (sans books)
 	v1
 		set up scrape of that library into swt-v3 refs
 		use library locally
@@ -19,7 +20,6 @@ add libary to its own git repo
 	v2: 	use Cloudinary API for library upload and retrieval
 	v3:		use AWS for same, for practice
 
-get it working from Heroku, so we don't have to deal w/separate Heroku branch (sans books)
 
 learn node, mean, mongodb, express, do a project
 get auth working on swt-sp4
@@ -35,8 +35,7 @@ set up templates for web customers
 
 
 #House keeping
-	Invoice Heritage Baptist
-	Invoice: check on St Mary's
+	Invoice St Mary's
 	Bank deposit
 	Scottrade acct move money
 	SmithPiano mailer
