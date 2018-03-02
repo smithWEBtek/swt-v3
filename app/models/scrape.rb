@@ -7,15 +7,11 @@ require 'json'
 	# (exported from Chrome) to: app/assets/bookmarks/<bookmarks.html>
 	# until you find a way to reach out to Chrome programatically
 
-  def self.bookmarks
+	def self.bookmarks
 		bookmarks = []
-		categories = []
 		file = File.open(Rails.root.join('app', 'assets', 'bookmarks', 'bookmarks.html'))
     parse = Nokogiri::HTML(file)
-		parse.css('h3').each do |category|
-			categories.push(category)
-binding.pry
-
+    refs = parse.css('a').each do |item|
 			ref = {
 				title: item.text, 
 				category: item.children.text,
@@ -90,7 +86,7 @@ binding.pry
 	# 	"title"=>"CodeFights",
 	# 	"url"=>"https://codefights.com/"},
 
-		binding.pry 
+		# binding.pry 
 
 	end
 end
