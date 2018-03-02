@@ -210,7 +210,6 @@ DATA_projects ={
 		]
 	}
 	 
-
 	def make_projects
 		DATA_projects[:projects].each do |project|
 			new_project = Project.new
@@ -221,13 +220,55 @@ DATA_projects ={
   end
 end
 
+DATA_users ={
+ :user_keys =>
+		["email", "password", "password_confirmation"],
+  :users => [
+    ["demo1@smithwebtek.com", "pointer", "pointer"],
+    ["demo2@smithwebtek.com", "pointer", "pointer"],
+    ["demo3@smithwebtek.com", "pointer", "pointer"]
+  ]
+}
+
+def make_users
+  DATA_users[:users].each do |user|
+    new_user = User.new
+    user.each_with_index do |attribute, i|
+      new_user.send(DATA_users[:user_keys][i]+"=", attribute)
+    end
+    new_user.save
+  end
+end
+
+DATA_admin_users ={
+ :admin_user_keys =>
+    ["email", "password", "password_confirmation"],
+  :admin_users => [
+    ["admin@smithwebtek.com", "Pointer1980", "Pointer1980"],
+    ["brad@smithwebtek.com", "Pointer1980", "Pointer1980"]
+  ]
+}
+
+def make_admin_users
+  DATA_admin_users[:admin_users].each do |admin_user|
+    new_admin_user = AdminUser.new
+    admin_user.each_with_index do |attribute, i|
+      new_admin_user.send(DATA_admin_users[:admin_user_keys][i]+"=", attribute)
+    end
+    new_admin_user.save
+  end
+end
+
 def main
   make_tags
 	make_refs
 	Scrape.bookmarks
 	Scrape.gitbooks
   make_posts
-  make_projects
+	make_projects
+	make_users
+	make_admin_users
 end
 
 main
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?

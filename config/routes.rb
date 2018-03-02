@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 	
+  devise_for :users
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   root 'static#home'
   get '/asdf', to: 'static#asdf'
   get '/zxcv', to: 'static#zxcv'
