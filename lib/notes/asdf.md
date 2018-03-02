@@ -6,12 +6,12 @@
 3. Assume the best of people first, (review 1 and 2)
 4. Before responding: Pause, Read, Listen, Love (review 1-3)
 5. Taking offense is NEVER productive. 
-6. If you are right, foregoing the opportunity to fight lets Time, The Universe and Karma make your case better than you ever could.
+6. Time, The Universe and Karma will make your case better than you ever could.
 
 
 invoice st mary for 2/27/2018
 
-add libary to its own git repo
+ 
 get it working from Heroku, so we don't have to deal w/separate Heroku branch (sans books)
 store new books in /Users/brad/dev/books (which is a git repo)
 commit changes 
