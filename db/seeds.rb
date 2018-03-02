@@ -225,7 +225,7 @@ def main
   make_tags
 	make_refs
 	Scrape.bookmarks
-	Scrape.books
+	Scrape.gitbooks
   make_posts
   make_projects
 end

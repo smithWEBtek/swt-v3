@@ -1,25 +1,34 @@
 <h1>Refs</h1> 
- 
-<table>
-  <thead>
-    <tr>
-			<th><%= sort_link "format" %></th>
-      <th><%= sort_link "title" %></th>
-      <th><%= sort_link "category" %></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @refs.each do |ref| %>
-      <tr>
-				<td><%= ref.format %></td>
-				<% if ref.format === 'pdf' %>
-					<td><%= link_to ref.title, ref_path(ref) %></td>
-				<% else %>
-					<td><%= link_to ref.title, ref.url %></td>
-				<% end %>
-        <td><%= ref.category %></td>
-        <td><%= ref.description %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag '//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', 'data-turbolinks-track' => true %>
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+<div class="container">
+	<table>
+		<thead>
+			<tr>
+				<th><%= sort_link "format" %></th>
+				<th><%= sort_link "title" %></th>
+				<th><%= sort_link "category" %></th>
+				<th><%= sort_link "description" %></th>
+				<th><%= sort_link "url" %></th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @refs.each do |ref| %>
+				<tr>
+					<td><%= ref.format %></td>
+					<% if ref.format === 'pdf' %>
+						<td><%= link_to ref.title, ref_path(ref) %></td>
+					<% else %>
+						<td><%= link_to ref.title, ref.url %></td>
+					<% end %>
+					<td><%= ref.category %></td>
+					<td><%= ref.description %></td>
+					<td><%= ref.url %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

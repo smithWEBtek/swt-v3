@@ -1,9 +1,51 @@
 =======================================================
 #MY TODO LIST for today
 
+1. Talk less, listen more, be more "impressed" than "impressive"
+2. Uplift and encourage through words and actions
+3. Assume the best of people first, (review 1 and 2)
+4. Before responding: Pause, Read, Listen, Love (review 1-3)
+5. Taking offense is NEVER productive. 
+6. If you are right, foregoing the opportunity to fight lets Time, The Universe and Karma make your case better than you ever could.
+
+
+invoice st mary for 2/27/2018
+
+add libary to its own git repo
+get it working from Heroku, so we don't have to deal w/separate Heroku branch (sans books)
+store new books in /Users/brad/dev/books (which is a git repo)
+commit changes 
+
+swt-v3 scrapes git repo for list of books, folder and url
+swt-v3 displays the new book in a link in the refs list
+
+
+
+	v1
+		set up scrape of that library into swt-v3 refs
+		use library locally
+		scrape locally for folder names and filenames
+		parse together urls, (using folder names and filenames) to read books online from github
+
+	v2: 	use Cloudinary API for library upload and retrieval
+	v3:		use AWS for same, for practice
+
+
+learn node, mean, mongodb, express, do a project
+get auth working on swt-sp4
+get routing working on Heroku
+start using Lunar pages for something
+
+set up templates for web customers
+	db, frameworks, host, options for scaling
+	package up services
+	target markets
+	low entry for prototypes
+		get to know how we work // and we get to know how you articulate your needs 
+
+
 #House keeping
-	Invoice Heritage Baptist
-	Invoice: check on St Mary's
+	Invoice St Mary's
 	Bank deposit
 	Scottrade acct move money
 	SmithPiano mailer

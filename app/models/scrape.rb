@@ -1,14 +1,21 @@
 class Scrape < ApplicationRecord
 require 'open-uri'
+require 'pdf/reader'
+require 'json'
 
-	# every few weeks, export and replace the bookmarks.html file, (exported from Chrome)
+	# every few weeks, export and replace the bookmarks.html file, 
+	# (exported from Chrome) to: app/assets/bookmarks/<bookmarks.html>
 	# until you find a way to reach out to Chrome programatically
-	
+
   def self.bookmarks
 		bookmarks = []
+		categories = []
 		file = File.open(Rails.root.join('app', 'assets', 'bookmarks', 'bookmarks.html'))
     parse = Nokogiri::HTML(file)
-    refs = parse.css('a').each do |item|
+		parse.css('h3').each do |category|
+			categories.push(category)
+binding.pry
+
 			ref = {
 				title: item.text, 
 				category: item.children.text,
@@ -20,67 +27,70 @@ require 'open-uri'
 		end
     Ref.import_bookmarks(bookmarks)
 	end
-	
-	def self.books
-		books = []
-		Dir.chdir(Rails.root.join('app', 'assets', 'books'))
-		folders = Dir.glob('*')
-		folders.each do |folder|
-			Dir.chdir(Rails.root.join('app', 'assets', 'books' + '/' + "#{folder}"))
-			files = Dir.glob('*')
-			files.each do |file|
-				book = {}
- 				book[:title] = file
-				book[:category] = folder
-				book[:description] = 'book description'
-				book[:format] = 'pdf'
- 				book[:url] =  "#{Rails.root.join('app', 'assets', 'books', 'folder', '/', "#{file}")}"
-				books.push(book)
-			end
+
+	def self.gitfolders
+		folders = []
+		site = HTTParty.get('https://github.com/smithWEBtek/books')
+		parse = Nokogiri::HTML(site)
+		parse.css('.js-navigation-open').each do |item|
+			folders.push(item.child.text)
 		end
-		Ref.import_books(books)
+		folders.slice(1, folders.length-3)
 	end
-	 
 
+	def self.gitbooks
+		folders = Scrape.gitfolders
+		books = []
+		book_list = []
+		refs = []
 
-	
-  # def self.free_books
-  #   @bookmarks = []
-  #   page = HTTParty.get("https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#ruby")
-  #   @parse = Nokogiri::HTML(page)
+		folders.each do |folder|
+			site = HTTParty.get('https://github.com/smithWEBtek/books/tree/master/'+ "#{folder}")
+			parse = Nokogiri::HTML(site)
+			parse.css('.js-navigation-open').each do |item|
+				book_list << item.child.text
+			end
 
-  # binding.pry
+			books = book_list.slice(2, book_list.length)
+			book_list = []
 
-  #   refs = @parse.css('a').each do |item|
-  #           ref = {
-      #   "Language Agnostic" = @parse.css('h3')[4].text
-      # <h3>  'group'
-      #   <ol>
-      #     <li>'book'
-      #       <a href="url to the book">
-      #     <li>'book'
-      #       <a href="url to the book">
-      #     <li>'book'
-      #       <a href="url to the book">
-      #     <li>'book'
-      #       <a href="url to the book">
-      #     <li>'book'
-      #       <a href="url to the book">
-      #     <li>'book'
-      #       <a href="url to the book">
-      #     <li>'book'
-      #       <a href="url to the book">
-      #   </ol>
-      # <h3>  'group'
+			books.each do |book|
+				ref = {
+					title: book,
+					category: folder,
+					format: 'pdf',
+					description: 'book in git library',
+					url: 'https://github.com/smithWEBtek/books/tree/master/'+ "#{folder}" + '/' + "#{book}"
+				}
+				refs.push(ref)
+			end
+			puts refs.count
+		end
+			Ref.import_bookmarks(refs)
+	end 
 
-    #     name: item.text, 
-    #     url: item.values.first
-    #     author: @parse.css('ul li a')[188].text
-    #     }
-    #     @bookmarks.push(ref)
-    #   end
-    # Ref.import(@bookmarks)
-    # end
+	def self.import_chrome_bookmarks
+		file = File.read(Rails.root.join('app', 'assets', 'bookmarks', 'chrome_bookmarks.json'))
+		data_hash = JSON.parse(file)
+
  
+	#  {"id"=>334,
+	# 	"dateAddedLocal"=>"9/12/2017, 1:11:09 PM",
+	# 	"dateAddedUTC"=>"2017-09-12T17:11:09.000Z",
+	# 	"index"=>2,
+	# 	"parentId"=>"330",
+	# 	"title"=>"Amazon Web Services (AWS) - Cloud Computing Services",
+	# 	"url"=>"https://aws.amazon.com/"},
+	
+	#  {"id"=>335,
+	# 	"dateAddedLocal"=>"12/3/2017, 10:02:17 PM",
+	# 	"dateAddedUTC"=>"2017-12-04T03:02:17.000Z",
+	# 	"index"=>3,
+	# 	"parentId"=>"330",
+	# 	"title"=>"CodeFights",
+	# 	"url"=>"https://codefights.com/"},
 
+		binding.pry 
+
+	end
 end
