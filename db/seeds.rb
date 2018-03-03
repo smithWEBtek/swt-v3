@@ -222,11 +222,12 @@ end
 
 DATA_users ={
  :user_keys =>
-		["email", "password", "password_confirmation"],
+		["first_name", "last_name", "email", "password", "password_confirmation"],
   :users => [
-    ["demo1@smithwebtek.com", "pointer", "pointer"],
-    ["demo2@smithwebtek.com", "pointer", "pointer"],
-    ["demo3@smithwebtek.com", "pointer", "pointer"]
+    ["Ned", "Ryerson", "ned@abc.com", "pointer", "pointer"],
+    ["Ted", "Baxter", "ted@abc.com", "pointer", "pointer"],
+    ["Fred", "Baker", "fred@abc.com", "pointer", "pointer"],
+    ["Demo", "Demo", "demo@demo.com", "password", "password"]
   ]
 }
 
@@ -244,8 +245,8 @@ DATA_admin_users ={
  :admin_user_keys =>
     ["email", "password", "password_confirmation"],
   :admin_users => [
-    ["admin@smithwebtek.com", "Pointer1980", "Pointer1980"],
-    ["brad@smithwebtek.com", "Pointer1980", "Pointer1980"]
+    ["admin@smithwebtek.com", "pointer", "pointer"],
+    ["brad@smithwebtek.com", "pointer", "pointer"]
   ]
 }
 
