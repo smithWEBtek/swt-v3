@@ -205,7 +205,7 @@ DATA_projects ={
 			"housing listings, sample data sets of discriminatory phrases",
 			"too often the city hears about discriminatory practices after they happen",
 			"proactively find discriminatory housing listings, before constituents",
-			"https://music-studio.herokuapp.com/",
+			"https://legalhousing.herokuapp.com//",
 			"http://res.cloudinary.com/smithwebtek/image/upload/v1519153948/legalhousing_cf9zjr.png"]
 		]
 	}
