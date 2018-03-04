@@ -12,17 +12,17 @@ def self.bookmarks
 	data = JSON.parse(file)
 	data.each do |bm|
 		new_bm	= Bookmark.new
-		new_bm.bm_id = bm["id"]
-		new_bm.bm_dateAddedLocal = bm["dateAddedLocal"]
-		new_bm.bm_dateAddedUTC = bm["dateAddedUTC"]
-		new_bm.bm_index = bm["index"]
-		new_bm.bm_parentId = bm["parentId"]
-		new_bm.bm_title = bm["title"]
-		new_bm.bm_url = bm["url"]
+		new_bm.cbm_id = bm["id"]
+		new_bm.dateAddedLocal = bm["dateAddedLocal"]
+		new_bm.dateAddedUTC = bm["dateAddedUTC"]
+		new_bm.cbm_index = bm["index"]
+		new_bm.parent_id = bm["parentId"]
+		new_bm.title = bm["title"]
+		new_bm.url = bm["url"]
 		new_bm.save
 	end
 end
-
+ 
 
 
 # 	def self.bookmarks

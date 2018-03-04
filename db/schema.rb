@@ -47,15 +47,15 @@ ActiveRecord::Schema.define(version: 20180304014505) do
   end
 
   create_table "bookmarks", force: :cascade do |t|
-    t.integer  "bm_id"
-    t.datetime "bm_dateAddedLocal"
-    t.datetime "bm_dateAddedUTC"
-    t.integer  "bm_index"
-    t.integer  "bm_parentId"
-    t.text     "bm_title"
-    t.text     "bm_url"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.integer  "cbm_id"
+    t.datetime "dateAddedLocal"
+    t.datetime "dateAddedUTC"
+    t.integer  "cbm_index"
+    t.integer  "parent_id"
+    t.text     "title"
+    t.text     "url"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "posts", force: :cascade do |t|

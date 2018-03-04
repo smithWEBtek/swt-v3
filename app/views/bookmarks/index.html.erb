@@ -1,0 +1,30 @@
+<div class="wrapper wrapper_padding clearfix">
+	<div class="sidebar col-4 sidebar-margin">
+		<%= render 'layouts/contact' %>
+			<br />
+			<br />
+			<%= render 'layouts/card' %>
+	</div>
+	<div class="col-3 body-text">
+
+	<h4>Bookmarks</h4>	
+		<table>
+			<thead>
+				<tr>
+					<th>id</th> 
+					<th>parent_id</th> 
+					<th>title</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% @bookmarks.each do |bm| %>
+					<tr>
+						<td><%= bm.id %></td>
+						<td><%= bm.parent_id %></td>
+						<td><%= link_to bm.title, bm.url %></td>
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
+	</div>
+</div>

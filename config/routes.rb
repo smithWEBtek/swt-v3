@@ -12,7 +12,6 @@ Rails.application.routes.draw do
 	get '/blog', to: 'posts#index'
 	get '/posts/new', to: 'posts#index'
 
-	get '/bookmarks', to: 'static#bookmarks'	
 	get 'scrape_bookmarks', to: 'ref#scrape_bookmarks'
 
 	get 'reload_books', to: 'ref#reload_books'

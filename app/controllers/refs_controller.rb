@@ -2,7 +2,6 @@ class RefsController < ApplicationController
   before_action :set_ref, only: [:show, :edit, :update, :destroy]
 	helper_method :sort_column, :sort_direction
 
- 
 	def index
 		@refs = Ref.order("#{sort_column} #{sort_direction}")
     # @refs = Ref.all 
@@ -47,14 +46,7 @@ class RefsController < ApplicationController
     @ref.delete
     redirect_to refs_path
 	end
-	
-
-# every few weeks, export and replace the bookmarks.html file, (exported from Chrome)
-# until you find a way to reach out to Chrome programatically
-def bookmarks
- render 'static/bookmarks'
-end
-
+ 
 def scrape_bookmarks
 	Scrape.bookmarks
  render 'static/bookmarks'
