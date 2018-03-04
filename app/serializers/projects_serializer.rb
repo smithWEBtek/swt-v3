@@ -1,4 +1,4 @@
 class ProjectsSerializer < ActiveModel::Serializer
-  attributes :id, :name, :business_model, :data_sources, :problem, :wishlist, :url, :screenshot, :created_at, :updated_at
+  attributes :id, :name, :business_model, :data_sources, :problem, :wishlist, :url, :screenshot
   has_many :tags
 end

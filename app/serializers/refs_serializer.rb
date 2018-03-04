@@ -1,4 +1,4 @@
 class RefsSerializer < ActiveModel::Serializer
-  attributes :id, :title, :category, :description, :format, :url, :created_at, :updated_at
+  attributes :id, :title, :category, :description, :format, :url
   has_many :tags
 end
