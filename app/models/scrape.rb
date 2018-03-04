@@ -26,7 +26,7 @@ require 'json'
 
 	def self.gitfolders
 		folders = []
-		site = HTTParty.get('https://github.com/smithWEBtek/books')
+		site = HTTParty.get('https://github.com/smithWEBtek/swt-v3/tree/master/app/assets/books')
 		parse = Nokogiri::HTML(site)
 		parse.css('.js-navigation-open').each do |item|
 			folders.push(item.child.text)
@@ -41,7 +41,7 @@ require 'json'
 		refs = []
 
 		folders.each do |folder|
-			site = HTTParty.get('https://github.com/smithWEBtek/books/tree/master/'+ "#{folder}")
+			site = HTTParty.get('https://github.com/smithWEBtek/swt-v3/tree/master/'+ "#{folder}")
 			parse = Nokogiri::HTML(site)
 			parse.css('.js-navigation-open').each do |item|
 				book_list << item.child.text
