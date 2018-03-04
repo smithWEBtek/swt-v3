@@ -7,22 +7,39 @@ require 'json'
 	# (exported from Chrome) to: app/assets/bookmarks/<bookmarks.html>
 	# until you find a way to reach out to Chrome programatically
 
-	def self.bookmarks
-		bookmarks = []
-		file = File.open(Rails.root.join('app', 'assets', 'bookmarks', 'bookmarks.html'))
-    parse = Nokogiri::HTML(file)
-    refs = parse.css('a').each do |item|
-			ref = {
-				title: item.text, 
-				category: item.children.text,
-				format: 'bookmark',
-        url: item.values.first,
-				description: 'bookmark'
-			}
-			bookmarks.push(ref)
-		end
-    Ref.import_bookmarks(bookmarks)
-	end
+def self.bookmarks
+	# file = File.read(Rails.root.join('app', 'assets', 'bookmarks', 'chrome_bookmarks.json'))
+	# data = JSON.parse(file)
+
+	
+	# cbm_id
+	# cbm_dateAddedLocal 
+	# cbm_dateAddedUTC	 
+	# cbm_index
+	# cbm_parentId 
+	# cbm_title	 
+	# cbm_url
+
+end
+
+
+
+# 	def self.bookmarks
+# 		bookmarks = []
+# 		file = File.open(Rails.root.join('app', 'assets', 'bookmarks', 'bookmarks.html'))
+# 		parse = Nokogiri::HTML(file)
+#     refs = parse.css('a').each do |item|
+# 			ref = {
+# 				title: item.text, 
+# 				category: item.children.text,
+# 				format: 'bookmark',
+#         url: item.values.first,
+# 				description: 'bookmark'
+# 			}
+# 			bookmarks.push(ref)
+# 		end
+#     Ref.import_bookmarks(bookmarks)
+# 	end
 
 	def self.gitfolders
 		folders = []

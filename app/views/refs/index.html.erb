@@ -9,6 +9,7 @@
 		<thead>
 			<tr>
 				<th><%= sort_link "format" %></th> 
+				<th><%= sort_link "category" %></th> 
 				<th><%= sort_link "title" %></th>
 			</tr>
 		</thead>
@@ -16,6 +17,7 @@
 			<% @refs.each do |ref| %>
 				<tr>
 					<td><%= ref.format %></td>
+					<td><%= ref.category %></td>
 					<% if ref.format === 'pdf' %>
 						<td><%= link_to ref.title, ref_path(ref) %></td>
 					<% else %>

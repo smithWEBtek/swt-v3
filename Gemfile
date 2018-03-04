@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'json'
 gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
+gem 'active_model_serializers', '~> 0.10.0'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'

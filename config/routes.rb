@@ -19,5 +19,5 @@ Rails.application.routes.draw do
 
 
   resources :posts, only: [:show, :index]
-  resources :refs, :projects, :tags
+  resources :refs, :projects, :tags, :bookmarks
 end
