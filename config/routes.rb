@@ -17,7 +17,6 @@ Rails.application.routes.draw do
 
 	get 'reload_books', to: 'ref#reload_books'
 
-
   resources :posts, only: [:show, :index]
   resources :refs, :projects, :tags, :bookmarks
 end

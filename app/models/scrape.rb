@@ -8,18 +8,19 @@ require 'json'
 	# until you find a way to reach out to Chrome programatically
 
 def self.bookmarks
-	# file = File.read(Rails.root.join('app', 'assets', 'bookmarks', 'chrome_bookmarks.json'))
-	# data = JSON.parse(file)
-
-	
-	# cbm_id
-	# cbm_dateAddedLocal 
-	# cbm_dateAddedUTC	 
-	# cbm_index
-	# cbm_parentId 
-	# cbm_title	 
-	# cbm_url
-
+	file = File.read(Rails.root.join('app', 'assets', 'bookmarks', 'chrome_bookmarks.json'))
+	data = JSON.parse(file)
+	data.each do |bm|
+		new_bm	= Bookmark.new
+		new_bm.bm_id = bm["id"]
+		new_bm.bm_dateAddedLocal = bm["dateAddedLocal"]
+		new_bm.bm_dateAddedUTC = bm["dateAddedUTC"]
+		new_bm.bm_index = bm["index"]
+		new_bm.bm_parentId = bm["parentId"]
+		new_bm.bm_title = bm["title"]
+		new_bm.bm_url = bm["url"]
+		new_bm.save
+	end
 end
 
 
@@ -81,29 +82,5 @@ end
 		end
 			Ref.import_bookmarks(refs)
 	end 
-
-	def self.import_chrome_bookmarks
-		file = File.read(Rails.root.join('app', 'assets', 'bookmarks', 'chrome_bookmarks.json'))
-		data_hash = JSON.parse(file)
-
  
-	#  {"id"=>334,
-	# 	"dateAddedLocal"=>"9/12/2017, 1:11:09 PM",
-	# 	"dateAddedUTC"=>"2017-09-12T17:11:09.000Z",
-	# 	"index"=>2,
-	# 	"parentId"=>"330",
-	# 	"title"=>"Amazon Web Services (AWS) - Cloud Computing Services",
-	# 	"url"=>"https://aws.amazon.com/"},
-	
-	#  {"id"=>335,
-	# 	"dateAddedLocal"=>"12/3/2017, 10:02:17 PM",
-	# 	"dateAddedUTC"=>"2017-12-04T03:02:17.000Z",
-	# 	"index"=>3,
-	# 	"parentId"=>"330",
-	# 	"title"=>"CodeFights",
-	# 	"url"=>"https://codefights.com/"},
-
-		# binding.pry 
-
-	end
 end
