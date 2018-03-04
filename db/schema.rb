@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 20180304014505) do
     t.integer  "cbm_index"
     t.integer  "parent_id"
     t.text     "title"
+    t.text     "category"
     t.text     "url"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false

@@ -1,9 +1,14 @@
 class Bookmark < ApplicationRecord
 	has_many :tags
 	
-	def self.get_parents
+	def self.set_categories
 		Bookmark.all.each do |bm|
-			bm.parent = Bookmark.find(bm.parent_id)
+			if Bookmark.find_by_cbm_id(bm.parent_id)
+				category = Bookmark.find_by_cbm_id(bm.parent_id)
+				bm.category = category.title
+			else
+				bm.category = "no parent id found"
+			end
 			bm.save
 		end
 	end
