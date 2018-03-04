@@ -18,11 +18,13 @@
 			</thead>
 			<tbody>
 				<% @bookmarks.each do |bm| %>
-					<tr>
-						<td><%= bm.id %></td>
-						<td><%= bm.category %></td>
-						<td><%= link_to bm.title, bm.url %></td>
-					</tr>
+					<% if bm.url != nil %>
+						<tr>
+							<td><%= bm.id %></td>
+							<td><%= bm.category %></td>
+							<td><%= link_to bm.title, bm.url %></td>
+						</tr>
+					<% end %>
 				<% end %>
 			</tbody>
 		</table>

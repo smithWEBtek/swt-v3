@@ -9,33 +9,25 @@
 6. Time, The Universe and Karma will make your case better than you ever could.
 
 
+=======================================================
+#Technical Coach dashboard:
+top 20 AAQ labs
+	top documentation links for each lab
+	samples to solve issues common for each lab
+
+all support links reachable
+all docs from leaders and team
+internalize the work flow and commands
+
+
+
 invoice st mary for 2/27/2018
-
- 
-get it working from Heroku, so we don't have to deal w/separate Heroku branch (sans books)
-store new books in /Users/brad/dev/books (which is a git repo)
-commit changes 
-
-swt-v3 scrapes git repo for list of books, folder and url
-swt-v3 displays the new book in a link in the refs list
-
-
-
-	v1
-		set up scrape of that library into swt-v3 refs
-		use library locally
-		scrape locally for folder names and filenames
-		parse together urls, (using folder names and filenames) to read books online from github
-
-	v2: 	use Cloudinary API for library upload and retrieval
-	v3:		use AWS for same, for practice
-
-
-learn node, mean, mongodb, express, do a project
 get auth working on swt-sp4
 get routing working on Heroku
-start using Lunar pages for something
+ 
 
+learn node, mean, mongodb, express, do a project
+start using Lunar pages for something
 set up templates for web customers
 	db, frameworks, host, options for scaling
 	package up services
@@ -128,10 +120,10 @@ set up templates for web customers
     prioritize the funnel, pick one, elaborate its outline and summary
     pick one of those and fill in some detail on first few sub-topics
 
-tekWiki
-tekAppt
-tekPos
-tekTutor
+	tekWiki
+	tekAppt
+	tekPos
+	tekTutor
 
 =======================================================
 #smithWEBtek

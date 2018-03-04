@@ -8,6 +8,7 @@ class CreateBookmarks < ActiveRecord::Migration[5.0]
 		t.integer 	:parent_id 
 		t.text 			:title
 		t.text 			:category
+		t.text 			:subcategory
 		t.text 			:url
 
 		t.timestamps

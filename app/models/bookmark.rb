@@ -12,4 +12,13 @@ class Bookmark < ApplicationRecord
 			bm.save
 		end
 	end
+
+	def self.tekmarks
+		@bookmarks = Bookmark.all.each do |b|
+			# category is under tek
+			# url exists
+
+			
+		end
+	end
 end

@@ -1,0 +1,25 @@
+<div class="wrapper wrapper_padding clearfix">
+  <div class="col-lg-12 body-text blockquote">
+ 
+	<h4>Flatirion Technical Coach links</h4>	
+	<table>
+		<thead>
+			<tr>
+				<th>id</th> 
+				<th>category</th> 
+				<th>title</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @bookmarks.each do |bm| %>
+				<tr>
+					<td><%= bm.id %></td>
+					<td><%= link_to bm.title, bm.url %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+
+  </div>
+</div>
+</div>

@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/qwer', to: 'static#qwer'
 	
   get '/about', to: 'static#about'
+  get '/flatiron', to: 'static#flatiron'
 	get '/blog', to: 'posts#index'
 	get '/posts/new', to: 'posts#index'
 

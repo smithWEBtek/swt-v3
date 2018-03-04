@@ -7,6 +7,11 @@ class StaticController < ApplicationController
     render '/static/draft.html.erb' 
   end
 
+	def flatiron
+		@bookmarks = Bookmark.all.where(category: 'flatiron')
+    render '/static/flatiron.html.erb' 
+  end
+
   def zxcv
     @file = "zxcv.md"
 		@path = '/lib/notes/'
