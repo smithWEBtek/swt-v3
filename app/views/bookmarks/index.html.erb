@@ -8,25 +8,12 @@
 	<div class="col-3 body-text">
 
 	<h4>Bookmarks</h4>	
-		<table>
-			<thead>
-				<tr>
-					<th>id</th> 
-					<th>category</th> 
-					<th>title</th>
-				</tr>
-			</thead>
-			<tbody>
-				<% @bookmarks.each do |bm| %>
-					<% if bm.url != nil %>
-						<tr>
-							<td><%= bm.id %></td>
-							<td><%= bm.category %></td>
-							<td><%= link_to bm.title, bm.url %></td>
-						</tr>
-					<% end %>
-				<% end %>
-			</tbody>
-		</table>
-	</div>
+	<% @categories.each do |category| %>
+		<div>
+			<h3><%= category %></h3>
+			<% @bookmarks.where(category: category).each do |bm| %>
+				<%= link_to bm.title, bm.url %> |
+			<% end %>
+		</div>
+	<% end %>
 </div>

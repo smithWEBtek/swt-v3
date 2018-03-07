@@ -17,8 +17,16 @@ class Bookmark < ApplicationRecord
 		@bookmarks = Bookmark.all.each do |b|
 			# category is under tek
 			# url exists
-
-			
 		end
+	end
+
+	def self.categories
+		@categories = []
+		Bookmark.all.each do |r|
+			if !r.category.empty?
+				@categories.push(r.category)
+			end
+		end
+		@categories.uniq
 	end
 end

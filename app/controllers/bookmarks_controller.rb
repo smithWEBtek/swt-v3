@@ -3,6 +3,7 @@ class BookmarksController < ApplicationController
  
 	def index
 		@bookmarks = Bookmark.all
+		@categories = Bookmark.categories
 	end
 
 	def show
