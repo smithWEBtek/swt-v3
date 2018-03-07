@@ -9,12 +9,11 @@
 
 	<h4>Bookmarks</h4>	
 	<% @categories.each do |category| %>
-		<%= link_to category, :anchor => category %>
-	<% end %>
-
-	<% @categories.each do |category| %>
-		<div id=<%= category %>>
-		<h3><%= category %></h3>
+		<%= link_to category, :anchor => category %> |
+		<% end %>
+		
+		<% @categories.each do |category| %>
+			<div id=<%= category %>><h3><%= category %></h3>
 		<% @bookmarks.where(category: category).each do |bm| %>
 			<%= link_to bm.title, bm.url %> |
 		<% end %>
