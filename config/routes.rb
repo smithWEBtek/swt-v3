@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-	
+ 
+
   devise_for :users
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -18,5 +19,5 @@ Rails.application.routes.draw do
 	# get 'reload_books', to: 'ref#reload_books'
 
   resources :posts, only: [:show, :index]
-  resources :refs, :projects, :tags, :bookmarks
+  resources :refs, :projects, :tags, :bookmarks, :books
 end

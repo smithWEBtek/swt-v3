@@ -29,5 +29,21 @@ Some setup you must do manually if you haven't yet:
 ===============================================================================
 
 
+180309
+
+created Book model
+considering breaking out Ref model to: 
+
+Bookmark
+Book
+Video
+
+
+Ref might turn into a join table between:
+-Book
+-Bookmark
+-Video
+-Doc
+-Site
 
 

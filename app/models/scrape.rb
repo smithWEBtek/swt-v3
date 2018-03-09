@@ -83,4 +83,39 @@ end
 			Ref.import_bookmarks(refs)
 	end 
  
+	def self.aaq
+		students = []
+			site = HTTParty.get('https://learn.co/expert-chat')
+			parse = Nokogiri::HTML(site)
+			binding.pry
+			parse.css('a').each do |item|
+
+
+				students << item.child.text
+			end
+	end
+
+	def self.books
+		books = []
+		Dir.chdir("/Users/brad/dev/books")
+		folders = Dir.glob('*')
+		folders.each do |folder|
+			Dir.chdir("/Users/brad/dev/books" + "/" + "#{folder}")
+			files = Dir.glob('*')
+			files.each do |file|
+				book = {}
+				url  = "/Users/brad/dev/books" + "/" + "#{folder}" + "/" + "#{file}"
+				book[:title] = file
+				book[:category] = folder
+				book[:description] = 'book description'
+				book[:format] = 'pdf'
+				book[:url] = url
+				books.push(book)
+			end
+		end
+		Ref.import_books(books)
+	end
+
+
+
 end
