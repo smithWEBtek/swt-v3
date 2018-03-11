@@ -22,8 +22,6 @@ def self.bookmarks
 		new_bm.save
 	end
 end
- 
-
 
 # 	def self.bookmarks
 # 		bookmarks = []
