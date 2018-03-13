@@ -1,9 +1,7 @@
 
+# Lab Walkthru: Hitting APIs with Faraday
 
------------------------------------------------------------------------------------------------------
-## Lab Walkthru: Hitting APIs with Faraday
-
-### Getting started: Prepare with the previous lab: [APIs and Postman](https://learn.co/tracks/full-stack-web-development-v4/rails-and-javascript/consuming-apis/apis-and-postman)
+## Getting started: Prepare with the previous lab: [APIs and Postman](https://learn.co/tracks/full-stack-web-development-v4/rails-and-javascript/consuming-apis/apis-and-postman)
 
 1. Read the [Foursquare API documentation](https://developer.foursquare.com/docs/api/endpoints) to find the API endpoint you need.
 2. Create a [FourSquare developer app and get your credentials](https://foursquare.com/developers/apps)
@@ -20,6 +18,10 @@
 		- example, sample of github repos: [https://api.github.com/users/smithWEBtek/repos](https://api.github.com/users/smithWEBtek/repos)
 6. Try **cURL** at the command line to quickly checkout an API endpoint
 	- copy this into your command line and hit enter:
+
+			curl https://api.github.com/users/smithwebtek/repos
+		 
+		 ..or..
 			
 			curl https://api.github.com/users/YOUR_GITHUB_USERNAME/repos
 
@@ -29,8 +31,7 @@
 		- [how-to-test-a-rest-api-from-command-line-with-curl](http://www.codingpedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/)
 		- [curl:// documentation](https://curl.haxx.se/)
 
-7. Beyond the lab:
-
+## Lab walkthru: Hitting APIs with Faraday
 - Format your [Faraday](https://github.com/lostisland/faraday) request object
 - Find venues by zipcode and query search terms
 - Create a list of results
@@ -46,11 +47,8 @@
 	- Parse the response you get in your controller
 	- Make the new data available to your view with an instance variable
 
- 
 
-
-
-## Resources and Ideas
+## Resources
 - Learn about [Socrata](https://dev.socrata.com) and [Socrata endpoints](https://dev.socrata.com/docs/endpoints.html)
 
 - [Cambridge Open Data portal](http://www.cambridgema.gov/departments/opendata), for the city of Cambridge, MA. The [Civic-Innovation-Challenge](https://data.cambridgema.gov/General-Government/Civic-Innovation-Challenge-Inventory/x96z-hdnh) provides data sets with problem statements, so you can do prototype projects with API data, that will help somone out and build your resume references.
@@ -61,4 +59,5 @@
 - [Patron](http://toland.github.io/patron/)
 Patron is a Ruby HTTP client library based on libcurl. It does not try to expose the full “power” (read complexity) of libcurl but instead tries to provide a sane API while taking advantage of libcurl under the hood.
 - [Creating a custom API connector in Ruby
-](https://www.youtube.com/watch?v=uJd53gt1w6s&feature=youtu.be) Learn how to build a real world application that works with an outside API in a Ruby program while using the HTTParty Ruby gem. 
+](https://www.youtube.com/watch?v=uJd53gt1w6s&feature=youtu.be)
+Learn how to build a real world application that works with an outside API in a Ruby program while using the HTTParty Ruby gem. 

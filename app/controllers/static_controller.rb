@@ -4,7 +4,8 @@ class StaticController < ApplicationController
   def qwer
     @file = "qwer.md"
 		@path = '/lib/notes/'
-    render '/static/draft.html.erb' 
+
+    render '/static/draft.html.erb', layout: false
   end
 
 	def flatiron
