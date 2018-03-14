@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/asdf', to: 'static#asdf'
   get '/zxcv', to: 'static#zxcv'
   get '/qwer', to: 'static#qwer'
+  get '/redux', to: 'static#redux'
 	
   get '/about', to: 'static#about'
   get '/flatiron', to: 'static#flatiron'

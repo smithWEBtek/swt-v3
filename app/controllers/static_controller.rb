@@ -8,6 +8,13 @@ class StaticController < ApplicationController
     render '/static/draft.html.erb', layout: false
   end
 
+  def redux
+    @file = "180314-cooking-with-redux.md"
+		@path = '/lib/notes/'
+
+    render '/static/draft.html.erb', layout: false
+  end
+
 	def flatiron
 		@bookmarks = Bookmark.all.where(category: 'flatiron')
     render '/static/flatiron.html.erb' 
