@@ -1,0 +1,170 @@
+@import 'welcome';
+@import 'posts_projects';
+@import 'pygments';
+@import 'custom';
+@import 'normalize';
+@import 'bootstrap';
+
+.stretch {
+  font-size: 2.5vw;
+}
+
+$white: #FFFFFF;
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Calibri', sans-serif;
+}
+
+.wrapper {
+  width: 93%;
+  margin: 0 auto;
+}
+
+.skinny_wrapper {
+  width: 80%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.wrapper_padding {
+  padding: .1rem 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  color: $dark;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 1% 0 1% 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 1% 0 1% 0;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin: 1% 0 1% 0;
+}
+
+h4 {
+  font-size: 1rem;
+  margin: 1% 0 1% 0;
+}
+
+h5 {
+  font-size: .9rem;
+  margin: 1% 0 1% 0;
+}
+
+h6 {
+  font-size: .7rem;
+  margin: 1% 0 1% 0;
+}
+
+p,
+ol,
+li,
+.date {
+  line-height: 1rem;
+  margin: 0 0 .9em 0;
+  font-size: .85em;
+  font-color: #light;
+}
+
+.ref-text {
+  line-height: 1rem;
+  margin: 0 0 .9em 0;
+  font-size: .77em;
+  color: #424652;
+}
+
+hr {
+  width: 108%;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid;
+  color: $highlight;
+  margin: 0 0 .5rem 0;
+}
+
+#tagline {
+  line-height: 1rem;
+  margin: 0 0 .9em 0;
+  font-size: 1em;
+  color: red;
+}
+
+hr-ref {
+  width: 6em;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid;
+  color: $highlight;
+  margin: 0 0 .5rem 0;
+}
+
+#main_nav {
+  padding: 1em 5%;
+  border-bottom: 1px solid;
+  color: $border;
+  .name {
+    font-weight: 700;
+    font-size: .8em;
+    letter-spacing: 2px;
+    border: 2px solid $border;
+    padding: 1rem;
+    text-decoration: none;
+    color: $dark;
+  }
+  nav {
+    float: left;
+    padding-top: 0;
+    a {
+      color: $dark;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem;
+      &:hover {
+        color: $highlight;
+      }
+    }
+  }
+}
+
+.text_hover:hover {
+  color: $dark;
+}
+
+#page_title {
+  text-align: center;
+  border-bottom: 1px solid $border;
+  padding: 3em 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
