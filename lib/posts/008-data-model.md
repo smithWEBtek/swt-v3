@@ -4,7 +4,7 @@
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTot9BkPEzMHbP4uWvww0QMhOYhDbT_Pa224lyDMJr7ZpJk7Bb0) 
 Columbo (the great 70s TV detective) would often solve a case with small bits of seemingly unimportant information. The unwitting suspect would admit to key points while Columbo quietly built his case. 
 
-This post covers some good habits for preparing a solid dataset in your development project for Sinatra, Rails, React, jQuery, javascript, React, Redux or anytime you need a sample dataset and database for developement. 
+This post covers some good habits for preparing a solid dataset in your development project for Sinatra, Rails, React, jQuery, javascript, React, Redux or anytime you need a sample dataset and database for development. 
 
 For applications that require a database, there are steps I follow that help me ensure my data is solid before I write any of the application logic or client side views. Like Columbo, this helps me eliminate things that would otherwise clutter my thinking as I develop, debug and add abstraction to my application. 
 
