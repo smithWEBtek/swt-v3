@@ -117,17 +117,17 @@ DATA_posts ={
       "",
       "Habits of a successful developer", 
       "007-habits.md"
+    ],
+    [
+    # ["date", "title", "repo", "video_url", "site_url", "summary", "content_md"],
+      "2018-03-20",
+      "Rails app seed data",
+      "",
+      "",
+      "",
+      "Planning your data model, building your seed file.", 
+      "008-data-model.md"
     ]
-    # [
-    # # ["date", "title", "repo", "video_url", "site_url", "summary", "content_md"],
-    #   "2018-01-22",
-    #   "How to build project seed data",
-    #   "",
-    #   "",
-    #   "",
-    #   "Solid data is your project foundation.", 
-    #   "008-project-data.md"
-    # ]
   ]
 }
 

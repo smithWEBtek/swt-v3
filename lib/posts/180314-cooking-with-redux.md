@@ -1,1 +1,0 @@
-React	Live Lecture	Cooking With Redux	Live Lecture: Cooking With Redux	React : Live Lecture : Cooking With Redux	WEDNESDAY	11:00 AM	Brad																		
