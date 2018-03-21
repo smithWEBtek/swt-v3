@@ -2,7 +2,7 @@ class StaticController < ApplicationController
   layout false, only: [:index2]
 
   def qwer
-    @file = "qwer.md"
+    @file = "zoom.md"
 		@path = '/lib/notes/'
 
     render '/static/draft.html.erb', layout: false
