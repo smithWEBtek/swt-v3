@@ -1,0 +1,14 @@
+<% @images.each do |img| %>
+	<ul>
+	<li>public_id: <%= img["public_id"] %></li>
+	<li>format: <%= img["format"] %></li>
+	<li>created_at: <%= img["created_at"] %></li>
+	<li>width: <%= img["width"] %></li>
+	<li>height: <%= img["height"] %></li>
+	<li>url: <%= link_to 'show_image', img["url"] %></li>
+	<li>secure_url: <%= link_to 'show_image', img["secure_url"] %></li>
+	<hr />
+	</ul>
+	<% end %>
+<hr />
+ 

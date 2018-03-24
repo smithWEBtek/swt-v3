@@ -1,0 +1,12 @@
+
+<% @pdfs.each do |pdf| %>
+	<hr />
+	<ul>
+		<li>public_id: <%= pdf["public_id"] %></li>
+		<li>format: <%= pdf["format"] %></li>
+		<li>url: <%= link_to 'show_pdf', pdf["url"] %></li>
+		<li>secure_url: <%= link_to 'show_pdf', pdf["secure_url"] %></li>
+	</ul>
+	<% end %>
+<hr />
+ 

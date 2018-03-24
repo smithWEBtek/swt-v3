@@ -13,12 +13,10 @@ Rails.application.routes.draw do
   get '/about', to: 'static#about'
   get '/flatiron', to: 'static#flatiron'
 	get '/blog', to: 'posts#index'
-	get '/posts/new', to: 'posts#index'
-
+ 
 	# get 'scrape_bookmarks', to: 'ref#scrape_bookmarks'
 
 	# get 'reload_books', to: 'ref#reload_books'
 
-  resources :posts, only: [:show, :index]
-  resources :refs, :projects, :tags, :bookmarks, :books
+  resources :posts, :refs, :projects, :tags, :bookmarks, :books
 end
