@@ -1,12 +1,10 @@
  
-## Rails app data model part 1: Document your model
-
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTot9BkPEzMHbP4uWvww0QMhOYhDbT_Pa224lyDMJr7ZpJk7Bb0) 
-Columbo (the great 70s TV detective) would often solve a case with small bits of seemingly unimportant information. The unwitting suspect would admit to key points while Columbo quietly built his case. 
-
-This post covers some good habits for preparing a solid dataset in your development project for Sinatra, Rails, React, jQuery, javascript, React, Redux or anytime you need a sample dataset and database for development. 
+Columbo (the great 70s TV detective) would often solve a case with small bits of seemingly unimportant information. The unwitting suspect would admit to key points while Columbo quietly built his case. This post covers some points that may seem unimportant compared to coding your solution, but if done, will "build your case" for a solid dataset and foundation for your development project. 
 
 For applications that require a database, there are steps I follow that help me ensure my data is solid before I write any of the application logic or client side views. Like Columbo, this helps me eliminate things that would otherwise clutter my thinking as I develop, debug and add abstraction to my application. 
+
+If your project requires a database, take the time to plan it out, considering the table relationships, the column names, meaningful seed data and a reusable script of steps for resetting your data while working locally on your machine, or publishing on a remote server.
 
 ## Some reasons why I always do this before a project:
 I want to have a bullet proof way to reset my database anytime I please, with minimal refactoring or wondering, especially when I end up deploy my apps to Heroku, Netlify, Firebase, AWS or Github pages, I want to be sure that I have solid code for resetting my data on a remote server. With a thoughtful seed file, I have an easy way to add both new fields to my database and add new data to match those fields, removing any guesswork about the effectiveness of the new data. 
