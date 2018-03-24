@@ -117,17 +117,17 @@ DATA_posts ={
       "",
       "Habits of a successful developer", 
       "007-habits.md"
+    ],
+    [
+    # ["date", "title", "repo", "video_url", "site_url", "summary", "content_md"],
+      "2018-03-20",
+      "Rails app seed data",
+      "",
+      "",
+      "",
+      "Planning your data model, building your seed file.", 
+      "008-data-model.md"
     ]
-    # [
-    # # ["date", "title", "repo", "video_url", "site_url", "summary", "content_md"],
-    #   "2018-01-22",
-    #   "How to build project seed data",
-    #   "",
-    #   "",
-    #   "",
-    #   "Solid data is your project foundation.", 
-    #   "008-project-data.md"
-    # ]
   ]
 }
 
@@ -205,12 +205,11 @@ DATA_projects ={
 			"housing listings, sample data sets of discriminatory phrases",
 			"too often the city hears about discriminatory practices after they happen",
 			"proactively find discriminatory housing listings, before constituents",
-			"https://music-studio.herokuapp.com/",
+			"https://legalhousing.herokuapp.com//",
 			"http://res.cloudinary.com/smithwebtek/image/upload/v1519153948/legalhousing_cf9zjr.png"]
 		]
 	}
 	 
-
 	def make_projects
 		DATA_projects[:projects].each do |project|
 			new_project = Project.new
@@ -221,13 +220,57 @@ DATA_projects ={
   end
 end
 
+DATA_users ={
+ :user_keys =>
+		["first_name", "last_name", "email", "password", "password_confirmation"],
+  :users => [
+    ["Ned", "Ryerson", "ned@abc.com", "pointer", "pointer"],
+    ["Ted", "Baxter", "ted@abc.com", "pointer", "pointer"],
+    ["Fred", "Baker", "fred@abc.com", "pointer", "pointer"],
+    ["Demo", "Demo", "demo@demo.com", "password", "password"]
+  ]
+}
+
+def make_users
+  DATA_users[:users].each do |user|
+    new_user = User.new
+    user.each_with_index do |attribute, i|
+      new_user.send(DATA_users[:user_keys][i]+"=", attribute)
+    end
+    new_user.save
+  end
+end
+
+DATA_admin_users ={
+ :admin_user_keys =>
+    ["email", "password", "password_confirmation"],
+  :admin_users => [
+    ["admin@smithwebtek.com", "pointer", "pointer"],
+    ["brad@smithwebtek.com", "pointer", "pointer"]
+  ]
+}
+
+def make_admin_users
+  DATA_admin_users[:admin_users].each do |admin_user|
+    new_admin_user = AdminUser.new
+    admin_user.each_with_index do |attribute, i|
+      new_admin_user.send(DATA_admin_users[:admin_user_keys][i]+"=", attribute)
+    end
+    new_admin_user.save
+  end
+end
+
 def main
   make_tags
 	make_refs
 	Scrape.bookmarks
-	Scrape.gitbooks
+	Bookmark.set_categories
+	# Scrape.gitbooks
   make_posts
-  make_projects
+	make_projects
+	make_users
+	make_admin_users
 end
 
 main
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
