@@ -1,0 +1,27 @@
+<h1>tek bookmarks</h1> 
+<%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag '//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', 'data-turbolinks-track' => true %>
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+<div class="container">
+	<table>
+		<thead>
+			<tr>
+				<th><%#= sort_link "format" %></th> 
+				<th><%= sort_link "category" %></th> 
+				<th><%= sort_link "title" %></th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @bookmarks.each do |bookmark| %>
+				<tr>
+					<td><%#= bookmark.format %></td>
+					<td><%= bookmark.category %></td>
+					<td><%= link_to bookmark.title, bookmark_path(bookmark) %></td>
+					<td><%= link_to bookmark.title, bookmark.url %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

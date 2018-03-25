@@ -5,7 +5,7 @@ class BookmarksController < ApplicationController
 		@bookmarks = Bookmark.all
 		@categories = Bookmark.categories
 	end
-
+  
 	def show
 		@bookmarks = Bookmark.all
 	end

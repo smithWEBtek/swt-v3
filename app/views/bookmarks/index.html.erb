@@ -7,16 +7,12 @@
 	</div>
 	<div class="col-3 body-text">
 
-	<h4>Bookmarks</h4>	
-	<% @categories.each do |category| %>
-		<%= link_to category, :anchor => category %> |
-		<% end %>
-		
-		<% @categories.each do |category| %>
-			<div id=<%= category %>><h3><%= category %></h3>
-		<% @bookmarks.where(category: category).each do |bm| %>
-			<%= link_to bm.title, bm.url %> |
-		<% end %>
+	<h4>tekmarks</h4>		 
+	<% @bookmarks.where(parent_id: '311').each do |bm| %>
+
+		<% binding.pry %>
+
+		<%= link_to bm.title, bm.url %> |
 	<% end %>
 	</div>
 </div>

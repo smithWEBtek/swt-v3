@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get '/about', to: 'static#about'
   get '/flatiron', to: 'static#flatiron'
 	get '/blog', to: 'posts#index'
+	get '/tek', to: 'refs#tek'
  
 	# get 'scrape_bookmarks', to: 'ref#scrape_bookmarks'
 

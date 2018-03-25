@@ -1,0 +1,22 @@
+<div class="wrapper wrapper_padding clearfix">
+	<div class="sidebar col-4 sidebar-margin">
+		<%= render 'layouts/contact' %>
+			<br />
+			<br />
+			<%= render 'layouts/card' %>
+	</div>
+	<div class="col-3 body-text">
+
+	<h4>Bookmarks</h4>	
+	<% @categories.each do |category| %>
+		<%= link_to category, :anchor => category %> |
+		<% end %>
+		
+		<% @categories.each do |category| %>
+			<div id=<%= category %>><h3><%= category %></h3>
+		<% @bookmarks.where(category: category).each do |bm| %>
+			<%= link_to bm.title, bm.url %> |
+		<% end %>
+	<% end %>
+	</div>
+</div>
