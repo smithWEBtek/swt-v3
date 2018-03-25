@@ -1,36 +1,29 @@
 class StaticController < ApplicationController
   layout false, only: [:index2]
-
-  def qwer
-    @file = "zoom.md"
-		@path = '/lib/notes/'
-
-    render '/static/draft.html.erb', layout: false
-  end
-
-  def redux
-    @file = "180314-add-feature.md"
-		@path = '/lib/notes/'
-
-    render '/static/draft.html.erb', layout: false
-  end
-
-	def flatiron
-		@bookmarks = Bookmark.all.where(category: 'flatiron')
-    render '/static/flatiron.html.erb' 
-  end
-
-  def zxcv
-    @file = "zxcv.md"
-		@path = '/lib/notes/'
-    render '/static/draft.html.erb' 
-  end
-
+	
 	def asdf
 		@file = "asdf.md"
 		@path = '/lib/notes/'
-    render '/static/draft.html.erb' 
+		render '/static/draft.html.erb' 
+	end
+	
+	def zxcv
+		@file = "zxcv.md"
+		@path = '/lib/notes/'
+		render '/static/draft.html.erb' 
+	end
+
+  def qwer
+    @file = "qwer.md"
+		@path = '/lib/notes/'
+    render '/static/draft.html.erb', layout: false
   end
+
+
+	def flatiron
+		@bookmarks = Bookmark.all.where(category: 'flatiron')
+		render '/static/flatiron.html.erb' 
+	end
 
   def home
     render :home

@@ -1,40 +1,4 @@
 ===============================================================================
-180324 
-
-## Udemy Node course
-
-## Udemy React course
-
-## Trilogy content
-
-## My blog: cloudinary implement
-
-## OO Triangle study group prep
-
-## OO Ruby Lecture prep
-
-## Udemy JavaScript course 
-
-## Career prep steps and plan
-
-## Taxes
-
-## Interview prep
-
-## Portfolio sites 
-
-## Organize smithWEBtek YouTube channel 
-
-## Music Studio Heroku React routing
-
-## Fire base 
-
-## AWS 
-
-
-
-
-===============================================================================
 # Devise install message: 
 
 
