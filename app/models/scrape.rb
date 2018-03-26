@@ -25,17 +25,11 @@ end
 
 def self.tekmarks
 	@tekmarks = {}
-
 	@tekmarks['categories'] = Bookmark.all.where(parent_id: 311)
- 
 	@tekmarks['categories'].each do |category|
 		parent = Bookmark.find_by(title: category.title)
-
-		binding.pry
 		@tekmarks['bookmarks'] = Bookmark.all.each { |bm| bm.parent_id == category.id }
 	end
- 
-
 	@tekmarks
 end
 
@@ -106,8 +100,6 @@ end
 			parse = Nokogiri::HTML(site)
 			binding.pry
 			parse.css('a').each do |item|
-
-
 				students << item.child.text
 			end
 	end

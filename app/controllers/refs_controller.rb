@@ -2,11 +2,8 @@ class RefsController < ApplicationController
   before_action :set_ref, only: [:show, :edit, :update, :destroy]
 	helper_method :sort_column, :sort_direction
 
-
 	def tek
 		@bookmarks = Bookmark.all.where(parent_id: 311)
-
-# binding.pry
 
 		@categories = Bookmark.categories
 		render 'bookmarks/tek'

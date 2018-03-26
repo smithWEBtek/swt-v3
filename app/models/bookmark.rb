@@ -6,6 +6,9 @@ class Bookmark < ApplicationRecord
 			if Bookmark.find_by_cbm_id(bm.parent_id)
 				category = Bookmark.find_by_cbm_id(bm.parent_id)
 				bm.category = category.title
+
+				binding.pry
+
 			else
 				bm.category = "no parent id found"
 			end
