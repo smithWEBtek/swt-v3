@@ -1,15 +1,12 @@
 class Bookmark < ApplicationRecord
 	has_many :tags
+	belongs_to :category
 	
-	def self.set_categories
-		Bookmark.all.each do |bm|
-			if Bookmark.find_by_cbm_id(bm.parent_id)
-				category = Bookmark.find_by_cbm_id(bm.parent_id)
-				bm.category = category.title
-			else
-				bm.category = "no parent id found"
-			end
-			bm.save
+	def set_bookmark_category
+		if Category.find_by_cbm_id(self.parent_id)
+			category = Category.find_by_cbm_id(self.parent_id)
+			self.category_id = category.id
+			self.save
 		end
 	end
 
@@ -20,13 +17,13 @@ class Bookmark < ApplicationRecord
 		end
 	end
 
-	def self.categories
-		@categories = []
-		Bookmark.all.each do |r|
-			if !r.category.empty?
-				@categories.push(r.category)
-			end
-		end
-		@categories.uniq
-	end
+	# def self.categories
+	# 	@categories = []
+	# 	Bookmark.all.each do |r|
+	# 		if !r.category.empty?
+	# 			@categories.push(r.category)
+	# 		end
+	# 	end
+	# 	@categories.uniq
+	# end
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180309121559) do
+ActiveRecord::Schema.define(version: 20180326091204) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,71 +47,61 @@ ActiveRecord::Schema.define(version: 20180309121559) do
   end
 
   create_table "bookmarks", force: :cascade do |t|
-    t.integer  "cbm_id"
-    t.datetime "dateAddedLocal"
-    t.datetime "dateAddedUTC"
-    t.integer  "cbm_index"
-    t.integer  "parent_id"
-    t.text     "title"
-    t.text     "category"
-    t.text     "subcategory"
-    t.text     "url"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.integer "cbm_id"
+    t.integer "cbm_index"
+    t.integer "parent_id"
+    t.text    "title"
+    t.text    "url"
+    t.integer "category_id", default: 1
   end
 
   create_table "books", force: :cascade do |t|
-    t.string   "title"
-    t.string   "category"
-    t.text     "description"
-    t.string   "format",      default: "pdf"
-    t.string   "url"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.string "title"
+    t.string "category"
+    t.text   "description"
+    t.string "format",      default: "pdf"
+    t.string "url"
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.text    "name"
+    t.integer "cbm_id"
   end
 
   create_table "posts", force: :cascade do |t|
-    t.date     "date"
-    t.string   "title"
-    t.string   "repo",         default: "enter_full_URL_or_leave_blank"
-    t.string   "video_url"
-    t.string   "site_url"
-    t.text     "summary",      default: "summary_blank"
-    t.text     "content_md",   default: "blank_md"
-    t.text     "content_html", default: "blank_html"
-    t.datetime "created_at",                                             null: false
-    t.datetime "updated_at",                                             null: false
+    t.date   "date"
+    t.string "title"
+    t.string "repo",         default: "enter_full_URL_or_leave_blank"
+    t.string "video_url"
+    t.string "site_url"
+    t.text   "summary",      default: "summary_blank"
+    t.text   "content_md",   default: "blank_md"
+    t.text   "content_html", default: "blank_html"
   end
 
   create_table "projects", force: :cascade do |t|
-    t.string   "name"
-    t.text     "business_model"
-    t.text     "data_sources"
-    t.text     "problem"
-    t.text     "wishlist"
-    t.text     "url"
-    t.text     "screenshot"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.string "name"
+    t.text   "business_model"
+    t.text   "data_sources"
+    t.text   "problem"
+    t.text   "wishlist"
+    t.text   "url"
+    t.text   "screenshot"
   end
 
   create_table "refs", force: :cascade do |t|
-    t.string   "title"
-    t.string   "category"
-    t.text     "description"
-    t.string   "format"
-    t.string   "url"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string "title"
+    t.string "category"
+    t.text   "description"
+    t.string "format"
+    t.string "url"
   end
 
   create_table "scrapes", force: :cascade do |t|
-    t.string   "name"
-    t.string   "url"
-    t.string   "selectors"
-    t.text     "notes"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "url"
+    t.string "selectors"
+    t.text   "notes"
   end
 
   create_table "tags", force: :cascade do |t|

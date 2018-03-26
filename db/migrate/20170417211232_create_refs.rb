@@ -6,8 +6,6 @@ class CreateRefs < ActiveRecord::Migration[5.0]
       t.text :description
       t.string :format
       t.string :url
-
-      t.timestamps
     end
   end
 end

@@ -2,8 +2,8 @@ class BookmarksController < ApplicationController
 		before_action :set_bookmark, only: [:show, :edit, :update, :destroy]
  
 	def index
-		@bookmarks = Bookmark.all
-		@categories = Bookmark.categories
+		# @bookmarks = Bookmark.all
+		@categories = Category.all
 	end
   
 	def show
@@ -46,7 +46,7 @@ class BookmarksController < ApplicationController
 		end
 
 		def bookmark_params
-			params.require(:bookmark).permit(:bm_id, :bm_dateAddedLocal, :bm_dateAddedUTC, :bm_index, :bm_parentId, :bm_title, :bm_url)
+			params.require(:bookmark).permit(:category_id, :bm_id, :bm_dateAddedLocal, :bm_dateAddedUTC, :bm_index, :bm_parentId, :bm_title, :bm_url)
 		end
 
 		def sortable_columns

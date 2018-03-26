@@ -264,7 +264,7 @@ def main
   make_tags
 	make_refs
 	Scrape.bookmarks
-	Bookmark.set_categories
+	# Bookmark.set_categories
 	# Scrape.gitbooks
   make_posts
 	make_projects

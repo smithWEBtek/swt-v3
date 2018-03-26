@@ -5,8 +5,6 @@ class CreateScrapes < ActiveRecord::Migration[5.0]
       t.string :url
       t.string :selectors
       t.text :notes
-
-      t.timestamps
     end
   end
 end
