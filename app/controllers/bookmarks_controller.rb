@@ -1,9 +1,15 @@
 class BookmarksController < ApplicationController
 		before_action :set_bookmark, only: [:show, :edit, :update, :destroy]
  
+	def export_csv
+		@bookmarks = Bookmark.all 
+		render 'bookmarks/index.csv.erb'
+	end
+
 	def index
 		# @bookmarks = Bookmark.all
-		@categories = Category.all
+		# @categories = Category.all
+		@categories = Category.tek_only
 	end
   
 	def show

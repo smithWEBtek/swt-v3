@@ -7,15 +7,21 @@
 	</div>
 	<div class="col-3 body-text">
 
-	<h4>Bookmarks</h4>
+	<h4 id='top'>Bookmarks</h4>	
 	<% @categories.each do |category| %>
-		<hr />
-		<h3><%= category.name %></h3>
-		<% category.bookmarks.each do |bm| %>
-			<ul>
-				<li><%= link_to bm.title, bm.url %></li>
-			</ul>
+		<%= link_to category.name, :anchor => category.name %> |
 		<% end %>
-	<% end %>
+		
+		<% @categories.each do |category| %>
+			<p><a href='#top'>^TOP</p>
+			<hr />
+
+			<h3 id=<%= category.name %>><%= category.name %></h3>
+			<% category.bookmarks.each do |bm| %>
+				<ul>
+					<li><%= link_to bm.title, bm.url %></li>
+				</ul>
+			<% end %>
+		<% end %>
+		</div>
 	</div>
-</div>

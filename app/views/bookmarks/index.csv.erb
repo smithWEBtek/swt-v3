@@ -1,0 +1,4 @@
+"Title", "Category", "Url"
+<% @bookmarks.each do |bookmark| %>
+<%= raw "\"#{bookmark.title}\"" %>,<%= raw "\"#{bookmark.category.name}\"" %>,<%= raw "\"#{bookmark.url}\"" %>
+<% end %>

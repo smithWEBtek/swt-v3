@@ -14,6 +14,9 @@ Rails.application.routes.draw do
 	get '/blog', to: 'posts#index'
 	get '/tek', to: 'refs#tek'
  
+
+	get '/export_bookmarks_csv', to: 'bookmarks#export_csv'
+
 	# get 'scrape_bookmarks', to: 'ref#scrape_bookmarks'
 
 	# get 'reload_books', to: 'ref#reload_books'
