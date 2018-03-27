@@ -8,9 +8,9 @@ class StaticController < ApplicationController
 	end
 	
 	def zxcv
-		@file = "zxcv.md"
-		@path = '/lib/notes/'
-		render '/static/draft.html.erb' 
+		@file = "post-sg-oo-triangle.md"
+		@path = '/lib/posts/'
+		render '/static/draft.html.erb', layout: false
 	end
 
   def qwer
