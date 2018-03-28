@@ -9,3 +9,5 @@
 - Attribute: What is an Object Attribute?
 - Assigning an attribute: **the SETTER method**
 - Retrieving or reading an attribute: **the GETTER method**
+
+## CRUD with OO RUBY
