@@ -7,12 +7,12 @@
 	</div>
 	<div class="col-3 body-text">
 
-	<h4 id='top'>Bookmarks</h4>	
+	<h4 id='top'>tekmarks</h4>	
 	<% @categories.each do |category| %>
 		<%= link_to category.name, :anchor => category.name %> |
 		<% end %>
 		
-		<% @categories.sort.each do |category| %>
+		<% @categories.each do |category| %>
 			<p><a href='#top'>^TOP</p>
 			<hr />
 
