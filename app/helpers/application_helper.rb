@@ -9,7 +9,7 @@ module ApplicationHelper
     if file.nil?
       "no blog.md file exists"
     else
-      render_file = "#{Rails.root}"+"#{path}"+"#{file}"
+			render_file = "#{Rails.root}"+"#{path}"+"#{file}"
       markdown(File.read(render_file))
     end
   end
@@ -26,9 +26,5 @@ module ApplicationHelper
       superscript: true
     }
     Redcarpet::Markdown.new(renderer, options).render(content).html_safe  
-	end
-	
-	def render_html(file)
-		Rails.root.join("db/posts", file)
-	end
+	end 
 end

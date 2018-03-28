@@ -12,7 +12,7 @@
 		<%= link_to category.name, :anchor => category.name %> |
 		<% end %>
 		
-		<% @categories.each do |category| %>
+		<% @categories.sort.each do |category| %>
 			<p><a href='#top'>^TOP</p>
 			<hr />
 

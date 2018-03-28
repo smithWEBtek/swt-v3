@@ -9,7 +9,7 @@ class BookmarksController < ApplicationController
 	def index
 		# @bookmarks = Bookmark.all
 		# @categories = Category.all
-		@categories = Category.tek_only
+		@categories = Category.tek_only.sort{|a,b|a.name<=>b.name}
 	end
   
 	def show

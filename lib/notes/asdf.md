@@ -2,16 +2,14 @@
 ===============================================================================
 180324 
 
-- [] OO Ruby Lecture prep
-- [] OO Triangle study group prep
-- [] My blog: cloudinary implement
 - [] Trilogy content
+- [] Udemy Node course
+- [] My blog: cloudinary implement
 - [] Learn an algorithm
 
 - [] Use Bootstrap on swt
 - [] Create table of book marks with PDFs using Cloudinary thumbnails 
 - [] Taxes
-- [] Udemy Node course
 - [] Udemy React course
 - [] Udemy JavaScript course 
 - [] Career prep steps and plan
