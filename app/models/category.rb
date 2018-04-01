@@ -9,7 +9,7 @@ class Category < ApplicationRecord
 	def self.tek_only
 		non_tek = ["_ntwk", "_accts", 
 		"trilogy", "misc", "port", "_//", "//", "_career", "_hku", 
-		"_job", "_learn-videos", "Aida", "bands", "career", "cirque", 
+		"_job", "_learn-videos", "Aida", "bands", "cirque", 
 		"flatiron", "glasses", "listen", "mainstage", "Network", "recruiter", 
 		"technical-coach", "wework",
 		"videos",
