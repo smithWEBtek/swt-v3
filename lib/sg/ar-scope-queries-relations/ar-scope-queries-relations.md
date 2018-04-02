@@ -1,4 +1,8 @@
-##  Live Discussion: AR Advanced (AR Scope methods, AR queries, AR relationships)
+##  Live Discussion: ActiveRecord
+- AR Scope methods
+- AR queries
+- AR relationships
+
 ***
 ## SWBAT
 - Use AR query methods
@@ -7,16 +11,18 @@
 
 ***
 ## Key Concepts
+- [Object Relational Mapping](http://api.rubyonrails.org/files/activerecord/README_rdoc.html)
 
-- ActiveRecord Queries: Commonly used AR Query Methods
-	- .find	
-	- .find_by 
-	- .first
-	- .last(#)
-	- .take(#)	
+- ActiveRecord: Query Methods
+	- .find(id)
+	- .find_by("<pick-a-column-name>: 'value'") 
+	- .first .second .third .fourth .fifth
+	- .last(<integer>)
+	- .take(<integer>)	
 	- .where(attribute: 'value')
+
 ***
-- CRUD in ActiveRecord: 
+- ActiveRecord: CRUD 
 	- #new 
 	- #create 
 	- #build
@@ -25,8 +31,13 @@
 	- #destroy
 	- .destroy_all
 - before :each
+
 ***
-- ActiveRecord Scope
+- ActiveRecord: Scope
+
+***
+- ActiveRecord: [call_backs](http://guides.rubyonrails.org/active_record_callbacks.html)
+- before_action
 
 
 ## Lessons
