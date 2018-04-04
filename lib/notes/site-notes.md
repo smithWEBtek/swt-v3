@@ -1,4 +1,25 @@
 ===============================================================================
+180404
+Add cloudinary upload form
+Walkthru
+	get a new book recommendation
+	download the pdf
+	use the Cloudinary API form to upload it
+	show the list of books that are on Cloudinary
+
+	
+
+
+
+
+
+
+
+
+
+
+
+===============================================================================
 # Devise install message: 
 
 
