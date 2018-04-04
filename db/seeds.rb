@@ -16,37 +16,6 @@ def make_tags
   end
 end
  
-DATA_refs ={
- :ref_keys =>
-    ["title", "category", "format", "url", "description"],
-  :refs => [
-    ["video1", "video", "#", "contents of video1" ],
-    ["video2", "video", "#", "contents of video2" ],
-    ["video3", "video", "#", "contents of video3" ],
-    ["video4", "video", "#", "contents of video4" ],
-    ["video5", "video", "#", "contents of video5" ],
-    ["video6", "video", "#", "contents of video6" ],
-
-    ["DerekBanas", "mentor", "#", "fast, succinct dev of all" ],
-    ["MacKenzieChild", "mentor", "#", "med pace webdev and design" ],
-    ["Uncle Bob", "mentor", "#", "computer science, programming, philosophy" ],
-    ["Build Blog", "mentor", "#", "contents of video6"],
-    ["Traversy Media", "mentor", "https://www.youtube.com/user/TechGuyWeb", "web dev:HTML/CSS, JavaScript, PHP, RoR"],
-    ["CodeAcademy", "mentor", "https://www.youtube.com/user/TechGuyWeb", "online school" ],
-    ["TUTS+", "mentor", "#", "contents of video6" ]
-  ]
-}
-
-def make_refs
-  DATA_refs[:refs].each do |ref|
-    new_ref = Ref.new
-    ref.each_with_index do |attribute, i|
-      new_ref.send(DATA_refs[:ref_keys][i]+"=", attribute)
-    end
-    new_ref.save
-  end
-end
- 
 DATA_posts ={
  :post_keys =>
     ["date", "title", "repo", "video_url", "site_url", "summary", "content_md", "content_html"],
@@ -262,7 +231,6 @@ end
 
 def main
   make_tags
-	make_refs
 	Scrape.bookmarks
   make_posts
 	make_projects
